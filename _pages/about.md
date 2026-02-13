@@ -7,7 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-# Yuanpeng Ye
 ## About Me
 
 · New Energy Materials and Devices (Elite Class) @ Guohao College, Tongji University, 2022-2026 (BSc)
