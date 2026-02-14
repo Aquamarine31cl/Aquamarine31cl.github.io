@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "https://s41.ax1x.com/2026/02/14/pZLiMhF.jpg"
   name             : "Yuanpeng Ye"
   pronouns         : "him"  
   bio              : "Short biography for the left-hand sidebar"
