@@ -1,5 +1,5 @@
 ---
-title: "Aqueously dispersed homopolypeptide nanotoroids with tunable circularly polarized luminescence"
+title: "Engineering circularly polarized luminescence through symmetry manipulation in achiral tetraphenylpyrazine structures"
 collection: publications
 category: manuscripts
 permalink: /publication/2026-05-01-paper-title-number-2
