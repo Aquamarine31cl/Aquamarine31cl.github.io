@@ -2,12 +2,11 @@
 title: "Aqueously dispersed homopolypeptide nanotoroids with tunable circularly polarized luminescence"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides3.pdf'
-paperurl: 'https://academicpages.github.io/files/paper3.pdf'
+permalink: /publication/2026-05-01-paper-title-number-2
+excerpt: 'Aqueously dispersed nanomaterials exhibiting circularly polarized luminescence (CPL) hold great potentials in biological fields due to the inherent chirality of biological systems and its excellent biocompatibility. However, the limited availability of biodegradable CPL nanoparticles in aqueous media has severely constrained the development of biomedical CPL. Here, we present a facile strategy for achieving tunable CPL of aqueously dispersed nanotoroids through the co-assembly of a homopolypeptide with three achiral triphenylamine derivatives, showing a CPL performance depending on the architecture and doping content of small molecules. Remarkably, a deep-red CPL can be achieved with a record luminescence dissymmetry factor (glum = 1.1 × 10−2) among aqueously polypeptide-based nanoparticles. Furthermore, the densely packed nanostructure completely suppressed the intrinsic reactive oxygen species generation of the chromophores by restricting oxygen diffusion and quenching exciton-energy transfer, thereby eliminating phototoxic risks while preserving imaging fidelity. Overall, this work not only provides a facile method for achieving aqueous CPL from achiral molecules but also establishes a structure-property relationship between chromophore geometry and supramolecular CPL performance, advancing their potential in biological fields.'
+date: 2026-05-01
+venue: 'Chinese Chemical Letters'
+paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S1001841725010228'
 citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
 
