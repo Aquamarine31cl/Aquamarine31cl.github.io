@@ -25,23 +25,23 @@ author:
   # Biographic information
   avatar           : "https://s41.ax1x.com/2026/02/14/pZLiMhF.jpg"
   name             : "Yuanpeng Ye"
-  pronouns         : "him"  
-  bio              : "Short biography for the left-hand sidebar"
+  pronouns         : "Pedro"  
+  bio              : "The flowing water does not race, but its persistence is unending."
   location         : "Shanghai, China"
   employer         : "Tongji University"
-  uri              : # URL
+  uri              : "https://aquamarine31cl.github.io/"
   email            : "1904699832@qq.com" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # URL
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : # URL
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
