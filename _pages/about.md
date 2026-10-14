@@ -11,8 +11,8 @@ redirect_from:
 
  - New Energy Materials and Devices (Elite Class) @ [Guohao College, Tongji University](https://ghc.tongji.edu.cn/), 2022-2026 (BSc)
  - Polymer Chemistry and Physics @ [Department of Macromolecular Science, Fudan University](https://polymer.fudan.edu.cn/), 2026-2031 (Expected, PhD)
- - Major: Macromolecular Chemistry and Physics (Supervisor: [Prof. Zhihong Nie & Prof. Yutao Sang](http://www.nielab.com/))
- - Research Interests: Supramolecularly Assembled Materials, Chiral Induced Spin Selectivity (CISS)
+ - Macromolecular Chemistry and Physics (Supervisor: [Prof. Zhihong Nie & Prof. Yutao Sang](http://www.nielab.com/))
+ - Research Interests on Supramolecularly Assembled Materials, Chiral Induced Spin Selectivity (CISS)
 
 ## News
 
