@@ -16,23 +16,23 @@ redirect_from:
 
 ## News
 
- - 2026.10 I received the Xianghui Scholarship in Fudan University (Only 200 PhD student were awarded this scholarship in the entire school)
+ - 2026.10 I received the Xianghui Scholarship at Fudan University (only 200 PhD students were awarded this scholarship in the entire school).
  
- - 2026.05 I was awarded the title of “Outstanding Graduate Students of Shanghai” by Tongji University & Guohao College
+ - 2026.05 I was awarded the title of “Outstanding Graduate Student of Shanghai” by Tongji University and Guohao College.
 
- - 2025.12 I was awarded the title of “Pacemaker to Academic Star” by Tongji University (The highest honor in the field of undergraduate academic achievements)
+ - 2025.12 I was awarded the title of “Pacemaker to Academic Star” by Tongji University (the highest honor in the field of undergraduate academic achievements).
 
- - 2025.09 I was recommended by Guohao Academy to be admitted directly to graduate school and I have also received the offer of admission from the Department of Polymer Science at Fudan University.
+ - 2025.09 I was recommended by Guohao Academy for direct admission to graduate school, and I also received an admission offer from the Department of Polymer Science at Fudan University.
    
- - 2025.09 I received the Alishan Scholarship in Tongji University (Only two undergraduate students were awarded this scholarship in the entire school)
+ - 2025.09 I received the Alishan Scholarship at Tongji University (only two undergraduate students were awarded this scholarship in the entire school).
 
- - 2025.09 Our work on “[Aqueously dispersed homopolypeptide nanotoroids with tunable circularly polarized luminescence](https://www.sciencedirect.com/science/article/abs/pii/S1001841725010228)” is accepted for publication in [Chinese Chemical Letters](https://www.sciencedirect.com/journal/chinese-chemical-letters "Go to Chinese Chemical Letters on ScienceDirect").
+ - 2025.09 Our work on “[Aqueously dispersed homopolypeptide nanotoroids with tunable circularly polarized luminescence](https://www.sciencedirect.com/science/article/abs/pii/S1001841725010228)” has been accepted for publication in [Chinese Chemical Letters](https://www.sciencedirect.com/journal/chinese-chemical-letters "Go to Chinese Chemical Letters on ScienceDirect").
 
- - 2024.11 I received the CRRC Zhuzhou Locomotive Scholarship (First Prize of the Outstanding Student Scholarship)
+ - 2024.11 I received the CRRC Zhuzhou Locomotive Scholarship at Tongji University (First Prize of the Outstanding Student Scholarship).
 
- - 2024.10 Our work on “[Engineering circularly polarized luminescence through symmetry manipulation in achiral tetraphenylpyrazine structures](https://www.sciencedirect.com/science/article/abs/pii/S0254586124003428)” is accepted for publication in [Chinese Journal of Structural Chemistry](https://www.sciencedirect.com/journal/chinese-journal-of-structural-chemistry "Go to Chinese Journal of Structural Chemistry on ScienceDirect").
+ - 2024.10 Our work on “[Engineering circularly polarized luminescence through symmetry manipulation in achiral tetraphenylpyrazine structures](https://www.sciencedirect.com/science/article/abs/pii/S0254586124003428)” has been accepted for publication in [Chinese Journal of Structural Chemistry](https://www.sciencedirect.com/journal/chinese-journal-of-structural-chemistry "Go to Chinese Journal of Structural Chemistry on ScienceDirect").
 
- - 2022.09 I was admitted to the [Engineering Experimental Class (Guohao Elite Class) of Tongji University](https://ghc.tongji.edu.cn/info/1051/2201.htm) through the interview.
+ - 2022.09 I was admitted to the [Engineering Experimental Class (Guohao Elite Class) of Tongji University](https://ghc.tongji.edu.cn/info/1051/2201.htm) through an interview.
 
 ## Honors and Competitions
 
