@@ -17,12 +17,14 @@ redirect_from:
 ## News
 
  - 2026.10 I received the Xianghui Scholarship at Fudan University (only 200 PhD students were awarded this scholarship in the entire school).
+
+ - 2026.06 I successfully graduated from the New Energy Materials and Devices (Elite Class) of Guohao College of Tongji University and was awarded a bachelor's degree in engineering.
  
- - 2026.05 I was awarded the title of “Outstanding Graduate Student of Shanghai” by Tongji University and Guohao College.
+ - 2026.04 I was awarded the title of “Outstanding Graduate Student of Shanghai” by Tongji University and Guohao College.
 
  - 2025.12 I was awarded the title of “Pacemaker to Academic Star” by Tongji University (the highest honor in the field of undergraduate academic achievements).
 
- - 2025.09 I was recommended by Guohao Academy for direct admission to graduate school, and I also received an admission offer from the Department of Polymer Science at Fudan University.
+ - 2025.09 I was recommended by Guohao College for direct admission to graduate school, and I also received an admission offer from the Department of Polymer Science at Fudan University.
    
  - 2025.09 I received the Alishan Scholarship at Tongji University (only two undergraduate students were awarded this scholarship in the entire school).
 
