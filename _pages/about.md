@@ -18,6 +18,8 @@ redirect_from:
 
  - 2026.10 I received the Xianghui Scholarship at Fudan University (only 200 PhD students were awarded this scholarship in the entire school).
 
+ - 2022.09 I was admitted to the [Department of Macromolecular Science, Fudan University](https://polymer.fudan.edu.cn/).
+
  - 2026.06 I successfully graduated from the New Energy Materials and Devices (Elite Class) of Guohao College of Tongji University and was awarded a bachelor's degree in engineering.
  
  - 2026.04 I was awarded the title of “Outstanding Graduate Student of Shanghai” by Tongji University and Guohao College.
@@ -38,7 +40,7 @@ redirect_from:
 
 ## Honors and Competitions
 
-### Honors
+### Honors (Representative)
  
  - **2025.12** Pacemaker to Academic Star of Tongji University (The highest honor in the field of undergraduate academic achievements)
  
@@ -52,20 +54,20 @@ redirect_from:
 
  - **2022.09** Freshman Scholarship
 
-### Competitions (Selected, As team leader or individual awards)
+### Competitions (Representative)
 
+ - **2026.03** (International Level) "SCIP+" Green Chemistry and Chemical Engineering Innovation and Entrepreneurship Competition ***Merit Award***
+ 
  - **2025.12** (National Level) The 19th "Challenge Cup" National College Students' Extracurricular Academic Science and Technology Works Competition ***Third Prize (Main Track)***
  
  - **2025.10** (National Level) The 1st Academic Exchange Conference for Outstanding Students of Honor Colleges in Excellence 9 University Consortium (E9) ***Second Prize***
 
- - **2026.03** (International Level) "SCIP+" Green Chemistry and Chemical Engineering Innovation and Entrepreneurship Competition ***Merit Award***
-
  - **2025.12** (National Level) Academic Annual Conference of Innovation and Entrepreneurship Practice Alliance ***Excellent Paper Selection Award***
 
- - **2025.06** (Provincial) The 19th "Challenge Cup" National College Students' Extracurricular Academic Science and Technology Works Competition ***First Prize (Main Track)***
+ - **2025.06** (Provincial Level) The 19th "Challenge Cup" National College Students' Extracurricular Academic Science and Technology Works Competition ***First Prize (Main Track)***
 
- - **2024.11** (Provincial) China International College Students' Innovation Competition (2024) ***Gold Award***
+ - **2024.11** (Provincial Level) China International College Students' Innovation Competition (2024) ***Gold Award***
  
- - **2024.07** (Provincial) College Students' Statistical Modeling Competition ***Second Prize***
+ - **2024.07** (Provincial Level) College Students' Statistical Modeling Competition ***Second Prize***
  
- - **2024.11** (Provincial) The 3rd "Tianjiao Bay Cup" Life and Health Innovation and Entrepreneurship Competition ***Third Prize***
+ - **2024.11** (Provincial Level) The 3rd "Tianjiao Bay Cup" Life and Health Innovation and Entrepreneurship Competition ***Third Prize***
