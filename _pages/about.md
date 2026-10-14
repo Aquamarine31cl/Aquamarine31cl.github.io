@@ -16,7 +16,7 @@ redirect_from:
 
 ## News
 
- - 2026.10 I received the Xianghui Scholarship at Fudan University (only 200 PhD students were awarded this scholarship in the entire school).
+ - 2026.10 I received the Xianghui Scholarship (only 200 PhD students were awarded this scholarship at Fudan University).
 
  - 2022.09 I was admitted to the [Department of Macromolecular Science, Fudan University](https://polymer.fudan.edu.cn/).
 
@@ -24,11 +24,11 @@ redirect_from:
  
  - 2026.04 I was awarded the title of “Outstanding Graduate Student of Shanghai” by Tongji University and Guohao College.
 
- - 2025.12 I was awarded the title of “Pacemaker to Academic Star” by Tongji University (the highest honor in the field of undergraduate academic achievements).
+ - 2025.12 I was awarded the title of “Pacemaker to Academic Star” by Tongji University (The Highest Honor in the Field of Undergraduate Academic Achievements).
 
  - 2025.09 I was recommended by Guohao College for direct admission to graduate school, and I also received an admission offer from the Department of Polymer Science at Fudan University.
    
- - 2025.09 I received the Alishan Scholarship at Tongji University (only two undergraduate students were awarded this scholarship in the entire school).
+ - 2025.09 I received the Alishan Scholarship (First Prize of the Outstanding Student Scholarship, Only Two Undergraduate Students were Awarded at Tongji University).
 
  - 2025.09 Our work on “[Aqueously dispersed homopolypeptide nanotoroids with tunable circularly polarized luminescence](https://www.sciencedirect.com/science/article/abs/pii/S1001841725010228)” has been accepted for publication in [Chinese Chemical Letters](https://www.sciencedirect.com/journal/chinese-chemical-letters "Go to Chinese Chemical Letters on ScienceDirect").
 
@@ -42,17 +42,21 @@ redirect_from:
 
 ### Honors (Representative)
  
- - **2025.12** Pacemaker to Academic Star of Tongji University (The highest honor in the field of undergraduate academic achievements)
+ - **2026.10** Xianghui Scholarship (Only 200 PhD Students were Awarded This Scholarship at Fudan University).
+
+ - **2026.04** Outstanding Graduate Student of Shanghai
+ 
+ - **2025.12** Pacemaker to Academic Star of Tongji University (The Highest Honor in the Field of Undergraduate Academic Achievements)
  
  - **2025.11** Outstanding Students of Tongji University
  
- - **2025.09** Alishan Scholarship (First Prize of the Outstanding Student Scholarship, only two undergraduate students were awarded this scholarship in the entire school)
+ - **2025.09** Alishan Scholarship (First Prize of the Outstanding Student Scholarship, Only Two Undergraduate Students were Awarded at Tongji University)
 
- - **2024.09** CRRC Zhuzhou Locomotive Scholarship (First Prize of the Outstanding Student Scholarship)
+ - **2024.09** CRRC Zhuzhou Locomotive Scholarship (First Prize of the Outstanding Student Scholarship at Tongji University)
 
- - **2023.09** Second Prize of the Outstanding Student Scholarship
+ - **2023.09** Second Prize of the Outstanding Student Scholarship at Tongji University
 
- - **2022.09** Freshman Scholarship
+ - **2022.09** Freshman Scholarship at Tongji University
 
 ### Competitions (Representative)
 
