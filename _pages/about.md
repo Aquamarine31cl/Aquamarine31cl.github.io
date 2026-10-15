@@ -16,7 +16,7 @@ redirect_from:
 
 ## News
 
- - 2026.10 I received the Xianghui Scholarship (only 200 PhD students were awarded this scholarship at Fudan University).
+ - 2026.10 I received the Xianghui Scholarship (Only 200 PhD Students were Awarded This Scholarship at Fudan University).
 
  - 2022.09 I was admitted to the [Department of Macromolecular Science, Fudan University](https://polymer.fudan.edu.cn/).
 
@@ -24,7 +24,7 @@ redirect_from:
  
  - 2026.04 I was awarded the title of “Outstanding Graduate Student of Shanghai” by Tongji University and Guohao College.
 
- - 2025.12 I was awarded the title of “Pacemaker to Academic Star” by Tongji University (The Highest Honor in the Field of Undergraduate Academic Achievements).
+ - 2025.12 I was awarded the title of “Academic Star Pacemaker” by Tongji University (The Highest Honor in the Field of Undergraduate Academic Achievements).
 
  - 2025.09 I was recommended by Guohao College for direct admission to graduate school, and I also received an admission offer from the Department of Polymer Science at Fudan University.
    
@@ -46,7 +46,7 @@ redirect_from:
 
  - **2026.04** Outstanding Graduate Student of Shanghai
  
- - **2025.12** Pacemaker to Academic Star of Tongji University (The Highest Honor in the Field of Undergraduate Academic Achievements)
+ - **2025.12** Academic Star Pacemaker of Tongji University (The Highest Honor in the Field of Undergraduate Academic Achievements)
  
  - **2025.11** Outstanding Students of Tongji University
  
