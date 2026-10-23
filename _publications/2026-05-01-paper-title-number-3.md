@@ -11,5 +11,5 @@ citation: '<strong>Y. Ye</strong>, X. Hu, D. Yang et al. <i>Chinese Chemical Let
 ---
 
 <div align="center">
-  <img src="/images/A2-GA.png" alt="Article 2 Graphic Abstract" width="70%">
+  <img src="/images/A2-GA.jpg" alt="Article 2 Graphic Abstract" width="70%">
 </div>
