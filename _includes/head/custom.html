@@ -1,6 +1,23 @@
+
 {% include base_path %}
 
 <!-- start custom head snippets -->
+
+<!-- Start in the dark interface unless the visitor has explicitly chosen light mode. -->
+<script>
+  (function () {
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light") {
+        document.documentElement.removeAttribute("data-theme");
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    } catch (error) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
 
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
@@ -12,6 +29,6 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#ffffff"/>
+<meta name="theme-color" content="#080e19"/>
 
 <!-- end custom head snippets -->
