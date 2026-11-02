@@ -1,0 +1,13 @@
+<section class="travel-journal" aria-labelledby="travel-journal-heading">
+  <header class="travel-journal-header"><p class="cosmic-eyebrow">A JOURNAL OF PLACES</p><h3 id="travel-journal-heading">Cities, dates & little discoveries.</h3><p>A few moments from each city, collected along the way.</p></header>
+  {% assign journeys = site.data.travel.journeys | sort: 'arrival' | reverse %}
+  {% for journey in journeys %}
+  <article class="city-journey" id="journey-{{ journey.id | escape }}" aria-labelledby="city-heading-{{ journey.id | escape }}">
+    <div class="city-journey-heading"><div class="city-arrival"><span>ARRIVED</span><time datetime="{{ journey.arrival | escape }}">{{ journey.arrival | date: '%-d %B %Y' }}</time></div><div class="city-heading-copy"><p class="cosmic-eyebrow">{{ journey.country | escape }}</p><h4 id="city-heading-{{ journey.id | escape }}">{{ journey.city | escape }}</h4>{% if journey.description and journey.description != '' %}<p>{{ journey.description | escape }}</p>{% endif %}</div></div>
+    <div class="city-photo-grid" aria-label="Three representative photographs of {{ journey.city | escape }}">
+    {% for index in (0..2) %}{% assign photo = journey.photos[index] %}
+      <figure class="city-photo-card">{% if photo.src and photo.src != '' %}<a href="{{ photo.src | relative_url }}" aria-label="View photograph {{ forloop.index }} of {{ journey.city | escape }}"><img src="{{ photo.src | relative_url }}" alt="{{ photo.alt | default: journey.city | escape }}" width="960" height="720" loading="lazy" decoding="async"></a>{% else %}<div class="city-photo-placeholder" role="img" aria-label="Photograph {{ forloop.index }} of {{ journey.city | escape }} coming soon"><span aria-hidden="true">{{ forloop.index | prepend: '0' }}</span><small>Photo coming soon</small></div>{% endif %}<figcaption><span>{{ forloop.index | prepend: '0' }}</span> {% if photo.caption and photo.caption != '' %}{{ photo.caption | escape }}{% else %}{{ journey.city | escape }} · A moment to remember{% endif %}</figcaption></figure>
+    {% endfor %}</div>
+  </article>
+  {% else %}<div class="travel-journal-empty"><span aria-hidden="true">✧</span><div><h4>The journey starts here.</h4><p>City visits, arrival dates and photographs will appear here.</p></div></div>{% endfor %}
+</section>

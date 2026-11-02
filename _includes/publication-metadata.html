@@ -1,0 +1,19 @@
+{% assign publication = site.data.publication_details[include.item.publication_key] %}
+{% if publication %}
+<section class="publication-metadata" aria-label="Publication details">
+  <p class="publication-authors">{% for author in publication.authors %}{% if author.highlight %}<strong>{{ author.name | escape }}</strong>{% else %}{{ author.name | escape }}{% endif %}<sup>{{ author.affiliation_ids | join: ',' }}{% if author.equal_contribution %}†{% endif %}{% if author.corresponding %}*{% endif %}</sup>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+  {% if publication.author_note != '' %}<p class="publication-author-note">{{ publication.author_note | escape }}</p>{% endif %}
+  <dl class="publication-facts">
+    <div><dt>Journal</dt><dd>{{ publication.journal | escape }}</dd></div>
+    <div><dt>Volume / Issue / Article</dt><dd>{{ publication.volume }} ({{ publication.issue }}), {{ publication.article_number }}</dd></div>
+    <div><dt>Issue publication</dt><dd>{{ publication.issue_publication | escape }}</dd></div>
+    <div><dt>Online record · indexed</dt><dd>{{ publication.online_record_date | date: '%-d %B %Y' }}</dd></div>
+    <div class="publication-doi"><dt>DOI</dt><dd><a href="https://doi.org/{{ publication.doi | escape }}">{{ publication.doi | escape }}</a></dd></div>
+  </dl>
+  <details class="publication-affiliations"{% unless include.compact %} open{% endunless %}>
+    <summary>Affiliations <span>({{ publication.affiliations | size }}) · indexed record</span></summary>
+    <ol>{% for affiliation in publication.affiliations %}<li value="{{ affiliation.id }}">{{ affiliation.text | escape }}</li>{% endfor %}</ol>
+  </details>
+  <p class="publication-provenance">Online dates and affiliations follow the <a href="{{ publication.index_url | escape }}">indexed article record</a>; publisher confirmation is pending. Author order and issue details: <a href="{{ publication.source_url | escape }}">journal</a> / <a href="{{ publication.crossref_url | escape }}">Crossref</a>.</p>
+</section>
+{% endif %}

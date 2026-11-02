@@ -1,0 +1,222 @@
+{
+  "title": "Milestones, earned.",
+  "intro": "Recognition along a journey of curiosity, teamwork, and persistence.",
+  "basis": "Counts cover the honors and competition awards listed below. Levels follow the original website; university scholarships and titles are grouped as university honors.",
+  "groups": [
+    {
+      "id": "international-national",
+      "label": "International / National",
+      "short": "Intl. / National",
+      "subtitle": "Across borders & disciplines",
+      "number": "01"
+    },
+    {
+      "id": "provincial",
+      "label": "Provincial / Ministerial",
+      "short": "Provincial",
+      "subtitle": "Regional recognition",
+      "number": "02"
+    },
+    {
+      "id": "university",
+      "label": "University",
+      "short": "University",
+      "subtitle": "Growing within the community",
+      "number": "03"
+    }
+  ],
+  "awards": [
+    {
+      "id": "award-01",
+      "date": "2026.10",
+      "title": "Xianghui Scholarship",
+      "distinction": "",
+      "detail": "Only 200 PhD Students were Awarded This Scholarship at Fudan University",
+      "kind": "honor",
+      "level": "university",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-02",
+      "date": "2026.04",
+      "title": "Outstanding Graduate Student of Shanghai",
+      "distinction": "",
+      "detail": "",
+      "kind": "honor",
+      "level": "provincial",
+      "featured": true,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-03",
+      "date": "2025.12",
+      "title": "Academic Star Pacemaker of Tongji University",
+      "distinction": "",
+      "detail": "The Highest Honor in the Field of Undergraduate Academic Achievements",
+      "kind": "honor",
+      "level": "university",
+      "featured": true,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-04",
+      "date": "2025.11",
+      "title": "Outstanding Students of Tongji University",
+      "distinction": "",
+      "detail": "",
+      "kind": "honor",
+      "level": "university",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-05",
+      "date": "2025.09",
+      "title": "Alishan Scholarship",
+      "distinction": "",
+      "detail": "First Prize of the Outstanding Student Scholarship, Only Two Undergraduate Students were Awarded at Tongji University",
+      "kind": "honor",
+      "level": "university",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-06",
+      "date": "2024.09",
+      "title": "CRRC Zhuzhou Locomotive Scholarship",
+      "distinction": "",
+      "detail": "First Prize of the Outstanding Student Scholarship at Tongji University",
+      "kind": "honor",
+      "level": "university",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-07",
+      "date": "2023.09",
+      "title": "Second Prize of the Outstanding Student Scholarship at Tongji University",
+      "distinction": "",
+      "detail": "",
+      "kind": "honor",
+      "level": "university",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-08",
+      "date": "2022.09",
+      "title": "Freshman Scholarship at Tongji University",
+      "distinction": "",
+      "detail": "",
+      "kind": "honor",
+      "level": "university",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-09",
+      "date": "2026.03",
+      "title": "'SCIP+' Green Chemistry and Chemical Engineering Innovation and Entrepreneurship Competition",
+      "distinction": "Merit Award",
+      "detail": "",
+      "kind": "competition",
+      "level": "international-national",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-10",
+      "date": "2025.12",
+      "title": "The 19th 'Challenge Cup' National College Students' Extracurricular Academic Science and Technology Works Competition",
+      "distinction": "Third Prize (Main Track)",
+      "detail": "",
+      "kind": "competition",
+      "level": "international-national",
+      "featured": true,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-11",
+      "date": "2025.12",
+      "title": "Academic Annual Conference of Innovation and Entrepreneurship Practice Alliance",
+      "distinction": "Excellent Paper Selection Award",
+      "detail": "",
+      "kind": "competition",
+      "level": "international-national",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-12",
+      "date": "2025.10",
+      "title": "The 1st Academic Exchange Conference for Outstanding Students of Honor Colleges in Excellence 9 University Consortium",
+      "distinction": "Second Prize",
+      "detail": "E9",
+      "kind": "competition",
+      "level": "international-national",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-13",
+      "date": "2025.06",
+      "title": "The 19th 'Challenge Cup' National College Students' Extracurricular Academic Science and Technology Works Competition",
+      "distinction": "First Prize (Main Track)",
+      "detail": "",
+      "kind": "competition",
+      "level": "provincial",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-14",
+      "date": "2024.11",
+      "title": "China International College Students' Innovation Competition",
+      "distinction": "Gold Award",
+      "detail": "2024",
+      "kind": "competition",
+      "level": "provincial",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-15",
+      "date": "2024.11",
+      "title": "The 3rd \"Tianjiao Bay Cup\" Life and Health Innovation and Entrepreneurship Competition",
+      "distinction": "Third Prize",
+      "detail": "",
+      "kind": "competition",
+      "level": "provincial",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "id": "award-16",
+      "date": "2024.07",
+      "title": "College Students' Statistical Modeling Competition",
+      "distinction": "Second Prize",
+      "detail": "",
+      "kind": "competition",
+      "level": "provincial",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    }
+  ]
+}

@@ -8,7 +8,7 @@
   (function () {
     try {
       var savedTheme = localStorage.getItem("theme");
-      if (savedTheme === "light") {
+      if (savedTheme === "light" || (savedTheme === "system" && !window.matchMedia("(prefers-color-scheme: dark)").matches)) {
         document.documentElement.removeAttribute("data-theme");
       } else {
         document.documentElement.setAttribute("data-theme", "dark");
@@ -18,6 +18,8 @@
     }
   })();
 </script>
+
+<link rel="stylesheet" href="{{ base_path }}/assets/css/cosmic.css">
 
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
@@ -29,6 +31,10 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#080e19"/>
+<meta name="theme-color" content="#090919"/>
 
 <!-- end custom head snippets -->
+
+{% if page.travel_maps %}<link rel="stylesheet" href="{{ '/assets/vendor/leaflet/leaflet.css' | relative_url }}"><link rel="stylesheet" href="{{ '/assets/css/travel-maps.css' | relative_url }}">{% endif %}
+
+<link rel="stylesheet" href="{{ '/assets/css/interactions.css' | relative_url }}">

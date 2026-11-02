@@ -26,14 +26,26 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="dark"] body {
-  background-color: #080e19;
+  background-color: #060c17;
   background-image:
-    radial-gradient(ellipse at 14% 4%, rgba(0, 166, 220, 0.14), transparent 34rem),
-    radial-gradient(ellipse at 92% 28%, rgba(76, 91, 210, 0.11), transparent 36rem),
-    linear-gradient(rgba(80, 143, 184, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(80, 143, 184, 0.035) 1px, transparent 1px);
-  background-size: auto, auto, 42px 42px, 42px 42px;
+    url("../../images/tech-field.svg"),
+    radial-gradient(ellipse at 8% 12%, rgba(0, 185, 230, 0.16), transparent 42%),
+    radial-gradient(ellipse at 94% 40%, rgba(83, 73, 205, 0.18), transparent 48%),
+    linear-gradient(rgba(75, 166, 213, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(75, 166, 213, 0.055) 1px, transparent 1px);
+  background-size: cover, auto, auto, 48px 48px, 48px 48px;
+  background-position: center top;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat, repeat;
   background-attachment: fixed;
+}
+@media (max-width: 600px) {
+  html[data-theme="dark"] body {
+    background-size: auto 850px, auto, auto, 36px 36px, 36px 36px;
+    background-attachment: scroll;
+  }
+}
+@media print {
+  html[data-theme="dark"] body { background-image: none; }
 }
 
 html[data-theme="dark"] ::selection {
@@ -602,4 +614,32 @@ html[data-theme="dark"] button:focus-visible {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}
+
+/* Keep the custom cards independent of the legacy float grid. */
+html[data-theme="dark"] #main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+html[data-theme="dark"] #main::before,
+html[data-theme="dark"] #main::after { display: none; }
+html[data-theme="dark"] #main > .sidebar,
+html[data-theme="dark"] #main > .page,
+html[data-theme="dark"] #main > .archive {
+  float: none; width: 100%; max-width: none; min-width: 0;
+  margin: 0; padding: 0;
+}
+html[data-theme="dark"] #main > .sidebar { position: static; height: auto; overflow: visible; padding-top: 0 !important; }
+html[data-theme="dark"] .author__avatar { width: auto; }
+html[data-theme="dark"] .author__urls-wrapper { display: block; }
+html[data-theme="dark"] .author__urls-wrapper button { display: none; }
+html[data-theme="dark"] .author__urls::before,
+html[data-theme="dark"] .author__urls::after { display: none; }
+html[data-theme="dark"] .page__content { overflow-wrap: anywhere; }
+@media (min-width: 1024px) {
+  html[data-theme="dark"] #main:has(> .sidebar) { grid-template-columns: 280px minmax(0, 1fr); align-items: start; }
+  html[data-theme="dark"] .author__avatar img { max-width: 100%; }
+}
+
+html[data-theme="dark"] .author__urls { display: block !important; z-index: 0; }
+html[data-theme="dark"] .author__urls li { white-space: normal; overflow-wrap: anywhere; }
+@media (max-width: 1023px) {
+  html[data-theme="dark"] .author__urls { display: flex !important; }
 }

@@ -1,0 +1,29 @@
+{% assign honors = site.data.honors %}
+<section id="honors" class="home-honors" aria-labelledby="honors-heading">
+  <header class="honors-section-heading"><div><p class="cosmic-eyebrow">RECOGNITION / SELECTED MILESTONES</p><h2 id="honors-heading">{{ honors.title | escape }}</h2></div><span class="honors-total">{{ honors.awards | size }} <small>honors & awards</small></span></header>
+  <p class="honors-intro">{{ honors.intro | escape }}</p>
+  <div class="honors-stats" aria-label="Award counts by level">
+    {% for group in honors.groups %}{% assign entries = honors.awards | where: 'level', group.id %}
+    <a class="honor-stat honor-stat--{{ group.id }}" href="#honors-{{ group.id }}"><span class="stat-orbit" aria-hidden="true"></span><span class="cosmic-eyebrow">{{ group.number }} / {{ group.short | escape }}</span><span class="honor-stat-number" data-honor-count="{{ entries | size }}" aria-hidden="true">{{ entries | size }}</span><span class="sr-only">{{ entries | size }} awards: </span><span class="honor-stat-label">{{ group.label | escape }}</span><span class="honor-stat-subtitle">{{ group.subtitle | escape }} <span aria-hidden="true">↗</span></span></a>
+    {% endfor %}
+  </div>
+  <p class="honors-count-note">{{ honors.basis | escape }}</p>
+  <div class="honors-subheading"><h3>In the spotlight</h3><span>Selected recognition</span></div>
+  <div class="honors-spotlight">
+    {% assign featured = honors.awards | where: 'featured', true %}{% for award in featured %}
+    <article class="honor-feature honors-reveal">
+      {% if award.image != '' %}<a class="honor-photo" href="{{ award.image | relative_url }}"><img src="{{ award.image | relative_url }}" alt="{{ award.image_alt | default: award.title | escape }}" width="960" height="640" loading="lazy"></a>
+      {% else %}<div class="honor-photo honor-photo--placeholder" role="img" aria-label="Image space reserved for {{ award.title | escape }}"><span class="honor-medallion" aria-hidden="true">✧</span><span class="honor-photo-label">CERTIFICATE / MOMENT<small>Image coming soon</small></span></div>{% endif %}
+      <div class="honor-feature-copy"><span class="honor-date">{{ award.date | escape }}</span><h4>{{ award.title | escape }}</h4>{% if award.distinction != '' %}<p class="honor-distinction">{{ award.distinction | escape }}</p>{% endif %}</div>
+    </article>{% endfor %}
+  </div>
+  <div id="honors-ledger" class="honors-ledger">
+    <div class="honors-subheading"><h3>Honors & competitions</h3><span>The full record</span></div>
+    <div class="honors-filters" hidden role="group" aria-label="Filter awards by level"><button type="button" data-honor-filter="all" aria-pressed="true">All <span>{{ honors.awards | size }}</span></button>{% for group in honors.groups %}<button type="button" data-honor-filter="{{ group.id }}" aria-pressed="false">{{ group.short | escape }}</button>{% endfor %}</div>
+    <p class="sr-only" data-honors-status role="status" aria-live="polite"></p>
+    {% for group in honors.groups %}{% assign entries = honors.awards | where: 'level', group.id %}
+    <section id="honors-{{ group.id }}" class="honor-group" data-honor-group="{{ group.id }}" aria-labelledby="heading-{{ group.id }}"><header class="honor-group-heading"><h4 id="heading-{{ group.id }}">{{ group.label | escape }}</h4><span>{{ entries | size }} awards</span></header><div class="honor-records">
+      {% for award in entries %}<article class="honor-record honors-reveal"><time datetime="{{ award.date | replace: '.', '-' }}">{{ award.date | escape }}</time><div><span class="honor-kind">{% if award.kind == 'competition' %}COMPETITION{% else %}HONOR{% endif %}</span><h5>{{ award.title | escape }}</h5>{% if award.distinction != '' %}<p class="honor-distinction">{{ award.distinction | escape }}</p>{% endif %}{% if award.detail != '' %}<p class="honor-detail">{{ award.detail | escape }}</p>{% endif %}</div></article>{% endfor %}
+    </div></section>{% endfor %}
+  </div>
+</section>

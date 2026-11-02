@@ -1,0 +1,172 @@
+{
+  "cjsc2025": {
+    "title": "Engineering circularly polarized luminescence through symmetry manipulation in achiral tetraphenylpyrazine structures",
+    "authors": [
+      {
+        "name": "Yuanpeng Ye",
+        "affiliation_ids": [
+          "1"
+        ],
+        "highlight": true,
+        "equal_contribution": true,
+        "corresponding": false
+      },
+      {
+        "name": "Longfei Yao",
+        "affiliation_ids": [
+          "1"
+        ],
+        "highlight": false,
+        "equal_contribution": true,
+        "corresponding": false
+      },
+      {
+        "name": "Guofeng Liu",
+        "affiliation_ids": [
+          "1"
+        ],
+        "highlight": false,
+        "equal_contribution": false,
+        "corresponding": true
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Shanghai Key Lab of Chemical Assessment and Sustainability, School of Chemical Science and Engineering, Advanced Research Institute, Tongji University, Shanghai, 200092, PR China"
+      }
+    ],
+    "journal": "Chinese Journal of Structural Chemistry",
+    "volume": "44",
+    "issue": "2",
+    "article_number": "100460",
+    "doi": "10.1016/j.cjsc.2024.100460",
+    "issue_publication": "1 February 2025",
+    "issue_date_precision": "day",
+    "online_record_date": "2024-11-05",
+    "online_date_status": "Index record; publisher date not independently confirmed",
+    "affiliation_status": "Indexed affiliation record (OpenAlex)",
+    "source_url": "https://www.cjsc.ac.cn/cms/issues/724",
+    "crossref_url": "https://api.crossref.org/works/10.1016/j.cjsc.2024.100460",
+    "index_url": "https://openalex.org/W4404056838",
+    "verified_on": "2026-11-01",
+    "author_note": "† Yuanpeng Ye and Longfei Yao contributed equally. * Corresponding author."
+  },
+  "cclet2026": {
+    "title": "Aqueously dispersed homopolypeptide nanotoroids with tunable circularly polarized luminescence",
+    "authors": [
+      {
+        "name": "Yuanpeng Ye",
+        "affiliation_ids": [
+          "1"
+        ],
+        "highlight": true,
+        "equal_contribution": false,
+        "corresponding": false
+      },
+      {
+        "name": "Xinke Hu",
+        "affiliation_ids": [
+          "1"
+        ],
+        "highlight": false,
+        "equal_contribution": false,
+        "corresponding": false
+      },
+      {
+        "name": "Dong Yang",
+        "affiliation_ids": [
+          "1"
+        ],
+        "highlight": false,
+        "equal_contribution": false,
+        "corresponding": false
+      },
+      {
+        "name": "Qianxi Gu",
+        "affiliation_ids": [
+          "2"
+        ],
+        "highlight": false,
+        "equal_contribution": false,
+        "corresponding": false
+      },
+      {
+        "name": "Shangning Liu",
+        "affiliation_ids": [
+          "3"
+        ],
+        "highlight": false,
+        "equal_contribution": false,
+        "corresponding": false
+      },
+      {
+        "name": "Jinhui Jiang",
+        "affiliation_ids": [
+          "4"
+        ],
+        "highlight": false,
+        "equal_contribution": false,
+        "corresponding": false
+      },
+      {
+        "name": "Guofeng Liu",
+        "affiliation_ids": [
+          "3"
+        ],
+        "highlight": false,
+        "equal_contribution": false,
+        "corresponding": false
+      },
+      {
+        "name": "Jianzhong Du",
+        "affiliation_ids": [
+          "4",
+          "2",
+          "1",
+          "5"
+        ],
+        "highlight": false,
+        "equal_contribution": false,
+        "corresponding": false
+      }
+    ],
+    "affiliations": [
+      {
+        "id": "1",
+        "text": "Guohao College, Tongji University, Shanghai 200092, China"
+      },
+      {
+        "id": "2",
+        "text": "Department of Polymeric Materials, School of Materials Science and Engineering, Tongji University, Shanghai 201804, China"
+      },
+      {
+        "id": "3",
+        "text": "Shanghai Key Laboratory of Chemical Assessment and Sustainability, School of Chemical Science and Engineering, Advanced Research Institute, Tongji University, Shanghai 200092, China"
+      },
+      {
+        "id": "4",
+        "text": "Department of Gynaecology and Obstetrics, Shanghai Key Laboratory of Anesthesiology and Brain Functional Modulation, Clinical Research Center for Anesthesiology and Perioperative Medicine Translational Research Institute of Brain and Brain-Like Intelligence, Shanghai Fourth People’s Hospital, School of Medicine, Tongji University, Shanghai 200434, China"
+      },
+      {
+        "id": "5",
+        "text": "School of Materials Science and Engineering, East China University of Science and Technology, Shanghai 200237, China"
+      }
+    ],
+    "journal": "Chinese Chemical Letters",
+    "volume": "37",
+    "issue": "5",
+    "article_number": "111844",
+    "doi": "10.1016/j.cclet.2025.111844",
+    "issue_publication": "May 2026",
+    "issue_date_precision": "month",
+    "online_record_date": "2025-09-17",
+    "online_date_status": "Index record; publisher date not independently confirmed",
+    "affiliation_status": "Indexed affiliation record (OpenAlex)",
+    "source_url": "https://www.sciencedirect.com/science/article/pii/S1001841725010228",
+    "crossref_url": "https://api.crossref.org/works/10.1016/j.cclet.2025.111844",
+    "index_url": "https://openalex.org/W4414299909",
+    "verified_on": "2026-11-01",
+    "author_note": ""
+  }
+}

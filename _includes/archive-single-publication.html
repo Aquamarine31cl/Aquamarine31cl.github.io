@@ -1,0 +1,13 @@
+{% include base_path %}
+<div class="list__item academic-list-item">
+  <article class="archive__item academic-card academic-card--publication" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="academic-card-visual">{% include academic-figure.html item=post %}</div>
+    <div class="academic-card-copy">
+      <p class="cosmic-eyebrow">{{ post.venue | escape }} · {{ post.date | date: '%Y' }}</p>
+      <h2 class="archive__item-title" itemprop="headline"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+      {% include publication-metadata.html item=post compact=true %}
+      <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncatewords: 65 | markdownify }}</div>
+      <div class="academic-links"><a href="{{ post.url | relative_url }}">Article details <span aria-hidden="true">↗</span></a>{% if post.paperurl %}<a href="{{ post.paperurl | escape }}">Publisher <span aria-hidden="true">↗</span></a>{% endif %}</div>
+    </div>
+  </article>
+</div>

@@ -1,0 +1,8 @@
+{% if include.item.image %}
+<figure class="academic-figure{% if include.item.collection == 'publications' %} academic-figure--graphical{% endif %}">
+  <a class="academic-figure-link" href="{{ include.item.image | relative_url }}" aria-label="{{ include.item.image_alt | escape }}">
+    <img src="{{ include.item.image | relative_url }}" alt="{{ include.item.image_alt | escape }}"{% if include.item.image_width %} width="{{ include.item.image_width }}"{% endif %}{% if include.item.image_height %} height="{{ include.item.image_height }}"{% endif %} loading="lazy" decoding="async">
+  </a>
+  <figcaption>{{ include.item.image_caption | escape }}{% if include.item.image_credit %} <span class="academic-image-credit">{% if include.item.image_source_url %}<a href="{{ include.item.image_source_url | escape }}">{{ include.item.image_credit | escape }}</a>{% else %}{{ include.item.image_credit | escape }}{% endif %}</span>{% endif %}</figcaption>
+</figure>
+{% endif %}

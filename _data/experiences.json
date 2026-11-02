@@ -1,0 +1,31 @@
+{
+  "eyebrow": "BEYOND THE LAB",
+  "title": "A life in motion.",
+  "intro": "Sports, journeys, and the moments in between.",
+  "sections": [
+    {
+      "id": "sports",
+      "index": "01",
+      "title": "Sports & Movement",
+      "subtitle": "Energy, rhythm, and new challenges.",
+      "art": "sports",
+      "entries": []
+    },
+    {
+      "id": "travel",
+      "index": "02",
+      "title": "Travel & Exploration",
+      "subtitle": "New places. Different perspectives.",
+      "art": "travel",
+      "entries": []
+    },
+    {
+      "id": "moments",
+      "index": "03",
+      "title": "Everyday Moments",
+      "subtitle": "Small discoveries worth keeping.",
+      "art": "moments",
+      "entries": []
+    }
+  ]
+}
