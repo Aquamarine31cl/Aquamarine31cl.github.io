@@ -5,42 +5,9 @@ permalink: /experiences/
 redirect_from:
   - /teaching/
 author_profile: false
-travel_maps: true
 ---
-{% include base_path %}
 {% assign experiences = site.data.experiences %}
 <main id="main" class="experience-page">
-  <header class="experience-hero">
-    <p class="cosmic-eyebrow">{{ experiences.eyebrow | escape }}</p>
-    <h1>{{ experiences.title | escape }}</h1>
-    <p class="experience-intro">{{ experiences.intro | escape }}</p>
-    <nav class="experience-tabs" aria-label="Experience categories">
-      {% for section in experiences.sections %}<a href="#{{ section.id | escape }}">{{ section.title | escape }} <span aria-hidden="true">↗</span></a>{% endfor %}
-    </nav>
-    <div class="hero-orbit" aria-hidden="true"><span></span></div>
-  </header>
-  <div class="experience-grid">
-    {% for section in experiences.sections %}
-    <section id="{{ section.id | escape }}" class="experience-section experience-section--{{ section.art | escape }}{% if section.id == 'travel' %} experience-section--atlas{% endif %}" aria-labelledby="heading-{{ section.id | escape }}">
-      <div class="experience-art" aria-hidden="true"><span class="art-orb"></span><span class="art-line"></span><span class="art-number">{{ section.index | escape }}</span></div>
-      <div class="experience-section-body">
-        <p class="cosmic-eyebrow">PERSONAL EXPLORATIONS / {{ section.index | escape }}</p>
-        <h2 id="heading-{{ section.id | escape }}">{{ section.title | escape }}</h2>
-        <p class="section-subtitle">{{ section.subtitle | escape }}</p>
-        {% if section.id == 'travel' %}{% include travel-journal.html %}{% include travel-maps.html %}{% endif %}
-        {% for entry in section.entries %}
-        <article class="experience-entry">
-          {% if entry.image %}<img src="{{ entry.image | relative_url }}" alt="{{ entry.image_alt | default: entry.title | escape }}" loading="lazy" width="960" height="640">{% endif %}
-          <p class="experience-entry-meta">{{ entry.date | escape }}{% if entry.location %} <span aria-hidden="true">·</span> {{ entry.location | escape }}{% endif %}</p>
-          <h3>{{ entry.title | escape }}</h3>
-          <p>{{ entry.description | escape }}</p>
-        </article>
-        {% else %}
-        <div class="experience-empty"><span aria-hidden="true">＋</span><p>Stories coming soon.<small>More stories and photos to follow</small></p></div>
-        {% endfor %}
-      </div>
-    </section>
-    {% endfor %}
-  </div>
-  <footer class="experience-closing"><span aria-hidden="true">✧</span><p>Stay curious. Keep exploring.</p><a href="{{ base_path }}/">Back to research <span aria-hidden="true">↗</span></a></footer>
+<header class="experience-hero"><p class="cosmic-eyebrow">{{ experiences.eyebrow }}</p><h1>{{ experiences.title }}</h1><p class="experience-intro">Choose a part of life beyond the lab.</p></header>
+<div class="experience-grid experience-hub">{% for section in experiences.sections %}<a class="experience-choice" href="{{ '/experiences/' | append: section.id | append: '/' | relative_url }}"><div class="experience-art" aria-hidden="true"><span class="art-orb"></span><span class="art-line"></span><span class="art-number">{{ section.index }}</span></div><div class="experience-choice-copy"><p class="cosmic-eyebrow">{{ section.index }} / EXPLORE</p><h2>{{ section.title }}</h2><p>{{ section.subtitle }}</p><span class="experience-choice-link">Explore This Chapter ↗</span></div></a>{% endfor %}</div>
 </main>

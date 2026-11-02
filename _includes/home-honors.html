@@ -8,7 +8,7 @@
     {% endfor %}
   </div>
   <p class="honors-count-note">{{ honors.basis | escape }}</p>
-  <div class="honors-subheading"><h3>In the spotlight</h3><span>Selected recognition</span></div>
+  <div class="honors-subheading"><h3>In the Spotlight</h3><span>Selected recognition</span></div>
   <div class="honors-spotlight">
     {% assign featured = honors.awards | where: 'featured', true %}{% for award in featured %}
     <article class="honor-feature honors-reveal">
@@ -18,7 +18,7 @@
     </article>{% endfor %}
   </div>
   <div id="honors-ledger" class="honors-ledger">
-    <div class="honors-subheading"><h3>Selected honors & competitions</h3><span>Representative selection</span></div>
+    <div class="honors-subheading"><h3>Selected Honors & Competitions</h3><span>Representative selection</span></div>
     <div class="honors-filters" hidden role="group" aria-label="Filter awards by level"><button type="button" data-honor-filter="all" aria-pressed="true">All selected <span>{{ honors.awards | size }}</span></button>{% for group in honors.groups %}<button type="button" data-honor-filter="{{ group.id }}" aria-pressed="false">{{ group.short | escape }}</button>{% endfor %}</div>
     <p class="sr-only" data-honors-status role="status" aria-live="polite"></p>
     {% for group in honors.groups %}{% assign entries = honors.awards | where: 'level', group.id %}

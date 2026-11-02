@@ -1,5 +1,5 @@
 <section class="travel-journal" aria-labelledby="travel-journal-heading">
-<header class="travel-journal-header"><p class="cosmic-eyebrow">A JOURNAL OF PLACES</p><h3 id="travel-journal-heading">Places & little discoveries.</h3><p>Three frames from each destination. Select a number to browse the photographs.</p></header>
+<header class="travel-journal-header"><p class="cosmic-eyebrow">A JOURNAL OF PLACES</p><h3 id="travel-journal-heading">Places & Little Discoveries.</h3><p>Three frames from each destination. Select a number to browse the photographs.</p></header>
 <div class="travel-city-grid">
 {% for journey in site.data.travel.journeys %}
 <article class="city-journey" id="journey-{{ journey.id | escape }}" aria-labelledby="city-heading-{{ journey.id | escape }}">
@@ -15,5 +15,5 @@
 {% if journey.description and journey.description != '' %}<details class="city-stop-details"><summary>Places explored</summary><p>{{ journey.description | escape }}</p></details>{% endif %}
 </article>
 {% endfor %}</div>
-{% if site.data.travel.pending_places.size > 0 %}<aside class="travel-journal-empty"><div><h4>Visits awaiting a location detail</h4><ul>{% for place in site.data.travel.pending_places %}<li><strong>{{ place.name | escape }}</strong> — {{ place.note | escape }}</li>{% endfor %}</ul></div></aside>{% endif %}
+{% if site.data.travel.pending_places.size > 0 %}<aside class="travel-journal-empty"><div><h4>Visits Awaiting a Location Detail</h4><ul>{% for place in site.data.travel.pending_places %}<li><strong>{{ place.name | escape }}</strong> — {{ place.note | escape }}</li>{% endfor %}</ul></div></aside>{% endif %}
 </section>

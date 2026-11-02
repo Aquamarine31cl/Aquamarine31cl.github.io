@@ -1,4 +1,4 @@
-<section class="home-news" aria-labelledby="news-heading"><div class="honors-section-heading"><div><p class="cosmic-eyebrow">NOTES FROM THE JOURNEY</p><h2 id="news-heading">News & updates</h2></div><span class="news-live"><span aria-hidden="true"></span>Latest</span></div>
+<section class="home-news" aria-labelledby="news-heading"><div class="honors-section-heading"><div><p class="cosmic-eyebrow">NOTES FROM THE JOURNEY</p><h2 id="news-heading">News & Updates</h2></div><span class="news-live"><span aria-hidden="true"></span>Latest</span></div>
 {% assign news_photos = site.data.home_news | where: 'important', true | sort: 'date' | reverse %}
 {% if news_photos.size == 0 %}{% assign news_photos = site.data.home_news | sort: 'date' | reverse %}{% endif %}
 <div class="news-photo-grid" aria-label="Three recent highlights">

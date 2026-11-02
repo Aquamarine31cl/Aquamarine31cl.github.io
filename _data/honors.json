@@ -1,7 +1,7 @@
 {
-  "title": "Milestones, earned.",
+  "title": "Milestones, Earned.",
   "intro": "Recognition along a journey of curiosity, teamwork, and persistence.",
-  "basis": "Totals include 9 international/national, 16 provincial/ministerial and 30 university honors. Only selected representative honors and competitions are listed below; this is not an exhaustive record. The three awards from November 2021 are already included in these totals.",
+  "basis": "Totals include 9 international/national, 16 provincial/ministerial and 30 school-level honors. Only selected representative honors and competitions are listed below; this is not an exhaustive record. The three awards from November 2021 are already included in these totals.",
   "groups": [
     {
       "id": "international-national",
@@ -21,8 +21,8 @@
     },
     {
       "id": "university",
-      "label": "University",
-      "short": "University",
+      "label": "School-Level Honors",
+      "short": "School-Level",
       "subtitle": "Growing within the community",
       "number": "03",
       "total": 30
