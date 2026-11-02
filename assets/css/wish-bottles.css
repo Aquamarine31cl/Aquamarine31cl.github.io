@@ -8,16 +8,15 @@ html .sidebar .wish-panel h4{font-size:13px;letter-spacing:.04em;margin:0;color:
 .wish-item{--wish-light:#f2c2f5;--wish-deep:#9a58d9;text-align:center;min-width:0;}
 .wish-item--held{--wish-light:#9df3ef;--wish-deep:#388dd2;}
 html .sidebar .wish-bottle{display:block;width:100%;padding:0;margin:9px 0 0;border:0;background:none;box-shadow:none;cursor:pointer;color:var(--wish-light);border-radius:16px;touch-action:manipulation;}
-.wish-bottle svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 4px 7px #070c2390);transition:filter .4s ease;}
-.wish-bottle:hover svg,.wish-bottle:focus-visible svg{filter:drop-shadow(0 0 9px var(--wish-deep)) drop-shadow(0 0 3px var(--wish-light));}
+.wish-bottle svg{display:block;width:100%;height:auto;overflow:visible;background:transparent!important;filter:none!important;}
+.wish-outline{transition:filter .35s ease,stroke-width .35s ease;}
+.wish-bottle:hover .wish-outline,.wish-bottle:focus-visible .wish-outline{filter:drop-shadow(0 0 3px var(--wish-light));stroke-width:2.1;}
 .wish-bottle:focus-visible,.wish-motion:focus-visible{outline:2px solid var(--wish-light,#c4adf4);outline-offset:3px;}
 .wish-vessel{transform-origin:80px 105px;}
 .wish-glass,.wish-outline,.wish-neck,.wish-rim{stroke:var(--wish-light);stroke-width:1.4;stroke-linejoin:round;}
 .wish-neck{stroke-opacity:.7;}.wish-rim{fill:#c9e3ff22;}
 .wish-liquid-top{stop-color:var(--wish-light);stop-opacity:.8;}.wish-liquid-bottom{stop-color:var(--wish-deep);stop-opacity:.85;}
-.wish-wave{fill:var(--wish-light);fill-opacity:.15;animation:wish-wave 4.8s ease-in-out infinite alternate;}
-.wish-wave--back{animation-duration:6.3s;animation-direction:alternate-reverse;fill-opacity:.22;}
-.wish-item--held .wish-wave{animation-delay:-2s;}
+.wish-surface{stroke:var(--wish-light);stroke-width:1.5;stroke-opacity:.85;stroke-linecap:round;}
 .wish-reflection{stroke:white;stroke-width:3;stroke-opacity:.35;stroke-linecap:round;}
 .wish-value{fill:#fff;font:600 15px/1 ui-monospace,monospace;paint-order:stroke;stroke:#29203e;stroke-opacity:.6;stroke-width:3px;letter-spacing:-.6px;}
 .wish-bubble{fill:#fff;opacity:0;animation:wish-bubble 5s ease-in infinite;}.wish-bubble--two{animation-delay:-2.7s;}
@@ -25,7 +24,7 @@ html .sidebar .wish-bottle{display:block;width:100%;padding:0;margin:9px 0 0;bor
 .wish-sparks circle{fill:var(--wish-light);opacity:0;animation:wish-spark 3.8s ease-out infinite;filter:drop-shadow(0 0 2px var(--wish-light));}
 .wish-sparks circle:nth-child(2){animation-delay:-1s;--drift:9px;}.wish-sparks circle:nth-child(3){animation-delay:-2s;--drift:-9px;}.wish-sparks circle:nth-child(4){animation-delay:-2.8s;--drift:5px;}
 
-@keyframes wish-wave{from{transform:translateX(-32px) translateY(-1px);}to{transform:translateX(32px) translateY(1px);}}
+
 @keyframes wish-spark{0%{opacity:0;transform:translate(0,0) scale(.4);}25%{opacity:.9;}100%{opacity:0;transform:translate(var(--drift,-5px),-27px) scale(.2);}}
 @keyframes wish-bubble{0%,15%{opacity:0;transform:translateY(0);}35%{opacity:.5;}100%{opacity:0;transform:translateY(-35px);}}
 @keyframes wish-twinkle{0%,100%{opacity:.3;}50%{opacity:1;}}
@@ -36,6 +35,9 @@ html[data-theme="light"] .wish-outline,html[data-theme="light"] .wish-neck,html[
 @media(max-width:924px){html .sidebar .wish-panel{max-width:330px;margin:12px auto 0;}.wish-bottle svg{max-height:185px;}}
 @media(prefers-reduced-motion:reduce){.wish-panel *{animation:none!important;transition:none!important;}}
 
-.wish-cork{fill:#c8a68c;fill-opacity:.65;stroke:#ead4bb;stroke-width:1;stroke-linejoin:round;}
+
 .wish-pisces{stroke:var(--wish-light);stroke-width:2;stroke-linecap:round;opacity:.24;}
 .wish-pisces circle{stroke-width:.65;stroke-dasharray:1 4;opacity:.6;}
+
+html .sidebar .wish-bottle:is(:hover,:active,:focus){background:transparent!important;background-image:none!important;box-shadow:none!important;border-color:transparent!important;filter:none!important;}
+html .sidebar .wish-bottle::before,html .sidebar .wish-bottle::after{content:none!important;}
