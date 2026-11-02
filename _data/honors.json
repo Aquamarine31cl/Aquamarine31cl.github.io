@@ -104,18 +104,6 @@
       "image_alt": ""
     },
     {
-      "id": "award-07",
-      "date": "2023.09",
-      "title": "Second Prize of the Outstanding Student Scholarship at Tongji University",
-      "distinction": "",
-      "detail": "",
-      "kind": "honor",
-      "level": "university",
-      "featured": false,
-      "image": "",
-      "image_alt": ""
-    },
-    {
       "id": "award-08",
       "date": "2022.09",
       "title": "Freshman Scholarship at Tongji University",
@@ -153,18 +141,6 @@
       "image_orientation": "landscape"
     },
     {
-      "id": "award-11",
-      "date": "2025.12",
-      "title": "Academic Annual Conference of Innovation and Entrepreneurship Practice Alliance",
-      "distinction": "Excellent Paper Selection Award",
-      "detail": "",
-      "kind": "competition",
-      "level": "international-national",
-      "featured": false,
-      "image": "",
-      "image_alt": ""
-    },
-    {
       "id": "award-12",
       "date": "2025.10",
       "title": "The 1st Academic Exchange Conference for Outstanding Students of Honor Colleges in Excellence 9 University Consortium",
@@ -194,18 +170,6 @@
       "title": "China International College Students' Innovation Competition",
       "distinction": "Gold Award",
       "detail": "2024",
-      "kind": "competition",
-      "level": "provincial",
-      "featured": false,
-      "image": "",
-      "image_alt": ""
-    },
-    {
-      "id": "award-15",
-      "date": "2024.11",
-      "title": "The 3rd \"Tianjiao Bay Cup\" Life and Health Innovation and Entrepreneurship Competition",
-      "distinction": "Third Prize",
-      "detail": "",
       "kind": "competition",
       "level": "provincial",
       "featured": false,

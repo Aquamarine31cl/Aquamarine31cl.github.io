@@ -313,3 +313,13 @@ html[data-atmosphere="calm"] body::after{opacity:.18;}
 @media print{.cosmic-motion-controls{display:none!important;}}
 
 .home-page .honor-feature .honor-photo{margin:0!important;border-radius:0;border-left:0;border-right:0;border-top:0;border-bottom:1px solid #bba4e62b;}
+
+/* Official educational identities, paired within each education card. */
+.education-logos{display:flex;align-items:center;gap:.65rem;min-height:72px;margin:0 0 1rem;}
+.home-page .page__content a.education-symbol{display:flex;align-items:center;justify-content:center;flex:0 0 66px;width:66px;height:66px;padding:7px;box-sizing:border-box;border:1px solid #b9a2df44!important;border-radius:15px;background:linear-gradient(135deg,#2b2949,#18253b);text-decoration:none;transition:border-color .2s ease,box-shadow .2s ease;}
+.home-page .page__content a.education-symbol:hover{border-color:#c6b3ed99!important;box-shadow:0 0 18px #ac90e322;}
+.home-page .page__content a.education-symbol img{display:block;max-width:100%;width:100%;height:100%;object-fit:contain;margin:0;padding:0;border:0;box-shadow:none;border-radius:0;}
+.home-page .page__content a.education-symbol--wordmark{flex-basis:106px;width:106px;}
+.education-logo-divider{height:25px;width:1px;background:linear-gradient(transparent,#b9a4de66,transparent);}
+.education-symbol:focus-visible{outline:2px solid #c6b3ed;outline-offset:3px;}
+@media(max-width:600px){.education-logos{gap:.6rem;}.home-page .page__content a.education-symbol{width:60px;height:60px;flex-basis:60px;}.home-page .page__content a.education-symbol--wordmark{width:100px;flex-basis:100px;}}

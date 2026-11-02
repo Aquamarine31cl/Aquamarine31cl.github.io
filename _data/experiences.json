@@ -4,8 +4,16 @@
   "intro": "Sports, journeys, and the moments in between.",
   "sections": [
     {
-      "id": "sports",
+      "id": "travel",
       "index": "01",
+      "title": "Travel & Exploration",
+      "subtitle": "New places. Different perspectives.",
+      "art": "travel",
+      "entries": []
+    },
+    {
+      "id": "sports",
+      "index": "02",
       "title": "Sports & Movement",
       "subtitle": "Energy, rhythm, and new challenges.",
       "art": "sports",
@@ -25,14 +33,6 @@
           "image_alt": ""
         }
       ]
-    },
-    {
-      "id": "travel",
-      "index": "02",
-      "title": "Travel & Exploration",
-      "subtitle": "New places. Different perspectives.",
-      "art": "travel",
-      "entries": []
     },
     {
       "id": "moments",
