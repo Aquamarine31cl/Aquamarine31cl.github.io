@@ -5,21 +5,21 @@
 
 <!-- Start in the dark interface unless the visitor has explicitly chosen light mode. -->
 <script>
-  (function () {
-    try {
-      var savedTheme = localStorage.getItem("aquamarine.theme.v2");
-      if (savedTheme === "light" || (savedTheme === "system" && !window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-        document.documentElement.removeAttribute("data-theme");
-      } else {
-        document.documentElement.setAttribute("data-theme", "dark");
-      }
-    } catch (error) {
-      document.documentElement.setAttribute("data-theme", "dark");
-    }
-  })();
+(function () {
+  var key = "aquamarine.theme.v2";
+  function setting() {
+    try { var saved = localStorage.getItem(key); return /^(dark|light|system)$/.test(saved) ? saved : "dark"; }
+    catch (error) { return "dark"; }
+  }
+  function computed() { var value = setting(); return value === "system" ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : value; }
+  function apply(value) { value = value || computed(); document.documentElement.setAttribute("data-theme", value); return value; }
+  function save(value) { try { localStorage.setItem(key, value); } catch (error) {} }
+  window.aquamarineTheme = { setting: setting, computed: computed, apply: apply, save: save };
+  apply();
+})();
 </script>
 
-<link rel="stylesheet" href="{{ base_path }}/assets/css/cosmic.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/cosmic.css?v=20261102-theme3">
 
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>

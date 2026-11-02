@@ -1,6 +1,1154 @@
 {
   "china_cities": [],
-  "world_countries": [],
+  "world_countries": [
+    {
+      "name": "Japan",
+      "code": "JPN"
+    },
+    {
+      "name": "Singapore",
+      "code": "SGP"
+    },
+    {
+      "name": "Malaysia",
+      "code": "MYS"
+    }
+  ],
   "world_cities": [],
-  "journeys": []
+  "journeys": [
+    {
+      "id": "tokyo",
+      "city": "Tokyo",
+      "country": "Japan",
+      "country_code": "JPN",
+      "scope": "world",
+      "lat": 35.6762,
+      "lng": 139.6503,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "JPN:tokyo"
+    },
+    {
+      "id": "osaka",
+      "city": "Osaka",
+      "country": "Japan",
+      "country_code": "JPN",
+      "scope": "world",
+      "lat": 34.6937,
+      "lng": 135.5023,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "JPN:osaka"
+    },
+    {
+      "id": "kamakura",
+      "city": "Kamakura",
+      "country": "Japan",
+      "country_code": "JPN",
+      "scope": "world",
+      "lat": 35.3192,
+      "lng": 139.5467,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "JPN:kamakura"
+    },
+    {
+      "id": "kyoto",
+      "city": "Kyoto",
+      "country": "Japan",
+      "country_code": "JPN",
+      "scope": "world",
+      "lat": 35.0116,
+      "lng": 135.7681,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "JPN:kyoto"
+    },
+    {
+      "id": "yokohama",
+      "city": "Yokohama",
+      "country": "Japan",
+      "country_code": "JPN",
+      "scope": "world",
+      "lat": 35.4437,
+      "lng": 139.638,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "JPN:yokohama"
+    },
+    {
+      "id": "fujiyoshida",
+      "city": "Fujiyoshida",
+      "country": "Japan",
+      "country_code": "JPN",
+      "scope": "world",
+      "lat": 35.4875,
+      "lng": 138.8079,
+      "arrival": "",
+      "description": "A visit to Fujiyoshida in the Mount Fuji area.",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "JPN:fujiyoshida"
+    },
+    {
+      "id": "singapore",
+      "city": "Singapore",
+      "country": "Singapore",
+      "country_code": "SGP",
+      "scope": "world",
+      "lat": 1.3521,
+      "lng": 103.8198,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "SGP:singapore"
+    },
+    {
+      "id": "kuala-lumpur",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "country_code": "MYS",
+      "scope": "world",
+      "lat": 3.139,
+      "lng": 101.6869,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "MYS:kuala-lumpur"
+    },
+    {
+      "id": "hong-kong",
+      "city": "Hong Kong",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 22.3193,
+      "lng": 114.1694,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:hong-kong"
+    },
+    {
+      "id": "macao",
+      "city": "Macao",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 22.1987,
+      "lng": 113.5439,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:macao"
+    },
+    {
+      "id": "shanghai",
+      "city": "Shanghai",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 31.2304,
+      "lng": 121.4737,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:shanghai"
+    },
+    {
+      "id": "suzhou",
+      "city": "Suzhou",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 31.2989,
+      "lng": 120.5853,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:suzhou"
+    },
+    {
+      "id": "nanjing",
+      "city": "Nanjing",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 32.0603,
+      "lng": 118.7969,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:nanjing"
+    },
+    {
+      "id": "shenzhen",
+      "city": "Shenzhen",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 22.5431,
+      "lng": 114.0579,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:shenzhen"
+    },
+    {
+      "id": "zhuhai",
+      "city": "Zhuhai",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 22.2707,
+      "lng": 113.5767,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:zhuhai"
+    },
+    {
+      "id": "hangzhou",
+      "city": "Hangzhou",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 30.2741,
+      "lng": 120.1551,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:hangzhou"
+    },
+    {
+      "id": "wuxi",
+      "city": "Wuxi",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 31.4912,
+      "lng": 120.3119,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:wuxi"
+    },
+    {
+      "id": "hefei",
+      "city": "Hefei",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 31.8206,
+      "lng": 117.2272,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:hefei"
+    },
+    {
+      "id": "changzhou",
+      "city": "Changzhou",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 31.8107,
+      "lng": 119.9741,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:changzhou"
+    },
+    {
+      "id": "zhenjiang",
+      "city": "Zhenjiang",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 32.1878,
+      "lng": 119.425,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:zhenjiang"
+    },
+    {
+      "id": "yangzhou",
+      "city": "Yangzhou",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 32.3942,
+      "lng": 119.4127,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:yangzhou"
+    },
+    {
+      "id": "ningbo",
+      "city": "Ningbo",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 29.8683,
+      "lng": 121.544,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:ningbo"
+    },
+    {
+      "id": "shaoxing",
+      "city": "Shaoxing",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 30.0303,
+      "lng": 120.5802,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:shaoxing"
+    },
+    {
+      "id": "beijing",
+      "city": "Beijing",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 39.9042,
+      "lng": 116.4074,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:beijing"
+    },
+    {
+      "id": "qingdao",
+      "city": "Qingdao",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 36.0671,
+      "lng": 120.3826,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:qingdao"
+    },
+    {
+      "id": "jinan",
+      "city": "Jinan",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 36.6512,
+      "lng": 117.1201,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:jinan"
+    },
+    {
+      "id": "chengdu",
+      "city": "Chengdu",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 30.5728,
+      "lng": 104.0668,
+      "arrival": "",
+      "description": "",
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "region_key": "CHN:chengdu"
+    },
+    {
+      "id": "haidong",
+      "region_key": "CHN:haidong",
+      "city": "Haidong",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 36.5029,
+      "lng": 102.1043,
+      "arrival": "",
+      "description": "Recorded stops: Beishan National Forest Park, Huzhu County.",
+      "sites": [
+        "Beishan National Forest Park, Huzhu County"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "changji",
+      "region_key": "CHN:changji",
+      "city": "Changji Hui Autonomous Prefecture",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 44.0146,
+      "lng": 87.3082,
+      "arrival": "",
+      "description": "Recorded stops: Tianshan Tianchi, Fukang.",
+      "sites": [
+        "Tianshan Tianchi, Fukang"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "ili",
+      "region_key": "CHN:ili",
+      "city": "Ili Kazakh Autonomous Prefecture",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 43.9169,
+      "lng": 81.3241,
+      "arrival": "",
+      "description": "Recorded stops: Nalati Grassland, Xinyuan County; Zhaosu horse ranch; Yining Folk Customs Park; Sarbulak Pass (Yining–Zhaosu Highway).",
+      "sites": [
+        "Nalati Grassland, Xinyuan County",
+        "Zhaosu horse ranch",
+        "Yining Folk Customs Park",
+        "Sarbulak Pass (Yining–Zhaosu Highway)"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "bortala",
+      "region_key": "CHN:bortala",
+      "city": "Bortala Mongol Autonomous Prefecture",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 44.895,
+      "lng": 82.0662,
+      "arrival": "",
+      "description": "Recorded stops: Bole.",
+      "sites": [
+        "Bole"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "xian",
+      "region_key": "CHN:xian",
+      "city": "Xi’an",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 34.3416,
+      "lng": 108.9398,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "yanan",
+      "region_key": "CHN:yanan",
+      "city": "Yan’an",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 36.5853,
+      "lng": 109.4897,
+      "arrival": "",
+      "description": "Recorded stops: Hukou Waterfall, Yichuan County (Shaanxi side).",
+      "sites": [
+        "Hukou Waterfall, Yichuan County (Shaanxi side)"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "dalian",
+      "region_key": "CHN:dalian",
+      "city": "Dalian",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 38.914,
+      "lng": 121.6147,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "dandong",
+      "region_key": "CHN:dandong",
+      "city": "Dandong",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 40.1243,
+      "lng": 124.383,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "harbin",
+      "region_key": "CHN:harbin",
+      "city": "Harbin",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 45.8038,
+      "lng": 126.535,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "shenyang",
+      "region_key": "CHN:shenyang",
+      "city": "Shenyang",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 41.8057,
+      "lng": 123.4315,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "changchun",
+      "region_key": "CHN:changchun",
+      "city": "Changchun",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "lat": 43.8171,
+      "lng": 125.3235,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    }
+  ],
+  "pending_places": [
+    {
+      "id": "qinghai-lake",
+      "name": "Qinghai Lake",
+      "country": "China",
+      "note": "Visited; the specific lakeside stop is to be added. Prefecture assignment and map marker are pending to avoid counting unconfirmed prefectures."
+    }
+  ]
 }

@@ -1,4 +1,6 @@
 Natural Earth 1:110m Admin 0 Countries. Public domain.
 https://www.naturalearthdata.com/about/terms-of-use/
 https://github.com/nvkelso/natural-earth-vector
-Properties reduced to English names and ADM0_A3 codes; geometry unchanged. This is an overview map, not a street map.
+Properties reduced to English names and ADM0_A3 codes.
+Local presentation adjustment: Taiwan polygon grouped into the China (CHN) MultiPolygon, sharing its label and styling; no coordinates relocated.
+This is a low-resolution travel overview, not a street map.

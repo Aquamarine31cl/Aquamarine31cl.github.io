@@ -249,3 +249,8 @@ html[data-theme="dark"] .home-page .page__content .honor-distinction {color:#cfb
 .news-photo-figure,.academic-figure,.city-photo-card{display:block;width:100%;}
 .news-photo-figure>.news-photo,.academic-figure>.academic-figure-link,.city-photo-card>a{width:100%;}
 .news-photo-figure img,.academic-figure img,.city-photo-card img{margin-bottom:0;}
+
+/* A viewport-sized nebula layer keeps the backdrop visible on long pages. */
+html[data-theme="dark"] body {isolation:isolate;background-color:#090919;background-image:none;}
+html[data-theme="dark"] body::before {content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-color:#090919;background-image:url("../../images/nebula-field.svg"),radial-gradient(ellipse at 6% 12%,rgba(112,65,196,.40),transparent 52%),radial-gradient(ellipse at 94% 34%,rgba(63,152,177,.25),transparent 48%),radial-gradient(ellipse at 62% 95%,rgba(163,65,142,.28),transparent 50%);background-size:cover,auto,auto,auto;background-repeat:no-repeat;background-position:center top;}
+@media print{html[data-theme="dark"] body::before{display:none;}}

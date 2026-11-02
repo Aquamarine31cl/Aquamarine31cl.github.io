@@ -1,9 +1,9 @@
-<section class="travel-atlas" aria-labelledby="travel-atlas-heading" data-world-url="{{ '/assets/maps/world.geojson' | relative_url }}">
-<header><p class="cosmic-eyebrow">PLACES / PERSPECTIVES</p><h3 id="travel-atlas-heading">A world of memories.</h3><p>Explore the places visited, one city at a time.</p></header>
+<section class="travel-atlas" aria-labelledby="travel-atlas-heading" data-world-url="{{ '/assets/maps/world.geojson?v=20261102-regions2' | relative_url }}">
+<header><p class="cosmic-eyebrow">PLACES / PERSPECTIVES</p><h3 id="travel-atlas-heading">A world of memories.</h3><p>Explore cities and prefectures visited. Stops within the same Chinese prefecture are grouped as one destination.</p></header>
 {% assign map_ids = 'china,world' | split: ',' %}{% for map_id in map_ids %}
-<article class="travel-map-card"><div class="travel-map-heading"><div><span class="cosmic-eyebrow">{% if map_id == 'china' %}01 / CLOSE TO HOME{% else %}02 / BEYOND BORDERS{% endif %}</span><h4>{% if map_id == 'china' %}Cities in China{% else %}Countries & cities around the world{% endif %}</h4></div><span class="travel-map-count" data-count="{{ map_id }}">No visits recorded yet</span></div>
-<div class="travel-map" id="travel-map-{{ map_id }}" role="region" aria-label="{% if map_id == 'china' %}Interactive map of cities visited in China{% else %}Interactive world travel map{% endif %}"></div>
+<article class="travel-map-card"><div class="travel-map-heading"><div><span class="cosmic-eyebrow">{% if map_id == 'china' %}01 / CLOSE TO HOME{% else %}02 / BEYOND BORDERS{% endif %}</span><h4>{% if map_id == 'china' %}Destinations in China{% else %}Countries & destinations around the world{% endif %}</h4></div><span class="travel-map-count" data-count="{{ map_id }}">No visits recorded yet</span></div>
+<div class="travel-map" id="travel-map-{{ map_id }}" role="region" aria-label="{% if map_id == 'china' %}Interactive map of destinations visited in China{% else %}Interactive world travel map{% endif %}"></div>
 <div class="travel-map-toolbar"><span><i aria-hidden="true"></i> Visited places</span><button type="button" data-reset="{{ map_id }}" disabled>Reset view</button></div>
 <p class="travel-map-status" data-status="{{ map_id }}" role="status">Loading map…</p><div class="travel-place-list" data-places="{{ map_id }}" aria-label="Visited places"></div></article>{% endfor %}
-<div hidden id="travel-data" data-json="{{ site.data.travel | jsonify | escape }}"></div><noscript><p>Enable JavaScript to explore the interactive maps. No visits have been recorded yet.</p></noscript>
+<div hidden id="travel-data" data-json="{{ site.data.travel | jsonify | escape }}"></div><noscript><p>Enable JavaScript to explore the interactive maps. Recorded visits are also listed in the travel journal below.</p></noscript>
 </section>

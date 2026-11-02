@@ -2,26 +2,17 @@
    Various functions that we want to use within the template
    ========================================================================== */
 
-// Use the same default and storage fallback as the initial head script.
-let determineThemeSetting = () => {
-  try {
-    const saved = localStorage.getItem("theme");
-    return ["dark", "light", "system"].includes(saved) ? saved : "dark";
-  } catch (error) { return "dark"; }
-};
-let determineComputedTheme = () => {
-  const setting = determineThemeSetting();
-  return setting === "system" ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : setting;
-};
+// One theme controller is shared by the head and the deferred bundle.
+let determineThemeSetting = () => window.aquamarineTheme.setting();
+let determineComputedTheme = () => window.aquamarineTheme.computed();
 let setTheme = (theme) => {
-  const selected = theme || determineComputedTheme();
-  $("html").attr("data-theme", selected);
+  const selected = window.aquamarineTheme.apply(theme);
   $("#theme-icon").toggleClass("fa-moon", selected === "dark").toggleClass("fa-sun", selected !== "dark");
   $(window).trigger("resize");
 };
 var toggleTheme = () => {
-  const selected = $("html").attr("data-theme") === "dark" ? "light" : "dark";
-  try { localStorage.setItem("theme", selected); } catch (error) {}
+  const selected = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  window.aquamarineTheme.save(selected);
   setTheme(selected);
 };
 
