@@ -12,7 +12,7 @@
 <figcaption>{% if photo.caption and photo.caption != '' %}{{ photo.caption | escape }}{% else %}{{ journey.city | escape }} · Frame {{ forloop.index }}{% endif %}</figcaption></figure>{% endfor %}
 </div><div class="city-photo-controls" aria-label="Photographs of {{ journey.city | escape }}">{% for index in (0..2) %}<button type="button" data-photo-select="{{ index }}" aria-label="Show photograph {{ forloop.index }} of {{ journey.city | escape }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">{{ forloop.index | prepend: '0' }}</button>{% endfor %}</div>
 </div>
-{% if journey.description and journey.description != '' %}<details class="city-stop-details"><summary>Places explored</summary><p>{{ journey.description | escape }}</p></details>{% endif %}
+<div class="city-stop-footer">{% if journey.description and journey.description != '' %}<details class="city-stop-details"><summary>Places Explored</summary><p>{{ journey.description | escape }}</p></details>{% endif %}</div>
 </article>
 {% endfor %}</div>
 {% if site.data.travel.pending_places.size > 0 %}<aside class="travel-journal-empty"><div><h4>Visits Awaiting a Location Detail</h4><ul>{% for place in site.data.travel.pending_places %}<li><strong>{{ place.name | escape }}</strong> — {{ place.note | escape }}</li>{% endfor %}</ul></div></aside>{% endif %}

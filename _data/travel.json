@@ -1369,10 +1369,11 @@
       "lat": 36.2864,
       "lng": 100.6204,
       "arrival": "",
-      "description": "Recorded stops: Longyangxia earth forest; Yellow River at Guide.",
+      "description": "Recorded stops: Longyangxia earth forest; Yellow River at Guide; Qinghai Lake.",
       "sites": [
         "Longyangxia earth forest",
-        "Yellow River at Guide"
+        "Yellow River at Guide",
+        "Qinghai Lake"
       ],
       "photos": [
         {
@@ -1644,12 +1645,5 @@
       ]
     }
   ],
-  "pending_places": [
-    {
-      "id": "qinghai-lake",
-      "name": "Qinghai Lake",
-      "country": "China",
-      "note": "Visited; the specific lakeside stop is to be added. Prefecture assignment and map marker are pending to avoid counting unconfirmed prefectures."
-    }
-  ]
+  "pending_places": []
 }

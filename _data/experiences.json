@@ -9,7 +9,22 @@
       "title": "Sports & Movement",
       "subtitle": "Energy, rhythm, and new challenges.",
       "art": "sports",
-      "entries": []
+      "entries": [
+        {
+          "id": "football",
+          "title": "Football",
+          "description": "Stories and photographs to follow.",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "go",
+          "title": "Go (Weiqi)",
+          "description": "Stories and photographs to follow.",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
     },
     {
       "id": "travel",

@@ -13,3 +13,10 @@
 @media(max-width:1200px){.travel-city-grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
 @media(max-width:900px){.travel-city-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:560px){.travel-city-grid{grid-template-columns:minmax(0,1fr);}.travel-city-grid .city-heading-copy{min-height:0;}}
+
+/* Stretch every card to the tallest content in its own row. */
+.travel-city-grid{align-items:stretch;}
+.travel-city-grid .city-journey{display:flex;flex-direction:column;min-width:0;box-sizing:border-box;}
+.travel-city-grid .city-photo-gallery{margin-top:auto;}
+.travel-city-grid .city-stop-footer{min-height:1.45rem;padding-top:.4rem;}
+.travel-city-grid .city-stop-footer .city-stop-details{margin-top:0;}
