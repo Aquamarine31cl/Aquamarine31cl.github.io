@@ -336,7 +336,8 @@
         }
       ],
       "region_key": "CHN:shanghai",
-      "adcode": 310000
+      "adcode": 310000,
+      "highlight": "gold"
     },
     {
       "id": "suzhou",
@@ -1546,7 +1547,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "highlight": "gold"
     },
     {
       "id": "sanming",
@@ -1704,7 +1706,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "highlight": "gold"
     },
     {
       "id": "urumqi",

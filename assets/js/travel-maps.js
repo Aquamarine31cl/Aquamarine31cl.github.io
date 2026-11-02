@@ -16,14 +16,15 @@ const list=root.querySelector('[data-places="'+id+'"]');
 const map=L.map('travel-map-'+id,{scrollWheelZoom:false,minZoom:1,maxZoom:10,zoomSnap:.25});
 map.attributionControl.addAttribution(id==='china'?'Boundaries: <a href="https://datav.aliyun.com/portal/school/atlas/area_selector">DataV GeoAtlas</a>':'Map data: <a href="https://www.naturalearthdata.com/">Natural Earth</a>');
 const reset=()=>map.fitBounds(id==='china'?[[3,73],[54,136]]:[[-55,-175],[80,175]],{padding:[12,12],animate:false});reset();
-const button=(name,action)=>{const b=document.createElement('button');b.type='button';b.textContent=name;b.addEventListener('click',action);list.append(b);};
+const button=(name,action)=>{const b=document.createElement('button');b.type='button';b.textContent=name;b.addEventListener('click',action);list.append(b);return b;};
 if(id==='china'){
 const [regions,outline]=await Promise.all([load(root.dataset.chinaUrl),load(root.dataset.outlineUrl)]);
 const visited=new Map(cities.map(j=>[Number(j.adcode),j]));const layers=new Map();
-const style=f=>({color:'#525b70',weight:.55,fillColor:visited.has(f.properties.adcode)?'#b39af4':'#49515f',fillOpacity:visited.has(f.properties.adcode)?.94:.85});
-const areas=L.geoJSON(regions,{style,onEachFeature:(f,layer)=>{const visit=visited.get(f.properties.adcode);layer.options.className=visit?'visited-prefecture':'unvisited-prefecture';layers.set(f.properties.adcode,layer);layer.bindTooltip(visit?visit.city:'Not yet visited',{sticky:true});layer.bindPopup(popup(visit?visit.city:'Not yet visited',visit&&visit.description));layer.on('mouseover',()=>layer.setStyle({weight:1.5,color:'#ece0ff'}));layer.on('mouseout',()=>areas.resetStyle(layer));}}).addTo(map);
+const isSpecial=code=>visited.get(code)?.highlight==='gold';
+const style=f=>({color:'#525b70',weight:.55,fillColor:isSpecial(f.properties.adcode)?'#e9bc59':visited.has(f.properties.adcode)?'#b39af4':'#49515f',fillOpacity:visited.has(f.properties.adcode)?.94:.85});
+const areas=L.geoJSON(regions,{style,onEachFeature:(f,layer)=>{const visit=visited.get(f.properties.adcode);layer.options.className=visit?(isSpecial(f.properties.adcode)?'visited-prefecture special-prefecture':'visited-prefecture'):'unvisited-prefecture';layers.set(f.properties.adcode,layer);layer.bindTooltip(visit?visit.city:'Not yet visited',{sticky:true});layer.bindPopup(popup(visit?visit.city:'Not yet visited',visit&&visit.description));layer.on('mouseover',()=>layer.setStyle({weight:1.5,color:'#ece0ff'}));layer.on('mouseout',()=>areas.resetStyle(layer));}}).addTo(map);
 L.geoJSON(outline,{interactive:false,style:{color:'#e9d9ff',weight:2,fill:false,opacity:1,className:'china-outer-outline'}}).addTo(map);
-cities.forEach(city=>button(city.city,()=>{const layer=layers.get(Number(city.adcode));if(layer){map.fitBounds(layer.getBounds(),{maxZoom:7,animate:!reduced()});layer.openPopup();}}));
+cities.forEach(city=>{const control=button(city.city,()=>{const layer=layers.get(Number(city.adcode));if(layer){map.fitBounds(layer.getBounds(),{maxZoom:7,animate:!reduced()});layer.openPopup();}});});
 root.querySelector('[data-count="china"]').textContent=visited.size+' destinations';
 root.dataset.chinaVisited=visited.size;
 }else{
@@ -35,7 +36,7 @@ cities.forEach(city=>{if(!Number.isFinite(city.lat)||!Number.isFinite(city.lng))
 root.querySelector('[data-count="world"]').textContent=countries.size+' countries · '+cities.length+' destinations';
 root.dataset.worldVisited=countries.size;
 }
-status.textContent='Visited regions glow in lavender; unvisited regions remain gray. Select a region or place to explore.';
+status.textContent='Select a region or place to explore. Drag to pan; use + / − to zoom.';
 const resetButton=root.querySelector('[data-reset="'+id+'"]');resetButton.disabled=false;resetButton.addEventListener('click',reset);
 if('ResizeObserver' in window)new ResizeObserver(()=>map.invalidateSize()).observe(map.getContainer());
 }catch(error){status.textContent='The map could not load. Please refresh and try again.';}
