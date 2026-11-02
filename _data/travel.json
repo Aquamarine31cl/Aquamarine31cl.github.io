@@ -1643,6 +1643,99 @@
           "caption": ""
         }
       ]
+    },
+    {
+      "id": "baiyin",
+      "region_key": "CHN:620400",
+      "city": "Baiyin",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 620400,
+      "lat": 36.54568,
+      "lng": 104.173606,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "lanzhou",
+      "region_key": "CHN:620100",
+      "city": "Lanzhou",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 620100,
+      "lat": 36.058039,
+      "lng": 103.823557,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "urumqi",
+      "region_key": "CHN:650100",
+      "city": "Urumqi",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 650100,
+      "lat": 43.792818,
+      "lng": 87.617733,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
     }
   ],
   "pending_places": []

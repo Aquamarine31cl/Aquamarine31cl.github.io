@@ -3,11 +3,11 @@
 {% if news_photos.size == 0 %}{% assign news_photos = site.data.home_news | sort: 'date' | reverse %}{% endif %}
 <div class="news-photo-grid" aria-label="Three recent highlights">
 {% for item in news_photos limit: 3 %}
-<article class="news-photo-card">
+<article class="news-photo-card news-photo-card--{{ item.image_orientation | default: 'landscape' }}">
   <figure class="news-photo-figure">
-    {% if item.image and item.image != '' %}<a class="news-photo{% if item.image_fit == 'contain' %} news-photo--contain{% endif %}" href="{{ item.image | relative_url }}" aria-label="View photograph: {{ item.title | default: item.date | escape }}"><img src="{{ item.image | relative_url }}" alt="{{ item.image_alt | default: item.title | default: 'Recent highlight' | escape }}" width="960" height="720" loading="lazy" decoding="async"><span class="home-photo-expand" aria-hidden="true">↗</span></a>
-    {% else %}<div class="news-photo news-photo--placeholder" role="img" aria-label="Photograph coming soon: {{ item.title | default: item.date | escape }}"><span class="news-photo-index" aria-hidden="true">{{ forloop.index | prepend: '0' }}</span><span class="news-photo-symbol" aria-hidden="true">✧</span><span class="news-photo-prompt">A MOMENT TO REMEMBER<small>Photo coming soon</small></span></div>{% endif %}
-    {% if item.image_caption and item.image_caption != '' %}<figcaption>{{ item.image_caption | escape }}</figcaption>{% endif %}
+    {% if item.image and item.image != '' %}<a class="news-photo{% if item.image_fit == 'contain' %} news-photo--contain{% endif %}" href="{{ item.image | relative_url }}" aria-label="View photograph: {{ item.title | default: item.date | escape }}"><img src="{{ item.image_preview | default: item.image | relative_url }}" alt="{{ item.image_alt | default: item.title | default: 'Recent highlight' | escape }}" width="960" height="720" loading="lazy" decoding="async"><span class="home-photo-expand" aria-hidden="true">↗</span></a>
+    {% else %}<div class="news-photo news-photo--placeholder" role="img" aria-label="Photograph coming soon: {{ item.title | default: item.date | escape }}"><span class="news-photo-index" aria-hidden="true">{{ forloop.index | prepend: '0' }}</span><span class="news-photo-symbol" aria-hidden="true">✧</span><span class="news-photo-prompt">A MOMENT TO REMEMBER<small>{% if item.image_orientation == 'portrait' %}Portrait Photo Coming Soon{% else %}Photo Coming Soon{% endif %}</small></span></div>{% endif %}
+    <figcaption class="news-photo-caption"{% unless item.image_caption and item.image_caption != '' %} aria-hidden="true"{% endunless %}>{{ item.image_caption | escape }}</figcaption>
   </figure>
   <div class="news-photo-copy"><time datetime="{{ item.date | replace: '.', '-' }}">{{ item.date | escape }}</time><h3>{{ item.title | default: item.date | escape }}</h3><span class="news-photo-category">LATEST MILESTONE</span></div>
 </article>{% endfor %}

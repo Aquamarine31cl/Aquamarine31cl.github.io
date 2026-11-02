@@ -323,3 +323,10 @@ html[data-atmosphere="calm"] body::after{opacity:.18;}
 .education-logo-divider{height:25px;width:1px;background:linear-gradient(transparent,#b9a4de66,transparent);}
 .education-symbol:focus-visible{outline:2px solid #c6b3ed;outline-offset:3px;}
 @media(max-width:600px){.education-logos{gap:.6rem;}.home-page .page__content a.education-symbol{width:60px;height:60px;flex-basis:60px;}.home-page .page__content a.education-symbol--wordmark{width:100px;flex-basis:100px;}}
+
+.news-photo-figure .news-photo-caption{display:block;min-height:3em;font-size:.58rem;line-height:1.5;padding:.45rem .1rem .2rem;margin:0;box-sizing:border-box;}
+
+/* First news milestone is a portrait certificate; shared outer frames stay aligned. */
+.news-photo-card--portrait .news-photo{padding:12px;box-sizing:border-box;}
+.news-photo-card--portrait .news-photo img{object-fit:contain;aspect-ratio:auto;padding:0;}
+.news-photo-card--portrait .news-photo--placeholder:before{inset:auto;top:12px;left:50%;height:calc(100% - 24px);width:auto;aspect-ratio:3/4;transform:translateX(-50%);border:1px solid #d6c4ef55;border-radius:5px;background:linear-gradient(145deg,#bca8e50a,#8ec5db05);}

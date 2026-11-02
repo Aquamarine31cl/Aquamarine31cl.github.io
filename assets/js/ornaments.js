@@ -2,10 +2,12 @@
 (() => {
 'use strict';
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+const fine=matchMedia('(hover: hover) and (pointer: fine)');
 const headings=document.querySelectorAll('.page__title,.honors-section-heading h2,.home-education>h2,.travel-atlas>header h3,.travel-journal-header h3');
 headings.forEach(heading=>{heading.classList.add('ornamented-heading');const orbit=document.createElement('span');orbit.className='heading-orbit';orbit.setAttribute('aria-hidden','true');heading.append(orbit);});
 const frames=document.querySelectorAll('.home-intro,.research-ribbon,.education-card,.honor-feature,.news-photo-card,.academic-card,.experience-choice,.city-journey,.travel-map-card,.experience-entry');
-frames.forEach(frame=>{frame.classList.add('ornamented-frame');const trim=document.createElement('span');trim.className='surface-trim';trim.setAttribute('aria-hidden','true');const sweep=document.createElement('span');sweep.className='surface-sweep';sweep.setAttribute('aria-hidden','true');frame.append(trim,sweep);});
+frames.forEach(frame=>{frame.classList.add('ornamented-frame');const trim=document.createElement('span');trim.className='surface-trim';trim.setAttribute('aria-hidden','true');const sweep=document.createElement('span');sweep.className='surface-sweep';sweep.setAttribute('aria-hidden','true');frame.append(trim,sweep);frame.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse'&&fine.matches&&!reduce.matches&&!frame.hasAttribute('data-sweep-running'))frame.setAttribute('data-sweep-running','');});frame.addEventListener('animationend',event=>{if(event.animationName==='frame-edge-pass')frame.removeAttribute('data-sweep-running');});});
+reduce.addEventListener('change',()=>{if(reduce.matches)frames.forEach(frame=>frame.removeAttribute('data-sweep-running'));});
 const nav=document.querySelector('#site-nav');if(!nav)return;
 nav.classList.add('ornamented-nav');const visible=nav.querySelector('.visible-links'),hidden=nav.querySelector('.hidden-links');
 const candidates=[...nav.querySelectorAll('.masthead__menu-item:not(.masthead__menu-item--lg):not(#theme-toggle)>a[href]')];

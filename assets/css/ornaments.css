@@ -24,8 +24,11 @@ html[data-theme="dark"].page-has-scrolled .masthead{background:rgba(11,10,28,.94
 .ornamented-frame:hover>.surface-trim,.ornamented-frame:focus-within>.surface-trim{opacity:.65;scale:1;}
 .surface-sweep{position:absolute;inset:0 0 auto;height:1px;z-index:3;pointer-events:none;overflow:hidden;border-radius:inherit;}
 .surface-sweep:before{content:'';display:block;width:35%;height:100%;background:linear-gradient(90deg,transparent,var(--frame-color),transparent);opacity:0;transform:translateX(-110%);}
-@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.ornamented-frame:hover>.surface-sweep:before{animation:frame-edge-pass 1100ms cubic-bezier(.2,.6,.3,1) both;}}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.ornamented-frame[data-sweep-running]>.surface-sweep:before{animation:frame-edge-pass 1100ms cubic-bezier(.2,.6,.3,1) both;}}
 @keyframes frame-edge-pass{0%{opacity:0;transform:translateX(-110%);}20%{opacity:.8;}85%{opacity:.5;}100%{opacity:0;transform:translateX(390%);}}
 @media(max-width:700px){.heading-orbit{width:13px;height:13px;margin-left:.45rem;}.surface-trim{inset:7px;opacity:.18;}.heading-orbit:before{inset:3px;}}
 @media(prefers-reduced-motion:reduce){.heading-orbit:after,.surface-sweep:before{animation:none!important;}.nav-orbit-indicator,.surface-trim,.masthead,.ornamented-nav a:before{transition:none!important;}}
 @media print{.heading-orbit,.surface-trim,.surface-sweep,.nav-orbit-indicator{display:none!important;}}
+
+/* Navigation motion belongs to the indicator, not to the text hit targets. */
+html .ornamented-nav .masthead__menu-item>a:hover{transform:none!important;}

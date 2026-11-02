@@ -7,27 +7,32 @@
     "image": "",
     "image_alt": "",
     "image_caption": "",
-    "image_fit": "cover"
+    "image_fit": "contain",
+    "image_orientation": "portrait"
   },
   {
     "date": "2026.09",
     "text": "I was admitted to the [Department of Macromolecular Science, Fudan University](https://polymer.fudan.edu.cn/).",
     "important": true,
     "title": "A New Chapter at Fudan",
-    "image": "",
-    "image_alt": "",
-    "image_caption": "",
-    "image_fit": "cover"
+    "image": "/images/news/2.jpg",
+    "image_alt": "Group photograph for the Fudan University milestone",
+    "image_caption": "A New Chapter at Fudan",
+    "image_fit": "contain",
+    "image_preview": "/images/news/2-preview.webp",
+    "image_orientation": "landscape"
   },
   {
     "date": "2026.06",
     "text": "I successfully graduated from the New Energy Materials and Devices (Elite Class) of Guohao College of Tongji University and was awarded a bachelor's degree in engineering.",
     "important": true,
     "title": "Graduation from Tongji",
-    "image": "",
-    "image_alt": "",
-    "image_caption": "",
-    "image_fit": "cover"
+    "image": "/images/news/3.jpg",
+    "image_alt": "Graduation group photograph in front of the university library",
+    "image_caption": "Graduation from Tongji",
+    "image_fit": "contain",
+    "image_preview": "/images/news/3-preview.webp",
+    "image_orientation": "landscape"
   },
   {
     "date": "2026.05",

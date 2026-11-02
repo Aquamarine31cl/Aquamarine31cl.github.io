@@ -4,3 +4,5 @@ Department of Macromolecular Science emblem: https://polymer.fudan.edu.cn/_uploa
 Tongji University emblem: https://www.tongji.edu.cn/images/logo.png (left 86 x 86 emblem)
 Guohao College wordmark: https://ghc.tongji.edu.cn/images/logo.png (college wordmark area, x224 y0 width148 height92; neighboring school identities omitted)
 Identity artwork is preserved. These marks identify educational affiliations.
+
+2026-11-02 centering correction: university and unit marks trimmed to visible alpha bounds and given equal 2px transparent padding on each side. Macromolecular Science extraction limited to x0..103 to exclude adjacent wordmark fragments. Original mark colors and geometry preserved.
