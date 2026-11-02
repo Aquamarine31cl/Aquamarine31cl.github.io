@@ -284,3 +284,32 @@ html[data-background-motion="paused"] body::before,html[data-background-motion="
 @media print{.cosmic-moving-stars,.cosmic-background-toggle{display:none!important;}}
 
 .honor-stat{position:relative;overflow:hidden;}
+
+/* Matched outer frames with separate portrait/landscape image mats. */
+.home-page .honors-spotlight{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:1rem;}
+.home-page .honor-feature{display:flex;flex-direction:column;min-width:0;}
+.home-page .honor-feature .honor-photo{display:flex;align-items:center;justify-content:center;position:relative;flex:0 0 290px;width:100%;height:290px;min-height:0;padding:20px;box-sizing:border-box;background:radial-gradient(ellipse at 50% 30%,#bda1eb12,transparent 70%),#14192b;}
+.home-page .honor-feature .honor-photo img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;margin:0;padding:0;border-radius:4px;}
+.home-page .honor-feature--portrait .honor-photo img{max-width:180px;}
+.home-page .honor-feature--landscape .honor-photo img{max-height:168px;}
+.home-page .honor-feature .honor-photo--placeholder{flex-direction:column;gap:.7rem;}
+.home-page .honor-feature .honor-photo--placeholder:before{inset:auto;width:calc(100% - 40px);max-width:180px;height:244px;border:1px solid #c4b0e666;border-radius:5px;background:linear-gradient(140deg,#bca8e510,#8ec5db06);box-sizing:border-box;}
+.home-page .honor-feature .honor-photo--placeholder:after{display:none;}
+.home-page .honor-feature--landscape .honor-photo--placeholder:before{max-width:none;width:calc(100% - 40px);height:auto;aspect-ratio:16/10;max-height:168px;}
+.home-page .honor-photo-label,.home-page .honor-medallion{position:relative;z-index:1;}
+.home-page .honor-feature-copy{flex:1;padding:1rem;display:flex;flex-direction:column;align-items:flex-start;}
+.home-page .honor-feature-copy .honor-distinction{margin-top:auto;padding-top:.75rem;}
+@media(max-width:700px){.home-page .honors-spotlight{grid-template-columns:1fr;}.home-page .honor-feature .honor-photo{flex-basis:260px;height:260px;}.home-page .honor-feature .honor-photo--placeholder:before{height:220px;max-width:165px;}.home-page .honor-feature--landscape .honor-photo--placeholder:before{height:auto;max-width:320px;max-height:180px;}}
+/* One compact control group, with a visible running indicator. */
+.cosmic-motion-controls{position:fixed;right:1rem;bottom:1rem;z-index:1000;display:flex;gap:0;border:1px solid #b9a2e64d;border-radius:999px;overflow:hidden;background:#12142bdf;backdrop-filter:blur(12px);box-shadow:0 6px 26px #05041122;}
+html .cosmic-motion-controls button{position:static;display:block;min-height:36px;padding:.5rem .8rem!important;border:0!important;border-radius:0!important;background:transparent!important;color:#ddd1ef!important;font:11px/1.4 'Segoe UI',Arial,sans-serif!important;cursor:pointer;box-shadow:none!important;}
+html .cosmic-motion-controls button+button{border-left:1px solid #b9a2e633!important;}
+.cosmic-motion-controls .cosmic-background-toggle:before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:#85809a;margin-right:7px;vertical-align:middle;}
+html[data-background-motion="running"] .cosmic-motion-controls .cosmic-background-toggle:before{background:#a1dddb;box-shadow:0 0 7px #a1dddb77;}
+html:not([data-theme="dark"]) .cosmic-motion-controls{display:none;}
+html .cosmic-motion-controls button:focus-visible{outline:2px solid #cbb5f0;outline-offset:-3px;}
+html[data-atmosphere="calm"] body::after{opacity:.18;}
+@media(max-width:600px){.cosmic-motion-controls{right:.6rem;bottom:.6rem;}.cosmic-motion-controls button{min-height:34px;}}
+@media print{.cosmic-motion-controls{display:none!important;}}
+
+.home-page .honor-feature .honor-photo{margin:0!important;border-radius:0;border-left:0;border-right:0;border-top:0;border-bottom:1px solid #bba4e62b;}

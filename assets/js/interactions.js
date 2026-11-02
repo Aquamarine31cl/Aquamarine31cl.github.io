@@ -1,27 +1,41 @@
-/* Native browser interactions. No animation framework or background changes. */
+/* Small, bounded interactions inspired by magnetic surfaces. No scroll hijacking. */
 (() => {
- 'use strict';
- const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
- const fine=window.matchMedia('(hover: hover) and (pointer: fine)');
- const selector='.education-card,.honor-feature,.news-photo-card,.honor-stat,.academic-card,.experience-section:not(.experience-section--atlas),.city-photo-card';
- const cards=[...document.querySelectorAll(selector)].filter(el=>!el.parentElement.closest(selector)&&!el.closest('.leaflet-container'));
- const reset=card=>{delete card.dataset.pointerActive;card.style.removeProperty('--tilt-x');card.style.removeProperty('--tilt-y');};
- cards.forEach(card=>{
-  card.classList.add('motion-card');
-  const sheen=document.createElement('span');sheen.className='motion-sheen';sheen.setAttribute('aria-hidden','true');card.append(sheen);
-  let frame=0;let position=null;
-  const render=()=>{frame=0;if(!position||reduce.matches||!fine.matches)return;const rect=card.getBoundingClientRect();if(!rect.width||!rect.height)return;const x=Math.max(0,Math.min(1,(position.x-rect.left)/rect.width));const y=Math.max(0,Math.min(1,(position.y-rect.top)/rect.height));card.style.setProperty('--touch-x',(x*100).toFixed(2)+'%');card.style.setProperty('--touch-y',(y*100).toFixed(2)+'%');const strength=rect.height>520?0:2;card.style.setProperty('--tilt-x',((.5-y)*strength).toFixed(2)+'deg');card.style.setProperty('--tilt-y',((x-.5)*strength).toFixed(2)+'deg');card.dataset.pointerActive='true';};
-  card.addEventListener('pointermove',event=>{if(event.pointerType!=='mouse'||reduce.matches||!fine.matches)return;position={x:event.clientX,y:event.clientY};if(!frame)frame=requestAnimationFrame(render);},{passive:true});
-  const leave=()=>{if(frame)cancelAnimationFrame(frame);frame=0;position=null;reset(card);};
-  card.addEventListener('pointerleave',leave);card.addEventListener('pointercancel',leave);window.addEventListener('blur',leave);
- });
- if('IntersectionObserver' in window&&!reduce.matches){const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('motion-arrived');observer.unobserve(entry.target);}});},{threshold:.12});cards.filter(card=>!card.classList.contains('honors-reveal')).forEach(card=>observer.observe(card));}
- const progress=document.createElement('div');progress.className='motion-scroll-progress';progress.setAttribute('aria-hidden','true');document.body.append(progress);
- let scheduled=false;
- const draw=()=>{scheduled=false;const length=document.documentElement.scrollHeight-window.innerHeight;const value=length>0?Math.max(0,Math.min(1,window.scrollY/length)):0;progress.style.setProperty('--reading-progress',value.toFixed(4));};
- const schedule=()=>{if(!scheduled){scheduled=true;requestAnimationFrame(draw);}};
- window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',schedule,{passive:true});window.addEventListener('load',schedule,{once:true});
- if('ResizeObserver' in window)new ResizeObserver(schedule).observe(document.body);draw();
- const sync=()=>{if(reduce.matches||!fine.matches)cards.forEach(reset);};
- reduce.addEventListener('change',sync);fine.addEventListener('change',sync);
+'use strict';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)'),fine=matchMedia('(hover: hover) and (pointer: fine)');
+const allowed=()=>fine.matches&&!reduce.matches;
+const selector='.education-card,.honor-feature,.news-photo-card,.honor-stat,.academic-card,.experience-choice,.city-journey';
+const cards=[...document.querySelectorAll(selector)].filter(el=>!el.parentElement.closest(selector)&&!el.closest('.leaflet-container'));
+const active=new Set(),states=[];let raf=0,last=0;
+const approach=(a,b,k)=>a+(b-a)*k;
+function wake(state){active.add(state);if(!raf){last=performance.now();raf=requestAnimationFrame(step);}}
+function step(now){raf=0;const dt=Math.min(now-last,40);last=now;const k=1-Math.exp(-dt*.018);
+for(const state of active){state.x=approach(state.x,state.tx,k);state.y=approach(state.y,state.ty,k);state.lift=approach(state.lift,state.hover?state.maxLift:0,k);state.el.style.setProperty('--tilt-x',(-state.y*state.strength).toFixed(3)+'deg');state.el.style.setProperty('--tilt-y',(state.x*state.strength).toFixed(3)+'deg');state.el.style.setProperty('--surface-lift',state.lift.toFixed(3)+'px');
+if(Math.abs(state.x-state.tx)+Math.abs(state.y-state.ty)+Math.abs(state.lift-(state.hover?state.maxLift:0))<.004){active.delete(state);if(!state.hover){state.el.removeAttribute('data-pointer-active');state.el.style.removeProperty('--surface-lift');}}}
+if(active.size)raf=requestAnimationFrame(step);}
+function leave(state){state.hover=false;state.tx=state.ty=0;wake(state);}
+for(const card of cards){card.classList.add('motion-card');const sheen=document.createElement('span');sheen.className='motion-sheen';sheen.setAttribute('aria-hidden','true');const edge=document.createElement('span');edge.className='motion-edge';edge.setAttribute('aria-hidden','true');card.append(sheen,edge);
+const compact=card.classList.contains('city-journey');const state={el:card,x:0,y:0,tx:0,ty:0,lift:0,hover:false,rect:null,strength:compact?1.3:2.4,maxLift:compact?2:4};states.push(state);
+card.addEventListener('pointerenter',event=>{if(!allowed()||event.pointerType!=='mouse')return;state.rect=card.getBoundingClientRect();});
+card.addEventListener('pointermove',event=>{if(!allowed()||event.pointerType!=='mouse')return;const rect=state.rect||card.getBoundingClientRect();if(!rect.width||!rect.height)return;const x=Math.max(0,Math.min(1,(event.clientX-rect.left)/rect.width)),y=Math.max(0,Math.min(1,(event.clientY-rect.top)/rect.height));state.tx=x-.5;state.ty=y-.5;state.hover=true;card.dataset.pointerActive='true';card.style.setProperty('--touch-x',(x*100).toFixed(2)+'%');card.style.setProperty('--touch-y',(y*100).toFixed(2)+'%');wake(state);},{passive:true});
+card.addEventListener('pointerleave',()=>leave(state));card.addEventListener('pointercancel',()=>leave(state));}
+const magnets=[...document.querySelectorAll('.home-paths a,.experience-tabs a,.academic-links a,.experience-back')];
+for(const el of magnets){el.classList.add('motion-magnetic');el.addEventListener('pointermove',event=>{if(!allowed()||event.pointerType!=='mouse')return;const b=el.getBoundingClientRect();el.style.setProperty('--magnet-x',((event.clientX-b.left-b.width/2)*.045).toFixed(2)+'px');el.style.setProperty('--magnet-y',((event.clientY-b.top-b.height/2)*.075).toFixed(2)+'px');},{passive:true});el.addEventListener('pointerleave',()=>{el.style.removeProperty('--magnet-x');el.style.removeProperty('--magnet-y');});}
+const reset=()=>{for(const s of states){s.hover=false;s.x=s.y=s.tx=s.ty=s.lift=0;s.el.removeAttribute('data-pointer-active');s.el.style.removeProperty('--surface-lift');s.el.style.removeProperty('--tilt-x');s.el.style.removeProperty('--tilt-y');}active.clear();if(raf)cancelAnimationFrame(raf);raf=0;for(const el of magnets){el.style.removeProperty('--magnet-x');el.style.removeProperty('--magnet-y');}};
+addEventListener('blur',reset);reduce.addEventListener('change',reset);fine.addEventListener('change',reset);document.addEventListener('visibilitychange',()=>{if(document.hidden)reset();});
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;const el=entry.target;if(!reduce.matches){el.style.setProperty('--arrival-delay',(Number(el.dataset.arrivalOrder||0)%6)*35+'ms');el.classList.add('motion-arrived');}observer.unobserve(el);}},{threshold:.06,rootMargin:'0px 0px -16px 0px'});[...new Set([...cards,...document.querySelectorAll('.home-intro,.experience-hero,.page__title')])].forEach((el,index)=>{el.dataset.arrivalOrder=index;observer.observe(el);});}
+const progress=document.createElement('div');progress.className='motion-scroll-progress';progress.setAttribute('aria-hidden','true');document.body.append(progress);
+let scheduled=false;function drawProgress(){scheduled=false;const length=document.documentElement.scrollHeight-innerHeight;progress.style.setProperty('--reading-progress',length>0?Math.max(0,Math.min(1,scrollY/length)):0);document.documentElement.classList.toggle('page-has-scrolled',scrollY>24);}
+function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(drawProgress);}}
+addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});addEventListener('load',schedule,{once:true});if('ResizeObserver' in window)new ResizeObserver(schedule).observe(document.body);drawProgress();
+/* Native dialog keeps focus and Escape behavior intact. Original links remain usable without JS. */
+if(typeof HTMLDialogElement==='undefined')return;
+const viewer=document.createElement('dialog');viewer.className='motion-viewer';viewer.setAttribute('aria-label','Photograph viewer');
+viewer.innerHTML='<div class="motion-viewer-top"><span>Closer Look</span><button type="button" class="motion-viewer-close" aria-label="Close photograph viewer">Close ×</button></div><div class="motion-viewer-stage"><img alt=""></div><div class="motion-viewer-bottom"><p class="motion-viewer-caption"></p><a class="motion-viewer-original" target="_blank" rel="noopener">Open Original ↗</a></div><div class="motion-viewer-navigation"><button type="button" data-viewer-prev aria-label="Previous photograph">← Previous</button><span data-viewer-count></span><button type="button" data-viewer-next aria-label="Next photograph">Next →</button></div>';
+document.body.append(viewer);const photo=viewer.querySelector('img'),caption=viewer.querySelector('.motion-viewer-caption'),original=viewer.querySelector('.motion-viewer-original'),count=viewer.querySelector('[data-viewer-count]'),navigation=viewer.querySelector('.motion-viewer-navigation');let group=[],position=0;
+function show(index){position=(index+group.length)%group.length;const anchor=group[position],img=anchor.querySelector('img');photo.src=anchor.href;photo.alt=img?img.alt:'';const figure=anchor.closest('figure');caption.textContent=(figure&&figure.querySelector('figcaption')?.textContent.trim())||(img&&img.alt)||'Photograph';original.href=anchor.href;count.textContent=(position+1)+' / '+group.length;navigation.hidden=group.length<2;if(!reduce.matches&&photo.animate)photo.animate([{opacity:.4,transform:'scale(.99)'},{opacity:1,transform:'scale(1)'}],{duration:260,easing:'ease-out'});}
+function close(){viewer.close();}
+viewer.querySelector('.motion-viewer-close').addEventListener('click',close);viewer.addEventListener('click',event=>{if(event.target===viewer)close();});viewer.addEventListener('close',()=>document.documentElement.classList.remove('motion-viewer-open'));
+viewer.querySelector('[data-viewer-prev]').addEventListener('click',()=>show(position-1));viewer.querySelector('[data-viewer-next]').addEventListener('click',()=>show(position+1));viewer.addEventListener('keydown',event=>{if(group.length>1&&event.key==='ArrowRight'){event.preventDefault();show(position+1);}if(group.length>1&&event.key==='ArrowLeft'){event.preventDefault();show(position-1);}});
+const pictureSelector='.academic-figure-link,.city-photo-card>a,a.honor-photo,.news-photo-figure>a';
+document.addEventListener('click',event=>{if(event.defaultPrevented||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;const anchor=event.target.closest(pictureSelector);if(!anchor||!anchor.querySelector('img'))return;const imageUrl=new URL(anchor.href,location.href);if(!/\.(jpe?g|png|webp|gif|avif|svg)$/i.test(imageUrl.pathname))return;event.preventDefault();const gallery=anchor.closest('[data-photo-gallery]');group=gallery?[...gallery.querySelectorAll('a[href]')].filter(a=>a.querySelector('img')):[anchor];position=Math.max(0,group.indexOf(anchor));show(position);document.documentElement.classList.add('motion-viewer-open');viewer.showModal();viewer.querySelector('.motion-viewer-close').focus();});
 })();
