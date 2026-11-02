@@ -1,28 +1,31 @@
 {
   "title": "Milestones, earned.",
   "intro": "Recognition along a journey of curiosity, teamwork, and persistence.",
-  "basis": "Counts cover the honors and competition awards listed below. Levels follow the original website; university scholarships and titles are grouped as university honors.",
+  "basis": "Totals include 9 international/national, 16 provincial/ministerial and 30 university honors. Only selected representative honors and competitions are listed below; this is not an exhaustive record. The three awards from November 2021 are already included in these totals.",
   "groups": [
     {
       "id": "international-national",
       "label": "International / National",
       "short": "Intl. / National",
       "subtitle": "Across borders & disciplines",
-      "number": "01"
+      "number": "01",
+      "total": 9
     },
     {
       "id": "provincial",
       "label": "Provincial / Ministerial",
       "short": "Provincial",
       "subtitle": "Regional recognition",
-      "number": "02"
+      "number": "02",
+      "total": 16
     },
     {
       "id": "university",
       "label": "University",
       "short": "University",
       "subtitle": "Growing within the community",
-      "number": "03"
+      "number": "03",
+      "total": 30
     }
   ],
   "awards": [
@@ -217,6 +220,43 @@
       "featured": false,
       "image": "",
       "image_alt": ""
+    },
+    {
+      "date": "2021.11",
+      "title": "35th Chinese Chemistry Olympiad (Final Round)",
+      "distinction": "Third Prize",
+      "id": "award-17",
+      "kind": "competition",
+      "level": "international-national",
+      "detail": "",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "date": "2021.11",
+      "title": "35th Chinese Chemistry Olympiad (Preliminary Round)",
+      "distinction": "First Prize",
+      "id": "award-18",
+      "kind": "competition",
+      "level": "provincial",
+      "detail": "",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
+    },
+    {
+      "date": "2021.11",
+      "title": "2021 High School Mathematics Olympiad (Preliminary Round)",
+      "distinction": "First Prize",
+      "id": "award-19",
+      "kind": "competition",
+      "level": "provincial",
+      "detail": "",
+      "featured": false,
+      "image": "",
+      "image_alt": ""
     }
-  ]
+  ],
+  "total": 55
 }

@@ -7,7 +7,7 @@
 <script>
   (function () {
     try {
-      var savedTheme = localStorage.getItem("theme");
+      var savedTheme = localStorage.getItem("aquamarine.theme.v2");
       if (savedTheme === "light" || (savedTheme === "system" && !window.matchMedia("(prefers-color-scheme: dark)").matches)) {
         document.documentElement.removeAttribute("data-theme");
       } else {
