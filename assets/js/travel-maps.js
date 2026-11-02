@@ -11,6 +11,7 @@ const status=root.querySelector('[data-status="'+id+'"]');
 try{
 if(!window.L)throw Error('Map library unavailable');
 const cities=journeys.filter(j=>j.scope===(id==='china'?'china':'world'));
+if(id==='china')cities.sort((a,b)=>Number(a.adcode)-Number(b.adcode));
 const list=root.querySelector('[data-places="'+id+'"]');
 const map=L.map('travel-map-'+id,{scrollWheelZoom:false,minZoom:1,maxZoom:10,zoomSnap:.25});
 map.attributionControl.addAttribution(id==='china'?'Boundaries: <a href="https://datav.aliyun.com/portal/school/atlas/area_selector">DataV GeoAtlas</a>':'Map data: <a href="https://www.naturalearthdata.com/">Natural Earth</a>');

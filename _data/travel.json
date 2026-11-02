@@ -1171,6 +1171,477 @@
         }
       ],
       "adcode": 220100
+    },
+    {
+      "id": "lhasa",
+      "region_key": "CHN:540100",
+      "city": "Lhasa",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 540100,
+      "lat": 29.652,
+      "lng": 91.1721,
+      "arrival": "",
+      "description": "Recorded stops: Lhasa; Drigung Til Monastery.",
+      "sites": [
+        "Lhasa",
+        "Drigung Til Monastery"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "nagqu",
+      "region_key": "CHN:540600",
+      "city": "Nagqu",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 540600,
+      "lat": 31.476,
+      "lng": 92.052,
+      "arrival": "",
+      "description": "Recorded stops: Maidika Wetland; Biru; Bujia Snow Mountain glacier group.",
+      "sites": [
+        "Maidika Wetland",
+        "Biru",
+        "Bujia Snow Mountain glacier group"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "chamdo",
+      "region_key": "CHN:540300",
+      "city": "Chamdo",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 540300,
+      "lat": 31.1406,
+      "lng": 97.172,
+      "arrival": "",
+      "description": "Recorded stops: Dingqing; Zizhu Monastery; Riwoche.",
+      "sites": [
+        "Dingqing",
+        "Zizhu Monastery",
+        "Riwoche"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "yushu",
+      "region_key": "CHN:632700",
+      "city": "Yushu Tibetan Autonomous Prefecture",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 632700,
+      "lat": 33.0053,
+      "lng": 97.0088,
+      "arrival": "",
+      "description": "Recorded stops: Nangqen; Gar Monastery and canyon; Lancang River braided channels; Baizha ancient salt fields; Nyangla Canyon; Gading Monastery; Southern headwaters of the Yangtze River; Zadoi; Tashi Qi Wa (cultural headwaters of the Lancang River); Zhiduo; Gaduo Jowo sacred mountain; Maduo Township, Qumarleb County.",
+      "sites": [
+        "Nangqen",
+        "Gar Monastery and canyon",
+        "Lancang River braided channels",
+        "Baizha ancient salt fields",
+        "Nyangla Canyon",
+        "Gading Monastery",
+        "Southern headwaters of the Yangtze River",
+        "Zadoi",
+        "Tashi Qi Wa (cultural headwaters of the Lancang River)",
+        "Zhiduo",
+        "Gaduo Jowo sacred mountain",
+        "Maduo Township, Qumarleb County"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "golog",
+      "region_key": "CHN:632600",
+      "city": "Golog Tibetan Autonomous Prefecture",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 632600,
+      "lat": 34.4736,
+      "lng": 100.2448,
+      "arrival": "",
+      "description": "Recorded stops: Eling Lake; Zhaling Lake; Madoi; Donggi Cona Lake; Amnye Machen; Maqen.",
+      "sites": [
+        "Eling Lake",
+        "Zhaling Lake",
+        "Madoi",
+        "Donggi Cona Lake",
+        "Amnye Machen",
+        "Maqen"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "hainan-qinghai",
+      "region_key": "CHN:632500",
+      "city": "Hainan Tibetan Autonomous Prefecture (Qinghai)",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 632500,
+      "lat": 36.2864,
+      "lng": 100.6204,
+      "arrival": "",
+      "description": "Recorded stops: Longyangxia earth forest; Yellow River at Guide.",
+      "sites": [
+        "Longyangxia earth forest",
+        "Yellow River at Guide"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "xining",
+      "region_key": "CHN:630100",
+      "city": "Xining",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 630100,
+      "lat": 36.6171,
+      "lng": 101.7782,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "guangzhou",
+      "region_key": "CHN:440100",
+      "city": "Guangzhou",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 440100,
+      "lat": 23.1291,
+      "lng": 113.2644,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "guilin",
+      "region_key": "CHN:450300",
+      "city": "Guilin",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 450300,
+      "lat": 25.2742,
+      "lng": 110.2991,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "xiamen",
+      "region_key": "CHN:350200",
+      "city": "Xiamen",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 350200,
+      "lat": 24.4798,
+      "lng": 118.0894,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "putian",
+      "region_key": "CHN:350300",
+      "city": "Putian",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 350300,
+      "lat": 25.454,
+      "lng": 119.0078,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "sanming",
+      "region_key": "CHN:350400",
+      "city": "Sanming",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 350400,
+      "lat": 26.2634,
+      "lng": 117.6389,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "aba",
+      "region_key": "CHN:513200",
+      "city": "Aba Tibetan and Qiang Autonomous Prefecture",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 513200,
+      "lat": 31.8994,
+      "lng": 102.2247,
+      "arrival": "",
+      "description": "Recorded stops: Jiuzhaigou; Huanglong.",
+      "sites": [
+        "Jiuzhaigou",
+        "Huanglong"
+      ],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "id": "gannan",
+      "region_key": "CHN:623000",
+      "city": "Gannan Tibetan Autonomous Prefecture",
+      "country": "China",
+      "country_code": "CHN",
+      "scope": "china",
+      "adcode": 623000,
+      "lat": 34.9833,
+      "lng": 102.911,
+      "arrival": "",
+      "description": "",
+      "sites": [],
+      "photos": [
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "src": "",
+          "alt": "",
+          "caption": ""
+        }
+      ]
     }
   ],
   "pending_places": [
