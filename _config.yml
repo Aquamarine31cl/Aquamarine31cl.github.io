@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "https://s41.ax1x.com/2026/02/14/pZLiMhF.jpg"
+  avatar           : "yuanpeng-avatar.jpg"
   name             : "Yuanpeng Ye"
   pronouns         : "Pedro"  
   bio              : "The flowing water does not race, but its persistence is unending."

@@ -254,3 +254,12 @@ html[data-theme="dark"] .home-page .page__content .honor-distinction {color:#cfb
 html[data-theme="dark"] body {isolation:isolate;background-color:#090919;background-image:none;}
 html[data-theme="dark"] body::before {content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-color:#090919;background-image:url("../../images/nebula-field.svg"),radial-gradient(ellipse at 6% 12%,rgba(112,65,196,.40),transparent 52%),radial-gradient(ellipse at 94% 34%,rgba(63,152,177,.25),transparent 48%),radial-gradient(ellipse at 62% 95%,rgba(163,65,142,.28),transparent 50%);background-size:cover,auto,auto,auto;background-repeat:no-repeat;background-position:center top;}
 @media print{html[data-theme="dark"] body::before{display:none;}}
+
+/* Slow composited nebula drift, with a separate field of twinkling stars. */
+html[data-theme="dark"] body::before{inset:-4%;animation:cosmic-nebula-drift 38s ease-in-out infinite alternate;will-change:transform;}
+html[data-theme="dark"] body::after{content:"";position:fixed;inset:-3%;z-index:-1;pointer-events:none;background-image:radial-gradient(circle at 13% 18%,#e5d4ff 0 1px,transparent 2px),radial-gradient(circle at 77% 35%,#bceaff 0 1px,transparent 2px),radial-gradient(circle at 44% 79%,#e0c7ff 0 1.3px,transparent 2.4px);background-size:311px 283px,463px 397px,577px 461px;animation:cosmic-star-drift 26s ease-in-out infinite alternate;opacity:.45;}
+@keyframes cosmic-nebula-drift{from{transform:translate3d(-1%,-.5%,0) scale(1.02);}to{transform:translate3d(1%,1%,0) scale(1.055);}}
+@keyframes cosmic-star-drift{0%{transform:translate3d(0,0,0);opacity:.25;}50%{opacity:.65;}100%{transform:translate3d(1%,-1.5%,0);opacity:.4;}}
+.author__avatar img{display:block;width:100%;max-width:175px;aspect-ratio:1;object-fit:cover;object-position:center;border-radius:50%;}
+@media(prefers-reduced-motion:reduce){html[data-theme="dark"] body::before,html[data-theme="dark"] body::after{animation:none;will-change:auto;}}
+@media print{html[data-theme="dark"] body::before,html[data-theme="dark"] body::after{display:none;}}

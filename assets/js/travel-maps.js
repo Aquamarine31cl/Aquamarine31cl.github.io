@@ -1,42 +1,43 @@
 (() => {
 'use strict';
-const root = document.querySelector('.travel-atlas'); if (!root) return;
-const statuses = root.querySelectorAll('[data-status]');
-const fail = () => statuses.forEach(el => { el.textContent = 'The map could not load. Please refresh and try again.'; });
-if (!window.L) { fail(); return; }
-const text = value => String(value == null ? '' : value);
-const popup = (title, note, year) => { const box = document.createElement('div'); const heading = document.createElement('strong'); heading.textContent = title; box.append(heading); [year, note].filter(Boolean).forEach(value => { const line = document.createElement('p'); line.textContent = text(value); box.append(line); }); return box; };
-const validCity = c => c && typeof c.name === 'string' && Number.isFinite(c.lat) && Number.isFinite(c.lng) && Math.abs(c.lat) <= 90 && Math.abs(c.lng) <= 180;
-const unique = values => [...new Map(values.map(v => [v.region_key || (v.name.toLowerCase() + ':' + v.lat + ':' + v.lng), v])).values()];
-(async () => {
-try {
- const data = JSON.parse(document.getElementById('travel-data').dataset.json);
- const response = await fetch(root.dataset.worldUrl); if (!response.ok) throw Error('Map unavailable'); const geo = await response.json();
- const journeys = (data.journeys || []).map(j => ({region_key:j.region_key,name:j.city,lat:j.lat,lng:j.lng,country:j.country,country_code:j.country_code,year:j.arrival,note:j.description,scope:j.scope}));
- const china = unique([...(data.china_cities || []), ...journeys.filter(j=>j.scope==='china')].filter(validCity));
- const world = unique([...(data.world_cities || []), ...china, ...journeys.filter(j=>j.scope==='world')].filter(validCity));
-  const countryRecords = new Map((data.world_countries || []).filter(c => c && /^[A-Z]{3}$/.test(c.code)).map(c => [c.code,c]));
- world.forEach(c => { if (/^[A-Z]{3}$/.test(c.country_code) && !countryRecords.has(c.country_code)) countryRecords.set(c.country_code,{name:c.country || c.country_code,code:c.country_code}); });
- for (const id of ['china','world']) {
-  const cities = id === 'china' ? china : world;
-  const map = L.map('travel-map-' + id, {scrollWheelZoom:false, minZoom:1, maxZoom:8, zoomSnap:0.25, worldCopyJump:false});
-  map.attributionControl.addAttribution('Map data: <a href="https://www.naturalearthdata.com/">Natural Earth</a>');
-  const reset = () => id === 'china' ? map.fitBounds([[18,73],[54,135]],{padding:[15,15],animate:false}) : map.fitBounds([[-55,-175],[80,175]],{padding:[10,10],animate:false}); reset();
-  const baseStyle = f => { const active = id === 'china' ? f.properties.code === 'CHN' : countryRecords.has(f.properties.code); return {color:active ? '#d2c3ff' : '#7f86ad',weight:active ? 1.1 : .7,fillColor:active ? '#a995ee' : '#343750',fillOpacity:active ? .85 : .8}; };
-  const countries = L.geoJSON(geo,{style:baseStyle,onEachFeature:(feature,layer) => {
-   layer.bindTooltip(feature.properties.name,{sticky:true});
-   if (id === 'world') { const visit = countryRecords.get(feature.properties.code);layer.bindPopup(popup(feature.properties.name,visit ? visit.note || 'Visited' : 'No visits recorded.',visit && visit.year)); }
-   layer.on('mouseover',()=>layer.setStyle({weight:1.5,color:'#d2c3ff'}));layer.on('mouseout',()=>countries.resetStyle(layer));
-  }}).addTo(map);
-  const list = root.querySelector('[data-places="' + id + '"]');
-  cities.forEach(city => { const marker = L.marker([city.lat,city.lng],{icon:L.divIcon({className:'travel-pin',html:'<span></span>',iconSize:[18,18],iconAnchor:[9,9]}),title:city.name,keyboard:true}).addTo(map).bindPopup(popup(city.name,city.note,city.year));const button=document.createElement('button');button.type='button';button.textContent=city.name;button.addEventListener('click',()=>{map.setView([city.lat,city.lng],Math.max(map.getZoom(),4),{animate:!window.matchMedia('(prefers-reduced-motion: reduce)').matches});marker.openPopup();});list.append(button); });
-  if (id === 'world') countryRecords.forEach(country => { const button=document.createElement('button');button.type='button';button.textContent=country.name || country.code;button.addEventListener('click',()=>{let found=false;countries.eachLayer(layer=>{if(layer.feature.properties.code===country.code){found=true;map.fitBounds(layer.getBounds(),{maxZoom:4,animate:false});layer.openPopup();}});if(!found){const city=cities.find(c=>c.country_code===country.code);if(city){map.setView([city.lat,city.lng],5,{animate:false});L.popup().setLatLng([city.lat,city.lng]).setContent(popup(country.name || country.code,'Visited')).openOn(map);}}});list.append(button); });
-  root.querySelector('[data-count="'+id+'"]').textContent=id==='china' ? cities.length+' destinations' : countryRecords.size+' countries · '+cities.length+' destinations';
-  root.querySelector('[data-status="'+id+'"]').textContent=cities.length || (id==='world' && countryRecords.size) ? 'Select a marker or place below to explore. Drag to pan; use + / − to zoom.' : 'No visits recorded yet. Drag to explore; use + / − to zoom.';
-  const resetButton=root.querySelector('[data-reset="'+id+'"]');resetButton.disabled=false;resetButton.addEventListener('click',reset);
-  if ('ResizeObserver' in window) new ResizeObserver(()=>map.invalidateSize()).observe(map.getContainer());
- }
- root.dataset.ready='true';
-} catch(error) { fail(); }
-})();
+const root=document.querySelector('.travel-atlas');if(!root)return;
+const data=JSON.parse(document.getElementById('travel-data').dataset.json);
+const reduced=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const popup=(title,note)=>{const box=document.createElement('div');const h=document.createElement('strong');h.textContent=title;box.append(h);if(note){const p=document.createElement('p');p.textContent=note;box.append(p);}return box;};
+const load=async url=>{const r=await fetch(url);if(!r.ok)throw Error('Map unavailable');return r.json();};
+const journeys=data.journeys||[];
+async function render(id){
+const status=root.querySelector('[data-status="'+id+'"]');
+try{
+if(!window.L)throw Error('Map library unavailable');
+const cities=journeys.filter(j=>j.scope===(id==='china'?'china':'world'));
+const list=root.querySelector('[data-places="'+id+'"]');
+const map=L.map('travel-map-'+id,{scrollWheelZoom:false,minZoom:1,maxZoom:10,zoomSnap:.25});
+map.attributionControl.addAttribution(id==='china'?'Boundaries: <a href="https://datav.aliyun.com/portal/school/atlas/area_selector">DataV GeoAtlas</a>':'Map data: <a href="https://www.naturalearthdata.com/">Natural Earth</a>');
+const reset=()=>map.fitBounds(id==='china'?[[3,73],[54,136]]:[[-55,-175],[80,175]],{padding:[12,12],animate:false});reset();
+const button=(name,action)=>{const b=document.createElement('button');b.type='button';b.textContent=name;b.addEventListener('click',action);list.append(b);};
+if(id==='china'){
+const [regions,outline]=await Promise.all([load(root.dataset.chinaUrl),load(root.dataset.outlineUrl)]);
+const visited=new Map(cities.map(j=>[Number(j.adcode),j]));const layers=new Map();
+const style=f=>({color:'#525b70',weight:.55,fillColor:visited.has(f.properties.adcode)?'#b39af4':'#49515f',fillOpacity:visited.has(f.properties.adcode)?.94:.85});
+const areas=L.geoJSON(regions,{style,onEachFeature:(f,layer)=>{const visit=visited.get(f.properties.adcode);layer.options.className=visit?'visited-prefecture':'unvisited-prefecture';layers.set(f.properties.adcode,layer);layer.bindTooltip(visit?visit.city:'Not yet visited',{sticky:true});layer.bindPopup(popup(visit?visit.city:'Not yet visited',visit&&visit.description));layer.on('mouseover',()=>layer.setStyle({weight:1.5,color:'#ece0ff'}));layer.on('mouseout',()=>areas.resetStyle(layer));}}).addTo(map);
+L.geoJSON(outline,{interactive:false,style:{color:'#e9d9ff',weight:2,fill:false,opacity:1,className:'china-outer-outline'}}).addTo(map);
+cities.forEach(city=>button(city.city,()=>{const layer=layers.get(Number(city.adcode));if(layer){map.fitBounds(layer.getBounds(),{maxZoom:7,animate:!reduced()});layer.openPopup();}}));
+root.querySelector('[data-count="china"]').textContent=visited.size+' destinations';
+root.dataset.chinaVisited=visited.size;
+}else{
+const geo=await load(root.dataset.worldUrl);const countries=new Map((data.world_countries||[]).map(c=>[c.code,c]));const layers=new Map();
+const style=f=>({color:'#6d7588',weight:.7,fillColor:countries.has(f.properties.code)?'#b39af4':'#49515f',fillOpacity:countries.has(f.properties.code)?.95:.85});
+const areas=L.geoJSON(geo,{style,onEachFeature:(f,layer)=>{const visited=countries.has(f.properties.code);layers.set(f.properties.code,layer);layer.bindTooltip(f.properties.name,{sticky:true});layer.bindPopup(popup(f.properties.name,visited?'Visited':'Not yet visited'));layer.on('mouseover',()=>layer.setStyle({weight:1.5,color:'#ece0ff'}));layer.on('mouseout',()=>areas.resetStyle(layer));}}).addTo(map);
+countries.forEach(c=>button(c.name,()=>{const layer=layers.get(c.code);if(layer){map.fitBounds(layer.getBounds(),{maxZoom:7,animate:false});layer.openPopup();}}));
+cities.forEach(city=>{if(!Number.isFinite(city.lat)||!Number.isFinite(city.lng))return;const marker=L.marker([city.lat,city.lng],{icon:L.divIcon({className:'travel-pin',html:'<span></span>',iconSize:[18,18],iconAnchor:[9,9]}),title:city.city}).addTo(map).bindPopup(popup(city.city,city.description));button(city.city,()=>{map.setView([city.lat,city.lng],5,{animate:!reduced()});marker.openPopup();});});
+root.querySelector('[data-count="world"]').textContent=countries.size+' countries · '+cities.length+' destinations';
+root.dataset.worldVisited=countries.size;
+}
+status.textContent='Visited regions glow in lavender; unvisited regions remain gray. Select a region or place to explore.';
+const resetButton=root.querySelector('[data-reset="'+id+'"]');resetButton.disabled=false;resetButton.addEventListener('click',reset);
+if('ResizeObserver' in window)new ResizeObserver(()=>map.invalidateSize()).observe(map.getContainer());
+}catch(error){status.textContent='The map could not load. Please refresh and try again.';}
+}
+Promise.all([render('china'),render('world')]);
 })();

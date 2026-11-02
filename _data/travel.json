@@ -275,7 +275,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:hong-kong"
+      "region_key": "CHN:hong-kong",
+      "adcode": 810000
     },
     {
       "id": "macao",
@@ -304,7 +305,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:macao"
+      "region_key": "CHN:macao",
+      "adcode": 820000
     },
     {
       "id": "shanghai",
@@ -333,7 +335,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:shanghai"
+      "region_key": "CHN:shanghai",
+      "adcode": 310000
     },
     {
       "id": "suzhou",
@@ -362,7 +365,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:suzhou"
+      "region_key": "CHN:suzhou",
+      "adcode": 320500
     },
     {
       "id": "nanjing",
@@ -391,7 +395,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:nanjing"
+      "region_key": "CHN:nanjing",
+      "adcode": 320100
     },
     {
       "id": "shenzhen",
@@ -420,7 +425,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:shenzhen"
+      "region_key": "CHN:shenzhen",
+      "adcode": 440300
     },
     {
       "id": "zhuhai",
@@ -449,7 +455,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:zhuhai"
+      "region_key": "CHN:zhuhai",
+      "adcode": 440400
     },
     {
       "id": "hangzhou",
@@ -478,7 +485,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:hangzhou"
+      "region_key": "CHN:hangzhou",
+      "adcode": 330100
     },
     {
       "id": "wuxi",
@@ -507,7 +515,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:wuxi"
+      "region_key": "CHN:wuxi",
+      "adcode": 320200
     },
     {
       "id": "hefei",
@@ -536,7 +545,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:hefei"
+      "region_key": "CHN:hefei",
+      "adcode": 340100
     },
     {
       "id": "changzhou",
@@ -565,7 +575,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:changzhou"
+      "region_key": "CHN:changzhou",
+      "adcode": 320400
     },
     {
       "id": "zhenjiang",
@@ -594,7 +605,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:zhenjiang"
+      "region_key": "CHN:zhenjiang",
+      "adcode": 321100
     },
     {
       "id": "yangzhou",
@@ -623,7 +635,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:yangzhou"
+      "region_key": "CHN:yangzhou",
+      "adcode": 321000
     },
     {
       "id": "ningbo",
@@ -652,7 +665,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:ningbo"
+      "region_key": "CHN:ningbo",
+      "adcode": 330200
     },
     {
       "id": "shaoxing",
@@ -681,7 +695,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:shaoxing"
+      "region_key": "CHN:shaoxing",
+      "adcode": 330600
     },
     {
       "id": "beijing",
@@ -710,7 +725,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:beijing"
+      "region_key": "CHN:beijing",
+      "adcode": 110000
     },
     {
       "id": "qingdao",
@@ -739,7 +755,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:qingdao"
+      "region_key": "CHN:qingdao",
+      "adcode": 370200
     },
     {
       "id": "jinan",
@@ -768,7 +785,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:jinan"
+      "region_key": "CHN:jinan",
+      "adcode": 370100
     },
     {
       "id": "chengdu",
@@ -797,7 +815,8 @@
           "caption": ""
         }
       ],
-      "region_key": "CHN:chengdu"
+      "region_key": "CHN:chengdu",
+      "adcode": 510100
     },
     {
       "id": "haidong",
@@ -829,7 +848,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 630200
     },
     {
       "id": "changji",
@@ -861,7 +881,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 652300
     },
     {
       "id": "ili",
@@ -896,7 +917,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 654000
     },
     {
       "id": "bortala",
@@ -928,7 +950,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 652700
     },
     {
       "id": "xian",
@@ -958,7 +981,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 610100
     },
     {
       "id": "yanan",
@@ -990,7 +1014,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 610600
     },
     {
       "id": "dalian",
@@ -1020,7 +1045,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 210200
     },
     {
       "id": "dandong",
@@ -1050,7 +1076,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 210600
     },
     {
       "id": "harbin",
@@ -1080,7 +1107,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 230100
     },
     {
       "id": "shenyang",
@@ -1110,7 +1138,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 210100
     },
     {
       "id": "changchun",
@@ -1140,7 +1169,8 @@
           "alt": "",
           "caption": ""
         }
-      ]
+      ],
+      "adcode": 220100
     }
   ],
   "pending_places": [

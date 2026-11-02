@@ -4,3 +4,14 @@ https://github.com/nvkelso/natural-earth-vector
 Properties reduced to English names and ADM0_A3 codes.
 Local presentation adjustment: Taiwan polygon grouped into the China (CHN) MultiPolygon, sharing its label and styling; no coordinates relocated.
 This is a low-resolution travel overview, not a street map.
+
+China prefecture boundaries and national outline: DataV GeoAtlas (areas_v3), retrieved 2026-11-02.
+https://datav.aliyun.com/portal/school/atlas/area_selector
+https://geo.datav.aliyun.com/areas_v3/bound/100000.json
+https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json
+Provincial *_full.json files combined into 370 display regions; municipalities and Hong Kong/Macao/Taiwan kept as their own regions. Properties reduced to codes and English display labels; original geometry retained.
+Singapore geometry: Natural Earth 1:50m Admin 0 Countries, public domain.
+https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson
+CSS background animation technique references:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
