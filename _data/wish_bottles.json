@@ -1,0 +1,18 @@
+{
+  "bottles": [
+    {
+      "id": "expected",
+      "label": "Expected Awards",
+      "value": 127306,
+      "capacity": 135306,
+      "liquid_y": 50.8
+    },
+    {
+      "id": "held",
+      "label": "Held Funds",
+      "value": 136170,
+      "capacity": 180000,
+      "liquid_y": 86.4
+    }
+  ]
+}

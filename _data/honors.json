@@ -50,9 +50,10 @@
       "kind": "honor",
       "level": "provincial",
       "featured": true,
-      "image": "",
-      "image_alt": "",
-      "image_orientation": "portrait"
+      "image": "/images/honors/1.png",
+      "image_alt": "Shanghai Outstanding Graduate certificate",
+      "image_orientation": "portrait",
+      "image_preview": "/images/honors/1-preview.webp"
     },
     {
       "id": "award-03",
@@ -63,9 +64,10 @@
       "kind": "honor",
       "level": "university",
       "featured": true,
-      "image": "",
-      "image_alt": "",
-      "image_orientation": "portrait"
+      "image": "/images/honors/2.png",
+      "image_alt": "Tongji University Academic Star Pacemaker certificate",
+      "image_orientation": "portrait",
+      "image_preview": "/images/honors/2-preview.webp"
     },
     {
       "id": "award-04",
@@ -136,9 +138,10 @@
       "kind": "competition",
       "level": "international-national",
       "featured": true,
-      "image": "",
-      "image_alt": "",
-      "image_orientation": "landscape"
+      "image": "/images/honors/3.png",
+      "image_alt": "Third Prize certificate for the 19th Challenge Cup",
+      "image_orientation": "landscape",
+      "image_preview": "/images/honors/3-preview.webp"
     },
     {
       "id": "award-12",
