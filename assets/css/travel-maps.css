@@ -22,13 +22,7 @@
 .travel-city-grid .city-stop-footer .city-stop-details{margin-top:0;}
 
 
-/* Decorative stars are a screen overlay, not additional destination markers. */
-.travel-map-stardust{position:absolute;inset:0;pointer-events:none;z-index:450;opacity:.55;background-image:radial-gradient(circle at 8% 18%,#ffe8a8 0 1px,transparent 2px),radial-gradient(circle at 31% 72%,#f4cc7a 0 .7px,transparent 2px),radial-gradient(circle at 68% 14%,#ffe6a4 0 1px,transparent 2px),radial-gradient(circle at 90% 79%,#ffd98d 0 1px,transparent 2px);background-size:173px 157px,241px 211px,293px 179px,319px 263px;animation:atlas-stars 7s ease-in-out infinite;}
-.travel-gold-dot{background:none;border:0;pointer-events:none!important;}
-.travel-gold-dot span{display:block;width:5px;height:5px;margin:3.5px;border-radius:50%;background:#ffe3a0;box-shadow:0 0 5px #ffe3a0,0 0 11px #e9b95c;animation:atlas-stars 3.7s ease-in-out infinite;}
-.travel-pin span{background:#ffe3a0!important;box-shadow:0 0 6px #ffe3a0,0 0 13px #e9b95c!important;}
-@keyframes atlas-stars{0%,100%{opacity:.4;}50%{opacity:.95;}}
-@media(prefers-reduced-motion:reduce){.travel-map-stardust,.travel-gold-dot span{animation:none;}}
+.travel-map-stardust{position:absolute;inset:0;pointer-events:none!important;z-index:450;background:transparent!important;}
 
 .city-journey{scroll-margin-block:110px;}
 .travel-city-grid .city-journey[data-map-highlight]{border-color:#f3cc7b!important;box-shadow:0 0 0 2px #f3cc7b88,0 0 28px #d5a74655!important;background:linear-gradient(145deg,#cda85426,#ac90dc18)!important;transition:border-color .3s ease,box-shadow .3s ease;}
