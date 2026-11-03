@@ -1,0 +1,65 @@
+{
+  "title": "Online Posts",
+  "intro": "Rhythm, precision and the joy of one more attempt. A collection of gaming videos shared on my Bilibili channel.",
+  "profile": "https://space.bilibili.com/333660376",
+  "groups": [
+    {
+      "id": "cheetah",
+      "title": "Cheetah Games · Including Minimax",
+      "intro": "Rolling Sky and Dancing Line share a fascination with music, movement and precise timing. This collection brings the Cheetah and Minimax eras together under one category.",
+      "games": [
+        {
+          "id": "rolling-sky",
+          "title": "Rolling Sky",
+          "tag": "RHYTHM / REACTION",
+          "image": "/images/online-posts/rolling-sky.svg",
+          "alt": "Illustration of a glowing ball rolling along a suspended geometric track",
+          "lead": "A Moving World, One Precise Line.",
+          "description": "Steer a rolling ball left and right along suspended tracks, avoiding obstacles as the music drives the pace. Changing scenery and patterned hazards turn a short run into a test of anticipation, route memory and steady control.",
+          "focus": "Watch the relationship between the soundtrack, obstacle patterns and small corrections in the ball’s path.",
+          "source": "https://apps.apple.com/us/app/rolling-sky/id1036661603",
+          "source_label": "Official App Store Description"
+        },
+        {
+          "id": "dancing-line",
+          "title": "Dancing Line",
+          "tag": "MUSIC / TIMING",
+          "image": "/images/online-posts/dancing-line.svg",
+          "alt": "Illustration of a luminous zigzag line crossing floating landscapes to musical notes",
+          "lead": "Listen for the Next Turn.",
+          "description": "Guide a continuously moving line through changing landscapes by tapping at the right moment to turn. Music is more than a backdrop: the rhythm helps anticipate corners, while the scenery unfolds around the route.",
+          "focus": "Listen to the musical cues and watch how the turns connect into one continuous performance.",
+          "source": "https://apps.apple.com/cn/app/id1177953618",
+          "source_label": "Official App Store Description"
+        }
+      ]
+    },
+    {
+      "id": "mario",
+      "title": "Mario Series",
+      "intro": "A separate home for platforming adventures: movement, discovery and the pleasure of learning a level.",
+      "games": [
+        {
+          "id": "mario-series",
+          "title": "Mario Series",
+          "tag": "PLATFORMING / EXPLORATION",
+          "image": "/images/online-posts/mario-series.svg",
+          "alt": "Platforming-inspired illustration with a red cap, green pipe, golden coins and floating blocks",
+          "lead": "Every Jump Has a Little Story.",
+          "description": "Mario’s platforming adventures combine running and jumping with imaginative stages, power-ups and hidden discoveries. From carefully timed landings to choosing a route through a level, the appeal lies in responsive movement and playful exploration.",
+          "focus": "Look for jump timing, momentum, route choices and the small discoveries along the way.",
+          "source": "https://mario.nintendo.com/",
+          "source_label": "Official Mario Website"
+        }
+      ]
+    }
+  ],
+  "radio": {
+    "title": "Music & Radio",
+    "name": "My NetEase Cloud Music Radio",
+    "intro": "A space for the sounds I share beyond the screen. Visit my NetEase Cloud Music radio to explore the programmes available on the channel.",
+    "url": "https://music.163.com/djradio?id=791847462",
+    "image": "/images/online-posts/radio.svg",
+    "alt": "Editorial illustration of a radio dial, headphones and a glowing sound wave"
+  }
+}

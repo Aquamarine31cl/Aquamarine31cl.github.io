@@ -3,6 +3,12 @@ layout: default
 ---
 
 {% include base_path %}
+{% assign full_page_locked = false %}
+{% if page.collection == 'publications' or page.collection == 'talks' %}
+ {% assign preview_collection = site[page.collection] | sort: 'date' | reverse %}
+ {% assign preview_first = preview_collection | first %}
+ {% if page.url != preview_first.url %}{% assign full_page_locked = true %}{% endif %}
+{% endif %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
@@ -46,7 +52,8 @@ layout: default
         </header>
       {% endunless %}
 
-      <section class="page__content" itemprop="text">
+      {% if full_page_locked %}<section class="daily-access-prompt" data-daily-prompt><h2>Explore the Full Collection</h2><p>Enter the access code to read this item.</p><button type="button" data-open-access>Unlock This Item</button></section>{% endif %}
+      <section {% if full_page_locked %}data-protected-section hidden{% endif %} class="page__content" itemprop="text">
         {% if page.publication_key %}{% include publication-metadata.html item=page %}{% endif %}
         {% include academic-figure.html item=page %}
         {% if page.publication_key %}<h2>Abstract</h2>{% endif %}

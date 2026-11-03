@@ -1,5 +1,5 @@
 {% include base_path %}
-<div class="list__item academic-list-item">
+<div {% unless forloop.first %}data-preview-item{% endunless %} class="list__item academic-list-item">
   <article class="archive__item academic-card" itemscope itemtype="http://schema.org/CreativeWork">
     <div class="academic-card-visual">{% include academic-figure.html item=post %}</div>
     <div class="academic-card-copy">

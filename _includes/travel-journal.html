@@ -1,8 +1,8 @@
 <section class="travel-journal" aria-labelledby="travel-journal-heading">
 <header class="travel-journal-header"><p class="cosmic-eyebrow">A JOURNAL OF PLACES</p><h3 id="travel-journal-heading">Places & Little Discoveries.</h3><p>Three frames from each destination. Select a number to browse the photographs.</p></header>
-<div class="travel-city-grid">
+<div class="travel-city-grid" data-preview-list>
 {% for journey in site.data.travel.journeys %}
-<article class="city-journey" id="journey-{{ journey.id | escape }}" aria-labelledby="city-heading-{{ journey.id | escape }}">
+<article {% unless forloop.first %}data-preview-item{% endunless %} class="city-journey" id="journey-{{ journey.id | escape }}" aria-labelledby="city-heading-{{ journey.id | escape }}">
 <div class="city-heading-copy"><p class="cosmic-eyebrow">{{ journey.country | escape }}</p><h4 id="city-heading-{{ journey.id | escape }}">{{ journey.city | escape }}</h4></div>
 <div class="city-photo-gallery" data-photo-gallery>
 <div class="city-photo-stage">

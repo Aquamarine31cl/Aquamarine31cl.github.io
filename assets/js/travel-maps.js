@@ -9,6 +9,7 @@ const journeys=data.journeys||[];
 let highlightTimer;
 const revealJourney=city=>{
  const card=document.getElementById('journey-'+city.id);if(!card)return;
+ if(card.hasAttribute('data-preview-item')&&!document.documentElement.hasAttribute('data-access-unlocked')){document.dispatchEvent(new CustomEvent('site-access-request',{detail:{resume:()=>revealJourney(city)}}));return;}
  root.ownerDocument.querySelectorAll('[data-map-highlight]').forEach(el=>el.removeAttribute('data-map-highlight'));
  clearTimeout(highlightTimer);card.setAttribute('data-map-highlight','');
  card.setAttribute('tabindex','-1');card.focus({preventScroll:true});
@@ -91,7 +92,7 @@ const list=root.querySelector('[data-places="'+id+'"]');
 const map=L.map('travel-map-'+id,{scrollWheelZoom:false,doubleClickZoom:false,minZoom:1,maxZoom:10,zoomSnap:.25});
 map.attributionControl.addAttribution(id==='china'?'Boundaries: <a href="https://datav.aliyun.com/portal/school/atlas/area_selector">DataV GeoAtlas</a>':'Map data: <a href="https://www.naturalearthdata.com/">Natural Earth</a>');
 const reset=()=>map.fitBounds(id==='china'?[[3,73],[54,136]]:[[-55,-175],[80,175]],{padding:[12,12],animate:false});reset();
-const button=(name,action)=>{const b=document.createElement('button');b.type='button';b.textContent=name;b.addEventListener('click',action);list.append(b);return b;};
+const button=(name,action)=>{const b=document.createElement('button');b.type='button';b.textContent=name;if(list.querySelector('button'))b.setAttribute('data-preview-item','');b.addEventListener('click',action);list.append(b);return b;};
 if(id==='china'){
 const [regions,outline]=await Promise.all([load(root.dataset.chinaUrl),load(root.dataset.outlineUrl)]);
 const visited=new Map(cities.map(j=>[Number(j.adcode),j]));const layers=new Map();
@@ -117,5 +118,8 @@ const resetButton=root.querySelector('[data-reset="'+id+'"]');resetButton.disabl
 if('ResizeObserver' in window)new ResizeObserver(()=>map.invalidateSize()).observe(map.getContainer());
 }catch(error){status.textContent='The map could not load. Please refresh and try again.';}
 }
-Promise.all([render('china'),render('world')]);
+render('china');
+let worldStarted=false;
+const startWorld=()=>{if(!worldStarted&&document.documentElement.hasAttribute('data-access-unlocked')){worldStarted=true;render('world');}};
+document.addEventListener('site-access-changed',startWorld);startWorld();
 })();
