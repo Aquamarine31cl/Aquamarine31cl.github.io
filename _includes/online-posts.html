@@ -1,6 +1,6 @@
 {% assign online = site.data.online_posts %}
 <section class="online-posts" id="online-posts" aria-labelledby="online-heading">
-<header class="online-header"><p class="cosmic-eyebrow">PLAY / LISTEN / SHARE</p><h2 id="online-heading">{{ online.title }}</h2><p>{{ online.intro }}</p><a class="online-channel" href="#access-dialog" data-access-kind="external" data-protected-href="{{ online.profile }}" target="_blank" rel="noopener noreferrer">Visit My Bilibili Channel ↗</a></header>
+<header class="online-header"><p class="cosmic-eyebrow">PLAY / LISTEN / SHARE</p>{% if page.online_posts %}<h1 id="online-heading">{{ online.title }}</h1>{% else %}<h2 id="online-heading">{{ online.title }}</h2>{% endif %}<p>{{ online.intro }}</p><a class="online-channel" href="#access-dialog" data-access-kind="external" data-protected-href="{{ online.profile }}" target="_blank" rel="noopener noreferrer">Visit My Bilibili Channel ↗</a></header>
 <nav class="online-categories" aria-label="Online post categories">{% for group in online.groups %}<a href="#online-{{ group.id }}">{{ group.title }}</a>{% endfor %}<a href="#online-radio">Music & Radio</a></nav>
 {% for group in online.groups %}<section class="online-group" id="online-{{ group.id }}"><header><p class="cosmic-eyebrow">GAME COLLECTION / {{ forloop.index | prepend: '0' }}</p><h3>{{ group.title }}</h3><p>{{ group.intro }}</p></header>
 <div class="online-game-grid" data-preview-list>{% for game in group.games %}<article {% unless forloop.first %}data-preview-item{% endunless %} class="online-game">

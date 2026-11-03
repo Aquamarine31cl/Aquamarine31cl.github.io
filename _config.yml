@@ -11,7 +11,7 @@ locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "A Fabulous Space"
 title_separator          : "-"
-name                     : &name "Yuanpeng Ye"
+name                     : &name "Aquamarine"
 description              : &description "What can I say"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://aquamarine31cl.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
@@ -24,7 +24,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "yuanpeng-avatar.jpg"
-  name             : "Yuanpeng Ye"
+  name             : "Aquamarine"
   pronouns         : "Pedro"  
   bio              : "The flowing water does not race, but its persistence is unending."
   location         : "Shanghai, China"

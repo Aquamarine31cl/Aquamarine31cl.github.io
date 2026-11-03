@@ -6,7 +6,35 @@ const form=dialog.querySelector('form'),input=dialog.querySelector('input'),feed
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
 let unlocked=false,pending=null,trigger=null,resume=null;
 try{unlocked=sessionStorage.getItem(key)===expected;}catch{}
+
+// Render the public alias initially; restore the owner's name only in an unlocked tab.
+const publicName='Aquamarine';
+const privateName=String.fromCharCode(89,117,97,110,112,101,110,103,32,89,101);
+const namePattern=/\bAquamarine\b/g;
+function applyNames(){
+ const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(node){
+  return node.parentElement?.closest('script,style,textarea,[data-name-private]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
+ }});
+ while(walker.nextNode()){
+  const node=walker.currentNode;
+  const text=unlocked?node.data.replace(namePattern,privateName):node.data.split(privateName).join(publicName);
+  if(node.data!==text)node.data=text;
+ }
+ document.querySelectorAll('[alt],[title],[aria-label],meta[content]').forEach(el=>{
+  if(el.closest('[data-name-private]'))return;
+  for(const attr of ['alt','title','aria-label','content']){
+   if(!el.hasAttribute(attr))continue;
+   const old=el.getAttribute(attr),next=unlocked?old.replace(namePattern,privateName):old.split(privateName).join(publicName);
+   if(old!==next)el.setAttribute(attr,next);
+  }
+ });
+ const baseTitle=window.aquamarinePublicationTitle?(unlocked?window.aquamarinePublicationTitle:'Publications'):document.title;
+ const title=unlocked?baseTitle.replace(namePattern,privateName):baseTitle.split(privateName).join(publicName);
+ if(document.title!==title)document.title=title;
+}
+
 function apply(){
+ applyNames();
  document.documentElement.toggleAttribute('data-access-unlocked',unlocked);
  document.querySelectorAll('.preview-access-prompt').forEach(el=>el.hidden=unlocked);
  document.querySelectorAll('[data-protected-href]').forEach(a=>{
@@ -68,7 +96,7 @@ function previews(){
 }
 previews();
 let previewScheduled=false;
-new MutationObserver(()=>{if(!previewScheduled){previewScheduled=true;requestAnimationFrame(()=>{previewScheduled=false;previews();});}}).observe(document.body,{childList:true,subtree:true});
+new MutationObserver(()=>{if(!previewScheduled){previewScheduled=true;requestAnimationFrame(()=>{previewScheduled=false;previews();applyNames();});}}).observe(document.body,{childList:true,subtree:true});
 document.addEventListener('site-access-request',e=>{
  if(unlocked){e.detail.resume();return;}
  pending=null;resume=e.detail.resume;open(document.activeElement);

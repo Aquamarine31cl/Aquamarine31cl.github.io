@@ -56,3 +56,18 @@ html .preview-access-prompt[hidden]{display:none!important;}
 .preview-access-prompt{grid-column:1/-1;list-style:none;padding:18px 0;margin:8px 0;text-align:center;}
 html .preview-access-prompt button{padding:11px 22px;border:1px solid #bfa4df66;border-radius:999px;background:#b69bdf12;color:#cbb8e3;cursor:pointer;font:13px/1.5 'Segoe UI',sans-serif;box-shadow:none;}
 html[data-theme="light"] .preview-access-prompt button{color:#62477b;}
+
+/* A compact, independent visitor card directly below the sidebar bottles. */
+html .sidebar .visitor-corner{display:block;width:100%;box-sizing:border-box;margin:14px 0 0;padding:16px 12px;border-radius:20px;gap:0;}
+html .sidebar .visitor-corner h2{font:600 17px/1.4 'Segoe UI',sans-serif;margin:8px 0 12px;}
+html .sidebar .visitor-corner .cosmic-eyebrow{font-size:8px;line-height:1.6;}
+html .sidebar .visitor-corner p{font-size:11px;line-height:1.7;}
+html .sidebar .visitor-scope{font-size:9px;line-height:1.6;}
+html .sidebar .visitor-controls{margin-top:15px;}
+html .sidebar .visitor-metrics{gap:5px;grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:14px;}
+html .sidebar .visitor-metrics strong,html .sidebar .visitor-metrics time{font-size:17px;}
+html .sidebar .visitor-metrics span{font-size:8px;line-height:1.5;}
+html .sidebar .visitor-heart{font-size:11px;padding:8px 5px;}
+html .sidebar .visitor-unlock{font-size:10px;margin-top:10px;}
+html .sidebar .visitor-heart>span:first-child{font-size:18px;margin-right:3px;}
+@media(max-width:924px){html .sidebar .visitor-corner{max-width:330px;margin:14px auto 0;}}

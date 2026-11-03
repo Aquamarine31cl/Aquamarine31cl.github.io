@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yuanpeng Ye"
+title: "Aquamarine"
 author_profile: true
 home_page: true
 redirect_from: 
@@ -20,4 +20,4 @@ redirect_from:
 
 {% include home-honors.html %}
 
-{% include visitor-corner.html %}
+

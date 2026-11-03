@@ -1,0 +1,22 @@
+
+/* Shared planet artwork: atmosphere, curved bands, directional light and distinct worlds. */
+.experience-art{--planet-texture:url('../../images/planets/dream.svg');--planet-glow:#bcb1e4;isolation:isolate;}
+.experience-art[data-planet="travel"],.experience-section--travel .experience-art{--planet-texture:url('../../images/planets/aurora.svg');--planet-glow:#8edbd0;background:radial-gradient(ellipse at 35% 100%,#598f9550,transparent 75%),#111c2f;}
+.experience-art[data-planet="sports"]{--planet-texture:url('../../images/planets/storm.svg');--planet-glow:#d8b79d;background:radial-gradient(ellipse at 50% 100%,#98685f45,transparent 75%),#201b30;}
+.experience-art[data-planet="moments"],.experience-section--moments .experience-art{background:radial-gradient(ellipse at 60% 110%,#9e7ab64d,transparent 75%),#1b1b32;}
+.experience-art .art-orb{position:absolute!important;width:145px!important;height:145px!important;top:28px!important;left:calc(50% - 72.5px)!important;border-radius:50%!important;z-index:2;transform:rotate(-14deg)!important;background-image:radial-gradient(circle at 28% 22%,#ffffff26 0%,transparent 30%,#080f2740 60%,#060b23df 94%),var(--planet-texture)!important;background-size:100% 100%;box-shadow:inset 2px 1px 5px #ffffff66,inset -10px -6px 15px #05091b99,0 0 2px 1px var(--planet-glow),0 0 25px -8px var(--planet-glow)!important;}
+.experience-art .art-orb:after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--planet-glow);opacity:.15;animation:planet-atmosphere 7s ease-in-out infinite;}
+.experience-art .art-line,.experience-art:after{position:absolute!important;width:260px!important;height:70px!important;left:calc(50% - 130px)!important;top:66px!important;border-radius:50%!important;transform:rotate(-24deg)!important;box-sizing:border-box;background:none!important;clip-path:none;border:11px solid #b3a3c43b!important;box-shadow:0 0 0 3px #a697b41f,inset 0 0 0 3px #bdaec133;z-index:1;}
+.experience-art:after{content:'';pointer-events:none;}
+.experience-art .art-line{z-index:3;clip-path:polygon(-20% 50%,120% 50%,120% 150%,-20% 150%);border-color:#cab9d870!important;}
+.experience-art[data-planet="travel"]:after,.experience-section--travel .experience-art:after{border-width:1px!important;border-color:#a1d8df55!important;box-shadow:none;width:235px!important;left:calc(50% - 117.5px)!important;}
+.experience-art[data-planet="travel"] .art-line,.experience-section--travel .experience-art .art-line{display:none;}
+.experience-art[data-planet="sports"]:after{width:230px!important;height:64px!important;left:calc(50% - 115px)!important;border:1px dashed #e3c5ad44!important;box-shadow:none;transform:rotate(17deg)!important;}
+.experience-art[data-planet="sports"] .art-line{display:none;}
+.art-moon{position:absolute;left:50%;top:98px;width:15px;height:15px;z-index:4;border-radius:50%;background:radial-gradient(circle at 25% 20%,#ede6d7,#a1a4b5 50%,#373c59 90%);box-shadow:0 0 8px #b5c4d326;animation:planet-moon 18s ease-in-out infinite;}
+.experience-art[data-planet="sports"] .art-moon{width:11px;height:11px;animation-delay:-6s;animation-duration:23s;}
+.experience-art[data-planet="moments"] .art-moon{width:9px;height:9px;animation-delay:-12s;animation-duration:26s;}
+.art-dust{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 12% 23%,#dfd5f7 0 1px,transparent 1.5px),radial-gradient(circle at 82% 16%,#dfd5f7 0 1px,transparent 1.5px),radial-gradient(circle at 89% 72%,#dfd5f7 0 .7px,transparent 1.3px),radial-gradient(circle at 20% 82%,#dfd5f7 0 .6px,transparent 1.3px);animation:planet-atmosphere 6s ease-in-out infinite;}
+@keyframes planet-atmosphere{0%,100%{opacity:.2;}50%{opacity:.65;}}
+@keyframes planet-moon{0%,100%{transform:translate(-115px,-29px) scale(.75);}50%{transform:translate(105px,35px) scale(1.05);}}
+@media(prefers-reduced-motion:reduce){.experience-art *{animation:none!important;}.art-moon{transform:translate(100px,20px);}}

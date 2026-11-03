@@ -36,3 +36,6 @@ html[data-theme="light"] .online-header p,html[data-theme="light"] .online-group
 @media(prefers-reduced-motion:reduce){.online-posts *{transition:none!important;transform:none!important;}}
 
 @media(min-width:741px){html:not([data-access-unlocked]) .online-game-grid{grid-template-columns:1fr;}html:not([data-access-unlocked]) .online-game-grid>.online-game:not([data-preview-item]){display:grid;grid-template-columns:1fr 1fr;}}
+
+.online-header h1{font-size:2.4rem;margin:.4rem 0 1rem;}
+@media(max-width:740px){.online-header h1{font-size:2rem;}}

@@ -49,3 +49,23 @@ html .sidebar .wish-bottle::before,html .sidebar .wish-bottle::after{content:non
 .wish-sparks circle:nth-child(6){animation-delay:-1.7s;--drift:-13px;}
 .wish-sparks circle{animation-duration:3.2s;}
 @keyframes wish-caustic{0%,100%{opacity:.08;transform:translateY(1px);}50%{opacity:.3;transform:translateY(-3px);}}
+
+/* Fluorescence is clipped to the liquid; particle glow follows each tiny shape. */
+.wish-liquid{filter:saturate(1.3) drop-shadow(0 0 3px var(--wish-light));}
+.wish-liquid-top{stop-opacity:.94;}
+.wish-liquid-bottom{stop-opacity:.9;}
+.wish-surface{stroke-width:1.8;stroke-opacity:1;filter:drop-shadow(0 0 3px var(--wish-light));}
+.wish-bubble{filter:drop-shadow(0 0 2px var(--wish-light));}
+.wish-sparks>*{fill:var(--wish-light);opacity:0;filter:drop-shadow(0 0 2.5px var(--wish-light));animation:wish-mist 2.6s ease-out infinite;transform-box:fill-box;transform-origin:center;}
+.wish-sparks>:nth-child(2){animation-delay:-.35s;--drift:10px;}
+.wish-sparks>:nth-child(3){animation-delay:-.7s;--drift:-12px;}
+.wish-sparks>:nth-child(4){animation-delay:-1s;--drift:16px;}
+.wish-sparks>:nth-child(5){animation-delay:-1.3s;--drift:-16px;}
+.wish-sparks>:nth-child(6){animation-delay:-1.6s;--drift:7px;}
+.wish-sparks>:nth-child(7){animation-delay:-1.9s;--drift:-7px;}
+.wish-sparks>:nth-child(8){animation-delay:-2.15s;--drift:13px;}
+.wish-sparks>:nth-child(9){animation-delay:-.5s;--drift:-10px;}
+.wish-sparks>:nth-child(10){animation-delay:-1.7s;--drift:12px;}
+.wish-sparks circle{animation-name:wish-mist;animation-duration:2.6s;}
+@keyframes wish-mist{0%{opacity:0;transform:translate(0,0) scale(.4);}12%{opacity:1;transform:translate(0,-5px) scale(1.15);}55%{opacity:.85;}100%{opacity:0;transform:translate(var(--drift,-8px),-43px) scale(.4);}}
+@media(prefers-reduced-motion:reduce){.wish-sparks>*{animation:none!important;opacity:.45;transform:translateY(-10px);}}
