@@ -10,3 +10,6 @@ main:
 
   - title: "Online Posts"
     url: /online-posts/
+
+  - title: "Portfolio"
+    url: /portfolio/
