@@ -19,3 +19,5 @@ redirect_from:
 {% include home-news.html %}
 
 {% include home-honors.html %}
+
+{% include visitor-corner.html %}
