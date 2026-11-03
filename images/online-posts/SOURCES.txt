@@ -1,11 +1,9 @@
-These three SVGs are original gameplay-inspired editorial illustrations, not screenshots or verified frames from the owner's videos.
-Descriptions:
-Rolling Sky: https://apps.apple.com/us/app/rolling-sky/id1036661603
-Dancing Line: https://apps.apple.com/cn/app/id1177953618
-Mario: https://mario.nintendo.com/
-Owner-provided Bilibili profile: https://space.bilibili.com/333660376
-The profile could not be fetched during preparation; no individual video titles, completion totals, game editions, dates or scores are claimed.
-Cheetah Games / Including Minimax is the owner's requested grouping, not a claim that every game's current publisher is Cheetah Mobile.
-
-Owner-provided radio: https://music.163.com/djradio?id=791847462
-Radio metadata could not be fetched; no radio title, programme count, music ownership or track list is inferred. The radio.svg artwork is original editorial illustration.
+Current game cards use downloaded official promotional assets, not generated illustrations.
+rolling-sky-official.webp, dancing-line-official.webp, roller-craft-official.webp: developer screenshots from the official Apple App Store listings.
+rolling-sky-2-official.webp: official Steam store capsule.
+wonder-official.webp, odyssey-official.webp, 3d-world-official.webp: official Nintendo store promotional artwork.
+Exact download URLs: OFFICIAL-SOURCES.json. Store links are included on each card.
+Super Mario 3D World uses official Switch edition artwork that also mentions Bowser's Fury; this does not claim that the owner has uploaded Bowser's Fury footage.
+radio.svg remains an original editorial radio illustration.
+Old generated SVGs remain unused in the repository for reversibility.
+Bilibili video titles could not be read (connection error / API412). Game names were confirmed by the owner. Rolling Sky 2 is marked as upcoming.

@@ -6,31 +6,60 @@
     {
       "id": "cheetah",
       "title": "Cheetah Games · Including Minimax",
-      "intro": "Rolling Sky and Dancing Line share a fascination with music, movement and precise timing. This collection brings the Cheetah and Minimax eras together under one category.",
+      "intro": "Rolling Sky, Dancing Line and Roller Craft bring together rhythm, precision and creativity. Rolling Sky 2 is included as an upcoming addition to my video collection.",
       "games": [
         {
           "id": "rolling-sky",
           "title": "Rolling Sky",
           "tag": "RHYTHM / REACTION",
-          "image": "/images/online-posts/rolling-sky.svg",
-          "alt": "Illustration of a glowing ball rolling along a suspended geometric track",
+          "image": "/images/online-posts/rolling-sky-official.webp",
+          "alt": "Rolling Sky official App Store promotional artwork",
           "lead": "A Moving World, One Precise Line.",
           "description": "Steer a rolling ball left and right along suspended tracks, avoiding obstacles as the music drives the pace. Changing scenery and patterned hazards turn a short run into a test of anticipation, route memory and steady control.",
           "focus": "Watch the relationship between the soundtrack, obstacle patterns and small corrections in the ball’s path.",
           "source": "https://apps.apple.com/us/app/rolling-sky/id1036661603",
-          "source_label": "Official App Store Description"
+          "source_label": "Official App Store Description",
+          "image_source": "https://apps.apple.com/us/app/rolling-sky/id1036661603"
         },
         {
           "id": "dancing-line",
           "title": "Dancing Line",
           "tag": "MUSIC / TIMING",
-          "image": "/images/online-posts/dancing-line.svg",
-          "alt": "Illustration of a luminous zigzag line crossing floating landscapes to musical notes",
+          "image": "/images/online-posts/dancing-line-official.webp",
+          "alt": "Dancing Line official App Store promotional artwork",
           "lead": "Listen for the Next Turn.",
           "description": "Guide a continuously moving line through changing landscapes by tapping at the right moment to turn. Music is more than a backdrop: the rhythm helps anticipate corners, while the scenery unfolds around the route.",
           "focus": "Listen to the musical cues and watch how the turns connect into one continuous performance.",
           "source": "https://apps.apple.com/cn/app/id1177953618",
-          "source_label": "Official App Store Description"
+          "source_label": "Official App Store Description",
+          "image_source": "https://apps.apple.com/cn/app/id1177953618"
+        },
+        {
+          "id": "roller-craft",
+          "title": "Roller Craft",
+          "tag": "RHYTHM / CREATION",
+          "image": "/images/online-posts/roller-craft-official.webp",
+          "alt": "RollerCraft official App Store promotional artwork",
+          "lead": "Roll, Create and Explore.",
+          "description": "Guide a rolling character through obstacle-filled courses, or explore the creative side of the game through its level editor. Precise movement and player-made stages bring together route learning, experimentation and a sense of discovery.",
+          "focus": "Watch the movement through each course and the ideas behind different stage layouts.",
+          "source": "https://apps.apple.com/hk/app/id6502975107",
+          "source_label": "Official App Store",
+          "image_source": "https://apps.apple.com/hk/app/id6502975107"
+        },
+        {
+          "id": "rolling-sky-2",
+          "title": "Rolling Sky 2",
+          "tag": "MUSIC / ADVENTURE",
+          "image": "/images/online-posts/rolling-sky-2-official.webp",
+          "alt": "Rolling Sky 2 official Steam promotional artwork",
+          "lead": "A Journey Carried by Music.",
+          "description": "Rolling Sky 2 combines music and running through changing environments, building its stages around imaginative journeys and a strong sense of rhythm.",
+          "focus": "Videos for this game will be added to the channel later.",
+          "status": "Videos Coming Soon",
+          "source": "https://store.steampowered.com/app/1067440/RollingSky2/",
+          "source_label": "Official Steam Page",
+          "image_source": "https://store.steampowered.com/app/1067440/RollingSky2/"
         }
       ]
     },
@@ -40,16 +69,44 @@
       "intro": "A separate home for platforming adventures: movement, discovery and the pleasure of learning a level.",
       "games": [
         {
-          "id": "mario-series",
-          "title": "Mario Series",
+          "id": "wonder",
+          "title": "Super Mario Bros. Wonder",
           "tag": "PLATFORMING / EXPLORATION",
-          "image": "/images/online-posts/mario-series.svg",
-          "alt": "Platforming-inspired illustration with a red cap, green pipe, golden coins and floating blocks",
-          "lead": "Every Jump Has a Little Story.",
-          "description": "Mario’s platforming adventures combine running and jumping with imaginative stages, power-ups and hidden discoveries. From carefully timed landings to choosing a route through a level, the appeal lies in responsive movement and playful exploration.",
-          "focus": "Look for jump timing, momentum, route choices and the small discoveries along the way.",
-          "source": "https://mario.nintendo.com/",
-          "source_label": "Official Mario Website"
+          "image": "/images/online-posts/wonder-official.webp",
+          "alt": "Super Mario Bros. Wonder official Nintendo promotional artwork",
+          "lead": "Wonder Around Every Corner.",
+          "description": "A side-scrolling platform adventure through the Flower Kingdom. Wonder Flowers transform stages in surprising ways, inviting players to adapt their jumps, explore unusual paths and discover playful changes to familiar platforming.",
+          "focus": "Watch the changing stage mechanics, jump timing and discoveries along the route.",
+          "source": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/",
+          "source_label": "Official Nintendo Page",
+          "image_source": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/"
+        },
+        {
+          "id": "odyssey",
+          "title": "Super Mario Odyssey",
+          "tag": "PLATFORMING / EXPLORATION",
+          "image": "/images/online-posts/odyssey-official.webp",
+          "alt": "Super Mario Odyssey official Nintendo promotional artwork",
+          "lead": "A World Beyond the Next Jump.",
+          "description": "A globe-trotting 3D platform adventure with Mario and Cappy. Explore varied kingdoms, use Cappy’s capture ability to approach obstacles in new ways, and discover Power Moons through movement, exploration and small challenges.",
+          "focus": "Watch movement combinations, captures, route choices and hidden discoveries.",
+          "source": "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/",
+          "source_label": "Official Nintendo Page",
+          "image_source": "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/"
+        },
+        {
+          "id": "3d-world",
+          "title": "Super Mario 3D World",
+          "tag": "PLATFORMING / EXPLORATION",
+          "image": "/images/online-posts/3d-world-official.webp",
+          "alt": "Super Mario 3D World official Nintendo promotional artwork",
+          "lead": "Playful Stages in Three Dimensions.",
+          "description": "A course-based 3D platform adventure built around running, jumping and inventive obstacles. The Super Bell adds climbing and pouncing to the movement, while varied stages encourage precise landings and exploration.",
+          "focus": "Watch stage routes, careful landings and the way power-ups change movement.",
+          "source": "https://www.nintendo.com/us/store/products/super-mario-3d-world-plus-bowsers-fury-switch/",
+          "source_label": "Official Nintendo Page",
+          "image_source": "https://www.nintendo.com/us/store/products/super-mario-3d-world-plus-bowsers-fury-switch/",
+          "artwork_note": "Official Switch edition artwork includes Bowser’s Fury; this entry introduces Super Mario 3D World."
         }
       ]
     }

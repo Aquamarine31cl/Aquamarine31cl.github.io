@@ -20,3 +20,8 @@
 @keyframes planet-atmosphere{0%,100%{opacity:.2;}50%{opacity:.65;}}
 @keyframes planet-moon{0%,100%{transform:translate(-115px,-29px) scale(.75);}50%{transform:translate(105px,35px) scale(1.05);}}
 @media(prefers-reduced-motion:reduce){.experience-art *{animation:none!important;}.art-moon{transform:translate(100px,20px);}}
+
+.experience-art .art-moon{animation:none!important;top:100.5px;}
+.experience-art .art-satellite-track{position:absolute;left:calc(50% - 151px);top:52.5px;width:302px;height:96px;box-sizing:border-box;border:1px solid #c6b9dc33;border-radius:50%;transform:rotate(-24deg);z-index:1;pointer-events:none;}
+
+.experience-art .art-line,.experience-art:after{top:65.5px!important;}.experience-art[data-planet="sports"]:after{top:68.5px!important;}

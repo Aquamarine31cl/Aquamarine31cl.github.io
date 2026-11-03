@@ -33,3 +33,7 @@ html[data-theme="dark"] .motion-card>.motion-sheen{background:radial-gradient(34
 @media(max-width:600px){.motion-viewer{border-radius:12px;}.motion-viewer-bottom{align-items:flex-start;flex-direction:column;gap:.4rem;}.motion-viewer-caption{max-width:100%;}.motion-viewer-stage{padding:.5rem;}}
 @media(prefers-reduced-motion:reduce){.motion-card,.motion-card[data-pointer-active="true"],.motion-magnetic{transform:none!important;translate:none!important;transition:none!important;}.motion-sheen,.motion-edge{display:none;}.motion-arrived{animation:none!important;opacity:1!important;}.motion-scroll-progress{display:none;}}
 @media print{.motion-scroll-progress,.motion-sheen,.motion-edge,.motion-viewer{display:none!important;}.motion-card{transform:none!important;translate:none!important;box-shadow:none!important;}.motion-arrived{animation:none!important;opacity:1!important;}}
+
+/* Mouse navigation must not leave the browser's focus ring on a restored card. */
+html a.motion-card:focus:not(:focus-visible),html a.motion-magnetic:focus:not(:focus-visible){outline:none!important;}
+html a.motion-card:focus-visible{outline:2px solid #c7b0ed!important;outline-offset:4px;}
