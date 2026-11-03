@@ -117,6 +117,7 @@ if(corner){
  let lastHeart=0;
  corner.querySelector('[data-send-heart]').addEventListener('click',e=>{
   if(Date.now()-lastHeart<250)return;lastHeart=Date.now();activity.hearts++;persist();render();
+  document.dispatchEvent(new CustomEvent('sky-heart',{detail:{count:activity.hearts}}));
   corner.querySelector('[data-heart-status]').textContent='Thank you! '+activity.hearts+' hearts sent on this browser.';
   if(!reduce.matches){const spark=document.createElement('span');spark.className='visitor-heart-spark';spark.textContent='✧';spark.setAttribute('aria-hidden','true');e.currentTarget.append(spark);spark.addEventListener('animationend',()=>spark.remove(),{once:true});}
  });
