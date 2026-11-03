@@ -1,7 +1,7 @@
 (() => {
 'use strict';
 const dialog=document.getElementById('access-dialog');if(!dialog)return;
-const key='aquamarine.access.v1',expected='be8cdbb4dfc3a009bbcc8f09ea09ac98760c624f1a22e1e8227473dae44c19b4';
+const key='aquamarine.access.v1',expected='384fde3636e6e01e0194d2976d8f26410af3e846e573379cb1a09e2f0752d8cc';
 const form=dialog.querySelector('form'),input=dialog.querySelector('input'),feedback=dialog.querySelector('[role="status"]');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
 let unlocked=false,pending=null,trigger=null,resume=null;

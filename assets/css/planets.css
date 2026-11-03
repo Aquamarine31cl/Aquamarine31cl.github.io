@@ -25,3 +25,16 @@
 .experience-art .art-satellite-track{position:absolute;left:calc(50% - 151px);top:52.5px;width:302px;height:96px;box-sizing:border-box;border:1px solid #c6b9dc33;border-radius:50%;transform:rotate(-24deg);z-index:1;pointer-events:none;}
 
 .experience-art .art-line,.experience-art:after{top:65.5px!important;}.experience-art[data-planet="sports"]:after{top:68.5px!important;}
+
+/* Local plasma and orbiting dust, without changing sphere or orbit geometry. */
+.planet-cloud-layer{position:absolute;inset:0;border-radius:50%;overflow:hidden;pointer-events:none;background:repeating-linear-gradient(165deg,transparent 0 24px,#d8e9ff14 28px,transparent 38px);background-size:180% 130%;mix-blend-mode:screen;animation:planet-cloud-drift 24s linear infinite;}
+[data-planet="travel"] .planet-cloud-layer{background:conic-gradient(from 30deg at 50% 50%,transparent 0 20%,#8bf3d92b 28%,transparent 35% 66%,#83baff28 74%,transparent 85%);filter:blur(3px);animation:planet-aurora-turn 32s linear infinite;}
+[data-planet="sports"] .planet-cloud-layer{background:repeating-linear-gradient(170deg,transparent 0 22px,#ffe7c029 27px,#d4929022 34px,transparent 43px);background-size:180% 150%;animation-duration:19s;}
+[data-planet="moments"] .planet-cloud-layer{background:repeating-linear-gradient(165deg,transparent 0 18px,#f4ccf129 22px,transparent 35px);animation-duration:30s;}
+.planet-corona{position:absolute;left:calc(50% - 81px);top:19.5px;width:162px;height:162px;border-radius:50%;border:1px solid var(--planet-glow);opacity:.12;box-shadow:0 0 20px -8px var(--planet-glow),inset 0 0 14px -8px var(--planet-glow);z-index:0;pointer-events:none;animation:planet-corona 8s ease-in-out infinite;}
+.planet-orbit-grain{position:absolute;left:50%;top:100.5px;width:2px;height:2px;border-radius:50%;background:var(--planet-glow);box-shadow:0 0 4px var(--planet-glow);pointer-events:none;will-change:transform;}
+.experience-art[data-resonance] .planet-corona{opacity:.65;box-shadow:0 0 30px -5px var(--planet-glow);}
+@keyframes planet-cloud-drift{to{background-position:180% 0;}}
+@keyframes planet-aurora-turn{to{transform:rotate(360deg);}}
+@keyframes planet-corona{0%,100%{opacity:.1;scale:1;}50%{opacity:.3;scale:1.05;}}
+@media(prefers-reduced-motion:reduce){.planet-cloud-layer,.planet-corona{animation:none!important;}.planet-orbit-grain{will-change:auto;}}
