@@ -3,9 +3,9 @@
     {
       "id": "expected",
       "label": "Expected Awards",
-      "value": 127306,
-      "capacity": 135306,
-      "liquid_y": 50.8
+      "value": 205306,
+      "capacity": 213306,
+      "liquid_y": 44
     },
     {
       "id": "held",

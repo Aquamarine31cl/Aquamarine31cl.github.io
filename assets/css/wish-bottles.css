@@ -41,3 +41,11 @@ html[data-theme="light"] .wish-outline,html[data-theme="light"] .wish-neck,html[
 
 html .sidebar .wish-bottle:is(:hover,:active,:focus){background:transparent!important;background-image:none!important;box-shadow:none!important;border-color:transparent!important;filter:none!important;}
 html .sidebar .wish-bottle::before,html .sidebar .wish-bottle::after{content:none!important;}
+
+/* Soft light remains inside the bottle silhouette. */
+.wish-liquid{filter:saturate(1.15);}
+.wish-caustic{stroke:var(--wish-light);stroke-width:2;stroke-linecap:round;opacity:.16;animation:wish-caustic 6s ease-in-out infinite;}
+.wish-sparks circle:nth-child(5){animation-delay:-.45s;--drift:14px;}
+.wish-sparks circle:nth-child(6){animation-delay:-1.7s;--drift:-13px;}
+.wish-sparks circle{animation-duration:3.2s;}
+@keyframes wish-caustic{0%,100%{opacity:.08;transform:translateY(1px);}50%{opacity:.3;transform:translateY(-3px);}}
