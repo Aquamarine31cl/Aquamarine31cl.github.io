@@ -41,7 +41,7 @@ function celebrate(message,strong=false,origin){
  if(!frame){last=0;frame=requestAnimationFrame(tick);}
 }
 function collect(id,button){
- const fresh=!discovered.includes(id);if(fresh){discovered.push(id);try{localStorage.setItem('aquamarine.sky.collection.v1',JSON.stringify(discovered));}catch{}drawBadges();}
+ const fresh=!discovered.includes(id);if(fresh){discovered.push(id);try{localStorage.setItem('aquamarine.sky.collection.v1',JSON.stringify(discovered));}catch{}drawBadges();document.dispatchEvent(new CustomEvent('sky-collection-change'));}
  const r=button.getBoundingClientRect();celebrate(fresh?names[id]+' discovered. '+discovered.length+' / 5 stars collected.':names[id]+' sends a little starlight.',discovered.length===5&&fresh,{x:r.left+r.width/2,y:r.top+r.height/2});
 }
 const sections=document.querySelectorAll('.home-education,.home-honors,.travel-journal,.online-posts,.experience-hero,.portfolio-hero');
@@ -49,6 +49,7 @@ sections.forEach(section=>{
  const id=section.matches('.home-education')?'scholar':section.matches('.home-honors')?'nova':section.matches('.travel-journal')?'voyager':section.matches('.online-posts,.portfolio-hero')?'creator':'dreamer';
  const b=document.createElement('button');b.type='button';b.className='sky-discovery';b.textContent='✧';b.setAttribute('aria-label','Discover a little starlight');b.title='A little starlight awaits';b.addEventListener('click',()=>collect(id,b));section.classList.add('has-sky-discovery');section.append(b);
 });
+document.addEventListener('sky-surprise',e=>celebrate(e.detail.message,!!e.detail.strong));
 document.addEventListener('sky-heart',event=>{
  const n=event.detail.count;
  if(n>0&&n%100===0)celebrate('A hundred little lights - a meteor shower for you.',true);

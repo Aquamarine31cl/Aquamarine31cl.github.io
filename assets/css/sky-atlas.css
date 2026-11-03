@@ -1,0 +1,24 @@
+
+.sky-atlas-dialog{position:fixed;width:min(630px,calc(100vw - 28px));max-height:92vh;overflow:auto;box-sizing:border-box;padding:30px;border:1px solid #bca2e666;border-radius:25px;background:radial-gradient(ellipse at 50% 45%,#49346788,transparent 65%),#10172a;color:#e8def6;box-shadow:0 25px 90px #03061599;}
+.sky-atlas-dialog::backdrop{background:#050a19c9;backdrop-filter:blur(8px);}
+.sky-atlas-dialog h2{font-size:27px;margin:10px 0;}
+.sky-atlas-dialog p{font-size:12px;line-height:1.8;color:#bcb0d0;}
+html .sky-atlas-close{position:absolute;top:12px;right:14px;border:0;background:none;box-shadow:none;color:#ddc8ed;font-size:25px;cursor:pointer;}
+.sky-atlas-map{height:340px;position:relative;margin:16px 0;background:radial-gradient(circle at 12% 22%,#ddc4f4 0 1px,transparent 2px),radial-gradient(circle at 85% 63%,#c6d8f4 0 1px,transparent 2px);}
+.sky-atlas-map svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;}
+.sky-atlas-map path{fill:none;stroke:#c4a9e345;stroke-width:.25;stroke-dasharray:1 2;animation:atlas-thread 28s linear infinite;}
+.sky-atlas-node{position:absolute;transform:translate(-50%,-50%);text-decoration:none!important;display:flex;align-items:center;flex-direction:column;width:100px;font:10px/1.5 'Segoe UI',sans-serif;color:#b3a0cb!important;text-align:center;}
+.sky-atlas-node>span:first-child{font-size:26px;color:#9083af;transition:color .3s,filter .3s;}
+.sky-atlas-node.is-found>span:first-child,.sky-atlas-node:hover>span:first-child{color:#f1ddff;filter:drop-shadow(0 0 7px #bd92ec);}
+.sky-atlas-node:focus-visible{outline:2px solid #c6afe6;outline-offset:5px;border-radius:10px;}
+.sky-atlas-note{font-size:10px!important;opacity:.6;}
+.sky-actions{display:grid;gap:7px;margin-top:12px;}
+html .sky-actions button,html .sky-alignment{position:relative;border:1px solid #bca0df55;border-radius:999px;background:#a98dd114;color:#d2bee6;padding:9px 12px;font:10px/1.5 'Segoe UI',sans-serif;cursor:pointer;box-shadow:none;overflow:hidden;}
+html .sky-alignment{margin-top:20px;font-size:12px;padding:10px 20px;}
+.sky-wish-button:before{content:'';position:absolute;inset:0;pointer-events:none;background:#b59de433;transform:scaleX(0);transform-origin:left;}
+.sky-wish-button[data-charging]:before{animation:wish-charge 700ms linear forwards;}
+.sky-actions button:focus-visible,.sky-alignment:focus-visible{outline:2px solid #ccb2ec;outline-offset:3px;}
+@keyframes wish-charge{to{transform:scaleX(1);}}
+@keyframes atlas-thread{to{stroke-dashoffset:-50;}}
+@media(max-width:500px){.sky-atlas-dialog{padding:24px 16px;}.sky-atlas-map{height:290px;}.sky-atlas-node{width:82px;font-size:9px;}}
+@media(prefers-reduced-motion:reduce){.sky-atlas-map path,.sky-wish-button:before{animation:none!important;}.sky-atlas-node>span{transition:none!important;}}
