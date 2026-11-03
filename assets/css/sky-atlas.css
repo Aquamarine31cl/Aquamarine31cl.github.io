@@ -22,3 +22,8 @@ html .sky-alignment{margin-top:20px;font-size:12px;padding:10px 20px;}
 @keyframes atlas-thread{to{stroke-dashoffset:-50;}}
 @media(max-width:500px){.sky-atlas-dialog{padding:24px 16px;}.sky-atlas-map{height:290px;}.sky-atlas-node{width:82px;font-size:9px;}}
 @media(prefers-reduced-motion:reduce){.sky-atlas-map path,.sky-wish-button:before{animation:none!important;}.sky-atlas-node>span{transition:none!important;}}
+
+html .sky-trace-toggle{padding:10px 18px;border:1px solid #bda3df66;border-radius:999px;background:#b293d218;color:#d9c6ec;font:12px/1.6 'Segoe UI',sans-serif;cursor:pointer;}
+.sky-trace-toggle:focus-visible{outline:2px solid #c6afe6;outline-offset:3px;}
+.sky-atlas-map .sky-trace-line{fill:none;stroke:#e8c594;stroke-width:.6;stroke-dasharray:none;filter:drop-shadow(0 0 1px #e8c594);}
+.sky-atlas-node.is-traced>span:first-child{color:#f2d6a8;filter:drop-shadow(0 0 6px #e9bb80);}

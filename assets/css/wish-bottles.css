@@ -69,3 +69,8 @@ html .sidebar .wish-bottle::before,html .sidebar .wish-bottle::after{content:non
 .wish-sparks circle{animation-name:wish-mist;animation-duration:2.6s;}
 @keyframes wish-mist{0%{opacity:0;transform:translate(0,0) scale(.4);}12%{opacity:1;transform:translate(0,-5px) scale(1.15);}55%{opacity:.85;}100%{opacity:0;transform:translate(var(--drift,-8px),-43px) scale(.4);}}
 @media(prefers-reduced-motion:reduce){.wish-sparks>*{animation:none!important;opacity:.45;transform:translateY(-10px);}}
+
+.wish-panel[data-wish-flare] .wish-sparks>*{animation-duration:1.4s!important;filter:drop-shadow(0 0 4px var(--wish-light));}
+.wish-panel[data-wish-flare] .wish-surface{stroke-width:2;filter:drop-shadow(0 0 5px var(--wish-light));}
+.wish-panel[data-wish-flare] .wish-pisces{opacity:.4;transition:opacity .3s;}
+.wish-bottle:hover .wish-reflection{stroke-opacity:.6;transition:stroke-opacity .4s;}

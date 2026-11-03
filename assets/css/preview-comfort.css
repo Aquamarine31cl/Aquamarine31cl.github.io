@@ -1,0 +1,19 @@
+
+/* Give the single visible preview its own readable layout, without changing unlocked grids. */
+html:not([data-access-unlocked]) .home-page .news-photo-grid,
+html:not([data-access-unlocked]) .home-page .honors-spotlight{grid-template-columns:minmax(0,1fr);gap:20px;}
+@media(min-width:741px){
+ html:not([data-access-unlocked]) .home-page .news-photo-card,
+ html:not([data-access-unlocked]) .home-page .honor-feature{display:grid;grid-template-columns:minmax(180px,.8fr) minmax(0,1.2fr);align-items:stretch;}
+ html:not([data-access-unlocked]) .home-page .news-photo-copy,
+ html:not([data-access-unlocked]) .home-page .honor-feature-copy{align-self:center;padding:28px;}
+ html:not([data-access-unlocked]) .home-page .news-photo-figure{margin:0;min-width:0;}
+}
+html:not([data-access-unlocked]) .honor-record{padding-top:24px;padding-bottom:24px;column-gap:22px;}
+html:not([data-access-unlocked]) .honor-record h5{line-height:1.65;overflow-wrap:anywhere;}
+html:not([data-access-unlocked]) .online-game-copy h4{line-height:1.5;overflow-wrap:normal;word-break:normal;}
+html:not([data-access-unlocked]) .online-game-copy>p{line-height:1.9;}
+html .preview-access-prompt{padding:24px 12px;margin:10px 0;box-sizing:border-box;}
+html .preview-access-prompt button{white-space:normal;max-width:100%;line-height:1.7;padding:11px 22px;}
+.access-photo-veil{padding:18px;box-sizing:border-box;text-align:center;line-height:1.8;}
+@media(max-width:740px){html:not([data-access-unlocked]) .home-page .news-photo-copy,html:not([data-access-unlocked]) .home-page .honor-feature-copy{padding:22px;}.honor-record{column-gap:14px;}.online-game-copy{padding:22px;}}

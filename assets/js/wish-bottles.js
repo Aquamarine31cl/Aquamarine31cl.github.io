@@ -89,5 +89,24 @@
   if('IntersectionObserver' in window)new IntersectionObserver(entries=>{
     visible=entries[0].isIntersecting;sync();
   },{rootMargin:'80px'}).observe(panel);
+
+  let lastBottle='',lastTap=0,flareTimer=0;
+  function flare(){
+    if(reduced.matches||paused)return;
+    panel.setAttribute('data-wish-flare','');clearTimeout(flareTimer);
+    flareTimer=setTimeout(()=>panel.removeAttribute('data-wish-flare'),1500);
+    states.forEach((s,i)=>{s.slopeVelocity+=(i?-.3:.3);});
+    start();
+  }
+  panel.querySelectorAll('.wish-bottle').forEach(button=>button.addEventListener('click',()=>{
+    if(reduced.matches||paused)return;
+    flare();
+    const now=Date.now(),id=button.dataset.wish;
+    if(lastBottle&&lastBottle!==id&&now-lastTap<1600){
+      document.dispatchEvent(new CustomEvent('sky-surprise',{detail:{message:'Twin stars - two little wishes share one sky.',strong:true}}));
+      lastBottle='';lastTap=0;
+    }else{lastBottle=id;lastTap=now;}
+  }));
+  document.addEventListener('sky-wish-released',flare);
   sync();
 })();

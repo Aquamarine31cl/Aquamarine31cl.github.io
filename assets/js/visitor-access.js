@@ -47,7 +47,7 @@ function apply(){
  });
  document.querySelectorAll('[data-protected-section]').forEach(el=>el.hidden=!unlocked);
  document.querySelectorAll('[data-daily-prompt]').forEach(el=>el.hidden=unlocked);
- document.querySelectorAll('[data-open-access]').forEach(el=>el.textContent=unlocked?'Access Unlocked · Manage ↗':el.closest('.daily-access-prompt')?'Unlock Daily':'Unlock Photos & Daily ↗');
+ document.querySelectorAll('[data-open-access]').forEach(el=>{if(!el.dataset.lockedLabel)el.dataset.lockedLabel=el.textContent.trim();el.textContent=unlocked?'Manage Access ↗':el.dataset.lockedLabel;});
  dialog.querySelector('[data-relock]').hidden=!unlocked;
  form.hidden=unlocked;
  document.dispatchEvent(new CustomEvent('site-access-changed'));
