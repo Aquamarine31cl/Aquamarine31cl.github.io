@@ -54,5 +54,7 @@ const hero=document.querySelector('.experience-hero');
 if(hero&&document.querySelector('.art-moon')){
  const button=document.createElement('button');button.type='button';button.className='sky-alignment';button.textContent='Align the Planets ✧';let cooldown=0;
  button.addEventListener('click',()=>{if(Date.now()-cooldown<7500)return;cooldown=Date.now();document.dispatchEvent(new CustomEvent('sky-alignment'));announce(reduce.matches?'Three worlds, one constellation.':'Three worlds find a moment of alignment.');});hero.append(button);
+ const eclipse=document.createElement('button');eclipse.type='button';eclipse.className='sky-alignment';eclipse.textContent='Observe an Eclipse ◐';let lastEclipse=0;
+ eclipse.addEventListener('click',()=>{if(Date.now()-lastEclipse<10000)return;lastEclipse=Date.now();document.dispatchEvent(new CustomEvent('sky-eclipse'));announce(reduce.matches?'A quiet eclipse, imagined in starlight.':'A quiet eclipse crosses one of your little worlds.');});hero.append(eclipse);
 }
 })();

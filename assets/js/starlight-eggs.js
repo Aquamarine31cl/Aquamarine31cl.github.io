@@ -47,7 +47,11 @@ function collect(id,button){
 const sections=document.querySelectorAll('.home-education,.home-honors,.travel-journal,.online-posts,.experience-hero,.portfolio-hero');
 sections.forEach(section=>{
  const id=section.matches('.home-education')?'scholar':section.matches('.home-honors')?'nova':section.matches('.travel-journal')?'voyager':section.matches('.online-posts,.portfolio-hero')?'creator':'dreamer';
- const b=document.createElement('button');b.type='button';b.className='sky-discovery';b.textContent='✧';b.setAttribute('aria-label','Discover a little starlight');b.title='A little starlight awaits';b.addEventListener('click',()=>collect(id,b));section.classList.add('has-sky-discovery');section.append(b);
+ const b=document.createElement('button');b.type='button';b.className='sky-discovery';b.textContent='✧';b.setAttribute('aria-label','Discover a little starlight');b.title='A little starlight awaits';b.addEventListener('click',()=>collect(id,b));section.classList.add('has-sky-discovery');
+ const tools=document.createElement('div');tools.className='sky-section-tools';
+ const ornament=section.querySelector(':scope>.section-constellation');if(ornament)tools.append(ornament);
+ tools.append(b);const header=section.querySelector(':scope>header,:scope>.honors-section-heading');
+ if(header)header.insertAdjacentElement('afterend',tools);else section.prepend(tools);
 });
 document.addEventListener('sky-surprise',e=>celebrate(e.detail.message,!!e.detail.strong));
 document.addEventListener('sky-heart',event=>{

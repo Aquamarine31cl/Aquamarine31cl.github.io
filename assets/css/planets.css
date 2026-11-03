@@ -38,3 +38,9 @@
 @keyframes planet-aurora-turn{to{transform:rotate(360deg);}}
 @keyframes planet-corona{0%,100%{opacity:.1;scale:1;}50%{opacity:.3;scale:1.05;}}
 @media(prefers-reduced-motion:reduce){.planet-cloud-layer,.planet-corona{animation:none!important;}.planet-orbit-grain{will-change:auto;}}
+
+.planet-eclipse-window{position:absolute;inset:0;border-radius:50%;overflow:hidden;pointer-events:none;}
+.planet-eclipse-window>span{position:absolute;left:10px;top:7px;width:125px;height:125px;border-radius:50%;background:radial-gradient(circle at 70% 40%,#080d1a,#020611 75%);box-shadow:0 0 8px #9cc4df25;transform:translateX(-165px);opacity:0;}
+[data-eclipse] .planet-eclipse-window>span{animation:planet-transit 9s cubic-bezier(.3,0,.7,1) forwards;}
+@keyframes planet-transit{0%{transform:translateX(-165px) translateY(-10px);opacity:0;}10%{opacity:.94;}90%{opacity:.94;}100%{transform:translateX(165px) translateY(10px);opacity:0;}}
+@media(prefers-reduced-motion:reduce){.planet-eclipse-window{display:none;}}

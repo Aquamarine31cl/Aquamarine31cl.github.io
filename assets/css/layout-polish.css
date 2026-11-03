@@ -1,0 +1,11 @@
+
+/* Unlock actions are siblings of lists, never timeline entries or narrow grid cells. */
+html .preview-access-prompt{display:flex;align-items:center;justify-content:center;clear:both;width:100%;min-width:0;padding:20px 16px;margin:12px 0 24px;border:1px solid #bfa5df26;border-radius:15px;background:#b9a1df06;box-sizing:border-box;}
+html .preview-access-prompt>button{display:inline-flex;align-items:center;justify-content:center;flex:0 1 auto;width:auto!important;min-width:210px;max-width:100%;padding:11px 22px;white-space:normal;word-break:normal!important;overflow-wrap:normal!important;line-height:1.6;letter-spacing:0;}
+html .preview-access-prompt[hidden]{display:none!important;}
+.sky-section-tools{position:relative;display:flex;align-items:center;justify-content:flex-end;gap:12px;min-height:34px;margin:8px 0 16px;isolation:isolate;}
+html .sky-section-tools>.sky-discovery{position:static!important;inset:auto!important;flex:0 0 32px;width:32px;height:32px;transform:none;}
+.sky-section-tools>.section-constellation{position:static!important;inset:auto!important;width:75px;height:32px;flex:0 0 75px;opacity:.5;}
+.sky-section-tools:focus-within>.section-constellation,.sky-section-tools:hover>.section-constellation{opacity:.9;}
+.experience-hero>.sky-section-tools{margin-bottom:0;}
+@media(max-width:560px){html .preview-access-prompt{padding:16px 10px;}html .preview-access-prompt>button{min-width:0;font-size:12px;}.sky-section-tools{margin:8px 0 12px;}}

@@ -5,6 +5,7 @@
  let frame=0,last=0,time=0,aligningAt=-100;
  const states=cards.map((el,i)=>{
   const kind=el.dataset.planet;
+  const eclipse=document.createElement('span');eclipse.className='planet-eclipse-window';eclipse.innerHTML='<span></span>';el.querySelector('.art-orb')?.append(eclipse);
   const cloud=document.createElement('span');cloud.className='planet-cloud-layer';el.querySelector('.art-orb')?.append(cloud);
   const corona=document.createElement('span');corona.className='planet-corona';el.append(corona);
   const dust=Array.from({length:kind==='moments'?18:10},(_,n)=>{const dot=document.createElement('span');dot.className='planet-orbit-grain';dot.style.opacity=String(.25+(n%4)*.15);el.append(dot);return dot;});
@@ -38,6 +39,10 @@
  }
  function tick(now){frame=0;const dt=last?Math.min((now-last)/1000,.05):0;last=now;time+=dt;paint();if(!document.hidden&&!reduced.matches)frame=requestAnimationFrame(tick);}
  function sync(){cancelAnimationFrame(frame);frame=0;last=0;paint();if(!document.hidden&&!reduced.matches)frame=requestAnimationFrame(tick);}
+ let eclipseTimer=0,eclipseIndex=0;
+ function clearEclipse(){clearTimeout(eclipseTimer);cards.forEach(el=>el.removeAttribute('data-eclipse'));}
+ document.addEventListener('sky-eclipse',()=>{clearEclipse();if(reduced.matches)return;cards[eclipseIndex++%cards.length].setAttribute('data-eclipse','');eclipseTimer=setTimeout(clearEclipse,9500);});
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)clearEclipse();});addEventListener('pagehide',clearEclipse);reduced.addEventListener('change',clearEclipse);
  let tour=[],tourTime=0;
  cards.forEach(el=>{
   function visit(){

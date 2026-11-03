@@ -87,10 +87,10 @@ function previews(){
  document.querySelectorAll('[data-preview-list]').forEach(list=>{
   const count=Array.from(list.querySelectorAll('[data-preview-item]')).filter(el=>el.closest('[data-preview-list]')===list).length;
   if(!count)return;
-  let prompt=Array.from(list.children).find(el=>el.classList.contains('preview-access-prompt'));
+  let prompt=list.nextElementSibling?.classList.contains('preview-access-prompt')?list.nextElementSibling:null;
   if(!prompt){
-   prompt=document.createElement(list.tagName==='OL'||list.tagName==='UL'?'li':'div');prompt.className='preview-access-prompt';
-   const button=document.createElement('button');button.type='button';button.setAttribute('data-open-access','');button.textContent='Unlock the Full Collection ↗';prompt.append(button);list.append(prompt);
+   prompt=document.createElement('div');prompt.className='preview-access-prompt';
+   const button=document.createElement('button');button.type='button';button.setAttribute('data-open-access','');button.textContent='Unlock the Full Collection ↗';prompt.append(button);list.insertAdjacentElement('afterend',prompt);
   }
   prompt.hidden=unlocked;
  });
