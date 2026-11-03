@@ -34,6 +34,7 @@ function applyNames(){
 }
 
 function apply(){
+ if(!unlocked)document.querySelectorAll('.news-archive').forEach(el=>el.open=false);
  applyNames();
  document.documentElement.toggleAttribute('data-access-unlocked',unlocked);
  document.querySelectorAll('.preview-access-prompt').forEach(el=>el.hidden=unlocked);

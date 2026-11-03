@@ -12,4 +12,5 @@
 </article>{% endfor %}
 </div>
 {% assign all_news = site.data.home_news | sort: 'date' | reverse %}
-<ol class="news-timeline" data-preview-list>{% for item in all_news %}<li {% unless forloop.first %}data-preview-item{% endunless %}><time datetime="{{ item.date | replace: '.', '-' }}">{{ item.date | escape }}</time><div>{{ item.text | markdownify }}</div></li>{% endfor %}</ol></section>
+<ol class="news-timeline" data-preview-list>{% for item in all_news limit: 5 %}<li {% unless forloop.first %}data-preview-item{% endunless %}><time datetime="{{ item.date | replace: '.', '-' }}">{{ item.date | escape }}</time><div>{{ item.text | markdownify }}</div></li>{% endfor %}</ol>
+{% if all_news.size > 5 %}<details class="news-archive" data-preview-item><summary>Earlier Updates <span>({{ all_news.size | minus: 5 }})</span></summary><ol class="news-timeline">{% for item in all_news offset: 5 %}<li><time datetime="{{ item.date | replace: '.', '-' }}">{{ item.date | escape }}</time><div>{{ item.text | markdownify }}</div></li>{% endfor %}</ol></details>{% endif %}</section>

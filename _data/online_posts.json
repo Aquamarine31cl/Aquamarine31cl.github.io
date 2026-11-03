@@ -27,16 +27,16 @@
           "id": "dancing-line",
           "title": "Dancing Line",
           "tag": "MUSIC / TIMING",
-          "image": "/images/online-posts/dancing-line-landscape-v2.webp",
-          "alt": "Dancing Line landscape promotional artwork",
+          "image": "/images/online-posts/dancing-line-ingame.webp",
+          "alt": "Dancing Line gameplay screenshot with a glowing path through a low-poly forest",
           "lead": "Listen for the Next Turn.",
           "description": "Guide a continuously moving line through changing landscapes by tapping at the right moment to turn. Music is more than a backdrop: the rhythm helps anticipate corners, while the scenery unfolds around the route.",
           "focus": "Listen to the musical cues and watch how the turns connect into one continuous performance.",
           "source": "https://apps.apple.com/cn/app/id1177953618",
           "source_label": "Official App Store Description",
-          "image_source": "https://www.taptap.io/app/189039",
+          "image_source": "https://store.steampowered.com/app/4698580/Dancing_Line__The_Mystery/",
           "status": "Updating",
-          "image_credit": "TapTap Store Promotional Artwork"
+          "image_credit": "Official In-Game Screenshot · The Mystery"
         },
         {
           "id": "roller-craft",
