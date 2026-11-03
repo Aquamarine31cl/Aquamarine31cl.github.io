@@ -25,6 +25,8 @@ function tick(now){
  ctx.globalAlpha=1;if(particles.length&&!document.hidden)frame=requestAnimationFrame(tick);else stop();
 }
 function celebrate(message,strong=false,origin){
+ const modal=document.querySelector('dialog[open]');
+ if(modal){const local=modal.querySelector('.sky-atlas-caption,[role=status]');if(local)local.textContent=message;return;}
  toast.getAnimations().forEach(a=>a.cancel());toast.textContent=message;toast.hidden=false;if(!reduced.matches&&toast.animate)toast.animate([{opacity:0,translate:'0 6px'},{opacity:1,translate:'0 0'}],{duration:240,easing:'cubic-bezier(.2,.7,.3,1)'});clearTimeout(timer);timer=setTimeout(()=>toast.hidden=true,3800);
  if(reduced.matches||document.hidden||!ctx)return;
  if(!frame){canvas.width=innerWidth;canvas.height=innerHeight;}

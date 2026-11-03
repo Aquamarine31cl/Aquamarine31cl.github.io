@@ -18,11 +18,11 @@
    if(!s.moon)continue;
    let theta=time*2*Math.PI/s.period+s.phase;
    const age=time-aligningAt;
-   if(age>=0&&age<7){
-    const smooth=x=>x*x*(3-2*x);
-    const blend=age<2?smooth(age/2):age<5?1:1-smooth((age-5)/2);
-    const nearest=Math.round(theta/(2*Math.PI))*2*Math.PI;
-    theta+=(nearest-theta)*blend;
+   if(age>=0&&age<7&&Number.isFinite(s.alignmentTarget)){
+    const ease=x=>x*x*(3-2*x);
+    if(age<2)theta+=(s.alignmentTarget-theta)*ease(age/2);
+    else if(age<5)theta=s.alignmentTarget;
+    else theta=s.alignmentTarget+(theta+s.alignmentShift-s.alignmentTarget)*ease((age-5)/2);
    }
    const x=s.a*Math.cos(theta),y=s.b*Math.sin(theta);
    const px=x*Math.cos(s.rotation)-y*Math.sin(s.rotation),py=x*Math.sin(s.rotation)+y*Math.cos(s.rotation);
@@ -30,8 +30,9 @@
    s.moon.style.zIndex=y<0?'1':'4';
    s.dust.forEach((dot,n)=>{
     const t=time*(s.el.dataset.planet==='moments'?.11:.16)+n*2*Math.PI/s.dust.length;
-    const spread=s.el.dataset.planet==='moments'? .86+(n%3)*.045:1;
-    const dx=s.a*spread*Math.cos(t),dy=s.b*spread*Math.sin(t);
+    const ring=s.el.dataset.planet==='moments';
+    const da=ring?119+(n%3)*4.5:s.a,db=ring?27+(n%3)*1.2:s.b;
+    const dx=da*Math.cos(t),dy=db*Math.sin(t);
     const x=dx*Math.cos(s.rotation)-dy*Math.sin(s.rotation),y=dx*Math.sin(s.rotation)+dy*Math.cos(s.rotation);
     dot.style.transform='translate('+x.toFixed(2)+'px,'+y.toFixed(2)+'px)';dot.style.zIndex=dy<0?'1':'4';
    });
@@ -55,6 +56,6 @@
   }
   el.addEventListener('pointerenter',visit);el.closest('a')?.addEventListener('focus',visit);
  });
- document.addEventListener('sky-alignment',()=>{if(!reduced.matches)aligningAt=time;});
+ document.addEventListener('sky-alignment',()=>{if(!reduced.matches){aligningAt=time;states.forEach(s=>{const nominal=time*2*Math.PI/s.period+s.phase;s.alignmentTarget=Math.round(nominal/(2*Math.PI))*2*Math.PI;s.alignmentShift=Math.round((s.alignmentTarget-(nominal+7*2*Math.PI/s.period))/(2*Math.PI))*2*Math.PI;});}});
  document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',sync);addEventListener('pageshow',sync);addEventListener('pagehide',()=>{cancelAnimationFrame(frame);frame=0;last=0;});sync();
 })();
