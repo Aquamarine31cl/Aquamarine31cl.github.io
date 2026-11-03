@@ -25,7 +25,7 @@ function tick(now){
  ctx.globalAlpha=1;if(particles.length&&!document.hidden)frame=requestAnimationFrame(tick);else stop();
 }
 function celebrate(message,strong=false,origin){
- toast.textContent=message;toast.hidden=false;clearTimeout(timer);timer=setTimeout(()=>toast.hidden=true,3800);
+ toast.getAnimations().forEach(a=>a.cancel());toast.textContent=message;toast.hidden=false;if(!reduced.matches&&toast.animate)toast.animate([{opacity:0,translate:'0 6px'},{opacity:1,translate:'0 0'}],{duration:240,easing:'cubic-bezier(.2,.7,.3,1)'});clearTimeout(timer);timer=setTimeout(()=>toast.hidden=true,3800);
  if(reduced.matches||document.hidden||!ctx)return;
  if(!frame){canvas.width=innerWidth;canvas.height=innerHeight;}
  const cx=origin?.x??innerWidth*.5,cy=origin?.y??innerHeight*.28;

@@ -23,12 +23,14 @@ for(const [id,label,url,note,x,y] of entries){
   const points=chosen.map(key=>entries.find(v=>v[0]===key)).map(v=>v[4]+','+v[5]).join(' ');
   let trail=map.querySelector('.sky-trace-line');if(!trail){trail=document.createElementNS('http://www.w3.org/2000/svg','polyline');trail.classList.add('sky-trace-line');map.querySelector('svg').append(trail);}trail.setAttribute('points',points);
   caption.textContent=chosen.length+' / 5 stars connected.';
-  if(chosen.length===5){caption.textContent='Your own constellation - a new path through familiar stars.';announce('Cartographer of a little galaxy - five stars, your own constellation.',true);}
+  if(chosen.length===5&&chosen.join(',')===entries.slice().reverse().map(e=>e[0]).join(',')){
+    dialog.setAttribute('data-mirror-sky','');caption.textContent='Mirror Sky - familiar stars, a different direction.';announce('Mirror Sky - a constellation found in reverse.',true);
+   }else if(chosen.length===5){caption.textContent='Your own constellation - a new path through familiar stars.';announce('Cartographer of a little galaxy - five stars, your own constellation.',true);}
  });
  a.addEventListener('pointerenter',()=>caption.textContent=note);a.addEventListener('focus',()=>caption.textContent=note);map.append(a);
 }
 traceButton.addEventListener('click',()=>{
- tracing=!tracing;chosen=[];traceButton.setAttribute('aria-pressed',String(tracing));
+ tracing=!tracing;chosen=[];dialog.removeAttribute('data-mirror-sky');traceButton.setAttribute('aria-pressed',String(tracing));
  traceButton.textContent=tracing?'Return to Navigation':'Trace a Constellation';
  map.querySelector('.sky-trace-line')?.remove();map.querySelectorAll('.is-traced').forEach(el=>el.classList.remove('is-traced'));
  caption.textContent=tracing?'Choose all five stars in any order. Links will not navigate in drawing mode.':'Choose a star to explore.';
@@ -57,4 +59,37 @@ if(hero&&document.querySelector('.art-moon')){
  const eclipse=document.createElement('button');eclipse.type='button';eclipse.className='sky-alignment';eclipse.textContent='Observe an Eclipse ◐';let lastEclipse=0;
  eclipse.addEventListener('click',()=>{if(Date.now()-lastEclipse<10000)return;lastEclipse=Date.now();document.dispatchEvent(new CustomEvent('sky-eclipse'));announce(reduce.matches?'A quiet eclipse, imagined in starlight.':'A quiet eclipse crosses one of your little worlds.');});hero.append(eclipse);
 }
+
+const moonCard=document.createElement('section');moonCard.className='sky-moon-card';
+moonCard.innerHTML='<button type="button" class="sky-moon-dial" aria-label="Advance the moon phase"><canvas width="96" height="96" aria-hidden="true"></canvas></button><div><p class="cosmic-eyebrow">A LITTLE LUNAR EXPERIMENT</p><h3 class="sky-moon-label">New Moon</h3><p class="sky-moon-help">Turn the moon. See what a full cycle reveals.</p></div>';
+dialog.append(moonCard);
+const phases=['New Moon','Waxing Crescent','First Quarter','Waxing Gibbous','Full Moon','Waning Gibbous','Last Quarter','Waning Crescent'];
+let phase=0,turns=0;
+const moonCanvas=moonCard.querySelector('canvas'),moonContext=moonCanvas.getContext('2d');
+function paintMoon(){
+ if(!moonContext)return;
+ const image=moonContext.createImageData(96,96),angle=Math.PI-phase*Math.PI/4;
+ for(let y=0;y<96;y++)for(let x=0;x<96;x++){
+  const nx=(x-47.5)/43,ny=(y-47.5)/43,r=nx*nx+ny*ny;if(r>1)continue;
+  const nz=Math.sqrt(1-r),light=Math.max(0,nx*Math.sin(angle)+nz*Math.cos(angle));
+  const grain=.94+.06*Math.sin(x*1.7+y*.8)*Math.cos(y*2.1);
+  const value=(20+205*Math.pow(light,.55))*grain,i=(y*96+x)*4;
+  image.data[i]=value;image.data[i+1]=value*.96;image.data[i+2]=Math.min(255,value*1.06+7);
+  image.data[i+3]=Math.min(255,(1-r)*6000);
+ }
+ moonContext.putImageData(image,0,0);
+ moonCard.querySelector('.sky-moon-label').textContent=phases[phase];
+ moonCard.querySelector('button').setAttribute('aria-label',phases[phase]+'. Advance the moon phase.');
+}
+moonCard.querySelector('button').addEventListener('click',()=>{
+ phase=(phase+1)%8;turns++;paintMoon();
+ if(phase===4){caption.textContent='Full moon: a quiet silver light in your little sky.';}
+ if(turns===8){
+  moonCard.setAttribute('data-cycle-complete','');
+  caption.textContent='Lunar Explorer - a full cycle, back where the journey began.';
+  announce('Lunar Explorer - eight phases, one complete journey.',true);
+ }
+});
+paintMoon();
+
 })();

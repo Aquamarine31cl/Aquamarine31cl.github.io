@@ -44,3 +44,8 @@
 [data-eclipse] .planet-eclipse-window>span{animation:planet-transit 9s cubic-bezier(.3,0,.7,1) forwards;}
 @keyframes planet-transit{0%{transform:translateX(-165px) translateY(-10px);opacity:0;}10%{opacity:.94;}90%{opacity:.94;}100%{transform:translateX(165px) translateY(10px);opacity:0;}}
 @media(prefers-reduced-motion:reduce){.planet-eclipse-window{display:none;}}
+
+[data-eclipse] .planet-corona{animation:eclipse-corona 9s ease-in-out forwards;}
+[data-eclipse] .planet-eclipse-window>span{box-shadow:0 0 2px #cfdbef77,0 0 10px #b6d8f533;}
+@keyframes eclipse-corona{0%,100%{opacity:.12;box-shadow:0 0 12px -8px var(--planet-glow);}45%,55%{opacity:.55;box-shadow:0 0 28px -6px var(--planet-glow),inset 0 0 7px #ffffff33;}}
+@media(prefers-reduced-motion:reduce){[data-eclipse] .planet-corona{animation:none!important;}}
