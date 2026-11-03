@@ -69,7 +69,7 @@ function addOceanStars(map,geo){
   }
   ctx.globalAlpha=1;ctx.globalCompositeOperation='destination-out';ctx.drawImage(mask,0,0);ctx.globalCompositeOperation='source-over';
  }
- function tick(now){frame=0;if(now-last>=32){paint(last?Math.min((now-last)/1000,.08):0);last=now;}start();}
+ function tick(now){frame=0;if(innerWidth>=700||now-last>=32){paint(last?Math.min((now-last)/1000,.08):0);last=now;}start();}
  function start(){if(!frame&&!motion.matches&&!document.hidden&&visible&&!moving)frame=requestAnimationFrame(tick);}
  function stop(){if(frame)cancelAnimationFrame(frame);frame=0;last=0;}
  function sync(){stop();if(motion.matches)paint(0);start();}

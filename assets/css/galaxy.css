@@ -1,0 +1,8 @@
+
+/* Deep-space atmosphere stays behind readable surfaces. */
+html[data-theme="dark"][data-atmosphere="rich"] body::before{background-color:#050814;animation-duration:70s;}
+html[data-theme="dark"][data-atmosphere="rich"] .masthead{background-color:#090d20e8;}
+html[data-theme="dark"] .portfolio-hero,html[data-theme="dark"] .experience-hero{background-color:#10162bd9;}
+html[data-theme="dark"] .page__inner-wrap{background-color:#101328bf;}
+html[data-atmosphere="rich"] .art-orb:after{box-shadow:0 0 18px -7px var(--planet-glow);}
+@media(prefers-reduced-motion:reduce){html[data-theme="dark"] body::before{animation:none!important;}}
