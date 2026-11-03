@@ -1,0 +1,9 @@
+Horizontal promotional assets:
+Rolling Sky 1600x800: Nintendo Spain official game page, https://www.nintendo.com/es-es/Juegos/Programas-descargables-Nintendo-Switch/Rolling-Sky-1542652.html
+Image: https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_RollingSky_image1600w.jpg
+Dancing Line 1024x500: TapTap store page https://www.taptap.io/app/189039
+Image: https://img.tapimg.net/market/images/23235987fd797855e76d7b56bf8eeff5.png
+Roller Craft 1024x500: TapTap store page https://www.taptap.io/app/33816651
+Image: https://img.tapimg.net/market/images/dc800b481fc4b3e490c0883b60849587.png
+Remaining Rolling Sky 2 / Mario imagery stays as previously downloaded landscape Steam/Nintendo assets.
+No synthetic images, rotation of portrait screenshots or cropping into fake landscape artwork.

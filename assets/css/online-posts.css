@@ -35,7 +35,7 @@ html[data-theme="light"] .online-header p,html[data-theme="light"] .online-group
 @media(max-width:740px){.online-game-grid,.online-radio,.online-game-grid>.online-game:only-child{display:grid;grid-template-columns:1fr;}.online-game-grid>.online-game:only-child{grid-column:auto;}.online-game-copy{padding:22px;}.online-header h2{font-size:2rem;}}
 @media(prefers-reduced-motion:reduce){.online-posts *{transition:none!important;transform:none!important;}}
 
-@media(min-width:741px){html:not([data-access-unlocked]) .online-game-grid{grid-template-columns:1fr;}html:not([data-access-unlocked]) .online-game-grid>.online-game:not([data-preview-item]){display:grid;grid-template-columns:1fr 1fr;}}
+
 
 .online-header h1{font-size:2.4rem;margin:.4rem 0 1rem;}
 @media(max-width:740px){.online-header h1{font-size:2rem;}}
@@ -49,3 +49,24 @@ html[data-theme="light"] .online-header p,html[data-theme="light"] .online-group
 .online-art-note{position:absolute;left:12px;right:12px;top:12px;background:#11162bb8;color:#e7dff1;padding:6px 9px;font-size:9px;line-height:1.5;border-radius:5px;}
 
 .online-game>figure{aspect-ratio:16/9;align-self:center;}.online-game>figure>img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;}
+
+@media(min-width:741px){.online-posts{max-width:none;width:100%;}.online-game-grid{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));}.online-game-grid>.online-game{display:flex;flex-direction:column;}.online-game>figure{width:100%;flex-shrink:0;}.online-game-copy{flex:1;}.online-group{width:100%;}}
+#main.experience-page:has(.online-posts){max-width:none;width:100%;box-sizing:border-box;}
+
+#main.experience-page:has(.online-posts)>.experience-section{display:block!important;grid-template-columns:none!important;width:100%;box-sizing:border-box;}#main.experience-page:has(.online-posts) .experience-section-body{width:100%;max-width:none;box-sizing:border-box;}
+
+/* Two independent, equal-width cards per desktop row in every access state. */
+@media(min-width:741px){
+ html .online-posts .online-game-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;width:100%;gap:24px;}
+ html .online-posts .online-game-grid>.online-game{grid-column:auto!important;display:flex;flex-direction:column;min-width:0;width:100%;}
+ html .online-posts .online-game-grid>.online-game>figure{width:100%;height:auto!important;aspect-ratio:16/9;flex:0 0 auto;align-self:stretch;}
+ html .online-posts .online-game-grid>.online-game>.online-game-copy{flex:1;}
+}
+@media(max-width:740px){html .online-posts .online-game-grid{grid-template-columns:1fr!important;}}
+
+@media(min-width:741px){
+ html #main.experience-page:has(.online-posts){max-width:none!important;width:100%!important;margin-left:0!important;margin-right:0!important;padding-left:24px!important;padding-right:24px!important;}
+ html #main.experience-page:has(.online-posts)>.experience-section{max-width:none!important;margin-left:0!important;margin-right:0!important;}
+ html #main.experience-page:has(.online-posts) .experience-section-body{padding:24px!important;max-width:none!important;}
+ html .online-posts{max-width:none!important;width:100%!important;}
+}

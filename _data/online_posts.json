@@ -6,46 +6,52 @@
     {
       "id": "cheetah",
       "title": "Cheetah Games · Including Minimax",
-      "intro": "Rolling Sky, Dancing Line and Roller Craft bring together rhythm, precision and creativity. Rolling Sky 2 is included as an upcoming addition to my video collection.",
+      "intro": "Rolling Sky, Dancing Line and Roller Craft continue to receive new additions to my video collection. The Rolling Sky 2 collection is complete.",
       "games": [
         {
           "id": "rolling-sky",
           "title": "Rolling Sky",
           "tag": "RHYTHM / REACTION",
-          "image": "/images/online-posts/rolling-sky-official.webp",
-          "alt": "Rolling Sky official App Store promotional artwork",
+          "image": "/images/online-posts/rolling-sky-landscape.webp",
+          "alt": "Rolling Sky landscape promotional artwork",
           "lead": "A Moving World, One Precise Line.",
           "description": "Steer a rolling ball left and right along suspended tracks, avoiding obstacles as the music drives the pace. Changing scenery and patterned hazards turn a short run into a test of anticipation, route memory and steady control.",
           "focus": "Watch the relationship between the soundtrack, obstacle patterns and small corrections in the ball’s path.",
           "source": "https://apps.apple.com/us/app/rolling-sky/id1036661603",
           "source_label": "Official App Store Description",
-          "image_source": "https://apps.apple.com/us/app/rolling-sky/id1036661603"
+          "image_source": "https://www.nintendo.com/es-es/Juegos/Programas-descargables-Nintendo-Switch/Rolling-Sky-1542652.html",
+          "status": "Updating",
+          "image_credit": "Nintendo Promotional Artwork"
         },
         {
           "id": "dancing-line",
           "title": "Dancing Line",
           "tag": "MUSIC / TIMING",
-          "image": "/images/online-posts/dancing-line-official.webp",
-          "alt": "Dancing Line official App Store promotional artwork",
+          "image": "/images/online-posts/dancing-line-landscape-v2.webp",
+          "alt": "Dancing Line landscape promotional artwork",
           "lead": "Listen for the Next Turn.",
           "description": "Guide a continuously moving line through changing landscapes by tapping at the right moment to turn. Music is more than a backdrop: the rhythm helps anticipate corners, while the scenery unfolds around the route.",
           "focus": "Listen to the musical cues and watch how the turns connect into one continuous performance.",
           "source": "https://apps.apple.com/cn/app/id1177953618",
           "source_label": "Official App Store Description",
-          "image_source": "https://apps.apple.com/cn/app/id1177953618"
+          "image_source": "https://www.taptap.io/app/189039",
+          "status": "Updating",
+          "image_credit": "TapTap Store Promotional Artwork"
         },
         {
           "id": "roller-craft",
           "title": "Roller Craft",
           "tag": "RHYTHM / CREATION",
-          "image": "/images/online-posts/roller-craft-official.webp",
-          "alt": "RollerCraft official App Store promotional artwork",
+          "image": "/images/online-posts/roller-craft-landscape.webp",
+          "alt": "Roller Craft landscape promotional artwork",
           "lead": "Roll, Create and Explore.",
           "description": "Guide a rolling character through obstacle-filled courses, or explore the creative side of the game through its level editor. Precise movement and player-made stages bring together route learning, experimentation and a sense of discovery.",
           "focus": "Watch the movement through each course and the ideas behind different stage layouts.",
           "source": "https://apps.apple.com/hk/app/id6502975107",
           "source_label": "Official App Store",
-          "image_source": "https://apps.apple.com/hk/app/id6502975107"
+          "image_source": "https://www.taptap.io/app/33816651",
+          "status": "Updating",
+          "image_credit": "TapTap Store Promotional Artwork"
         },
         {
           "id": "rolling-sky-2",
@@ -55,8 +61,8 @@
           "alt": "Rolling Sky 2 official Steam promotional artwork",
           "lead": "A Journey Carried by Music.",
           "description": "Rolling Sky 2 combines music and running through changing environments, building its stages around imaginative journeys and a strong sense of rhythm.",
-          "focus": "Videos for this game will be added to the channel later.",
-          "status": "Videos Coming Soon",
+          "focus": "The video collection for this game is complete.",
+          "status": "Completed",
           "source": "https://store.steampowered.com/app/1067440/RollingSky2/",
           "source_label": "Official Steam Page",
           "image_source": "https://store.steampowered.com/app/1067440/RollingSky2/"
@@ -79,7 +85,8 @@
           "focus": "Watch the changing stage mechanics, jump timing and discoveries along the route.",
           "source": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/",
           "source_label": "Official Nintendo Page",
-          "image_source": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/"
+          "image_source": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/",
+          "status": "Completed"
         },
         {
           "id": "odyssey",
@@ -92,7 +99,8 @@
           "focus": "Watch movement combinations, captures, route choices and hidden discoveries.",
           "source": "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/",
           "source_label": "Official Nintendo Page",
-          "image_source": "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/"
+          "image_source": "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/",
+          "status": "Completed"
         },
         {
           "id": "3d-world",
@@ -106,7 +114,8 @@
           "source": "https://www.nintendo.com/us/store/products/super-mario-3d-world-plus-bowsers-fury-switch/",
           "source_label": "Official Nintendo Page",
           "image_source": "https://www.nintendo.com/us/store/products/super-mario-3d-world-plus-bowsers-fury-switch/",
-          "artwork_note": "Official Switch edition artwork includes Bowser’s Fury; this entry introduces Super Mario 3D World."
+          "artwork_note": "Official Switch edition artwork includes Bowser’s Fury; this entry introduces Super Mario 3D World.",
+          "status": "Completed"
         }
       ]
     }
