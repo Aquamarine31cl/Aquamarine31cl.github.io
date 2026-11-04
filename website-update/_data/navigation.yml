@@ -1,0 +1,18 @@
+main:
+  - title: "About"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "Conference"
+    url: /talks/
+  - title: "Experiences"
+    url: /experiences/
+
+  - title: "Online Posts"
+    url: /online-posts/
+
+  - title: "Portfolio"
+    url: /portfolio/
+
+  - title: "Star Arcade"
+    url: /arcade/

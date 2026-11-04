@@ -1,0 +1,75 @@
+
+{% include base_path %}
+
+<!-- start custom head snippets -->
+
+<!-- Start in the dark interface unless the visitor has explicitly chosen light mode. -->
+<script>
+(function () {
+  var key = "aquamarine.theme.v2";
+  function setting() {
+    try { var saved = localStorage.getItem(key); return /^(dark|light|system)$/.test(saved) ? saved : "dark"; }
+    catch (error) { return "dark"; }
+  }
+  function computed() { var value = setting(); return value === "system" ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : value; }
+  function apply(value) { value = value || computed(); document.documentElement.setAttribute("data-theme", value); return value; }
+  function save(value) { try { localStorage.setItem(key, value); } catch (error) {} }
+  window.aquamarineTheme = { setting: setting, computed: computed, apply: apply, save: save };
+  apply();
+})();
+</script>
+
+<link rel="stylesheet" href="{{ base_path }}/assets/css/cosmic.css?v=20261102-smooth30">
+
+<!-- Support for Academicons -->
+<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+
+<!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
+<link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
+<link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
+<link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
+<link rel="icon" href="/images/favicon.ico"/>
+<meta name="theme-color" content="#090919"/>
+
+<!-- end custom head snippets -->
+
+{% if page.travel_maps %}<link rel="stylesheet" href="{{ '/assets/vendor/leaflet/leaflet.css' | relative_url }}"><link rel="stylesheet" href="{{ '/assets/css/travel-maps.css' | relative_url }}?v=20261102-smooth30">{% endif %}
+
+<link rel="stylesheet" href="{{ '/assets/css/interactions.css' | relative_url }}?v=20261102-smooth30">
+
+<link rel="stylesheet" href="{{ '/assets/css/ornaments.css' | relative_url }}?v=20261102-smooth30">
+
+{% if page.home_page %}<link rel="stylesheet" href="{{ '/assets/css/wish-bottles.css' | relative_url }}?v=20261102-smooth30">{% endif %}
+
+<link rel="stylesheet" href="{{ '/assets/css/visitor-access.css' | relative_url }}?v=20261103-smooth30">
+
+{% if page.experience_category == 'moments' or page.online_posts %}<link rel="stylesheet" href="{{ '/assets/css/online-posts.css' | relative_url }}?v=20261103-smooth30">{% endif %}
+
+<link rel="stylesheet" href="{{ '/assets/css/planets.css' | relative_url }}?v=20261103-smooth30">
+
+{% if page.collection == 'publications' %}<script>window.aquamarinePublicationTitle=document.title;document.title='Publications';</script>{% endif %}
+
+{% if page.portfolio_page %}<link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}?v=20261103-smooth30">{% endif %}
+
+<link rel="stylesheet" href="{{ '/assets/css/galaxy.css' | relative_url }}?v=20261103-smooth30">
+
+<link rel="stylesheet" href="{{ '/assets/css/galactic-details.css' | relative_url }}?v=20261103-orbit39">
+
+<link rel="stylesheet" href="{{ '/assets/css/starlight-eggs.css' | relative_url }}?v=20261104-homebound52">
+
+<link rel="stylesheet" href="{{ '/assets/css/sky-atlas.css' | relative_url }}?v=20261103-orbit39">
+
+<link rel="stylesheet" href="{{ '/assets/css/preview-comfort.css' | relative_url }}?v=20261103-orbit39">
+
+<link rel="stylesheet" href="{{ '/assets/css/sky-secret.css' | relative_url }}?v=20261103-orbit39">
+
+<link rel="stylesheet" href="{{ '/assets/css/layout-polish.css' | relative_url }}?v=20261103-orbit39">
+
+<link rel="stylesheet" href="{{ '/assets/css/stability.css' | relative_url }}?v=20261103-orbit39">
+
+<link rel="stylesheet" href="{{ '/assets/css/orbit-stable.css' | relative_url }}?v=20261103-orbit39">
+
+<link rel="stylesheet" href="{{ '/assets/css/pocket-observatory.css' | relative_url }}?v=20261104-echo44">
+<link rel="stylesheet" href="{{ '/assets/css/star-arcade.css' | relative_url }}?v=50">

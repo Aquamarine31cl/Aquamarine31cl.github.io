@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Private Files"
+permalink: /private-files/
+author_profile: false
+---
+<main id="main" class="experience-page">
+  <section class="experience-hero" aria-labelledby="private-files-title">
+    <p class="cosmic-eyebrow">RESTRICTED / ARCHIVE</p>
+    <h1 id="private-files-title">Private Files</h1>
+    {% assign archive_url = site.visitor_admin_url | default: '' %}
+    {% assign archive_scheme = archive_url | slice: 0, 8 %}
+    {% if archive_scheme == 'https://' %}
+      <p class="experience-intro">Sign in to the private archive to view or download its files.</p>
+      <p><a href="{{ archive_url | escape }}">Open Private Archive</a></p>
+    {% else %}
+      <p class="experience-intro">The private archive is awaiting connection to its sign-in service.</p>
+    {% endif %}
+  </section>
+</main>
