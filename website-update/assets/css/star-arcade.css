@@ -54,3 +54,13 @@ html .challenge-board button[data-state="player"]{background:#b2f5e9;color:#192b
 .star-game:is([data-sector="4"],[data-sector="9"]){--sector-color:#c7a8fc;}
 .star-game[data-sector] [data-sector]{color:var(--sector-color);}
 html .challenge-board button[data-state="goal"]{border-color:var(--sector-color,#8de9d1);}
+.challenge-board [data-orbit-tile]{
+ display:grid;place-items:center;aspect-ratio:1;min-width:0;
+ border:1px solid #605279;border-radius:.35rem;background:#222039;color:#cabfe5;
+}
+.challenge-board [data-orbit-tile="hazard"]{background:#572d43;color:#ffd8e7;}
+.challenge-board [data-orbit-tile="gravity"]{background:#333256;color:#abbdff;}
+.challenge-board [data-orbit-tile="ship"]{background:#a8e6e0;color:#192b3a;}
+.challenge-board [data-orbit-tile="station"],.challenge-board [data-orbit-tile="beacon"]{background:#18544f;color:#d7ffed;}
+.challenge-board [data-flight-preview]{outline:2px dashed #f7d781;outline-offset:-3px;}
+html .challenge-actions button[aria-pressed="true"]{background:#a7f3db;color:#142b2b;}
