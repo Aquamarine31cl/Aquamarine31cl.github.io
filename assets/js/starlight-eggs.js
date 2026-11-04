@@ -2,7 +2,7 @@
 'use strict';
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
 const names={scholar:'Scholar',nova:'Nova',voyager:'Voyager',dreamer:'Dreamer',creator:'Creator'};
-let discovered=[];try{const saved=JSON.parse(localStorage.getItem('aquamarine.sky.collection.v1')||'[]');if(Array.isArray(saved))discovered=saved.filter(x=>Object.hasOwn(names,x));}catch{}
+let discovered=[];try{const saved=JSON.parse(localStorage.getItem('aquamarine.sky.collection.v1')||'[]');if(Array.isArray(saved))discovered=[...new Set(saved.filter(x=>Object.hasOwn(names,x)))];}catch{}
 const toast=document.createElement('div');toast.className='sky-toast';toast.setAttribute('role','status');toast.setAttribute('aria-live','polite');toast.hidden=true;document.body.append(toast);
 const canvas=document.createElement('canvas');canvas.className='sky-celebration';canvas.setAttribute('aria-hidden','true');document.body.append(canvas);const ctx=canvas.getContext('2d');
 let particles=[],frame=0,last=0,timer=0;
@@ -25,6 +25,7 @@ function tick(now){
  ctx.globalAlpha=1;if(particles.length&&!document.hidden)frame=requestAnimationFrame(tick);else stop();
 }
 function celebrate(message,strong=false,origin){
+ if(document.hidden)return;
  const modal=document.querySelector('dialog[open]');
  if(modal){const local=modal.querySelector('.sky-atlas-caption,[role=status]');if(local)local.textContent=message;return;}
  toast.getAnimations().forEach(a=>a.cancel());toast.textContent=message;toast.hidden=false;if(!reduced.matches&&toast.animate)toast.animate([{opacity:0,translate:'0 6px'},{opacity:1,translate:'0 0'}],{duration:240,easing:'cubic-bezier(.2,.7,.3,1)'});clearTimeout(timer);timer=setTimeout(()=>toast.hidden=true,3800);
@@ -43,6 +44,7 @@ function celebrate(message,strong=false,origin){
  if(!frame){last=0;frame=requestAnimationFrame(tick);}
 }
 function collect(id,button){
+ const now=performance.now();if(now-Number(button.dataset.lastSpark||'-Infinity')<700)return;button.dataset.lastSpark=String(now);
  const fresh=!discovered.includes(id);if(fresh){discovered.push(id);try{localStorage.setItem('aquamarine.sky.collection.v1',JSON.stringify(discovered));}catch{}drawBadges();document.dispatchEvent(new CustomEvent('sky-collection-change'));}
  const r=button.getBoundingClientRect();celebrate(fresh?names[id]+' discovered. '+discovered.length+' / 5 stars collected.':names[id]+' sends a little starlight.',discovered.length===5&&fresh,{x:r.left+r.width/2,y:r.top+r.height/2});
 }
@@ -68,5 +70,6 @@ if(visits>0&&(visits%10===7||visits%100===42)){
  let shown=false;try{shown=sessionStorage.getItem('aquamarine.sky.visit')===String(visits);sessionStorage.setItem('aquamarine.sky.visit',String(visits));}catch{}
  if(!shown)setTimeout(()=>celebrate('Visit '+visits+': welcome back to your little galaxy.'),900);
 }
-document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();});addEventListener('pagehide',stop);addEventListener('resize',stop);reduced.addEventListener('change',stop);drawBadges();
+function suspend(){stop();clearTimeout(timer);toast.hidden=true;toast.getAnimations().forEach(a=>a.cancel());}
+document.addEventListener('visibilitychange',()=>{if(document.hidden)suspend();});addEventListener('pagehide',suspend);addEventListener('resize',stop);reduced.addEventListener('change',stop);drawBadges();
 })();
