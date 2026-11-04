@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Star Arcade"
+permalink: /arcade/
+author_profile: false
+---
+<main id="main" class="experience-page">
+  <header class="experience-hero">
+    <p class="cosmic-eyebrow">PLAY / TEN GAMES</p>
+    <h1>Star Arcade</h1>
+    <p class="experience-intro">A quiet corner for little games.</p>
+  </header>
+  <section class="star-game" aria-labelledby="star-game-title">
+    <h2 id="star-game-title">Constellation Memory</h2>
+    <p>Study the numbered sequence, then hide it and repeat it. Complete five rounds to discover a secret constellation. Take as much time as you like.</p>
+    <p data-game-status role="status">Ready for round one?</p>
+    <ol class="star-game-sequence" aria-label="Sequence to remember" hidden></ol>
+    <div class="star-game-grid" role="group" aria-label="Choose a star" hidden>
+      <button type="button" data-star="1">✦ <span>1</span></button>
+      <button type="button" data-star="2">✧ <span>2</span></button>
+      <button type="button" data-star="3">✷ <span>3</span></button>
+      <button type="button" data-star="4">✵ <span>4</span></button>
+    </div>
+    <button type="button" data-game-action hidden>Start Game</button>
+    <noscript><p>Enable JavaScript to play Constellation Memory.</p></noscript>
+  </section>
+  <div data-arcade-games></div>
+</main>
+<script defer src="{{ '/assets/js/star-arcade.js' | relative_url }}?v=46"></script>
+<script defer src="{{ '/assets/js/arcade-games.js' | relative_url }}?v=48"></script>

@@ -2,7 +2,7 @@
  const cards=Array.from(document.querySelectorAll('.experience-art'));
  if(!cards.length)return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
- let frame=0,last=0,time=0,aligningAt=-100;
+ let frame=0,last=0,time=0,orbitPulseTimer=0;
  const states=cards.map((el,i)=>{
   const kind=el.dataset.planet;
   const eclipse=document.createElement('span');eclipse.className='planet-eclipse-window';eclipse.innerHTML='<span></span>';el.querySelector('.art-orb')?.append(eclipse);
@@ -10,20 +10,17 @@
   const corona=document.createElement('span');corona.className='planet-corona';el.append(corona);
   const dust=Array.from({length:kind==='moments'?18:10},(_,n)=>{const dot=document.createElement('span');dot.className='planet-orbit-grain';dot.style.opacity=String(.25+(n%4)*.15);el.append(dot);return dot;});
   const [a,b,rotation,period]=kind==='travel'?[117,35,-24,18]:kind==='sports'?[114.5,31.5,17,23]:[151,48,-24,26];
-  if(kind==='moments'){const track=document.createElement('span');track.className='art-satellite-track';el.append(track);}
+  // The visible track and the moving moon share the very same ellipse.
+  const ns='http://www.w3.org/2000/svg',track=document.createElementNS(ns,'svg'),ellipse=document.createElementNS(ns,'ellipse'),size=a*2+24;
+  track.classList.add('planet-moon-track');track.setAttribute('viewBox',[-size/2,-size/2,size,size].join(' '));track.setAttribute('aria-hidden','true');
+  track.style.width=size+'px';track.style.height=size+'px';
+  ellipse.setAttribute('rx',a);ellipse.setAttribute('ry',b);ellipse.setAttribute('transform','rotate('+rotation+')');track.append(ellipse);el.append(track);
   return {el,moon:el.querySelector('.art-moon'),a,b,rotation:rotation*Math.PI/180,period,phase:i*2.1,dust};
  });
  function paint(){
   for(const s of states){
    if(!s.moon)continue;
-   let theta=time*2*Math.PI/s.period+s.phase;
-   const age=time-aligningAt;
-   if(age>=0&&age<7&&Number.isFinite(s.alignmentTarget)){
-    const ease=x=>x*x*(3-2*x);
-    if(age<2)theta+=(s.alignmentTarget-theta)*ease(age/2);
-    else if(age<5)theta=s.alignmentTarget;
-    else theta=s.alignmentTarget+(theta+s.alignmentShift-s.alignmentTarget)*ease((age-5)/2);
-   }
+   const theta=time*2*Math.PI/s.period+s.phase;
    const x=s.a*Math.cos(theta),y=s.b*Math.sin(theta);
    const px=x*Math.cos(s.rotation)-y*Math.sin(s.rotation),py=x*Math.sin(s.rotation)+y*Math.cos(s.rotation);
    s.moon.style.transform='translate('+px.toFixed(3)+'px,'+py.toFixed(3)+'px) translate(-50%,-50%)';
@@ -38,8 +35,22 @@
    });
   }
  }
- function tick(now){frame=0;const dt=last?Math.min((now-last)/1000,.05):0;last=now;time+=dt;paint();if(!document.hidden&&!reduced.matches)frame=requestAnimationFrame(tick);}
- function sync(){cancelAnimationFrame(frame);frame=0;last=0;paint();if(!document.hidden&&!reduced.matches)frame=requestAnimationFrame(tick);}
+ let inView=true;
+ const canAnimate=()=>inView&&!document.hidden&&!reduced.matches;
+ function tick(now){frame=0;if(!canAnimate())return;const dt=last?Math.min((now-last)/1000,.05):0;last=now;time+=dt;paint();frame=requestAnimationFrame(tick);}
+ function sync(){cancelAnimationFrame(frame);frame=0;last=0;paint();if(canAnimate())frame=requestAnimationFrame(tick);}
+ if(typeof IntersectionObserver==='function'){
+  const visibleCards=new Set();
+  const observer=new IntersectionObserver(entries=>{
+   for(const entry of entries){
+    if(entry.isIntersecting)visibleCards.add(entry.target);
+    else visibleCards.delete(entry.target);
+   }
+   const visible=visibleCards.size>0;
+   if(visible!==inView){inView=visible;sync();}
+  });
+  cards.forEach(card=>observer.observe(card));
+ }
  let eclipseTimer=0,eclipseIndex=0;
  function clearEclipse(){clearTimeout(eclipseTimer);cards.forEach(el=>el.removeAttribute('data-eclipse'));}
  document.addEventListener('sky-eclipse',()=>{clearEclipse();if(reduced.matches)return;cards[eclipseIndex++%cards.length].setAttribute('data-eclipse','');eclipseTimer=setTimeout(clearEclipse,9500);});
@@ -56,6 +67,8 @@
   }
   el.addEventListener('pointerenter',visit);el.closest('a')?.addEventListener('focus',visit);
  });
- document.addEventListener('sky-alignment',()=>{if(!reduced.matches){aligningAt=time;states.forEach(s=>{const nominal=time*2*Math.PI/s.period+s.phase;s.alignmentTarget=Math.round(nominal/(2*Math.PI))*2*Math.PI;s.alignmentShift=Math.round((s.alignmentTarget-(nominal+7*2*Math.PI/s.period))/(2*Math.PI))*2*Math.PI;});}});
+ function clearOrbitPulse(){clearTimeout(orbitPulseTimer);cards.forEach(el=>el.removeAttribute('data-orbit-pulse'));}
+ document.addEventListener('sky-alignment',()=>{clearOrbitPulse();if(reduced.matches)return;cards.forEach(el=>el.setAttribute('data-orbit-pulse',''));orbitPulseTimer=setTimeout(clearOrbitPulse,4000);});
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)clearOrbitPulse();});addEventListener('pagehide',clearOrbitPulse);reduced.addEventListener('change',clearOrbitPulse);
  document.addEventListener('visibilitychange',sync);reduced.addEventListener('change',sync);addEventListener('pageshow',sync);addEventListener('pagehide',()=>{cancelAnimationFrame(frame);frame=0;last=0;});sync();
 })();

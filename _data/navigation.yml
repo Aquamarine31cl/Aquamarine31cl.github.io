@@ -13,3 +13,6 @@ main:
 
   - title: "Portfolio"
     url: /portfolio/
+
+  - title: "Star Arcade"
+    url: /arcade/

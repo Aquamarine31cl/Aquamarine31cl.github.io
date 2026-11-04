@@ -8,4 +8,18 @@ html .observatory-actions button{margin:0;padding:9px 14px;min-height:42px;borde
 .pocket-observatory :is(canvas,button):focus-visible{outline:2px solid #b9edff;outline-offset:3px;}
 .pocket-observatory .observatory-status{min-height:3.6em;color:#cabde0;}
 .pocket-observatory[data-complete] canvas{border-color:#e3cb8f99;}
+.pocket-observatory[data-beacon] canvas{border-color:#85ecd199;}
+.observatory-actions button[hidden]{display:none!important;}
+@media(pointer:coarse){html .observatory-actions button{min-height:44px;}}
+@media(max-height:500px){.sky-atlas-dialog{max-height:calc(100dvh - 20px);}}
+@media(max-height:500px) and (orientation:landscape){
+ .pocket-observatory canvas{max-width:380px;margin-inline:auto;}
+}
+.cosmic-motion-controls{
+ right:max(.6rem,env(safe-area-inset-right));
+ bottom:max(.6rem,env(safe-area-inset-bottom));
+ max-width:calc(100vw - 1.2rem - env(safe-area-inset-right));
+}
+html .cosmic-motion-controls button{min-width:0;white-space:normal;}
+@media(pointer:coarse){html .cosmic-motion-controls button{min-height:44px;}}
 @media(max-width:420px){.observatory-actions button{flex:1 1 140px;}.pocket-observatory p{font-size:11px;}}

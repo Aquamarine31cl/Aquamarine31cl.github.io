@@ -15,8 +15,13 @@
               {% assign domain = base_path %}
             {% endif %}
             <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              <a href="{{ domain }}{{ link.url }}"{% if link.url == '/arcade/' %} class="star-arcade-nav"{% endif %}>{{ link.title }}</a>
             </li>
+            {% if link.url == '/arcade/' and site.visitor_admin_url %}
+              <li class="masthead__menu-item">
+                <a href="{{ site.visitor_admin_url | escape }}">Visitor Admin</a>
+              </li>
+            {% endif %}
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" tabindex="0" aria-label="Toggle Color Theme"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
