@@ -1,36 +1,4 @@
-.star-game{
- margin:1.5rem auto 3rem;
- padding:clamp(1rem,4vw,2rem);
- max-width:38rem;
- border:1px solid #a88cd877;
- border-radius:1.4rem;
- background:#17172f;
- color:#f4ecff;
-}
-.star-game h2{margin-top:0;color:inherit;}
-.star-game [hidden]{display:none!important;}
-.star-game-sequence,.star-game-grid{display:flex;flex-wrap:wrap;gap:.65rem;margin:1rem 0;padding:0;}
-.star-game-sequence li{display:grid;place-items:center;min-width:2rem;min-height:2rem;border:1px solid #bda4f080;border-radius:.5rem;list-style:none;}
-html .star-game button{min-width:48px;min-height:48px;padding:.55rem .8rem;border:1px solid #bb9ae6;border-radius:.65rem;background:#2b2348;color:#fff;cursor:pointer;}
-html .star-game button:focus-visible{outline:2px solid #9ef1e8;outline-offset:3px;}
-.star-game[data-won]{border-color:#93efd9;}
-.star-game[data-won] [data-game-status]{color:#a4fae6;animation:arcade-arrival .7s ease-out;}
-.star-game button[data-hit]{animation:arcade-arrival .35s ease-out;}
-@keyframes arcade-arrival{from{opacity:.65;transform:translateY(3px);}to{opacity:1;transform:none;}}
-@media(prefers-reduced-motion:reduce){.star-game *, .star-game[data-won] [data-game-status]{animation:none!important;}}
-#site-nav a.star-arcade-nav{
- color:#00685d!important;
- background:#d4faf1!important;
- border-radius:.5rem;
-}
-html[data-theme="dark"] #site-nav a.star-arcade-nav{
- color:#a3fae7!important;
- background:#173e43!important;
-}
+#site-nav a.star-arcade-nav{color:#00685d!important;background:#d4faf1!important;border-radius:.5rem;}
+html[data-theme="dark"] #site-nav a.star-arcade-nav{color:#a3fae7!important;background:#173e43!important;}
 #site-nav a.star-arcade-nav:hover,#site-nav a.star-arcade-nav:focus-visible{outline:2px solid currentColor;outline-offset:-2px;}
 #site-nav .selected>a.star-arcade-nav{text-decoration:underline;text-underline-offset:.2em;}
-.star-game-board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;max-width:15rem;margin:1rem 0;}
-html .star-game-board button{min-width:0;padding:.35rem;}
-html .star-game-board button[aria-pressed="true"]{background:#a7f3db;color:#142b2b;}
-.star-game form{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;}
-.star-game input{width:7rem;max-width:100%;margin:0;}

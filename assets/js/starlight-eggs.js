@@ -7,6 +7,7 @@ const toast=document.createElement('div');toast.className='sky-toast';toast.setA
 const canvas=document.createElement('canvas');canvas.className='sky-celebration';canvas.setAttribute('aria-hidden','true');document.body.append(canvas);const ctx=canvas.getContext('2d');
 let particles=[],frame=0,last=0,timer=0;
 function drawBadges(){
+ document.querySelectorAll('[data-sky-afterglow]').forEach(el=>el.hidden=discovered.length!==5);
  document.querySelectorAll('[data-sky-count]').forEach(el=>el.textContent=discovered.length+' / 5');
  document.querySelectorAll('[data-sky-badges]').forEach(el=>{
   el.replaceChildren();for(const [id,name] of Object.entries(names)){const chip=document.createElement('span');chip.className=discovered.includes(id)?'sky-badge is-found':'sky-badge';chip.textContent=(discovered.includes(id)?'✦ ':'· ')+name;el.append(chip);}
@@ -70,6 +71,28 @@ if(visits>0&&(visits%10===7||visits%100===42)){
  let shown=false;try{shown=sessionStorage.getItem('aquamarine.sky.visit')===String(visits);sessionStorage.setItem('aquamarine.sky.visit',String(visits));}catch{}
  if(!shown)setTimeout(()=>celebrate('Visit '+visits+': welcome back to your little galaxy.'),900);
 }
-function suspend(){stop();clearTimeout(timer);toast.hidden=true;toast.getAnimations().forEach(a=>a.cancel());}
+const afterglow=document.querySelector('[data-sky-afterglow]');
+if(afterglow){
+ const picture=afterglow.querySelector('svg');
+ const home=afterglow.querySelector('[data-sky-return]');
+ const status=afterglow.querySelector('[role="status"]');
+ afterglow.querySelector('[data-sky-light]').addEventListener('click',()=>{
+  picture.removeAttribute('hidden');
+  picture.classList.remove('is-lighting','is-homebound');
+  if(!reduced.matches){
+   picture.getBoundingClientRect();
+   picture.classList.add('is-lighting');
+  }
+  home.hidden=false;
+  status.textContent='Starlight Afterglow discovered. Five stars, one constellation.';
+ });
+ home.addEventListener('click',()=>{
+  picture.classList.remove('is-lighting','is-homebound');
+  picture.getBoundingClientRect();
+  picture.classList.add('is-homebound');
+  status.textContent='Homebound Star discovered. The constellation lights the way home.';
+ });
+}
+function suspend(){stop();clearTimeout(timer);toast.hidden=true;toast.getAnimations().forEach(a=>a.cancel());afterglow?.querySelector('svg')?.classList.remove('is-lighting','is-homebound');}
 document.addEventListener('visibilitychange',()=>{if(document.hidden)suspend();});addEventListener('pagehide',suspend);addEventListener('resize',stop);reduced.addEventListener('change',stop);drawBadges();
 })();

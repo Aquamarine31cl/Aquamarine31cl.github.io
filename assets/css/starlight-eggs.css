@@ -15,3 +15,56 @@ html .sky-discovery:focus-visible{outline:2px solid #d9c1f4;outline-offset:3px;}
 .sky-badge.is-found{color:#e3cff6;border-color:#c4a7e077;background:#ab89d418;}
 html .sidebar .sky-collection p{font-size:9px!important;color:#a89bbd;}
 @media(prefers-reduced-motion:reduce){.sky-discovery{transition:none!important;}}
+.sky-afterglow[hidden],.sky-afterglow svg[hidden]{display:none!important;}
+html .sky-afterglow button{max-width:100%;min-height:44px;padding:.45rem .65rem;white-space:normal;border:1px solid #a8e4dc;border-radius:.65rem;background:#162e3a;color:#d4faf4;font-size:11px;}
+.sky-afterglow svg{display:block;width:100%;height:auto;margin:.3rem 0;overflow:visible;}
+.sky-afterglow path{fill:none;stroke:#8de5da;stroke-width:1.6;}
+.sky-afterglow circle{fill:#e0fcff;}
+.sky-afterglow svg.is-lighting path{stroke-dasharray:1;animation:sky-afterglow-trace 1s ease-out both;}
+.sky-afterglow svg.is-lighting circle{animation:sky-afterglow-glow .7s .3s ease-out both;}
+@keyframes sky-afterglow-trace{from{stroke-dashoffset:1;}to{stroke-dashoffset:0;}}
+@keyframes sky-afterglow-glow{from{opacity:.25;}to{opacity:1;}}
+@media(prefers-reduced-motion:reduce){.sky-afterglow svg.is-lighting :is(path,circle){animation:none;}}
+.sky-afterglow button[hidden]{display:none!important;}
+.sky-afterglow .sky-homebound-star{display:none;fill:#ffe7aa;}
+.sky-afterglow .is-homebound .sky-homebound-star{
+ display:block;
+ transform:translate(148px,-17px);
+ animation:sky-homebound-return 1.8s linear both;
+}
+@keyframes sky-homebound-return{
+ 0%{transform:translate(0,0);}
+ 24%{transform:translate(33px,-25px);}
+ 49%{transform:translate(73px,-9px);}
+ 79%{transform:translate(113px,-37px);}
+ 100%{transform:translate(148px,-17px);}
+}
+@media(prefers-reduced-motion:reduce){.sky-afterglow .is-homebound .sky-homebound-star{animation:none;}}
+.sky-wish-echo[hidden]{display:none!important;}
+.sky-wish-echo{margin-top:.7rem;padding:.65rem;border:1px solid #a8e4dc55;border-radius:.75rem;}
+html .sky-wish-echo button{max-width:100%;min-height:44px;padding:.45rem .65rem;white-space:normal;border:1px solid #a8e4dc;border-radius:.65rem;background:#162e3a;color:#d4faf4;font-size:11px;}
+.sky-wish-echo p:empty,.sky-echo-orbit{display:none;}
+.sky-wish-echo.is-answering .sky-echo-orbit{display:grid;place-items:center;position:relative;isolation:isolate;height:72px;color:#c3fff0;}
+.sky-echo-orbit span{position:absolute;width:45px;height:45px;border:1px solid #8ce9d7;border-radius:50%;opacity:.25;animation:sky-wish-wave 1.3s ease-out both;}
+.sky-echo-orbit span:nth-child(2){animation-delay:.18s;}
+.sky-echo-orbit span:nth-child(3){animation-delay:.36s;}
+@keyframes sky-wish-wave{from{transform:scale(.25);opacity:.8;}to{transform:scale(1.5);opacity:.12;}}
+.sky-lunar-halo[hidden]{display:none!important;}
+html .sky-lunar-halo{max-width:100%;min-height:44px;white-space:normal;}
+.sky-moon-card [role="status"]:empty{display:none;}
+.sky-moon-card[data-halo] .sky-moon-dial{
+ outline:2px solid #e9d3ff;
+ outline-offset:3px;
+ animation:sky-lunar-halo 1.2s ease-out;
+}
+@keyframes sky-lunar-halo{
+ from{outline-offset:0;outline-color:transparent;}
+ 55%{outline-offset:8px;outline-color:#fff1cf;}
+ to{outline-offset:3px;outline-color:#e9d3ff;}
+}
+@media(prefers-reduced-motion:reduce){.sky-moon-card[data-halo] .sky-moon-dial{animation:none;}}
+@media(prefers-reduced-motion:reduce){
+ .sky-echo-orbit span{animation:none;}
+ .sky-echo-orbit span:nth-child(2){transform:scale(1.25);}
+ .sky-echo-orbit span:nth-child(3){transform:scale(1.5);}
+}

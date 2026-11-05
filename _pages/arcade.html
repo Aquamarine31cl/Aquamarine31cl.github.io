@@ -4,27 +4,44 @@ title: "Star Arcade"
 permalink: /arcade/
 author_profile: false
 ---
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=60">
 <main id="main" class="experience-page">
-  <header class="experience-hero">
-    <p class="cosmic-eyebrow">PLAY / TEN GAMES</p>
-    <h1>Star Arcade</h1>
-    <p class="experience-intro">A quiet corner for little games.</p>
-  </header>
-  <section class="star-game" aria-labelledby="star-game-title">
-    <h2 id="star-game-title">Constellation Memory</h2>
-    <p>Study the numbered sequence, then hide it and repeat it. Complete five rounds to discover a secret constellation. Take as much time as you like.</p>
-    <p data-game-status role="status">Ready for round one?</p>
-    <ol class="star-game-sequence" aria-label="Sequence to remember" hidden></ol>
-    <div class="star-game-grid" role="group" aria-label="Choose a star" hidden>
-      <button type="button" data-star="1">✦ <span>1</span></button>
-      <button type="button" data-star="2">✧ <span>2</span></button>
-      <button type="button" data-star="3">✷ <span>3</span></button>
-      <button type="button" data-star="4">✵ <span>4</span></button>
-    </div>
-    <button type="button" data-game-action hidden>Start Game</button>
-    <noscript><p>Enable JavaScript to play Constellation Memory.</p></noscript>
-  </section>
-  <div data-arcade-games></div>
-</main>
-<script defer src="{{ '/assets/js/star-arcade.js' | relative_url }}?v=46"></script>
-<script defer src="{{ '/assets/js/arcade-games.js' | relative_url }}?v=48"></script>
+<header class="experience-hero"><p class="cosmic-eyebrow">REAL-TIME / SPACE COMBAT</p><h1>Star Arcade</h1><p class="experience-intro">Two real-time campaigns in flight combat and route-building defense.</p></header>
+<section class="voidrunner" data-voidrunner aria-labelledby="voidrunner-title">
+<h2 id="voidrunner-title">Voidrunner</h2>
+<p>Clear four waves. Keep momentum while firing, use asteroids as cover, and let your weapon cool between bursts. Shields regenerate after four seconds without damage. Each cleared sector grants one upgrade and repairs 30 hull.</p>
+<p>Keyboard: W/↑ thrust, A/← and D/→ steer, S/↓ brake, Space fire, P pause. Focus the flight view to use keyboard controls. On touch screens, hold the controls below. The flight pauses when you leave it.</p>
+<p data-flight-hud aria-live="off"></p>
+<canvas width="960" height="600" tabindex="0" role="img" aria-label="Voidrunner real-time space combat flight view"></canvas>
+<div class="flight-controls">
+<button type="button" data-flight-control="left" aria-label="Steer left">↶ Left</button>
+<button type="button" data-flight-control="thrust">Thrust</button>
+<button type="button" data-flight-control="right" aria-label="Steer right">Right ↷</button>
+<button type="button" data-flight-control="brake">Brake</button>
+<button type="button" data-flight-control="fire">Fire</button>
+</div>
+<div class="flight-controls"><button type="button" data-flight-start>Launch / Restart</button><button type="button" data-flight-pause disabled>Pause Flight</button></div>
+<div class="flight-controls" data-flight-upgrades hidden>
+<button type="button" data-upgrade="damage">Upgrade Weapon</button>
+<button type="button" data-upgrade="engine">Upgrade Engine</button>
+<button type="button" data-upgrade="shield">Upgrade Shield</button>
+</div>
+<p data-flight-status role="status">Ready. Select Launch to begin.</p>
+<noscript><p>Enable JavaScript to play.</p></noscript>
+</section><section class="voidrunner" data-relay-siege aria-labelledby="siege-title">
+<h2 id="siege-title">Relay Siege</h2>
+<p>Protect the relay through six waves. Place laser towers (35 credits) for damage and stasis towers (50) to slow enemies. Towers block movement, so every placement reshapes the shortest route. You must leave a route open. Armored enemies take reduced laser damage and cost two integrity if they escape.</p>
+<p>Select a tile, then Build. Upgrade the selected tower to level 3 for 30 and 60 credits, or salvage it for 60% of its total investment. Each kill funds more construction. A cleared wave grants 35 credits. On narrow screens, scroll the board sideways. Arrow keys navigate tiles.</p>
+<p data-siege-hud></p>
+<div class="siege-scroll"><div class="siege-grid" data-siege-grid role="grid" aria-label="Relay defense map"></div></div>
+<div class="flight-controls">
+<button type="button" data-siege-mode="laser" aria-pressed="true">Laser (35)</button><button type="button" data-siege-mode="stasis" aria-pressed="false">Stasis (50)</button>
+<button type="button" data-siege-action="build">Build</button><button type="button" data-siege-action="upgrade">Upgrade</button><button type="button" data-siege-action="sell">Salvage</button>
+</div>
+<div class="flight-controls"><button type="button" data-siege-launch>Launch Wave</button><button type="button" data-siege-pause>Pause Wave</button><button type="button" data-siege-restart>Restart Siege</button></div>
+<p role="status"></p>
+</section></main>
+<script defer src="{{ '/assets/js/voidrunner-engine.js' | relative_url }}?v=60"></script>
+<script defer src="{{ '/assets/js/voidrunner.js' | relative_url }}?v=60"></script>
+
+<script defer src="{{ '/assets/js/relay-siege.js' | relative_url }}?v=60"></script>

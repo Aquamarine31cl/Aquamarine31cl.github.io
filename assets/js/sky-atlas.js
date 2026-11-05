@@ -44,18 +44,35 @@ if(corner){
  const actions=document.createElement('div');actions.className='sky-actions';
  const atlas=document.createElement('button');atlas.type='button';atlas.textContent='Explore My Star Atlas';atlas.addEventListener('click',()=>open(atlas));
  const wish=document.createElement('button');wish.type='button';wish.className='sky-wish-button';wish.textContent='Hold to Make a Wish';wish.setAttribute('aria-label','Make a wish. Hold with the pointer, or press Enter or Space.');
- let timer=0,lastWish=0;
+ const echo=document.createElement('section');echo.className='sky-wish-echo';echo.hidden=true;
+ echo.innerHTML='<button type="button">Listen for an Echo</button><div aria-hidden="true" class="sky-echo-orbit"><span></span><span></span><span></span><b>✦</b></div><p role="status"></p>';
+ const orbit=echo.querySelector('.sky-echo-orbit');
+ echo.querySelector('button').addEventListener('click',()=>{
+  echo.classList.remove('is-answering');
+  if(!reduce.matches)orbit.getBoundingClientRect();
+  echo.classList.add('is-answering');
+  echo.querySelector('[role="status"]').textContent='Wish Echo discovered. Three wishes, one answer from the stars.';
+ });
+ let timer=0,lastWish=0,wishes=0;
  function cancel(){clearTimeout(timer);timer=0;wish.removeAttribute('data-charging');}
- function release(){cancel();if(Date.now()-lastWish<2200)return;lastWish=Date.now();document.dispatchEvent(new CustomEvent('sky-wish-released'));announce('A wish released - a comet carries it into the galaxy.',true);}
+ function release(){
+  cancel();
+  if(Date.now()-lastWish<2200)return;
+  lastWish=Date.now();
+  document.dispatchEvent(new CustomEvent('sky-wish-released'));
+  wishes++;
+  if(wishes===3)echo.hidden=false;
+  announce(wishes===3?'A faint echo is waiting below your wishes.':'A wish released - a comet carries it into the galaxy.',true);
+ }
  wish.addEventListener('pointerdown',e=>{if(e.button!==0)return;cancel();wish.setPointerCapture(e.pointerId);wish.dataset.charging='';timer=setTimeout(release,700);});
  ['pointerup','pointercancel','lostpointercapture'].forEach(type=>wish.addEventListener(type,cancel));wish.addEventListener('click',e=>{if(e.detail===0)release();});
  addEventListener('blur',cancel);document.addEventListener('visibilitychange',()=>{if(document.hidden)cancel();});
- actions.append(atlas,wish);corner.append(actions);
+ actions.append(atlas,wish);corner.append(actions,echo);
 }
 const hero=document.querySelector('.experience-hero');
 if(hero&&document.querySelector('.art-moon')){
- const button=document.createElement('button');button.type='button';button.className='sky-alignment';button.textContent='Align the Planets ✧';let cooldown=0;
- button.addEventListener('click',()=>{if(Date.now()-cooldown<7500)return;cooldown=Date.now();document.dispatchEvent(new CustomEvent('sky-alignment'));announce(reduce.matches?'Three worlds, one constellation.':'Three worlds find a moment of alignment.');});const actionRow=document.createElement('div');actionRow.className='sky-experience-actions';hero.append(actionRow);actionRow.append(button);
+ const button=document.createElement('button');button.type='button';button.className='sky-alignment';button.textContent='Illuminate the Orbits ✧';let cooldown=0;
+ button.addEventListener('click',()=>{if(Date.now()-cooldown<7500)return;cooldown=Date.now();document.dispatchEvent(new CustomEvent('sky-alignment'));announce(reduce.matches?'Three worlds, one constellation.':'Three orbits answer in starlight.');});const actionRow=document.createElement('div');actionRow.className='sky-experience-actions';hero.append(actionRow);actionRow.append(button);
  const eclipse=document.createElement('button');eclipse.type='button';eclipse.className='sky-alignment';eclipse.textContent='Observe an Eclipse ◐';let lastEclipse=0;
  eclipse.addEventListener('click',()=>{if(Date.now()-lastEclipse<10000)return;lastEclipse=Date.now();document.dispatchEvent(new CustomEvent('sky-eclipse'));announce(reduce.matches?'A quiet eclipse, imagined in starlight.':'A quiet eclipse crosses one of your little worlds.');});actionRow.append(eclipse);
 }
@@ -63,6 +80,25 @@ if(hero&&document.querySelector('.art-moon')){
 const moonCard=document.createElement('section');moonCard.className='sky-moon-card';
 moonCard.innerHTML='<button type="button" class="sky-moon-dial" aria-label="Advance the moon phase"><canvas width="96" height="96" aria-hidden="true"></canvas></button><div><p class="cosmic-eyebrow">A LITTLE LUNAR EXPERIMENT</p><h3 class="sky-moon-label">New Moon</h3><p class="sky-moon-help">Turn the moon. See what a full cycle reveals.</p></div>';
 dialog.append(moonCard);
+const moonDial=moonCard.querySelector('.sky-moon-dial');
+const halo=document.createElement('button');
+halo.type='button';
+halo.className='sky-lunar-halo';
+halo.textContent='Reveal the Lunar Halo';
+halo.hidden=true;
+const haloStatus=document.createElement('p');
+haloStatus.setAttribute('role','status');
+moonCard.lastElementChild.append(halo,haloStatus);
+halo.addEventListener('click',()=>{
+ moonCard.removeAttribute('data-halo');
+ if(!reduce.matches)moonDial.getBoundingClientRect();
+ moonCard.dataset.halo='';
+ haloStatus.textContent='Lunar Halo discovered. A ring of light completes the cycle.';
+});
+dialog.addEventListener('close',()=>{
+ moonCard.removeAttribute('data-halo');
+ haloStatus.textContent='';
+});
 const phases=['New Moon','Waxing Crescent','First Quarter','Waxing Gibbous','Full Moon','Waning Gibbous','Last Quarter','Waning Crescent'];
 let phase=0,turns=0;
 const moonCanvas=moonCard.querySelector('canvas'),moonContext=moonCanvas.getContext('2d');
@@ -85,6 +121,7 @@ moonCard.querySelector('button').addEventListener('click',()=>{
  phase=(phase+1)%8;turns++;paintMoon();
  if(phase===4){caption.textContent='Full moon: a quiet silver light in your little sky.';}
  if(turns===8){
+  halo.hidden=false;
   moonCard.setAttribute('data-cycle-complete','');
   caption.textContent='Lunar Explorer - a full cycle, back where the journey began.';
   announce('Lunar Explorer - eight phases, one complete journey.',true);

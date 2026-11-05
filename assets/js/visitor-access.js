@@ -40,10 +40,10 @@ function apply(){
  document.querySelectorAll('.preview-access-prompt').forEach(el=>el.hidden=unlocked);
  document.querySelectorAll('[data-protected-href]').forEach(a=>{
   a.href=unlocked?a.dataset.protectedHref:'#access-dialog';a.classList.toggle('access-is-locked',!unlocked);
-  a.querySelectorAll('[data-protected-src]').forEach(img=>{
-   if(unlocked){img.src=img.dataset.protectedSrc;img.hidden=false;}else{img.removeAttribute('src');img.hidden=true;}
-  });
   a.querySelectorAll('.access-photo-veil').forEach(veil=>veil.hidden=unlocked);
+ });
+ document.querySelectorAll('[data-protected-src]').forEach(img=>{
+  if(unlocked){img.src=img.dataset.protectedSrc;img.hidden=false;}else{img.removeAttribute('src');img.hidden=true;}
  });
  document.querySelectorAll('[data-protected-section]').forEach(el=>el.hidden=!unlocked);
  document.querySelectorAll('[data-daily-prompt]').forEach(el=>el.hidden=unlocked);

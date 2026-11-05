@@ -17,9 +17,9 @@
             <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
               <a href="{{ domain }}{{ link.url }}"{% if link.url == '/arcade/' %} class="star-arcade-nav"{% endif %}>{{ link.title }}</a>
             </li>
-            {% if link.url == '/arcade/' and site.visitor_admin_url %}
+            {% if link.url == '/arcade/' %}
               <li class="masthead__menu-item">
-                <a href="{{ site.visitor_admin_url | escape }}">Visitor Admin</a>
+                <a href="{{ '/private-files/' | relative_url }}"{% if page.url == '/private-files/' %} aria-current="page"{% endif %}>Private Files</a>
               </li>
             {% endif %}
           {% endfor %}

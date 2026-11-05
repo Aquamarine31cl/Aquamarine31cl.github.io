@@ -53,7 +53,7 @@ html[data-theme="light"] .online-header p,html[data-theme="light"] .online-group
 @media(min-width:741px){.online-posts{max-width:none;width:100%;}.online-game-grid{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));}.online-game-grid>.online-game{display:flex;flex-direction:column;}.online-game>figure{width:100%;flex-shrink:0;}.online-game-copy{flex:1;}.online-group{width:100%;}}
 #main.experience-page:has(.online-posts){max-width:none;width:100%;box-sizing:border-box;}
 
-#main.experience-page:has(.online-posts)>.experience-section{display:block!important;grid-template-columns:none!important;width:100%;box-sizing:border-box;}#main.experience-page:has(.online-posts) .experience-section-body{width:100%;max-width:none;box-sizing:border-box;}
+#main.experience-page:has(.online-posts)>.experience-section:not([hidden]){display:block!important;grid-template-columns:none!important;width:100%;box-sizing:border-box;}#main.experience-page:has(.online-posts) .experience-section-body{width:100%;max-width:none;box-sizing:border-box;}
 
 /* Two independent, equal-width cards per desktop row in every access state. */
 @media(min-width:741px){
