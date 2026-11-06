@@ -9,7 +9,7 @@
  const upgrades=game.querySelector('[data-flight-upgrades]');
  const start=game.querySelector('[data-flight-start]'),pause=game.querySelector('[data-flight-pause]');
  let paused=false,frame=0,last=0,accumulator=0,lastPhase='',lastHud='';
- const keys={ArrowLeft:'left',a:'left',ArrowRight:'right',d:'right',ArrowUp:'thrust',w:'thrust',ArrowDown:'brake',s:'brake',' ':'fire'};
+ const keys={ArrowLeft:'left',a:'left',ArrowRight:'right',d:'right',ArrowUp:'thrust',w:'thrust',ArrowDown:'brake',s:'brake',' ':'fire',Shift:'brake'};
  function clear(){for(const key of Object.keys(input))delete input[key];}
  function paint(){
   ctx.fillStyle='#080f24';ctx.fillRect(0,0,960,600);
@@ -39,7 +39,7 @@
   ctx.fillStyle='#b0f1e8';ctx.beginPath();ctx.moveTo(19,0);ctx.lineTo(-12,-11);ctx.lineTo(-6,0);ctx.lineTo(-12,11);ctx.closePath();ctx.fill();
   if(p.shield>0){ctx.strokeStyle='#8de8f080';ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(0,0,22,0,Math.PI*2);ctx.stroke();}ctx.restore();
   if(!reduced.matches)for(const effect of model.effects){ctx.strokeStyle='#f4cfaa';ctx.globalAlpha=effect.life/.45;ctx.beginPath();ctx.arc(effect.x,effect.y,(.45-effect.life)*85+4,0,Math.PI*2);ctx.stroke();}ctx.globalAlpha=1;
-  const text='Wave '+model.wave+' / 4 · Hull '+Math.ceil(p.hull)+' · Shield '+Math.ceil(p.shield)+' · Heat '+Math.ceil(p.heat)+'% · Score '+model.score;
+  const text='Wave '+model.wave+' / 4 · Hull '+Math.ceil(p.hull)+' · Shield '+Math.ceil(p.shield)+' · Heat '+Math.ceil(p.heat)+'% · Speed '+Math.round(Math.hypot(p.vx,p.vy))+' · Score '+model.score;
   if(text!==lastHud){hud.textContent=text;lastHud=text;}
   if(model.phase!==lastPhase){
    lastPhase=model.phase;upgrades.hidden=model.phase!=='upgrade';

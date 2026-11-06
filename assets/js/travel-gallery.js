@@ -40,3 +40,22 @@ buttons.forEach(button=>button.addEventListener('click',()=>{if(button.getAttrib
   if(document.hidden)route.classList.remove('is-tracing');
  });
 })();
+/* Compute once per layout change, from all three frames, so switching photographs never shifts a row. */
+(() => {
+ const grid=document.querySelector('.travel-city-grid');if(!grid)return;
+ const cards=[...grid.querySelectorAll('.city-journey')];let frame=0;
+ function sizeRows(){
+  frame=0;const rows=new Map();
+  for(const card of cards){const top=Math.round(card.offsetTop);if(!rows.has(top))rows.set(top,[]);rows.get(top).push(card);}
+  for(const row of rows.values()){
+   let ratio=.75;
+   for(const card of row)for(const img of card.querySelectorAll('img[data-photo-width]'))ratio=Math.max(ratio,Number(img.dataset.photoHeight)/Number(img.dataset.photoWidth));
+   const width=row[0].querySelector('.city-photo-stage')?.clientWidth||180;
+   const height=Math.round(Math.min(420,Math.max(170,width*Math.min(1.34,ratio)+50)));
+   for(const card of row)card.style.setProperty('--travel-frame-height',height+'px');
+  }
+ }
+ const schedule=()=>{if(!frame)frame=requestAnimationFrame(sizeRows);};
+ if('ResizeObserver' in window){let lastWidth=0;new ResizeObserver(entries=>{const width=entries[0].contentRect.width;if(Math.abs(width-lastWidth)>.5){lastWidth=width;schedule();}}).observe(grid);}else window.addEventListener('resize',schedule);
+ document.fonts?.ready.then(schedule);schedule();
+})();

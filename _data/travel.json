@@ -28,19 +28,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/tokyo-1.jpg",
+          "thumbnail": "/images/travel/abroad/tokyo-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Tokyo skyline after dusk",
+          "caption": "Tokyo skyline after dusk"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/tokyo-2.jpg",
+          "thumbnail": "/images/travel/abroad/tokyo-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Rainbow Bridge and Tokyo Bay",
+          "caption": "Rainbow Bridge and Tokyo Bay"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/tokyo-3.jpg",
+          "thumbnail": "/images/travel/abroad/tokyo-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Senso-ji temple and its pagoda",
+          "caption": "Senso-ji temple and its pagoda"
         }
       ],
       "region_key": "JPN:tokyo"
@@ -57,19 +66,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/osaka-1.jpg",
+          "thumbnail": "/images/travel/abroad/osaka-1-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "Osaka Castle after dark",
+          "caption": "Osaka Castle after dark"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/osaka-2.jpg",
+          "thumbnail": "/images/travel/abroad/osaka-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Dotonbori and the Glico sign",
+          "caption": "Dotonbori and the Glico sign"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/osaka-3.jpg",
+          "thumbnail": "/images/travel/abroad/osaka-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Super Nintendo World at Universal Studios Japan",
+          "caption": "Super Nintendo World at Universal Studios Japan"
         }
       ],
       "region_key": "JPN:osaka"
@@ -86,19 +104,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/kamakura-1.jpg",
+          "thumbnail": "/images/travel/abroad/kamakura-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "The coast viewed from Enoshima",
+          "caption": "The coast viewed from Enoshima"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/kamakura-2.jpg",
+          "thumbnail": "/images/travel/abroad/kamakura-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Waterfront near Enoshima",
+          "caption": "Waterfront near Enoshima"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/kamakura-3.jpg",
+          "thumbnail": "/images/travel/abroad/kamakura-3-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "Enoden train beside a coastal station",
+          "caption": "Enoden train beside a coastal station"
         }
       ],
       "region_key": "JPN:kamakura"
@@ -115,19 +142,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/kyoto-1.jpg",
+          "thumbnail": "/images/travel/abroad/kyoto-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Kiyomizu-dera above the green hillside",
+          "caption": "Kiyomizu-dera above the green hillside"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/kyoto-2.jpg",
+          "thumbnail": "/images/travel/abroad/kyoto-2-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "Torii gates at Fushimi Inari",
+          "caption": "Torii gates at Fushimi Inari"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/kyoto-3.jpg",
+          "thumbnail": "/images/travel/abroad/kyoto-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A small courtyard in Kyoto",
+          "caption": "A small courtyard in Kyoto"
         }
       ],
       "region_key": "JPN:kyoto"
@@ -144,19 +180,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/yokohama-1.jpg",
+          "thumbnail": "/images/travel/abroad/yokohama-1-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "Flower beds beside Yokohama Bay",
+          "caption": "Flower beds beside Yokohama Bay"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/yokohama-2.jpg",
+          "thumbnail": "/images/travel/abroad/yokohama-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Yokohama waterfront and InterContinental Hotel",
+          "caption": "Yokohama waterfront and InterContinental Hotel"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/yokohama-3.jpg",
+          "thumbnail": "/images/travel/abroad/yokohama-3-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "A street in Yokohama",
+          "caption": "A street in Yokohama"
         }
       ],
       "region_key": "JPN:yokohama"
@@ -173,19 +218,28 @@
       "description": "A visit to Fujiyoshida in the Mount Fuji area.",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/fujiyoshida-1.jpg",
+          "thumbnail": "/images/travel/abroad/fujiyoshida-1-thumb.jpg",
+          "width": 1800,
+          "height": 1525,
+          "alt": "Mount Fuji framed by spring flowers",
+          "caption": "Mount Fuji framed by spring flowers"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/fujiyoshida-2.jpg",
+          "thumbnail": "/images/travel/abroad/fujiyoshida-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Chureito Pagoda and Mount Fuji",
+          "caption": "Chureito Pagoda and Mount Fuji"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/fujiyoshida-3.jpg",
+          "thumbnail": "/images/travel/abroad/fujiyoshida-3-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "Cherry blossoms in Fujiyoshida",
+          "caption": "Cherry blossoms in Fujiyoshida"
         }
       ],
       "region_key": "JPN:fujiyoshida"
@@ -202,19 +256,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/singapore-1.jpg",
+          "thumbnail": "/images/travel/abroad/singapore-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Marina Bay Sands at night",
+          "caption": "Marina Bay Sands at night"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/singapore-2.jpg",
+          "thumbnail": "/images/travel/abroad/singapore-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Gardens by the Bay after dark",
+          "caption": "Gardens by the Bay after dark"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/singapore-3.jpg",
+          "thumbnail": "/images/travel/abroad/singapore-3-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "A quiet shore in Singapore",
+          "caption": "A quiet shore in Singapore"
         }
       ],
       "region_key": "SGP:singapore"
@@ -231,19 +294,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/kuala-lumpur-1.jpg",
+          "thumbnail": "/images/travel/abroad/kuala-lumpur-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Kuala Lumpur skyline at blue hour",
+          "caption": "Kuala Lumpur skyline at blue hour"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/kuala-lumpur-2.jpg",
+          "thumbnail": "/images/travel/abroad/kuala-lumpur-2-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "Petronas Twin Towers after dark",
+          "caption": "Petronas Twin Towers after dark"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/abroad/kuala-lumpur-3.jpg",
+          "thumbnail": "/images/travel/abroad/kuala-lumpur-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Putra Mosque in nearby Putrajaya",
+          "caption": "Putra Mosque in nearby Putrajaya"
         }
       ],
       "region_key": "MYS:kuala-lumpur"

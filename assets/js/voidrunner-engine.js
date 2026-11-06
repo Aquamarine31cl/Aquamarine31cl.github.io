@@ -72,6 +72,7 @@
    if(this.time-p.lastHit>4)p.shield=Math.min(65+this.upgrades.shield*10,p.shield+dt*(5+this.upgrades.shield*2));
    p.angle+=((input.right?1:0)-(input.left?1:0))*dt*3.4;
    if(input.thrust){const force=150+this.upgrades.engine*40;p.vx+=Math.cos(p.angle)*force*dt;p.vy+=Math.sin(p.angle)*force*dt;}
+   // Braking damps velocity exponentially, independent of display refresh rate.
    const drag=Math.exp(-dt*(input.brake?4.5:.22));p.vx*=drag;p.vy*=drag;
    const speed=Math.hypot(p.vx,p.vy),limit=220+this.upgrades.engine*22;
    if(speed>limit){p.vx*=limit/speed;p.vy*=limit/speed;}

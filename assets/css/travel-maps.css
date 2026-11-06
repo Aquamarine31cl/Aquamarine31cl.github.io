@@ -61,3 +61,19 @@ html[data-theme="dark"] .travel-star-passport svg{color:#a8f1db;}
 @keyframes travel-passport-trace{from{stroke-dashoffset:1;}to{stroke-dashoffset:0;}}
 @keyframes travel-passport-star{from{opacity:.15;}to{opacity:1;}}
 @media(prefers-reduced-motion:reduce){.travel-star-passport .is-tracing :is(path,circle){animation:none;}}
+/* Keep every original frame visible; each visual row reserves room for its tallest orientation. */
+.travel-city-grid .city-photo-stage{height:var(--travel-frame-height,210px);display:grid;place-items:center;background:radial-gradient(ellipse,#243146,#111627);border-radius:12px;}
+.travel-city-grid .city-photo-stage:before,.travel-city-grid .city-photo-stage:after{display:none;}
+.travel-city-grid .city-photo-card{height:100%;display:flex!important;flex-direction:column;justify-content:center;}
+.travel-city-grid .city-photo-card[hidden]{display:none!important;}
+.travel-city-grid .city-photo-card>a{height:calc(100% - 50px);min-height:0;border-radius:10px;display:flex;align-items:center;justify-content:center;}
+.travel-city-grid .city-photo-card img{width:100%;height:100%;aspect-ratio:auto;object-fit:contain;transform:none;}
+.travel-city-grid .city-photo-card figcaption{height:50px;min-height:0;padding:7px 4px 0;box-sizing:border-box;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.45;font-size:11px;}
+.travel-city-grid .city-photo-placeholder{height:calc(100% - 50px);aspect-ratio:auto;}
+.travel-city-grid .city-photo-controls{margin-top:10px;}
+.travel-city-grid .city-photo-controls button{touch-action:manipulation;}
+.motion-viewer .motion-viewer-photo{object-fit:contain;}
+/* AcademicPages' generic figure rule wraps flex columns; reset it for destination galleries. */
+.travel-city-grid .city-photo-card{flex-wrap:nowrap;align-items:stretch;gap:0;}
+.travel-city-grid .city-photo-card>a{flex:1 1 auto;height:auto;min-height:0;}
+.travel-city-grid .city-photo-card figcaption{flex:0 0 50px;width:100%;margin:0;font-family:inherit;}
