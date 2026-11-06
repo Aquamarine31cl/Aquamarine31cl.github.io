@@ -77,3 +77,10 @@ html[data-theme="dark"] .travel-star-passport svg{color:#a8f1db;}
 .travel-city-grid .city-photo-card{flex-wrap:nowrap;align-items:stretch;gap:0;}
 .travel-city-grid .city-photo-card>a{flex:1 1 auto;height:auto;min-height:0;}
 .travel-city-grid .city-photo-card figcaption{flex:0 0 50px;width:100%;margin:0;font-family:inherit;}
+/* The reserved row space is transparent; only the actual photograph gets a frame. */
+.travel-city-grid .city-photo-stage{background:transparent;border-radius:0;}
+.travel-city-grid .city-photo-card{height:auto;justify-content:center;align-items:center;}
+.travel-city-grid .city-photo-card>a{flex:0 0 auto;display:block;width:fit-content;max-width:100%;height:auto;margin-inline:auto;background:transparent;overflow:hidden;border:1px solid #bca3e655;border-radius:10px;line-height:0;box-sizing:border-box;}
+.travel-city-grid .city-photo-card img{display:block;width:auto;max-width:100%;height:auto;max-height:calc(var(--travel-frame-height,210px) - 52px);aspect-ratio:auto;object-fit:contain;border-radius:0;}
+.travel-city-grid .city-photo-card figcaption{flex:0 0 50px;}
+.travel-city-grid .city-photo-placeholder{width:100%;height:calc(var(--travel-frame-height,210px) - 50px);}
