@@ -15,9 +15,9 @@
               {% assign domain = base_path %}
             {% endif %}
             <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}"{% if link.url == '/arcade/' %} class="star-arcade-nav"{% endif %}>{{ link.title }}</a>
+              <a href="{{ domain }}{{ link.url }}"{% if link.url == '/star-arcade/' %} class="star-arcade-nav"{% endif %}>{{ link.title }}</a>
             </li>
-            {% if link.url == '/arcade/' %}
+            {% if link.url == '/star-arcade/' %}
               <li class="masthead__menu-item">
                 <a href="{{ '/private-files/' | relative_url }}"{% if page.url == '/private-files/' %} aria-current="page"{% endif %}>Private Files</a>
               </li>
