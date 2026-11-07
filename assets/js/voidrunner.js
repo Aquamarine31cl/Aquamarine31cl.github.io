@@ -62,6 +62,7 @@
   model.chooseUpgrade(button.dataset.upgrade);clear();sync();canvas.focus();
  });
  game.addEventListener('keydown',event=>{
+  if(event.ctrlKey||event.metaKey||event.altKey)return;
   if(event.target.matches('button')&&event.key===' ')return;
   const key=keys[event.key]||keys[event.key.toLowerCase()];
   if(key&&active()){event.preventDefault();input[key]=true;}

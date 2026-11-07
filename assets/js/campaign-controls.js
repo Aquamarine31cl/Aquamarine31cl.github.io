@@ -1,14 +1,41 @@
-/* Campaign-scoped keyboard commands; browser and text-entry shortcuts remain untouched. */
+/* Strategy shortcuts are scoped to the active game's controls. */
 (() => {
-'use strict';
-const campaigns=[...document.querySelectorAll('.voidrunner')];let focused=null,returnFocus=null;
-function leave(){if(!focused)return;focused.classList.remove('campaign-expanded');document.body.classList.remove('campaign-focus-mode');const button=focused.querySelector('[data-campaign-focus]');button.textContent='Focus Campaign';button.setAttribute('aria-pressed','false');focused=null;returnFocus?.focus();}
-for(const root of campaigns){
- const tools=document.createElement('div');tools.className='campaign-toolbar';const button=document.createElement('button');button.type='button';button.dataset.campaignFocus='';button.textContent='Focus Campaign';button.setAttribute('aria-pressed','false');tools.append(button);root.querySelector('h2').after(tools);
- button.addEventListener('click',()=>{if(focused===root){leave();return;}leave();window.dispatchEvent(new Event('blur'));focused=root;returnFocus=button;root.classList.add('campaign-expanded');document.body.classList.add('campaign-focus-mode');button.textContent='Exit Focus · Esc';button.setAttribute('aria-pressed','true');root.scrollIntoView({block:'start',behavior:'instant'});});
- const isColony=root.hasAttribute('data-helios'),isFleet=root.hasAttribute('data-meridian'),isSiege=root.hasAttribute('data-relay-siege');
- const commands=isColony?{n:'[data-helios-next]',u:'[data-helios-order="upgrade"]',r:'[data-helios-order="repair"]',l:'[data-helios-order="launch"]','1':'[data-helios-build="solar"]','2':'[data-helios-build="mine"]','3':'[data-helios-build="lab"]','4':'[data-helios-build="shield"]','5':'[data-helios-build="radiator"]','6':'[data-helios-build="relay"]'}:isFleet?{m:'[data-fleet-action="move"]',f:'[data-fleet-action="shoot"]',t:'[data-fleet-action="missile"]',b:'[data-fleet-action="brace"]',o:'[data-fleet-action="overwatch"]',e:'[data-fleet-action="end"]'}:isSiege?{b:'[data-siege-action="build"]',u:'[data-siege-action="upgrade"]',s:'[data-siege-action="sell"]',n:'[data-siege-launch]'}:{};
- if(Object.keys(commands).length){const help=document.createElement('p');help.className='campaign-key-help';help.textContent=isColony?'Keyboard (focus a hex): 1–6 build · U upgrade · R repair · L beacon · N next cycle.':isFleet?'Keyboard (focus a sector): M move · F fire · T missile · B brace · O overwatch · E end turn.':'Keyboard (focus a tile): B build · U upgrade · S salvage · N launch wave.';tools.after(help);root.addEventListener('keydown',event=>{if(event.ctrlKey||event.metaKey||event.altKey||event.repeat||event.target.closest('input,select,textarea,a,summary')||event.target.isContentEditable)return;const selector=commands[event.key.toLowerCase()],target=selector&&root.querySelector(selector);if(target&&!target.disabled){event.preventDefault();target.click();}});}
-}
-document.addEventListener('keydown',event=>{if(event.key==='Escape'&&focused&&!document.querySelector('dialog[open]')){event.preventDefault();leave();}});
+  'use strict';
+  const profiles = [
+    ['[data-relay-siege]', 'Use the arrow keys to select a tile. 1 / 2 select a tower, B builds, U upgrades, S salvages, N launches a wave, and P pauses or resumes.', {
+      '1': '[data-siege-mode="laser"]', '2': '[data-siege-mode="stasis"]',
+      b: '[data-siege-action="build"]', u: '[data-siege-action="upgrade"]',
+      s: '[data-siege-action="sell"]', n: '[data-siege-launch]', p: '[data-siege-pause]'
+    }],
+    ['[data-helios]', 'Use the arrow keys to select a hex. 1–6 build modules in button order, U upgrades, R repairs, L launches a beacon, and N advances the cycle.', {
+      '1': '[data-helios-build="solar"]', '2': '[data-helios-build="mine"]',
+      '3': '[data-helios-build="lab"]', '4': '[data-helios-build="shield"]',
+      '5': '[data-helios-build="radiator"]', '6': '[data-helios-build="relay"]',
+      u: '[data-helios-order="upgrade"]', r: '[data-helios-order="repair"]',
+      l: '[data-helios-order="launch"]', n: '[data-helios-next]'
+    }],
+    ['[data-meridian]', 'Use the arrow keys to navigate and Enter to select a ship or target. M moves, F fires, T launches a missile, B braces, O sets overwatch, and E ends the turn.', {
+      m: '[data-fleet-action="move"]', f: '[data-fleet-action="shoot"]',
+      t: '[data-fleet-action="missile"]', b: '[data-fleet-action="brace"]',
+      o: '[data-fleet-action="overwatch"]', e: '[data-fleet-action="end"]'
+    }]
+  ];
+
+  for (const [selector, instructions, commands] of profiles) {
+    const game = document.querySelector(selector);
+    if (!game) continue;
+    const help = document.createElement('p');
+    help.className = 'campaign-key-help';
+    help.textContent = instructions;
+    game.querySelector('h1').after(help);
+    game.addEventListener('keydown', event => {
+      if (event.defaultPrevented || event.repeat || event.ctrlKey || event.metaKey || event.altKey ||
+          event.target.isContentEditable || event.target.closest('input, select, textarea, a, summary')) return;
+      const action = commands[event.key.toLowerCase()];
+      const button = action && game.querySelector(action);
+      if (!button || button.disabled) return;
+      event.preventDefault();
+      button.click();
+    });
+  }
 })();

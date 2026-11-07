@@ -4,78 +4,39 @@ title: "Star Arcade"
 permalink: /star-arcade/
 author_profile: false
 ---
-<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=60">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=67">
 <main id="main" class="experience-page">
-<header class="experience-hero"><p class="cosmic-eyebrow">FIVE CAMPAIGNS / ONE GALAXY</p><h1>Star Arcade</h1><p class="experience-intro">Five complete campaigns: flight combat, route defense, colony logistics, orbital navigation and fleet tactics.</p></header><nav class="campaign-nav" aria-label="Choose a campaign"><a href="#voidrunner-title">01 · Voidrunner</a><a href="#siege-title">02 · Relay Siege</a><a href="#helios-title">03 · Helios Accord</a><a href="#kepler-title">04 · Kepler Courier</a><a href="#meridian-title">05 · Meridian Fleet</a></nav>
-<section class="voidrunner" data-voidrunner aria-labelledby="voidrunner-title">
-<h2 id="voidrunner-title">Voidrunner</h2>
-<p>Clear four waves. Keep momentum while firing, use asteroids as cover, and let your weapon cool between bursts. Shields regenerate after four seconds without damage. Each cleared sector grants one upgrade and repairs 30 hull.</p>
-<p>Keyboard: W/↑ thrust, A/← and D/→ steer, S/↓ or Shift brake, Space fire, P pause. Focus the flight view to use keyboard controls. On touch screens, hold the controls below. The flight pauses when you leave it.</p>
-<p data-flight-hud aria-live="off"></p>
-<canvas width="960" height="600" tabindex="0" role="img" aria-label="Voidrunner real-time space combat flight view"></canvas>
-<div class="flight-controls">
-<button type="button" data-flight-control="left" aria-label="Steer left">↶ Left</button>
-<button type="button" data-flight-control="thrust">Thrust</button>
-<button type="button" data-flight-control="right" aria-label="Steer right">Right ↷</button>
-<button type="button" data-flight-control="brake">Brake</button>
-<button type="button" data-flight-control="fire">Fire</button>
-</div>
-<div class="flight-controls"><button type="button" data-flight-start>Launch / Restart</button><button type="button" data-flight-pause disabled>Pause Flight</button></div>
-<div class="flight-controls" data-flight-upgrades hidden>
-<button type="button" data-upgrade="damage">Upgrade Weapon</button>
-<button type="button" data-upgrade="engine">Upgrade Engine</button>
-<button type="button" data-upgrade="shield">Upgrade Shield</button>
-</div>
-<p data-flight-status role="status">Ready. Select Launch to begin.</p>
-<noscript><p>Enable JavaScript to play.</p></noscript>
-</section><section class="voidrunner" data-relay-siege aria-labelledby="siege-title">
-<h2 id="siege-title">Relay Siege</h2>
-<p>Protect the relay through six waves. Place laser towers (35 credits) for damage and stasis towers (50) to slow enemies. Towers block movement, so every placement reshapes the shortest route. You must leave a route open. Armored enemies take reduced laser damage and cost two integrity if they escape.</p>
-<p>Select a tile, then Build. Upgrade the selected tower to level 3 for 30 and 60 credits, or salvage it for 60% of its total investment. Each kill funds more construction. A cleared wave grants 35 credits. On narrow screens, scroll the board sideways. Arrow keys navigate tiles.</p>
-<p data-siege-hud></p>
-<div class="siege-scroll"><div class="siege-grid" data-siege-grid role="grid" aria-label="Relay defense map"></div></div>
-<div class="flight-controls">
-<button type="button" data-siege-mode="laser" aria-pressed="true">Laser (35)</button><button type="button" data-siege-mode="stasis" aria-pressed="false">Stasis (50)</button>
-<button type="button" data-siege-action="build">Build</button><button type="button" data-siege-action="upgrade">Upgrade</button><button type="button" data-siege-action="sell">Salvage</button>
-</div>
-<div class="flight-controls"><button type="button" data-siege-launch>Launch Wave</button><button type="button" data-siege-pause>Pause Wave</button><button type="button" data-siege-restart>Restart Siege</button></div>
-<p role="status"></p>
-</section><section class="voidrunner" data-helios aria-labelledby="helios-title">
-<h2 id="helios-title">Helios Accord</h2>
-<p>A 36-cycle colony campaign. Build a connected industrial network, balance power and heat, survive solar flares, and launch three navigation beacons. Each cycle allows one construction, repair, research or launch order. You can inspect the board without spending that order.</p>
-<details class="helios-help"><summary>Colony Manual & Module Reference</summary><ul>
-<li>Select a hex sector, then issue an order. New modules must touch the connected colony. Relays bridge sectors and add 20 battery capacity per level.</li>
-<li>Core production: 8 energy and 4 alloy per cycle. Extractors consume 3 power per level and mine finite deposits; labs consume 5 power per level and produce 3 science per level. Power prioritizes cooling and shields. Unpowered or disconnected modules do nothing.</li>
-<li>Solar output changes with the six sun sectors every three cycles. Adjacent arrays shade each other. Flares every six cycles halve solar output and damage unshielded modules.</li>
-<li>Heat above 24 damages modules. Radiators cool themselves and adjacent modules. Shields protect their own hex and adjacent hexes. Upgrade modules to level 3, research cooling, efficiency or armor to level 2, or salvage 60% of a module's base cost.</li>
-<li>Research costs 15 alloy and 12 / 24 science. Beacons cost 38 / 50 / 62 alloy, 18 / 26 / 34 science, and 20 energy each. Build an extractor and lab early; protect the core before the first flare.</li>
-</ul></details>
-<p class="helios-hud" data-helios-hud></p><p class="helios-forecast" data-helios-forecast></p>
-<div class="helios-layout"><div><svg class="helios-map" data-helios-board viewBox="0 0 640 510" role="group" aria-label="Helios colony sectors. Arrow keys move selection; Enter selects."></svg><p data-helios-detail></p></div><div>
-<div class="helios-orders"><button data-helios-build="solar" type="button">Solar · 22</button><button data-helios-build="mine" type="button">Extractor · 26</button><button data-helios-build="lab" type="button">Lab · 34</button><button data-helios-build="shield" type="button">Shield · 30</button><button data-helios-build="radiator" type="button">Radiator · 18</button><button data-helios-build="relay" type="button">Relay · 12</button></div>
-<div class="helios-orders"><button data-helios-order="upgrade" type="button">Upgrade · 18 / 36</button><button data-helios-order="repair" type="button">Repair · 12</button><button data-helios-order="salvage" type="button">Salvage</button><button data-helios-order="launch" type="button">Launch Beacon</button></div>
-<div class="helios-orders"><button data-helios-tech="efficiency" type="button">Research Efficiency</button><button data-helios-tech="cooling" type="button">Research Cooling</button><button data-helios-tech="fortification" type="button">Research Armor</button></div>
-<div class="flight-controls"><button data-helios-next type="button">Advance Cycle</button><button data-helios-restart type="button">Restart Colony</button></div><ol class="helios-log" data-helios-log aria-label="Colony event log"></ol></div></div><p role="status" data-helios-status></p></section>
-<section class="voidrunner kepler-campaign" data-kepler aria-labelledby="kepler-title">
-<h2 id="kepler-title">Kepler Courier</h2><p>Pilot an inertial spacecraft across three increasingly distant circular orbits. Gravity bends every maneuver. Rendezvous with each moving station within 15 units and below 1.8 relative speed; high-speed approaches cause damage. Docking restores fuel and hull. Select Launch again after delivery.</p>
-<details class="helios-help"><summary>Orbital Flight Manual</summary><ul><li>Focus the flight view: A / ← and D / → rotate; W / ↑ or Space thrust; P pauses. Touch controls work by holding the buttons. Prograde and Retrograde align the craft with or against its current velocity.</li><li>To raise orbit, burn prograde near periapsis, coast toward the target altitude, then burn prograde again to circularize. To lower orbit, burn retrograde. Watch the dashed unpowered trajectory and the transfer estimates.</li><li>The golden circle moves with the destination station. Interception needs timing as well as altitude. A lower orbit overtakes a higher orbit. Stop burning early and approach slowly; do not cancel all orbital velocity.</li><li>Keep periapsis above 65 and radius below 650. The simulation starts at 1× mission time with a fixed 120 Hz integration step. Select 3× or 6× for coasting; return to 1× for docking. Hold Shift for quarter-power precision thrust. Q aligns prograde; E aligns retrograde; switching tabs or scrolling away pauses it. Fuel is finite; an unsafe trajectory can require a restart.</li></ul></details>
-<p class="helios-hud" data-kepler-hud></p><canvas width="960" height="800" tabindex="0" role="img" aria-label="Kepler Courier orbital navigation view"></canvas><p data-kepler-telemetry></p><label class="courier-speed">Simulation Speed <select data-kepler-speed><option value="1">1× · Precision Flight</option><option value="3">3× · Transit</option><option value="6">6× · Fast Coast</option></select></label>
-<div class="flight-controls"><button type="button" data-kepler-control="left" aria-pressed="false">Rotate Left</button><button type="button" data-kepler-control="thrust" aria-pressed="false">Hold Thrust</button><button type="button" data-kepler-control="right" aria-pressed="false">Rotate Right</button><button type="button" data-kepler-align>Prograde</button><button type="button" data-kepler-retro>Retrograde</button></div>
-<div class="flight-controls"><button type="button" data-kepler-start>Launch / Continue / Restart</button><button type="button" data-kepler-pause>Pause Courier</button></div><p role="status" data-kepler-status></p></section>
-<section class="voidrunner" data-meridian aria-labelledby="meridian-title"><h2 id="meridian-title">Meridian Fleet</h2>
-<p>Command three specialized vessels in a tactical battle across an asteroid field. Secure eight relay signal points or eliminate the hostile fleet within 18 rounds. Select a friendly vessel, select a destination or enemy, then issue an order. Every vessel has four action points per round.</p>
-<details class="helios-help"><summary>Fleet Combat Manual</summary><ul><li>Movement costs one AP per tile along the shortest open route. Asteroids block movement and firing lines. The two golden relay tiles each grant one signal point per round if a friendly is within one tile and no hostile contests it.</li><li>Fire costs two AP and adds 30 heat. Front-facing shields absorb damage; side and rear hits bypass shields and deal 25% extra hull damage. The Vanguard is balanced, the Lancer has range 7, and the Warden has stronger shields.</li><li>Missiles cost three AP, add 40 heat and strike the selected tile plus its four neighbors after the enemy response. They deal 42 hull damage and can hit allies. The red tiles telegraph the danger area.</li><li>Brace costs two AP: restore shields, cool 25 heat and face the selected tile. Overwatch costs two AP: fire once at the first enemy moving into clear range. Weapons cannot fire above 65 heat; each round cools 25.</li><li>Hostiles maneuver, fire or hold overwatch. Reinforcements arrive in rounds 6 and 10. On narrow screens scroll the board horizontally; arrow keys navigate sectors.</li></ul></details>
-<p class="helios-hud" data-fleet-hud></p><p data-fleet-detail></p><div class="fleet-scroll"><div class="fleet-board" data-fleet-board role="grid" aria-label="Meridian fleet tactical sectors"></div></div>
-<div class="flight-controls"><button type="button" data-fleet-action="move">Move</button><button type="button" data-fleet-action="shoot">Fire · 2 AP</button><button type="button" data-fleet-action="missile">Missile · 3 AP</button><button type="button" data-fleet-action="brace">Brace · 2 AP</button><button type="button" data-fleet-action="overwatch">Overwatch · 2 AP</button></div><div class="flight-controls"><button type="button" data-fleet-action="end">End Fleet Turn</button><button type="button" data-fleet-restart>Restart Fleet</button></div><p role="status" data-fleet-status></p><ol class="helios-log" data-fleet-log aria-label="Fleet combat log"></ol></section></main>
-<script defer src="{{ '/assets/js/voidrunner-engine.js' | relative_url }}?v=60"></script>
-<script defer src="{{ '/assets/js/voidrunner.js' | relative_url }}?v=60"></script>
-
-<script defer src="{{ '/assets/js/relay-siege.js' | relative_url }}?v=60"></script>
-
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=64">
-<script defer src="{{ '/assets/js/helios-engine.js' | relative_url }}?v=63"></script>
-<script defer src="{{ '/assets/js/helios.js' | relative_url }}?v=63"></script>
-<script defer src="{{ '/assets/js/kepler-courier.js' | relative_url }}?v=63"></script>
-<script defer src="{{ '/assets/js/meridian-fleet.js' | relative_url }}?v=63"></script>
-
-<script defer src="{{ '/assets/js/campaign-controls.js' | relative_url }}?v=64"></script>
+<header class="experience-hero"><p class="cosmic-eyebrow">FIVE CAMPAIGNS / ONE GALAXY</p><h1>Star Arcade</h1><p>Choose a game to start.</p></header>
+<nav class="arcade-library" aria-label="Choose a game">
+  <a class="arcade-choice" href="{{ '/star-arcade/voidrunner/' | relative_url }}">
+    <span class="cosmic-eyebrow">01 · Space combat</span>
+    <h2>Voidrunner</h2>
+    <p>Pilot an inertial fighter through four waves.</p>
+    <span class="arcade-play-label">Play →</span>
+  </a>
+  <a class="arcade-choice" href="{{ '/star-arcade/relay-siege/' | relative_url }}">
+    <span class="cosmic-eyebrow">02 · Tower defense</span>
+    <h2>Relay Siege</h2>
+    <p>Build and upgrade defenses to protect the relay.</p>
+    <span class="arcade-play-label">Play →</span>
+  </a>
+  <a class="arcade-choice" href="{{ '/star-arcade/helios-accord/' | relative_url }}">
+    <span class="cosmic-eyebrow">03 · Colony strategy</span>
+    <h2>Helios Accord</h2>
+    <p>Develop a solar colony and launch navigation beacons.</p>
+    <span class="arcade-play-label">Play →</span>
+  </a>
+  <a class="arcade-choice" href="{{ '/star-arcade/kepler-courier/' | relative_url }}">
+    <span class="cosmic-eyebrow">04 · Orbital flight</span>
+    <h2>Kepler Courier</h2>
+    <p>Match orbits and dock at three moving stations.</p>
+    <span class="arcade-play-label">Play →</span>
+  </a>
+  <a class="arcade-choice" href="{{ '/star-arcade/meridian-fleet/' | relative_url }}">
+    <span class="cosmic-eyebrow">05 · Fleet tactics</span>
+    <h2>Meridian Fleet</h2>
+    <p>Command ships across an asteroid field and capture relays.</p>
+    <span class="arcade-play-label">Play →</span>
+  </a>
+</nav>
+</main>

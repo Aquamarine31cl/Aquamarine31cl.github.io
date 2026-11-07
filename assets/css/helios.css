@@ -9,3 +9,27 @@ html .voidrunner{max-width:1280px;box-sizing:border-box;scroll-margin-top:100px;
 body.campaign-focus-mode .voidrunner:not(.campaign-expanded),body.campaign-focus-mode .experience-hero,body.campaign-focus-mode .campaign-nav{display:none!important;}
 body.campaign-focus-mode .campaign-expanded{max-width:1440px;margin-top:0;}.campaign-expanded>.campaign-toolbar{position:sticky;top:85px;z-index:8;pointer-events:none}.campaign-expanded>.campaign-toolbar button{pointer-events:auto;background:#164550;box-shadow:0 2px 15px #05091988;}
 @media(max-width:600px){.voidrunner canvas,.kepler-campaign canvas{max-width:100%;}.campaign-toolbar button{flex:0 1 auto!important;}.campaign-expanded>.campaign-toolbar{top:70px;}.helios-orders button{min-height:44px;}.courier-speed select{font-size:14px;}}
+
+.arcade-library {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+.arcade-choice {
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem;
+  border: 1px solid #7fcaba70;
+  border-radius: 16px;
+  background: #17233b;
+  color: #e4f2ff !important;
+  text-decoration: none !important;
+}
+.arcade-choice:hover, .arcade-choice:focus-visible { border-color: #d9c1ff; background: #20314d; }
+.arcade-choice h2 { color: inherit; margin: .5rem 0; }
+.arcade-choice p { margin-bottom: 1rem; }
+.arcade-play-label { margin-top: auto; color: #a7e8da; }
+.arcade-back { display: inline-block; padding: .5rem 0; }
+.arcade-play .voidrunner { margin-top: .5rem; }
+.arcade-play .voidrunner h1 { color: inherit; }

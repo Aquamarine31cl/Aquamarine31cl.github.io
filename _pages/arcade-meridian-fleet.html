@@ -1,0 +1,17 @@
+---
+layout: default
+title: "Meridian Fleet"
+permalink: /star-arcade/meridian-fleet/
+author_profile: false
+---
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=67">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=67">
+<main id="main" class="experience-page arcade-play"><a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
+<section class="voidrunner" data-meridian aria-labelledby="meridian-title"><h1 id="meridian-title">Meridian Fleet</h1>
+<p>Command three specialized vessels in a tactical battle across an asteroid field. Secure eight relay signal points or eliminate the hostile fleet within 18 rounds. Select a friendly vessel, select a destination or enemy, then issue an order. Every vessel has four action points per round.</p>
+<details class="helios-help"><summary>Fleet Combat Manual</summary><ul><li>Movement costs one AP per tile along the shortest open route. Asteroids block movement and firing lines. The two golden relay tiles each grant one signal point per round if a friendly is within one tile and no hostile contests it.</li><li>Fire costs two AP and adds 30 heat. Front-facing shields absorb damage; side and rear hits bypass shields and deal 25% extra hull damage. The Vanguard is balanced, the Lancer has range 7, and the Warden has stronger shields.</li><li>Missiles cost three AP, add 40 heat and strike the selected tile plus its four neighbors after the enemy response. They deal 42 hull damage and can hit allies. The red tiles telegraph the danger area.</li><li>Brace costs two AP: restore shields, cool 25 heat and face the selected tile. Overwatch costs two AP: fire once at the first enemy moving into clear range. Weapons cannot fire above 65 heat; each round cools 25.</li><li>Hostiles maneuver, fire or hold overwatch. Reinforcements arrive in rounds 6 and 10. On narrow screens scroll the board horizontally; arrow keys navigate sectors.</li></ul></details>
+<p class="helios-hud" data-fleet-hud></p><p data-fleet-detail></p><div class="fleet-scroll"><div class="fleet-board" data-fleet-board role="grid" aria-label="Meridian fleet tactical sectors"></div></div>
+<div class="flight-controls"><button type="button" data-fleet-action="move">Move</button><button type="button" data-fleet-action="shoot">Fire · 2 AP</button><button type="button" data-fleet-action="missile">Missile · 3 AP</button><button type="button" data-fleet-action="brace">Brace · 2 AP</button><button type="button" data-fleet-action="overwatch">Overwatch · 2 AP</button></div><div class="flight-controls"><button type="button" data-fleet-action="end">End Fleet Turn</button><button type="button" data-fleet-restart>Restart Fleet</button></div><p role="status" data-fleet-status></p><ol class="helios-log" data-fleet-log aria-label="Fleet combat log"></ol></section>
+</main>
+<script defer src="{{ '/assets/js/meridian-fleet.js' | relative_url }}?v=67"></script>
+<script defer src="{{ '/assets/js/campaign-controls.js' | relative_url }}?v=67"></script>
