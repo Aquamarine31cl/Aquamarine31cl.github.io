@@ -1,7 +1,9 @@
 (() => {
 'use strict';
 const dialog=document.getElementById('access-dialog');if(!dialog)return;
-const key='aquamarine.access.v1',expected='384fde3636e6e01e0194d2976d8f26410af3e846e573379cb1a09e2f0752d8cc';
+const restricted=/\/(online-posts|portfolio)\/?$/.test(location.pathname);
+const key=restricted?'aquamarine.access.creative.v1':'aquamarine.access.v1';
+const expected=restricted?'bf9de450c75ae31f736a773783bfa24b6a8afc04de83185503d4a32da1d06877':'384fde3636e6e01e0194d2976d8f26410af3e846e573379cb1a09e2f0752d8cc';
 const form=dialog.querySelector('form'),input=dialog.querySelector('input'),feedback=dialog.querySelector('[role="status"]');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
 let unlocked=false,pending=null,trigger=null,resume=null;
@@ -53,7 +55,7 @@ function apply(){
  document.dispatchEvent(new CustomEvent('site-access-changed'));
 }
 function open(el){
- trigger=el;feedback.textContent=unlocked?'Photos, Daily and paper downloads are unlocked in this tab.':'';
+ trigger=el;feedback.textContent=unlocked?(restricted?'Online Posts and Portfolio are unlocked in this tab.':'This part of the site is unlocked in this tab.'):'';
  input.value='';dialog.showModal();if(!unlocked)input.focus();else dialog.querySelector('[data-relock]').focus();
 }
 function close(){dialog.close();pending=null;resume=null;if(trigger?.isConnected)trigger.focus({preventScroll:true});}
@@ -82,6 +84,11 @@ dialog.querySelector('[data-relock]').addEventListener('click',()=>{
  unlocked=false;try{sessionStorage.removeItem(key);}catch{}apply();feedback.textContent='This tab is locked again.';input.focus();
 });
 apply();
+window.addEventListener('pageshow',event=>{
+ if(!event.persisted)return;
+ try{unlocked=sessionStorage.getItem(key)===expected;}catch{unlocked=false;}
+ apply();previews();
+});
 
 function previews(){
  document.querySelectorAll('[data-preview-list]').forEach(list=>{

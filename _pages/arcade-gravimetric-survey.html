@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Gravimetric Survey"
+permalink: /star-arcade/gravimetric-survey/
+author_profile: false
+---
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=68">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=68">
+<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=68">
+<main id="main" class="experience-page arcade-play">
+<a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
+<section class="voidrunner grid-mission" data-grid-mission="survey" aria-labelledby="mission-heading">
+<p class="cosmic-eyebrow">Hazard deduction</p>
+<h1 id="mission-heading">Gravimetric Survey</h1>
+<p>Reveal every safe sector. Numbers count nearby hazards, including diagonals. Your first scan and its neighbors are safe. Scan an already revealed number to open its unflagged neighbors when the adjacent flag count matches.</p>
+<p class="campaign-key-help">Arrows / WASD select. Enter or Space scans. F or right-click flags. Z undoes an action.</p>
+<p role="status" class="mission-status"></p>
+<div class="mission-grid" role="group" aria-label="Gravimetric Survey board"></div>
+<div class="flight-controls">
+  <button type="button" data-undo>Undo</button>
+  <button type="button" data-reset>Restart Stage</button>
+  
+  <button type="button" data-flag>Toggle Flag on Selected Tile</button>
+  <button type="button" data-next hidden>Next Stage</button>
+</div>
+</section>
+</main>
+<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=68"></script>

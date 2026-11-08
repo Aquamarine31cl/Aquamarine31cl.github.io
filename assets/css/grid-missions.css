@@ -1,0 +1,27 @@
+.grid-mission { max-width: 900px !important; }
+.mission-status { color: #a7e8da; font-variant-numeric: tabular-nums; }
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  gap: clamp(1px, .5vw, 4px);
+  max-width: 580px;
+  margin: 1rem auto;
+}
+html .voidrunner .mission-grid button {
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  aspect-ratio: 1;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  font-size: clamp(.75rem, 3.4vw, 1.7rem);
+  background: #1b2c49;
+  color: #e6f5ff;
+}
+html .voidrunner .mission-grid [data-kind=lit] { background: #205851; color: #c4ffe8; }
+html .voidrunner .mission-grid [data-kind=wall] { background: #080f21; color: #617691; }
+html .voidrunner .mission-grid [data-kind=danger] { background: #742b45; }
+html .voidrunner .mission-grid [data-kind=goal] { background: #665018; color: #ffe5a3; }
+html .voidrunner .mission-grid button:focus-visible { outline-offset: -3px; }

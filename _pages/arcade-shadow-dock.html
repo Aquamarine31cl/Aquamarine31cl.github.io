@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Shadow Dock"
+permalink: /star-arcade/shadow-dock/
+author_profile: false
+---
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=68">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=68">
+<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=68">
+<main id="main" class="experience-page arcade-play">
+<a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
+<section class="voidrunner grid-mission" data-grid-mission="stealth" aria-labelledby="mission-heading">
+<p class="cosmic-eyebrow">Patrol infiltration</p>
+<h1 id="mission-heading">Shadow Dock</h1>
+<p>Collect the access key and reach the exit. The guard takes one step after each move or wait. Shaded tiles show the current sightline. Watch the direction arrow and plan where it will look next.</p>
+<p class="campaign-key-help">Arrows / WASD move. Space waits a turn. Z undoes your last turn.</p>
+<p role="status" class="mission-status"></p>
+<div class="mission-grid" role="group" aria-label="Shadow Dock board"></div>
+<div class="flight-controls">
+  <button type="button" data-undo>Undo</button>
+  <button type="button" data-reset>Restart Stage</button>
+  <button type="button" data-wait>Wait</button>
+  
+  <button type="button" data-next hidden>Next Stage</button>
+</div>
+</section>
+</main>
+<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=68"></script>
