@@ -4,9 +4,9 @@ title: "Gravimetric Survey"
 permalink: /star-arcade/gravimetric-survey/
 author_profile: false
 ---
-<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=69">
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=69">
-<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=69">
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=70">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=70">
+<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=70">
 <main id="main" class="experience-page arcade-play">
 <a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
 <section class="voidrunner grid-mission" data-grid-mission="survey" aria-labelledby="mission-heading">
@@ -14,6 +14,7 @@ author_profile: false
 <h1 id="mission-heading">Gravimetric Survey</h1>
 <p>Reveal every safe sector. Numbers count nearby hazards, including diagonals. Your first scan and its neighbors are safe. Scan an already revealed number to open its unflagged neighbors when the adjacent flag count matches.</p>
 <p class="campaign-key-help">Arrows / WASD select. Enter or Space scans. F or right-click flags. Z undoes an action.</p>
+<label class="courier-speed">Stage &amp; difficulty <select data-stage-select></select></label>
 <p role="status" class="mission-status"></p>
 <div class="mission-grid" role="group" aria-label="Gravimetric Survey board"></div>
 <div class="flight-controls">
@@ -25,4 +26,5 @@ author_profile: false
 </div>
 </section>
 </main>
-<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=69"></script>
+<script defer src="{{ '/assets/js/grid-mission-stages.js' | relative_url }}?v=70"></script>
+<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=70"></script>

@@ -33,12 +33,22 @@
       [[6,3],[7,3],[8,3],[9,3],[9,2],[9,1],[9,2],[9,3],[8,3],[7,3]],
       [[5,3],[6,3],[7,3],[8,3],[9,3],[9,2],[9,1],[9,2],[9,3],[8,3],[7,3],[6,3]]
   ];
-  const boardSizes = {
-    circuit: [6, 7, 8, 9, 10, 11],
-    survey: [6, 7, 8, 9, 10, 11]
-  };
-  const hazards = [6, 9, 12, 17, 22, 28];
-  const stageCount = maps[mode]?.length ?? boardSizes[mode].length;
+  const extra = globalThis.ArcadeMissionStages;
+  maps.cargo.push(...extra.cargo);
+  maps.stealth.push(...extra.stealth);
+  patrols.push(...extra.patrols);
+  const stageCount = 100;
+  const select = root.querySelector('[data-stage-select]');
+  const difficulty = stage => Math.floor(stage / 20) + 1;
+  const stars = stage => '★'.repeat(difficulty(stage)) + '☆'.repeat(5 - difficulty(stage));
+  const boardSize = stage => [6, 7, 8, 10, 12][difficulty(stage) - 1];
+  const mineCount = stage => [6, 9, 13, 21, 33][difficulty(stage) - 1];
+  for (let stage = 0; stage < stageCount; stage++) {
+    const option = document.createElement('option');
+    option.value = String(stage);
+    option.textContent = 'Stage ' + (stage + 1) + ' · ' + stars(stage);
+    select.append(option);
+  }
   const directions = [[0,-1],[1,0],[0,1],[-1,0]];
   const arrows = {ArrowUp:0,ArrowRight:1,ArrowDown:2,ArrowLeft:3,w:0,d:1,s:2,a:3};
   const glyphs = ['','╵','╶','└','╷','│','┌','├','╴','┘','─','┴','┐','┤','┬','┼'];
@@ -54,9 +64,10 @@
     return () => {seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
   }
   function reset() {
+    select.value=String(level);
     const map=maps[mode]?.[level];
-    width=map?.[0].length ?? boardSizes[mode][level];
-    height=map?.length ?? boardSizes[mode][level];
+    width=map?.[0].length ?? boardSize(level);
+    height=map?.length ?? boardSize(level);
     terrain=map?.join('') ?? '';
     state={turn:0,result:'',player:terrain.indexOf('@'),key:false,
       crates:[...terrain].flatMap((tile,i)=>tile==='$'?[i]:[]),
@@ -157,7 +168,7 @@
     if(!state.mines.length){
       const safe=new Set([tile,...adjacent(tile)]),random=randomSource(421+level);
       const candidates=cells.map((_,i)=>i).filter(i=>!safe.has(i));
-      while(state.mines.length<hazards[level]){
+      while(state.mines.length<mineCount(level)){
         state.mines.push(candidates.splice(Math.floor(random()*candidates.length),1)[0]);
       }
     }
@@ -217,10 +228,10 @@
       cell.setAttribute('aria-label',`Row ${Math.floor(i/width)+1}, column ${i%width+1}: ${label}`);
     }
     const progress=circuit?` · Powered ${circuit.seen.size}/${cells.length} · Open connections ${circuit.leaks}`
-      :mode==='survey'?` · Flags ${state.flags.length}/${hazards[level]}`
+      :mode==='survey'?` · Flags ${state.flags.length}/${mineCount(level)}`
       :mode==='stealth'?(state.key?' · Key acquired':' · Find the key'):'';
-    status.textContent=`Stage ${level+1}/${stageCount} · Turns ${state.turn}${progress}`+
-      (state.result==='won'?(level===stageCount-1?' · Campaign complete.':' · Stage complete.'):state.result==='lost'?' · Mission failed. Undo or restart.':'');
+    status.textContent=`Stage ${level+1}/${stageCount} · ${stars(level)} (${difficulty(level)}/5) · Turns ${state.turn}${progress}`+
+      (state.result==='won'?(level===stageCount-1?' · Final stage complete.':' · Stage complete.'):state.result==='lost'?' · Mission failed. Undo or restart.':'');
     next.hidden=state.result!=='won'||level===stageCount-1;
     undo.disabled=!history.length;
   }
@@ -238,8 +249,9 @@
     else if(key===' '&&mode==='stealth'){event.preventDefault();move(-1);}
   });
   root.addEventListener('keydown',event=>{
-    if(event.key.toLowerCase()==='z'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.repeat)undo.click();
+    if(event.target!==select&&event.key.toLowerCase()==='z'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.repeat)undo.click();
   });
+  select.addEventListener('change',()=>{level=Number(select.value);reset();});
   undo.addEventListener('click',()=>{if(history.length){state=history.pop();render();cells[cursor].focus();}});
   next.addEventListener('click',()=>{if(state.result!=='won'||level>=stageCount-1)return;level++;reset();cells[cursor].focus();});
   root.querySelector('[data-reset]').addEventListener('click',()=>{reset();cells[cursor].focus();});
