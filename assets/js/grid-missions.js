@@ -37,17 +37,23 @@
   maps.cargo.push(...extra.cargo);
   maps.stealth.push(...extra.stealth);
   patrols.push(...extra.patrols);
-  const stageCount = 100;
+  const stageCount = 500;
   const select = root.querySelector('[data-stage-select]');
-  const difficulty = stage => Math.floor(stage / 20) + 1;
+  const difficulty = stage => Math.floor((stage % 100) / 20) + 1;
   const stars = stage => '★'.repeat(difficulty(stage)) + '☆'.repeat(5 - difficulty(stage));
   const boardSize = stage => [6, 7, 8, 10, 12][difficulty(stage) - 1];
   const mineCount = stage => [6, 9, 13, 21, 33][difficulty(stage) - 1];
+  let chapter;
   for (let stage = 0; stage < stageCount; stage++) {
+    if (stage % 50 === 0) {
+      chapter = document.createElement('optgroup');
+      chapter.label = 'Stages ' + (stage + 1) + '–' + (stage + 50);
+      select.append(chapter);
+    }
     const option = document.createElement('option');
     option.value = String(stage);
     option.textContent = 'Stage ' + (stage + 1) + ' · ' + stars(stage);
-    select.append(option);
+    chapter.append(option);
   }
   const directions = [[0,-1],[1,0],[0,1],[-1,0]];
   const arrows = {ArrowUp:0,ArrowRight:1,ArrowDown:2,ArrowLeft:3,w:0,d:1,s:2,a:3};
