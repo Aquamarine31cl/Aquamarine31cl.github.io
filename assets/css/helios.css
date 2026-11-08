@@ -12,7 +12,7 @@ body.campaign-focus-mode .campaign-expanded{max-width:1440px;margin-top:0;}.camp
 
 .arcade-library {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin-block: 1.5rem;
 }
@@ -33,3 +33,6 @@ body.campaign-focus-mode .campaign-expanded{max-width:1440px;margin-top:0;}.camp
 .arcade-back { display: inline-block; padding: .5rem 0; }
 .arcade-play .voidrunner { margin-top: .5rem; }
 .arcade-play .voidrunner h1 { color: inherit; }
+
+@media (max-width: 800px) { .arcade-library { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .arcade-library { grid-template-columns: minmax(0, 1fr); } }
