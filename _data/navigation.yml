@@ -1,4 +1,6 @@
 main:
+  - title: "Star Arcade"
+    url: /star-arcade/
   - title: "About"
     url: /
   - title: "Publications"
@@ -13,6 +15,3 @@ main:
 
   - title: "Portfolio"
     url: /portfolio/
-
-  - title: "Star Arcade"
-    url: /star-arcade/
