@@ -392,19 +392,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/shanghai-1.jpg",
+          "thumbnail": "/images/travel/china-71/shanghai-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Aerial view of the Huangpu River",
+          "caption": "Aerial view of the Huangpu River"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/shanghai-2.jpg",
+          "thumbnail": "/images/travel/china-71/shanghai-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Pudong skyline at night",
+          "caption": "Pudong skyline at night"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/shanghai-3.jpg",
+          "thumbnail": "/images/travel/china-71/shanghai-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A landscaped garden path",
+          "caption": "A landscaped garden path"
         }
       ],
       "region_key": "CHN:shanghai",
@@ -423,19 +432,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/suzhou-1.jpg",
+          "thumbnail": "/images/travel/china-71/suzhou-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A rockery and flowers beside the pond",
+          "caption": "A rockery and flowers beside the pond"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/suzhou-2.jpg",
+          "thumbnail": "/images/travel/china-71/suzhou-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A garden pond under a blue sky",
+          "caption": "A garden pond under a blue sky"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/suzhou-3.jpg",
+          "thumbnail": "/images/travel/china-71/suzhou-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A canal street at night",
+          "caption": "A canal street at night"
         }
       ],
       "region_key": "CHN:suzhou",
@@ -543,19 +561,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/hangzhou-1.jpg",
+          "thumbnail": "/images/travel/china-71/hangzhou-1-thumb.jpg",
+          "width": 1800,
+          "height": 1800,
+          "alt": "A pavement relief at sunset",
+          "caption": "A pavement relief at sunset"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/hangzhou-2.jpg",
+          "thumbnail": "/images/travel/china-71/hangzhou-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A tree-lined canal and stone bridge",
+          "caption": "A tree-lined canal and stone bridge"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/hangzhou-3.jpg",
+          "thumbnail": "/images/travel/china-71/hangzhou-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A garden pond beside a pavilion",
+          "caption": "A garden pond beside a pavilion"
         }
       ],
       "region_key": "CHN:hangzhou",
@@ -573,19 +600,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/wuxi-1.jpg",
+          "thumbnail": "/images/travel/china-71/wuxi-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Stone arch bridge and its reflection",
+          "caption": "Stone arch bridge and its reflection"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/wuxi-2.jpg",
+          "thumbnail": "/images/travel/china-71/wuxi-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Canal-side buildings lit at night",
+          "caption": "Canal-side buildings lit at night"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/wuxi-3.jpg",
+          "thumbnail": "/images/travel/china-71/wuxi-3-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "An illuminated tower above the square",
+          "caption": "An illuminated tower above the square"
         }
       ],
       "region_key": "CHN:wuxi",
@@ -633,19 +669,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/changzhou-1.jpg",
+          "thumbnail": "/images/travel/china-71/changzhou-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Traditional buildings reflected in a pond",
+          "caption": "Traditional buildings reflected in a pond"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/changzhou-2.jpg",
+          "thumbnail": "/images/travel/china-71/changzhou-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A statue beside a carved stone wall",
+          "caption": "A statue beside a carved stone wall"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/changzhou-3.jpg",
+          "thumbnail": "/images/travel/china-71/changzhou-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "The tall bookshelves of Banshan Bookstore",
+          "caption": "The tall bookshelves of Banshan Bookstore"
         }
       ],
       "region_key": "CHN:changzhou",
@@ -663,19 +708,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/zhenjiang-1.jpg",
+          "thumbnail": "/images/travel/china-71/zhenjiang-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A red footbridge beneath a pagoda",
+          "caption": "A red footbridge beneath a pagoda"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/zhenjiang-2.jpg",
+          "thumbnail": "/images/travel/china-71/zhenjiang-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A hilltop view across the water",
+          "caption": "A hilltop view across the water"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/zhenjiang-3.jpg",
+          "thumbnail": "/images/travel/china-71/zhenjiang-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A garden pavilion surrounded by flowers",
+          "caption": "A garden pavilion surrounded by flowers"
         }
       ],
       "region_key": "CHN:zhenjiang",
@@ -693,19 +747,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/yangzhou-1.jpg",
+          "thumbnail": "/images/travel/china-71/yangzhou-1-thumb.jpg",
+          "width": 1350,
+          "height": 1800,
+          "alt": "A rock garden beside the water",
+          "caption": "A rock garden beside the water"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/yangzhou-2.jpg",
+          "thumbnail": "/images/travel/china-71/yangzhou-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A pavilion and rockery at He Garden",
+          "caption": "A pavilion and rockery at He Garden"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/yangzhou-3.jpg",
+          "thumbnail": "/images/travel/china-71/yangzhou-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A view across the lake",
+          "caption": "A view across the lake"
         }
       ],
       "region_key": "CHN:yangzhou",
@@ -723,19 +786,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/ningbo-1.jpg",
+          "thumbnail": "/images/travel/china-71/ningbo-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A city lake framed by trees",
+          "caption": "A city lake framed by trees"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/ningbo-2.jpg",
+          "thumbnail": "/images/travel/china-71/ningbo-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "An illuminated bridge on the river",
+          "caption": "An illuminated bridge on the river"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/ningbo-3.jpg",
+          "thumbnail": "/images/travel/china-71/ningbo-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A pavilion overlooking a garden pond",
+          "caption": "A pavilion overlooking a garden pond"
         }
       ],
       "region_key": "CHN:ningbo",
@@ -753,19 +825,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/shaoxing-1.jpg",
+          "thumbnail": "/images/travel/china-71/shaoxing-1-thumb.jpg",
+          "width": 1355,
+          "height": 1800,
+          "alt": "A rock garden at dusk",
+          "caption": "A rock garden at dusk"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/shaoxing-2.jpg",
+          "thumbnail": "/images/travel/china-71/shaoxing-2-thumb.jpg",
+          "width": 1800,
+          "height": 1441,
+          "alt": "Lanterns along a canal at night",
+          "caption": "Lanterns along a canal at night"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/shaoxing-3.jpg",
+          "thumbnail": "/images/travel/china-71/shaoxing-3-thumb.jpg",
+          "width": 1800,
+          "height": 1340,
+          "alt": "The entrance mural at Lu Xun’s Native Place",
+          "caption": "The entrance mural at Lu Xun’s Native Place"
         }
       ],
       "region_key": "CHN:shaoxing",
@@ -813,19 +894,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/qingdao-1.jpg",
+          "thumbnail": "/images/travel/china-71/qingdao-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Qingdao coastline from above",
+          "caption": "Qingdao coastline from above"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/qingdao-2.jpg",
+          "thumbnail": "/images/travel/china-71/qingdao-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "May Fourth Square at night",
+          "caption": "May Fourth Square at night"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/qingdao-3.jpg",
+          "thumbnail": "/images/travel/china-71/qingdao-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Red rooftops in Qingdao’s old town",
+          "caption": "Red rooftops in Qingdao’s old town"
         }
       ],
       "region_key": "CHN:qingdao",
@@ -843,19 +933,28 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/jinan-1.jpg",
+          "thumbnail": "/images/travel/china-71/jinan-1-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "A historic tower above a stone wall",
+          "caption": "A historic tower above a stone wall"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/jinan-2.jpg",
+          "thumbnail": "/images/travel/china-71/jinan-2-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "Pavilions by the spring pool",
+          "caption": "Pavilions by the spring pool"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/china-71/jinan-3.jpg",
+          "thumbnail": "/images/travel/china-71/jinan-3-thumb.jpg",
+          "width": 1800,
+          "height": 1350,
+          "alt": "The Spring City Square sculpture at night",
+          "caption": "The Spring City Square sculpture at night"
         }
       ],
       "region_key": "CHN:jinan",
