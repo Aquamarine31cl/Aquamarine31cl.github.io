@@ -11,8 +11,10 @@
  }
  class Voidrunner {
   constructor(random=Math.random){this.random=random;this.reset();}
-  reset(){
+  reset(mode="standard"){
+   this.practice=mode==="practice";
    this.phase='ready';this.wave=0;this.time=0;this.score=0;this.kills=0;
+   this.waveStart=null;this.pulseCooldown=0;this.pulseFlash=0;
    this.player={x:480,y:300,vx:0,vy:0,angle:-Math.PI/2,hull:100,shield:65,heat:0,cooldown:0,invincible:0,lastHit:-10};
    this.upgrades={damage:1,engine:1,shield:1};this.bullets=[];this.enemies=[];this.effects=[];
    this.rocks=[{x:220,y:180,r:37},{x:735,y:180,r:42},{x:250,y:445,r:36},{x:710,y:438,r:33}];
@@ -21,6 +23,28 @@
   nextWave(){
    this.wave++;this.spawned=0;this.spawnTimer=.8;this.quota=3+this.wave*2;
    this.player.shield=Math.min(65+this.upgrades.shield*10,this.player.shield+25);
+   this.waveSeed=Math.floor(this.random()*0x100000000)>>>0;
+   this.waveStart={player:{...this.player},time:this.time,score:this.score,kills:this.kills,seed:this.waveSeed,pulseCooldown:this.pulseCooldown};
+  }
+  retryWave(){
+   if(this.phase!=='lost'||!this.waveStart)return false;
+   const checkpoint=this.waveStart;
+   this.player={...checkpoint.player};this.time=checkpoint.time;
+   this.score=checkpoint.score;this.kills=checkpoint.kills;
+   this.waveSeed=checkpoint.seed;this.pulseCooldown=checkpoint.pulseCooldown;this.pulseFlash=0;
+   this.spawned=0;this.spawnTimer=.8;
+   this.enemies=[];this.bullets=[];this.effects=[];
+   this.phase='playing';return true;
+  }
+  waveRandom(){
+   this.waveSeed=(Math.imul(this.waveSeed,1664525)+1013904223)>>>0;
+   return this.waveSeed/0x100000000;
+  }
+  pulse(){
+   if(this.phase!=='playing'||this.pulseCooldown>0)return false;
+   this.bullets=this.bullets.filter(bullet=>bullet.friendly||distance(bullet,this.player)>110);
+   this.pulseCooldown=8;this.pulseFlash=.3;
+   return true;
   }
   chooseUpgrade(type){
    if(this.phase!=='upgrade'||!Object.hasOwn(this.upgrades,type))return;
@@ -36,20 +60,20 @@
    }else entity.hull-=amount;
   }
   spawn(){
-   const side=Math.floor(this.random()*4),t=.1+this.random()*.8;
+   const side=Math.floor(this.waveRandom()*4),t=.1+this.waveRandom()*.8;
    const x=side===0?30:side===1?W-30:t*W;
    const y=side===2?30:side===3?H-30:t*H;
    const role=this.wave>=3&&this.spawned%5===4?"gunship":this.wave>=2&&this.spawned%3===1?"interceptor":"raider";
    const traits={raider:{r:14,bonus:0,speed:1,range:190,fireRate:1},interceptor:{r:11,bonus:-12,speed:1.65,range:105,fireRate:.85},gunship:{r:19,bonus:36,speed:.72,range:270,fireRate:.9}}[role];
    const hull=30+this.wave*8+traits.bonus;
-   this.enemies.push({x,y,vx:0,vy:0,role,traits,r:traits.r,hull,maxHull:hull,cooldown:1+this.random(),strafe:this.random()<.5?-1:1});
+   this.enemies.push({x,y,vx:0,vy:0,role,traits,r:traits.r,hull,maxHull:hull,cooldown:1+this.waveRandom(),strafe:this.waveRandom()<.5?-1:1});
    this.spawned++;
   }
   shoot(entity,friendly){
    const angle=friendly?entity.angle:Math.atan2(this.player.y-entity.y,this.player.x-entity.x);
    const speed=friendly?510:210+this.wave*14;
    const x=entity.x+Math.cos(angle)*20,y=entity.y+Math.sin(angle)*20;
-   this.bullets.push({x,y,oldX:x,oldY:y,vx:Math.cos(angle)*speed+(friendly?entity.vx*.4:0),vy:Math.sin(angle)*speed+(friendly?entity.vy*.4:0),life:2.4,friendly,damage:friendly?18+this.upgrades.damage*7:10});
+   this.bullets.push({x,y,oldX:x,oldY:y,vx:Math.cos(angle)*speed+(friendly?entity.vx*.4:0),vy:Math.sin(angle)*speed+(friendly?entity.vy*.4:0),life:2.4,friendly,damage:friendly?18+this.upgrades.damage*7:this.practice?6:10});
   }
   move(entity,dt,radius){
    entity.x=clamp(entity.x+entity.vx*dt,radius,W-radius);
@@ -69,6 +93,8 @@
   step(dt,input={}){
    if(this.phase!=='playing')return;
    dt=Math.min(dt,1/60);this.time+=dt;
+   this.pulseCooldown=Math.max(0,this.pulseCooldown-dt);
+   this.pulseFlash=Math.max(0,this.pulseFlash-dt);
    const p=this.player;
    p.invincible=Math.max(0,p.invincible-dt);p.cooldown-=dt;
    p.heat=Math.max(0,p.heat-dt*25);
@@ -82,7 +108,7 @@
    if(input.fire&&p.cooldown<=0&&p.heat<=82){this.shoot(p,true);p.heat+=18;p.cooldown=.16;}
    this.move(p,dt,13);
    this.spawnTimer-=dt;
-   if(this.spawned<this.quota&&this.spawnTimer<=0){this.spawn();this.spawnTimer=1.8;}
+   if(this.spawned<this.quota&&this.spawnTimer<=0){this.spawn();this.spawnTimer=this.practice?2.8:1.8;}
    for(const enemy of this.enemies){
     const dx=p.x-enemy.x,dy=p.y-enemy.y,d=Math.hypot(dx,dy)||1;
     const approach=clamp((d-enemy.traits.range)/90,-1,1),speed=(65+this.wave*6)*enemy.traits.speed;
@@ -95,7 +121,7 @@
     const ease=1-Math.exp(-dt*2);enemy.vx+=(vx-enemy.vx)*ease;enemy.vy+=(vy-enemy.vy)*ease;
     this.move(enemy,dt,enemy.r);enemy.cooldown-=dt;
     if(enemy.cooldown<=0&&d<520){this.shoot(enemy,false);enemy.cooldown=(1.8-this.wave*.13)*enemy.traits.fireRate;}
-    if(distance(enemy,p)<27){this.damage(p,12);enemy.vx*=-1;enemy.vy*=-1;}
+    if(distance(enemy,p)<27){this.damage(p,this.practice?8:12);enemy.vx*=-1;enemy.vy*=-1;}
    }
    for(const bullet of this.bullets){
     bullet.oldX=bullet.x;bullet.oldY=bullet.y;bullet.x+=bullet.vx*dt;bullet.y+=bullet.vy*dt;bullet.life-=dt;

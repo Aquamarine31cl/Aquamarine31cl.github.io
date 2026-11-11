@@ -3,15 +3,15 @@
   <header class="honors-section-heading"><div><h2 id="honors-heading">Honors & awards</h2></div><span class="honors-total">{{ honors.total }} <small>honors & competition awards in total</small></span></header>
   <p class="honors-intro">{{ honors.intro | escape }}</p>
   <div class="honors-stats" aria-label="Award counts by level">
-    {% for group in honors.groups %}{% assign entries = honors.awards | where: 'level', group.id %}
+  {% for group in honors.groups %}{% assign entries = honors.awards | where: 'level', group.id %}
     <a class="honor-stat honor-stat--{{ group.id }}" href="#honors-{{ group.id }}"><span class="stat-orbit" aria-hidden="true"></span><span class="cosmic-eyebrow">{{ group.number }} / {{ group.short | escape }}</span><span class="honor-stat-number" data-honor-count="{{ group.total }}" aria-hidden="true">{{ group.total }}</span><span class="sr-only">{{ group.total }} awards in total: </span><span class="honor-stat-label">{{ group.label | escape }}</span><span class="honor-stat-subtitle">{{ group.subtitle | escape }} <span aria-hidden="true">↗</span></span></a>
     {% endfor %}
   </div>
   <p class="honors-count-note">{{ honors.basis | escape }}</p>
   <div class="honors-subheading"><h3>Selected awards</h3></div>
   <div class="honors-spotlight" data-preview-list>
-    {% assign featured = honors.awards | where: 'featured', true %}{% for award in featured %}
-    <article {% unless forloop.first %}data-preview-item{% endunless %} class="honor-feature honors-reveal honor-feature--{{ award.image_orientation | default: 'landscape' }}">
+  {% assign featured = honors.awards | where: 'featured', true %}{% for award in featured %}
+  <article {% unless forloop.first %}data-preview-item{% endunless %} class="honor-feature honors-reveal honor-feature--{{ award.image_orientation | default: 'landscape' }}">
       {% if award.image != '' %}<a class="honor-photo" href="#access-dialog" data-protected-href="{{ award.image | relative_url }}" data-access-kind="photo"><span class="access-photo-veil"><span aria-hidden="true">✧</span><span>Unlock photograph</span></span><img hidden data-protected-src="{{ award.image_preview | default: award.image | relative_url }}" alt="{{ award.image_alt | default: award.title | escape }}" {% if award.image_orientation == 'portrait' %}width="720" height="960"{% else %}width="960" height="600"{% endif %} loading="lazy"></a>
       {% else %}<div class="honor-photo honor-photo--placeholder" role="img" aria-label="Image space reserved for {{ award.title | escape }}"><span class="honor-medallion" aria-hidden="true">✧</span><span class="honor-photo-label">CERTIFICATE / MOMENT<small>{% if award.image_orientation == 'portrait' %}Portrait Image Coming Soon{% else %}Landscape Image Coming Soon{% endif %}</small></span></div>{% endif %}
       <div class="honor-feature-copy"><span class="honor-date">{{ award.date | escape }}</span><h4>{{ award.title | escape }}</h4>{% if award.distinction != '' %}<p class="honor-distinction">{{ award.distinction | escape }}</p>{% endif %}</div>
@@ -21,9 +21,10 @@
     <div class="honors-subheading"><h3>Award records</h3></div>
     <div class="honors-filters" hidden role="group" aria-label="Filter awards by level"><button type="button" data-honor-filter="all" aria-pressed="true">All selected <span>{{ honors.awards | size }}</span></button>{% for group in honors.groups %}<button type="button" data-honor-filter="{{ group.id }}" aria-pressed="false">{{ group.short | escape }}</button>{% endfor %}</div>
     <p class="sr-only" data-honors-status role="status" aria-live="polite"></p>
-    {% for group in honors.groups %}{% assign entries = honors.awards | where: 'level', group.id %}
+  {% for group in honors.groups %}{% assign entries = honors.awards | where: 'level', group.id %}
     <section id="honors-{{ group.id }}" class="honor-group" data-honor-group="{{ group.id }}" aria-labelledby="heading-{{ group.id }}"><header class="honor-group-heading"><h4 id="heading-{{ group.id }}">{{ group.label | escape }}</h4><span>{{ entries | size }} selected / {{ group.total }} total</span></header><div class="honor-records" data-preview-list>
-      {% for award in entries %}<article {% unless forloop.first %}data-preview-item{% endunless %} class="honor-record honors-reveal"><time datetime="{{ award.date | replace: '.', '-' }}">{{ award.date | escape }}</time><div><span class="honor-kind">{% if award.kind == 'competition' %}COMPETITION{% else %}HONOR{% endif %}</span><h5>{{ award.title | escape }}</h5>{% if award.distinction != '' %}<p class="honor-distinction">{{ award.distinction | escape }}</p>{% endif %}{% if award.detail != '' %}<p class="honor-detail">{{ award.detail | escape }}</p>{% endif %}</div></article>{% endfor %}
+  {% for award in entries %}<article {% unless forloop.first %}data-preview-item{% endunless %} class="honor-record honors-reveal"><time datetime="{{ award.date | replace: '.', '-' }}">{{ award.date | escape }}</time><div><span class="honor-kind">{% if award.kind == 'competition' %}COMPETITION{% else %}HONOR{% endif %}</span><h5>{{ award.title | escape }}</h5>{% if award.distinction != '' %}<p class="honor-distinction">{{ award.distinction | escape }}</p>{% endif %}{% if award.detail != '' %}<p class="honor-detail">{{ award.detail | escape }}</p>{% endif %}</div></article>{% endfor %}
     </div></section>{% endfor %}
   </div>
 </section>
+

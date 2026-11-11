@@ -20,7 +20,8 @@
     "image_caption": "A New Chapter at Fudan",
     "image_fit": "contain",
     "image_preview": "/images/news/2-preview.webp",
-    "image_orientation": "landscape"
+    "image_orientation": "landscape",
+    "public_text": "I began graduate studies at Fudan University."
   },
   {
     "date": "2026.06",
@@ -32,11 +33,13 @@
     "image_caption": "Graduation from Tongji",
     "image_fit": "contain",
     "image_preview": "/images/news/3-preview.webp",
-    "image_orientation": "landscape"
+    "image_orientation": "landscape",
+    "public_text": "I completed my bachelor’s degree in engineering at Tongji University."
   },
   {
     "date": "2026.05",
-    "text": "Our work on '[Aqueously dispersed homopolypeptide nanotoroids with tunable circularly polarized luminescence](https://www.sciencedirect.com/science/article/abs/pii/S1001841725010228)' has been published in [Chinese Chemical Letters](https://www.sciencedirect.com/journal/chinese-chemical-letters \"Go to Chinese Chemical Letters on ScienceDirect\")."
+    "text": "Our work on '[Aqueously dispersed homopolypeptide nanotoroids with tunable circularly polarized luminescence](https://www.sciencedirect.com/science/article/abs/pii/S1001841725010228)' has been published in [Chinese Chemical Letters](https://www.sciencedirect.com/journal/chinese-chemical-letters \"Go to Chinese Chemical Letters on ScienceDirect\").",
+    "public_text": "Our work was published in Chinese Chemical Letters."
   },
   {
     "date": "2026.04",
@@ -48,7 +51,8 @@
   },
   {
     "date": "2025.09",
-    "text": "I was recommended by Guohao College for direct admission to graduate school, and I also received an admission offer from the Department of Polymer Science at Fudan University."
+    "text": "I was recommended by Guohao College for direct admission to graduate school, and I also received an admission offer from the Department of Polymer Science at Fudan University.",
+    "public_text": "I received an offer of graduate admission from Fudan University."
   },
   {
     "date": "2025.09",
@@ -56,7 +60,8 @@
   },
   {
     "date": "2025.02",
-    "text": "Our work on '[Engineering circularly polarized luminescence through symmetry manipulation in achiral tetraphenylpyrazine structures](https://www.sciencedirect.com/science/article/abs/pii/S0254586124003428)' has been published in [Chinese Journal of Structural Chemistry](https://www.sciencedirect.com/journal/chinese-journal-of-structural-chemistry \"Go to Chinese Journal of Structural Chemistry on ScienceDirect\")."
+    "text": "Our work on '[Engineering circularly polarized luminescence through symmetry manipulation in achiral tetraphenylpyrazine structures](https://www.sciencedirect.com/science/article/abs/pii/S0254586124003428)' has been published in [Chinese Journal of Structural Chemistry](https://www.sciencedirect.com/journal/chinese-journal-of-structural-chemistry \"Go to Chinese Journal of Structural Chemistry on ScienceDirect\").",
+    "public_text": "Our work was published in the Chinese Journal of Structural Chemistry."
   },
   {
     "date": "2024.11",
@@ -64,6 +69,7 @@
   },
   {
     "date": "2022.09",
-    "text": "I was admitted to the [Engineering Experimental Class (Guohao Elite Class) of Tongji University](https://ghc.tongji.edu.cn/info/1051/2201.htm) through an interview."
+    "text": "I was admitted to the [Engineering Experimental Class (Guohao Elite Class) of Tongji University](https://ghc.tongji.edu.cn/info/1051/2201.htm) through an interview.",
+    "public_text": "I was admitted to Tongji University after an interview."
   }
 ]

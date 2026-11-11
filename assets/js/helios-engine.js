@@ -10,15 +10,23 @@
   radiator:{name:'Radiator',cost:18,draw:1,heat:-13,symbol:'❄'},
   relay:{name:'Relay / Battery',cost:12,draw:0,heat:0,symbol:'◇'}
  };
+ const scenarios={
+  standard:{alloy:130,energy:30,flareInterval:6,oreScale:1},
+  scarcity:{alloy:110,energy:20,flareInterval:6,oreScale:.8},
+  storm:{alloy:150,energy:30,flareInterval:5,oreScale:1}
+ };
  class HeliosAccord {
-  constructor(){this.reset();}
-  reset(){
-   this.turn=0;this.alloy=130;this.energy=30;this.science=0;this.integrity=100;
+  constructor(scenario){this.reset(scenario);}
+  reset(scenario='standard'){
+   this.scenario=Object.hasOwn(scenarios,scenario)?scenario:'standard';
+   const rules=scenarios[this.scenario];
+   this.previousOrder=null;
+   this.turn=0;this.alloy=rules.alloy;this.energy=rules.energy;this.science=0;this.integrity=100;
    this.beacons=0;this.phase='playing';this.selected='0,0';this.actionUsed=false;
    this.tech={efficiency:0,cooling:0,fortification:0};this.log=['Colony online. Build one module per cycle, then advance time.'];
    this.tiles=new Map();
    for(let q=-3;q<=3;q++)for(let r=-3;r<=3;r++)if(Math.abs(q+r)<=3){
-    const ore=60+((q*19+r*31+200)%7)*12;
+    const ore=Math.round((60+((q*19+r*31+200)%7)*12)*rules.oreScale);
     this.tiles.set(`${q},${r}`,{q,r,ore,kind:null,level:1,hp:100,heat:0,online:false,powered:false});
    }
    Object.assign(this.tiles.get('0,0'),{kind:'core',online:true,powered:true});
@@ -32,11 +40,31 @@
    for(let i=0;i<queue.length;i++)for(const t of this.neighbors(queue[i]))if(t.kind&&!t.online){t.online=true;queue.push(t);}
   }
   note(message){this.log.unshift(message);this.log=this.log.slice(0,8);return message;}
-  predict(){const cycle=this.turn+1;return{cycle,storm:cycle%6===0,strength:12+Math.floor(cycle/6)*5,sun:Math.floor(this.turn/3)%6};}
+  predict(){
+   const cycle=this.turn+1,interval=scenarios[this.scenario].flareInterval;
+   return {cycle,storm:cycle%interval===0,strength:12+Math.floor(cycle/interval)*5,sun:Math.floor(this.turn/3)%6};
+  }
+  copyState(){
+   return {...this,previousOrder:null,tech:{...this.tech},forecast:{...this.forecast},log:[...this.log],
+    tiles:new Map([...this.tiles].map(([id,tile])=>[id,{...tile}]))};
+  }
+  projectCycle(){
+   if(this.phase!=='playing')return null;
+   const projection=Object.assign(Object.create(HeliosAccord.prototype),this.copyState());
+   projection.step();
+   return projection;
+  }
+  undoOrder(){
+   if(!this.previousOrder)return false;
+   Object.assign(this,this.previousOrder);
+   this.note('Last order undone.');
+   return true;
+  }
   spendAction(cost){
    if(this.phase!=='playing'){this.note('Restart the campaign to play again.');return false;}
    if(this.actionUsed){this.note('One construction or research order per cycle. Advance the cycle first.');return false;}
    if(this.alloy<cost){this.note('Not enough alloy for this order.');return false;}
+   this.previousOrder=this.copyState();
    this.alloy-=cost;this.actionUsed=true;return true;
   }
   build(kind){
@@ -82,6 +110,7 @@
   }
   step(){
    if(this.phase!=='playing')return false;
+   this.previousOrder=null;
    this.network();const weather=this.forecast,connected=[...this.tiles.values()].filter(t=>t.online);
    let generated=8,demand=0;const sun=directions[weather.sun];
    for(const t of this.tiles.values())t.powered=false;
@@ -115,7 +144,10 @@
    for(const [id,t] of this.tiles){
     t.heat=heat.get(id);
     if(!t.kind)continue;
-    if(t.heat>24)t.hp-=Math.ceil((t.heat-24)*.4);
+    if(t.heat>24){
+     const heatDamage=Math.ceil((t.heat-24)*.4);
+     if(t.kind==='core')this.integrity-=heatDamage;else t.hp-=heatDamage;
+    }
     if(weather.storm){
      const shields=this.neighbors(t).concat(t).filter(n=>n.powered&&n.kind==='shield').reduce((s,n)=>s+10*n.level,0);
      const hit=Math.max(0,weather.strength-shields-this.tech.fortification*5);
@@ -126,8 +158,9 @@
    const core=this.tiles.get('0,0');
    if(core.heat<16&&!weather.storm)this.integrity=Math.min(100,this.integrity+2);
    this.alloy+=4; // Core fabricator prevents an exhausted deposit from soft-locking play.
-   const capacity=45+connected.filter(t=>t.kind==='relay').reduce((s,t)=>s+20*t.level,0);
-   this.energy=Math.min(capacity,this.energy);this.turn++;this.actionUsed=false;this.network();
+   this.network();
+   const capacity=45+[...this.tiles.values()].filter(t=>t.online&&t.kind==='relay').reduce((s,t)=>s+20*t.level,0);
+   this.energy=Math.min(capacity,this.energy);this.turn++;this.actionUsed=false;
    this.note(`Cycle ${this.turn}: +${Math.floor(generated)} power / ${demand} demand${weather.storm?' · flare impact':''}.`);
    if(this.integrity<=0){this.integrity=0;this.phase='lost';this.note('Command core lost. Rebuild with shield coverage before the next flare.');}
    else if(this.turn>=36){this.phase='lost';this.note('The departure window closed after cycle 36. Restart to revise your colony plan.');}

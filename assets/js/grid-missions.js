@@ -179,7 +179,7 @@
     }
     return {tile,danger,direction};
   }
-  function move(direction) {
+  function move(direction,focusBoard=true) {
     if(state.result)return;
     const target=direction===-1?state.player:neighbor(state.player,direction);
     if(target<0||terrain[target]==='#')return;
@@ -195,7 +195,7 @@
       else if(terrain[target]==='K')state.key=true;
       else if(terrain[target]==='E'&&state.key)state.result='won';
     }
-    storeDraft();render();cells[cursor].focus({preventScroll:true});
+    storeDraft();render();if(focusBoard)cells[cursor].focus({preventScroll:true});
   }
   function adjacent(tile) {
     const x=tile%width,y=Math.floor(tile/width),out=[];
@@ -301,6 +301,7 @@
     status.textContent=`Stage ${level+1}/${stageCount} · ${stars(level)} (${difficulty(level)}/5) · Turns ${state.turn}${detail}`+
       (state.result==='won'?(level===stageCount-1?' · Final stage complete.':' · Stage complete.'):state.result==='lost'?' · Mission failed. Undo or restart.':cornered?' · Crate trapped in a corner. Undo the push.':'');
     next.hidden=state.result!=='won'||level===stageCount-1;
+    for(const button of directionPad?.querySelectorAll('button')??[])button.disabled=Boolean(state.result);
     undo.disabled=!history.length;
     if(flagMode){flagMode.textContent='Flag Mode: '+(marking?'On':'Off');flagMode.setAttribute('aria-pressed',String(marking));}
   }
@@ -314,7 +315,11 @@
         const target=neighbor(cursor,direction);
         if(target>=0){cursor=target;render();cells[cursor].focus();}
       }
-    }else if(key==='f'&&mode==='survey'){event.preventDefault();activate(cursor,true);}
+    }else if(key==='f'&&mode==='survey'){
+      event.preventDefault();
+      const tile=cells.indexOf(event.target);
+      if(tile>=0){cursor=tile;activate(tile,true);}
+    }
     else if(key===' '&&mode==='stealth'){event.preventDefault();move(-1);}
   });
   root.addEventListener('keydown',event=>{
@@ -339,25 +344,45 @@
   root.querySelector('[data-reset]').addEventListener('click',()=>{reset();storeDraft();cells[cursor].focus();});
   root.querySelector('[data-wait]')?.addEventListener('click',()=>move(-1));
   flagMode?.addEventListener('click',()=>{marking=!marking;render();});
+  function surveyClue(){
+    const clues=state.revealed.flatMap(tile=>{
+      const neighbors=adjacent(tile);
+      const unknown=neighbors.filter(i=>!state.revealed.includes(i)&&!state.flags.includes(i));
+      const mines=countMines(tile)-neighbors.filter(i=>state.flags.includes(i)).length;
+      return unknown.length&&mines>=0&&mines<=unknown.length?[{unknown,mines}]:[];
+    });
+    const settled=clue=>clue.mines===0||clue.mines===clue.unknown.length;
+    const direct=clues.find(settled);
+    if(direct)return direct;
+    // Subtract a fully contained clue to determine the remaining neighbors.
+    for(const small of clues)for(const large of clues){
+      if(small.unknown.length>=large.unknown.length||!small.unknown.every(tile=>large.unknown.includes(tile)))continue;
+      const difference={unknown:large.unknown.filter(tile=>!small.unknown.includes(tile)),mines:large.mines-small.mines};
+      if(settled(difference))return difference;
+    }
+    return null;
+  }
   root.querySelector('[data-survey-hint]')?.addEventListener('click',()=>{
     if(state.result)return;
-    hintTile=-1;
-    for(const clue of state.revealed){
-      const neighbors=adjacent(clue);
-      const unopened=neighbors.filter(i=>!state.revealed.includes(i)&&!state.flags.includes(i));
-      if(!unopened.length)continue;
-      const remaining=countMines(clue)-neighbors.filter(i=>state.flags.includes(i)).length;
-      if(remaining!==0&&remaining!==unopened.length)continue;
-      hintTile=unopened[0];
+    const clue=surveyClue();
+    hintTile=clue?.unknown[0]??-1;
+    if(hintTile>=0){
       cursor=hintTile;
       const row=Math.floor(hintTile/width)+1,column=hintTile%width+1;
-      hintStatus.textContent='Row '+row+', column '+column+(remaining?' should be flagged.':' should be safe.')+' This assumes your flags are correct.';
-      break;
+      hintStatus.textContent='Row '+row+', column '+column+(clue.mines?' should be flagged.':' should be safe.')+' This assumes your flags are correct.';
+    }else{
+      hintStatus.textContent=state.revealed.length?'No certain tile from nearby clues. Check your flags.':'Scan a tile to begin. The first scan is safe.';
     }
-    if(hintTile<0)hintStatus.textContent=state.revealed.length?'No single clue settles a tile. Compare neighboring clues.':'Scan a tile to begin. The first scan is safe.';
     render();
     if(hintTile>=0)cells[hintTile].focus({preventScroll:true});
   });
+  const directionPad=root.querySelector('.mission-directions');
+  if(directionPad){
+    directionPad.hidden=false;
+    for(const button of directionPad.querySelectorAll('[data-move]')){
+      button.addEventListener('click',()=>move(Number(button.dataset.move),false));
+    }
+  }
   reset(true);
 })();
 

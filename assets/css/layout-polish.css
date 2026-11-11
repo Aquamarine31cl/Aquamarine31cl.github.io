@@ -58,3 +58,87 @@ html .daily-access-prompt > p { margin: 0 auto 1rem; max-width: 42ch; }
 .home-summary { font-size: clamp(1rem, 2vw, 1.22rem); margin-bottom: .85rem; }
 .home-section-links { margin-top: .7rem; }
 .home-page :is(#education-heading, #news-heading, #honors) { scroll-margin-top: 6rem; }
+@media (max-width: 600px) {
+  html .cosmic-motion-controls {
+    right: max(.55rem, env(safe-area-inset-right));
+    bottom: max(.55rem, env(safe-area-inset-bottom));
+    max-width: calc(100vw - 1.1rem);
+  }
+  html[data-theme="dark"] .page__footer {
+    padding-bottom: max(3rem, calc(2.5rem + env(safe-area-inset-bottom)));
+  }
+}
+
+/* Keep the first phone screen focused on the homepage content. */
+@media (min-width: 1024px) {
+  html #main.site-home {
+    display: grid;
+    grid-template-columns: minmax(210px, 280px) minmax(0, 1fr);
+    gap: clamp(1rem, 2.5vw, 1.8rem);
+    align-items: start;
+  }
+  html #main.site-home > .home-page { grid-area: 1 / 2; }
+  html #main.site-home > .sidebar { grid-area: 1 / 1; }
+  html #main.site-home > :is(.home-page, .sidebar) { width: auto; max-width: none; margin-inline: 0; }
+}
+@media (max-width: 1023px) {
+  html #main.site-home { display: block; }
+  html #main.site-home > :is(.home-page, .sidebar) { float: none; width: auto; max-width: none; margin-inline: 0; }
+  html #main.site-home > .sidebar { margin-top: 1.15rem; }
+}
+@media (max-width: 600px) {
+  html .cosmic-motion-controls {
+    position: static;
+    display: inline-flex;
+    margin-top: .75rem;
+    max-width: 100%;
+  }
+  html:not([data-theme="dark"]) .cosmic-motion-controls { display: none; }
+  html[data-theme="dark"] .page__footer { padding-bottom: max(1.25rem, env(safe-area-inset-bottom)); }
+  html .journey-top {
+    left: auto;
+    right: max(.65rem, env(safe-area-inset-right));
+    bottom: max(.65rem, env(safe-area-inset-bottom));
+    width: 36px;
+    height: 36px;
+  }
+  .home-page .home-intro { padding-bottom: .9rem; }
+  .home-education, .home-news, .home-honors { margin-top: 1.7rem; }
+  .home-page .page__content .education-card {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    grid-template-areas: "logos school" "logos period" "logos degree" "logos department";
+    gap: .15rem .8rem;
+    align-content: start;
+    padding: .9rem;
+  }
+  .home-page .page__content .education-card .education-logos {
+    grid-area: logos;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .35rem;
+    margin: 0;
+    min-height: 0;
+  }
+  .home-page .page__content .education-card a.education-symbol {
+    width: 52px;
+    height: 52px;
+    flex: 0 0 52px;
+  }
+  .home-page .page__content .education-card .education-logo-divider { display: none; }
+  .home-page .page__content .education-card h3 { grid-area: school; margin: 0 0 .1rem; line-height: 1.35; }
+  .home-page .page__content .education-card .education-period { grid-area: period; margin: 0; }
+  .home-page .page__content .education-card .education-degree { grid-area: degree; margin: 0; }
+  .home-page .page__content .education-card > a { grid-area: department; overflow-wrap: anywhere; }
+  .experience-hero > .sky-section-tools { margin-top: 0; min-height: 28px; }
+  .experience-hub .experience-choice .experience-art { height: 202px; }
+  .experience-hub .experience-choice-copy { padding: 1rem; }
+  .home-page .page__content .news-timeline p, .home-page .page__content .research-ribbon > p { line-height: 1.6; }
+}
+@media (hover: none) and (pointer: coarse) {
+  .motion-arrived:not(.honors-reveal) { animation-duration: 260ms; animation-delay: 0ms; }
+  .section-constellation circle { animation: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-arrived:not(.honors-reveal) { animation: none; }
+}

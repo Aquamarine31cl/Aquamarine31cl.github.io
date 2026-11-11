@@ -1,21 +1,29 @@
 ---
-layout: default
+layout: arcade
 title: "Gravimetric Survey"
 permalink: /star-arcade/gravimetric-survey/
 author_profile: false
 ---
-<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=70">
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=70">
-<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=83">
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=87">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=87">
+<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=87">
 <main id="main" class="experience-page arcade-play">
 <a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
 <section class="voidrunner grid-mission" data-grid-mission="survey" aria-labelledby="mission-heading">
-<p class="cosmic-eyebrow">Hazard deduction</p>
 <h1 id="mission-heading">Gravimetric Survey</h1>
-<p>Reveal every safe sector. Numbers count nearby hazards, including diagonals. Your first scan and its neighbors are safe. Scan an already revealed number to open its unflagged neighbors when the adjacent flag count matches.</p>
-<p class="campaign-key-help">Arrows / WASD select. Enter or Space scans. F or right-click flags. On touch, turn on Flag Mode and tap a sector. Z undoes an action.</p>
-<label class="courier-speed">Stage &amp; difficulty <select data-stage-select></select></label>
+<p class="arcade-objective">Scan every safe square. Numbers count hazards in the eight surrounding squares.</p>
+<details class="helios-help">
+  <summary>Controls and rules</summary>
+  <ul>
+    <li>Your first scan and the surrounding squares are safe. Flag a suspected hazard using Flag Mode, right-click or the F key.</li>
+    <li>Scan a revealed number again to open its unflagged neighbors once enough flags surround it.</li>
+    <li>Check a Clue can highlight a move deduced from the numbers, assuming your flags are correct.</li>
+  </ul>
+</details>
+<div class="mission-picker">
+<label class="courier-speed">Stage <select data-stage-select></select></label>
 <form class="mission-jump"><label>Go to Stage <input type="number" min="1" max="500" step="1" required inputmode="numeric"></label> <button type="submit">Go</button></form>
+</div>
 <p class="mission-record"></p>
 <p role="status" class="mission-status"></p>
 <div class="mission-grid" role="group" aria-label="Gravimetric Survey board"></div>
@@ -30,6 +38,6 @@ author_profile: false
 <p data-hint-status role="status"></p>
 </section>
 </main>
-<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=81"></script>
-<script defer src="{{ '/assets/js/grid-mission-stages.js' | relative_url }}?v=74"></script>
-<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=83"></script>
+<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=87"></script>
+<script defer src="{{ '/assets/js/grid-mission-stages.js' | relative_url }}?v=87"></script>
+<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=87"></script>

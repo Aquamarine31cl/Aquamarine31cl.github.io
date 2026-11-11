@@ -7,12 +7,12 @@
       b: '[data-siege-action="build"]', u: '[data-siege-action="upgrade"]',
       s: '[data-siege-action="sell"]', n: '[data-siege-launch]', p: '[data-siege-pause]'
     }],
-    ['[data-helios]', 'Use the arrow keys to select a hex. 1–6 build modules in button order, U upgrades, R repairs, L launches a beacon, and N advances the cycle.', {
+    ['[data-helios]', 'Use the arrow keys to select a hex. 1–6 build modules in button order, U upgrades, R repairs, L launches a beacon, Z undoes an order, and N advances the cycle.', {
       '1': '[data-helios-build="solar"]', '2': '[data-helios-build="mine"]',
       '3': '[data-helios-build="lab"]', '4': '[data-helios-build="shield"]',
       '5': '[data-helios-build="radiator"]', '6': '[data-helios-build="relay"]',
       u: '[data-helios-order="upgrade"]', r: '[data-helios-order="repair"]',
-      l: '[data-helios-order="launch"]', n: '[data-helios-next]'
+      l: '[data-helios-order="launch"]', z: '[data-helios-undo]', n: '[data-helios-next]'
     }],
     ['[data-meridian]', 'Use the arrow keys to navigate and Enter to select a ship or target. M moves, F fires, T launches a missile, B braces, O sets overwatch, Z undoes an order, and E ends the turn.', {
       m: '[data-fleet-action="move"]', f: '[data-fleet-action="shoot"]',

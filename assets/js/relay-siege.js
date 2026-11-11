@@ -8,12 +8,14 @@
  const adjacent=i=>[i-10,i+10,i%10?i-1:-1,i%10<9?i+1:-1].filter(j=>j>=0&&j<100);
  class RelaySiege {
   constructor(){this.reset();}
-  reset(){this.phase='build';this.credits=140;this.lives=15;this.wave=0;this.towers=new Map();this.enemies=[];this.effects=[];this.selected=44;this.mode='laser';this.clock=0;this.remaining=0;this.timer=0;this.message='Build towers, then launch the first wave.';}
+  reset(){this.distanceMap=null;this.phase='build';this.credits=140;this.lives=15;this.wave=0;this.towers=new Map();this.enemies=[];this.effects=[];this.selected=44;this.mode='laser';this.clock=0;this.remaining=0;this.timer=0;this.message='Build towers, then launch the first wave.';}
   distances(){
+   if(this.distanceMap)return this.distanceMap;
    const distances=Array(100).fill(Infinity),queue=[exit];distances[exit]=0;
    for(let n=0;n<queue.length;n++)for(const j of adjacent(queue[n])){
     if(!this.towers.has(j)&&distances[j]===Infinity){distances[j]=distances[queue[n]]+1;queue.push(j);}
    }
+   this.distanceMap=distances;
    return distances;
   }
   build(){
@@ -23,8 +25,9 @@
    if(this.enemies.some(e=>e.cell===i||e.target===i)){this.message='An enemy is crossing that tile.';return;}
    if(this.credits<cost){this.message='Insufficient credits.';return;}
    this.towers.set(i,{type:this.mode,level:1,cooldown:0,priority:this.mode==='stasis'?'fresh':'first'});
+   this.distanceMap=null;
    const map=this.distances();
-   if(!Number.isFinite(map[entrance])||this.enemies.some(e=>!Number.isFinite(map[e.cell])||!Number.isFinite(map[e.target]))){this.towers.delete(i);this.message='That placement would seal a route. Leave a path to the relay.';return;}
+   if(!Number.isFinite(map[entrance])||this.enemies.some(e=>!Number.isFinite(map[e.cell])||!Number.isFinite(map[e.target]))){this.towers.delete(i);this.distanceMap=null;this.message='That placement would seal a route. Leave a path to the relay.';return;}
    this.credits-=cost;this.message='Tower built. Enemies will use the shortest open route.';
   }
   upgrade(){
@@ -37,7 +40,8 @@
   sell(){
    const tower=this.towers.get(this.selected);if(!tower)return;
    this.credits+=Math.floor((towers[tower.type].cost+(tower.level===2?30:tower.level===3?90:0))*.6);
-   this.towers.delete(this.selected);this.message='Tower salvaged for 60% of its investment.';
+   this.towers.delete(this.selected);
+   this.distanceMap=null;this.message='Tower salvaged for 60% of its investment.';
   }
   launch(){if(this.phase!=='build')return;this.wave++;this.remaining=waveSize(this.wave);this.timer=0;this.phase='wave';this.message='Wave '+this.wave+' approaching.';}
   step(dt){
@@ -100,9 +104,11 @@
   for(let n=0;n<100&&at!==exit;n++){route.add(at);at=adjacent(at).filter(i=>!model.towers.has(i)).sort((a,b)=>map[a]-map[b])[0];if(at===undefined)break;}
   cells.forEach((b,i)=>{
    const tower=model.towers.get(i),enemies=model.enemies.filter(e=>e.cell===i);
-   b.textContent=tower?({laser:'L',stasis:'S',rail:'R'}[tower.type])+tower.level:enemies.length?'◆':i===entrance?'IN':i===exit?'OUT':route.has(i)?'·':'';
+   const symbol=tower?({laser:'L',stasis:'S',rail:'R'}[tower.type])+tower.level:enemies.length?'◆':i===entrance?'IN':i===exit?'OUT':route.has(i)?'·':'';
+   if(b.textContent!==symbol)b.textContent=symbol;
    b.toggleAttribute('data-siege-range',Math.hypot(i%10-model.selected%10,Math.floor(i/10)-Math.floor(model.selected/10))<=range);
-   b.tabIndex=model.selected===i?0:-1;
+   const tabIndex=model.selected===i?0:-1;
+   if(b.tabIndex!==tabIndex)b.tabIndex=tabIndex;
    b.dataset.tile=tower?tower.type:enemies.length?'enemy':route.has(i)?'route':'empty';
    b.setAttribute('aria-selected',String(model.selected===i));
    b.setAttribute('aria-label',String.fromCharCode(65+i%10)+(Math.floor(i/10)+1)+', '+(tower?tower.type+' tower level '+tower.level:enemies.length?'enemy present':i===entrance?'entry':i===exit?'relay':'empty'));

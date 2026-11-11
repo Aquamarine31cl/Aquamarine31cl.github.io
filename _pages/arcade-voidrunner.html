@@ -1,18 +1,28 @@
 ---
-layout: default
+layout: arcade
 title: "Voidrunner"
 permalink: /star-arcade/voidrunner/
 author_profile: false
 ---
-<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=67">
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=67">
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=87">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=87">
 <main id="main" class="experience-page arcade-play"><a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
-<section class="voidrunner" data-voidrunner aria-labelledby="voidrunner-title">
-<p class="campaign-key-help">Pink raiders circle at medium range. Gold interceptors close quickly. Violet gunships stay farther out and take more hits.</p>
+<section class="voidrunner" data-voidrunner data-arcade-fullscreen aria-labelledby="voidrunner-title">
 <h1 id="voidrunner-title">Voidrunner</h1>
-<p>Clear four waves. Keep momentum while firing, use asteroids as cover, and let your weapon cool between bursts. Shields regenerate after four seconds without damage. Each cleared sector grants one upgrade and repairs 30 hull.</p>
-<p>Keyboard: W/↑ thrust, A/← and D/→ steer, S/↓ or Shift brake, Space fire, P pause. Focus the flight view to use keyboard controls. On touch screens, hold the controls below. The flight pauses when you leave it.</p>
+<p class="arcade-objective">Clear four waves. Take cover behind asteroids and use Pulse to clear nearby enemy shots.</p>
+<details class="helios-help">
+  <summary>Controls and rules</summary>
+  <ul>
+    <li><kbd>W</kbd> thrusts, <kbd>A</kbd> and <kbd>D</kbd> turn, <kbd>S</kbd> brakes, <kbd>Space</kbd> fires, <kbd>E</kbd> pulses and <kbd>P</kbd> pauses. Arrow keys also steer and thrust. On touch screens, hold the controls below the flight view.</li>
+    <li>Pulse clears shots within 110 units and recharges in 8 seconds. Shields start recharging after 4 seconds without damage.</li>
+    <li>Pink raiders circle, gold interceptors close in, and violet gunships keep their distance. Each cleared wave gives one upgrade and repairs 30 hull.</li>
+    <li>Practice mode spaces out arrivals and reduces damage. Retry Wave restores your ship and score to the start of that wave.</li>
+  </ul>
+</details>
+<div class="arcade-settings"><label>Flight mode <select data-flight-mode><option value="standard">Standard</option><option value="practice">Practice</option></select></label></div>
+<div class="flight-controls flight-actions"><button type="button" data-flight-start>Launch</button><button type="button" data-flight-retry hidden>Retry Wave</button><button type="button" data-flight-pause disabled>Pause Flight</button></div>
 <p data-flight-hud aria-live="off"></p>
+<div class="flight-deck">
 <canvas width="960" height="600" tabindex="0" role="img" aria-label="Voidrunner real-time space combat flight view"></canvas>
 <div class="flight-controls">
 <button type="button" data-flight-control="left" aria-label="Steer left">↶ Left</button>
@@ -20,8 +30,11 @@ author_profile: false
 <button type="button" data-flight-control="right" aria-label="Steer right">Right ↷</button>
 <button type="button" data-flight-control="brake">Brake</button>
 <button type="button" data-flight-control="fire">Fire</button>
+<button type="button" data-flight-pulse disabled>Pulse</button>
 </div>
-<div class="flight-controls"><button type="button" data-flight-start>Launch / Restart</button><button type="button" data-flight-pause disabled>Pause Flight</button></div>
+</div>
+
+
 <div class="flight-controls" data-flight-upgrades hidden>
 <button type="button" data-upgrade="damage">Upgrade Weapon</button>
 <button type="button" data-upgrade="engine">Upgrade Engine</button>
@@ -31,5 +44,5 @@ author_profile: false
 <noscript><p>Enable JavaScript to play.</p></noscript>
 </section>
 </main>
-<script defer src="{{ '/assets/js/voidrunner-engine.js' | relative_url }}?v=81"></script>
-<script defer src="{{ '/assets/js/voidrunner.js' | relative_url }}?v=81"></script>
+<script defer src="{{ '/assets/js/voidrunner-engine.js' | relative_url }}?v=87"></script>
+<script defer src="{{ '/assets/js/voidrunner.js' | relative_url }}?v=87"></script>

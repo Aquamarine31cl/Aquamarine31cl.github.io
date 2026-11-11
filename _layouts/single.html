@@ -18,8 +18,8 @@ layout: default
 {% endif %}
 
 {% endif %}
-<div id="main" role="main">
-  {% include sidebar.html %}
+<div id="main" role="main"{% if page.home_page %} class="site-home"{% endif %}>
+  {% unless page.home_page %}{% include sidebar.html %}{% endunless %}
 
   {% if full_page_locked %}<section class="daily-access-prompt" data-daily-prompt><h1>Item details</h1><p>Enter the access code to read this item.</p><button type="button" data-open-access>Enter access code</button></section>{% endif %}
   <article {% if full_page_locked %}data-protected-section hidden{% endif %} class="page{% if page.home_page %} home-page{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
@@ -102,6 +102,7 @@ layout: default
       {% include comments.html %}
     {% endif %}
   </article>
+  {% if page.home_page %}{% include sidebar.html %}{% endif %}
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if full_page_locked == false and page.id and page.related and site.related_posts.size > 0 %}

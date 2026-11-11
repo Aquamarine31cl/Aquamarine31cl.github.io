@@ -1,0 +1,33 @@
+---
+ # Star Arcade app shell
+---
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" data-theme="dark" class="arcade-app">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1122">
+  <title>{{ page.title | escape }}{% unless page.title == 'Star Arcade' %} · Star Arcade{% endunless %}</title>
+  <link rel="manifest" href="{{ '/star-arcade/manifest.webmanifest' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/star-arcade/icon-192.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/star-arcade/icon-192.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/star-arcade.css' | relative_url }}?v=87">
+  <link rel="stylesheet" href="{{ '/assets/css/arcade-app.css' | relative_url }}?v=87">
+</head>
+<body>
+  <a class="arcade-skip" href="#main">Skip to content</a>
+  <header class="arcade-bar">
+    <nav aria-label="Star Arcade navigation">
+      <a class="arcade-brand" href="{{ '/star-arcade/' | relative_url }}"{% if page.url == '/star-arcade/' %} aria-current="page"{% endif %}>
+        <img src="{{ '/star-arcade/icon-192.png' | relative_url }}" alt="" width="36" height="36">
+        <span>Star Arcade</span>
+      </a>
+      {% unless site.arcade_standalone %}<a class="arcade-website" href="{{ '/' | relative_url }}">Main website <span aria-hidden="true">↗</span></a>{% endunless %}
+    </nav>
+  </header>
+  {{ content }}
+  <script defer src="{{ '/assets/js/arcade-app.js' | relative_url }}?v=87"></script>
+</body>
+</html>
+
+

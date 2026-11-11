@@ -1,0 +1,246 @@
+/* Layout shared by the installable arcade and its games. */
+.arcade-app {
+  color-scheme: dark;
+  font-family: system-ui, "Segoe UI", sans-serif;
+  line-height: 1.55;
+  background: #0a1122;
+  color: #ecf3ff;
+}
+.arcade-app *, .arcade-app *::before, .arcade-app *::after { box-sizing: border-box; }
+.arcade-app body { margin: 0; min-height: 100vh; }
+.arcade-app :is(button, select, input) { font: inherit; }
+.arcade-app button:not(:disabled), .arcade-app summary { cursor: pointer; }
+.arcade-app :is(a, button, select, input, canvas, summary):focus-visible {
+  outline: 2px solid #ffe2a3;
+  outline-offset: 3px;
+}
+.arcade-app a { color: #a7f0e2; }
+.arcade-app h1 { font-size: clamp(1.75rem, 4.8vw, 2.75rem); line-height: 1.14; margin: 0 0 .65rem; }
+.arcade-app p { margin: .5rem 0 1rem; }
+.arcade-app [hidden] { display: none !important; }
+.arcade-skip {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  transform: translateY(-150%);
+  padding: .75rem;
+  z-index: 2;
+  background: #15243e;
+}
+.arcade-skip:focus { transform: none; }
+.arcade-bar { background: #101a2f; border-bottom: 1px solid #324762; }
+.arcade-bar nav {
+  max-width: 78rem;
+  margin: auto;
+  min-height: 3.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .25rem 1rem;
+  padding: .5rem max(.85rem, env(safe-area-inset-right)) .5rem max(.85rem, env(safe-area-inset-left));
+}
+.arcade-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  color: #f1f6ff !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+.arcade-brand img { border-radius: .55rem; }
+.arcade-website { font-size: .85rem; padding: .55rem 0; text-underline-offset: .25rem; }
+
+.arcade-app #main {
+  width: min(100%, 78rem);
+  margin: 0 auto;
+  padding: clamp(.85rem, 3vw, 2rem) max(.85rem, env(safe-area-inset-right)) max(2rem, env(safe-area-inset-bottom)) max(.85rem, env(safe-area-inset-left));
+}
+.arcade-app .experience-hero {
+  max-width: 1080px;
+  margin-inline: auto;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border: 1px solid #38506d;
+  border-radius: 1.2rem;
+  background: radial-gradient(ellipse at 100% 0, #2c3963, transparent 70%), #14223b;
+}
+.arcade-app .experience-hero p { max-width: 54ch; color: #c4d4e6; }
+.arcade-app-actions { display: flex; flex-wrap: wrap; gap: .45rem 1rem; align-items: center; }
+.arcade-app-actions button {
+  min-height: 2.75rem;
+  border: 1px solid #a3e7da;
+  border-radius: .65rem;
+  background: #baf0e6;
+  color: #0c3434;
+  padding: .45rem .8rem;
+  font-weight: 650;
+}
+.arcade-app-actions details { color: #b0e6dd; font-size: .9rem; }
+.arcade-app-actions summary { padding: .55rem 0; }
+.arcade-app-actions details p { margin: 0; }
+.arcade-app-actions [role="status"] { margin: 0; font-size: .83rem; }
+.arcade-app-actions [role="status"]:empty { display: none; }
+.arcade-app .arcade-filters button { min-height: 2.6rem; }
+.arcade-app .arcade-choice { color: inherit; }
+.arcade-app .arcade-choice .cosmic-eyebrow { color: #abc1df; font-size: .78rem; }
+.arcade-app .arcade-choice h2 { font-size: 1.28rem; line-height: 1.25; }
+.arcade-app .arcade-choice p { color: #c5d1e3; font-size: .92rem; }
+.arcade-app .arcade-choice:hover .arcade-play-label { color: #bcffed; }
+.arcade-app .arcade-back { display: inline-block; padding-block: .3rem; }
+
+.arcade-app .voidrunner { margin: .65rem auto 0; }
+.arcade-app .voidrunner button { touch-action: manipulation; }
+.arcade-app .voidrunner [data-flight-control], .arcade-app .voidrunner [data-kepler-control] { touch-action: none; }
+.arcade-app .voidrunner [data-pressed="true"], .arcade-app .voidrunner [data-kepler-control][aria-pressed="true"] {
+  color: #0a302e;
+  background: #a5f0d9;
+}
+.arcade-app .voidrunner :is(input, select) {
+  max-width: 100%;
+  padding: .55rem;
+  color: #f2f7ff;
+  background: #15253d;
+  border: 1px solid #607f9c;
+  border-radius: .5rem;
+}
+.arcade-app .helios-help { margin: .55rem 0 .75rem; }
+.arcade-app :is(.fleet-scroll, .siege-scroll) { overscroll-behavior-inline: contain; }
+.arcade-app .board-scroll-hint { display: none; font-size: .8rem; color: #b9ccdf; }
+.arcade-app .mission-directions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(2.7rem, 1fr));
+  gap: .35rem;
+  max-width: 12rem;
+  margin: .6rem auto;
+}
+.arcade-app .mission-directions [data-move="0"] { grid-column: 2; }
+.arcade-app .mission-directions [data-move="3"] { grid-column: 1; }
+.arcade-app .mission-directions button { min-height: 44px; padding: .25rem; }
+@media (max-width: 680px) {
+  .arcade-app .board-scroll-hint { display: block; margin: .35rem 0; }
+  .arcade-app .flight-controls { gap: .35rem; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .arcade-app .arcade-choice { transition: transform 160ms ease, border-color 160ms ease, background-color 160ms ease; }
+  .arcade-app .arcade-choice:hover { transform: translateY(-3px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arcade-app .arcade-choice, .arcade-app .helios-map polygon { transition: none; }
+}
+.arcade-app .arcade-library { max-width: 1080px; margin-inline: auto; }
+
+.arcade-game-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: .35rem .8rem;
+}
+.arcade-game-heading h1 { flex: 1 1 11rem; margin: 0; }
+.arcade-app .voidrunner .arcade-game-heading button {
+  flex: 0 0 auto;
+  min-height: 42px;
+  padding: .42rem .72rem;
+  font-size: .83rem;
+}
+.arcade-app .voidrunner .arcade-objective { max-width: 66ch; margin-block: .55rem; }
+.arcade-app .voidrunner .helios-help summary { padding-block: .45rem; color: #b0e6dd; }
+.arcade-app .flight-actions { margin: .55rem 0; }
+.arcade-app .flight-deck { min-width: 0; }
+.arcade-app .flight-deck canvas { max-width: min(100%, 920px); }
+.arcade-app .kepler-campaign .flight-deck canvas { max-width: min(100%, 760px); }
+.arcade-app .mission-picker {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: .65rem 1rem;
+  margin-block: .55rem;
+}
+.arcade-app .mission-picker > * { margin: 0; }
+.arcade-app .mission-picker .courier-speed { gap: .4rem; }
+.arcade-app .mission-record { margin: .4rem 0; }
+.arcade-app :is(.mission-status, [data-flight-hud], [data-kepler-hud]) { font-size: .88rem; line-height: 1.45; }
+
+html.arcade-focus-mode { overflow: hidden; }
+.arcade-app .arcade-focus-view { position: fixed; inset: 0; z-index: 10; }
+.arcade-app .voidrunner:is(:fullscreen, .arcade-focus-view) {
+  width: 100%;
+  height: 100%;
+  max-width: none !important;
+  max-height: none;
+  margin: 0;
+  padding: 0 max(.85rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(.85rem, env(safe-area-inset-left));
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 0;
+  border-radius: 0;
+  background: #10172c;
+}
+.arcade-app :is(.voidrunner:fullscreen, .arcade-focus-view) .arcade-game-heading {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: max(.5rem, env(safe-area-inset-top)) 0 .5rem;
+  border-bottom: 1px solid #36475d;
+  background: #10172c;
+}
+.arcade-app :is(.voidrunner:fullscreen, .arcade-focus-view) .arcade-game-heading h1 {
+  font-size: clamp(1.2rem, 3.5vw, 1.65rem);
+}
+.arcade-app :is(.voidrunner:fullscreen, .arcade-focus-view) .arcade-objective { font-size: .9rem; }
+.arcade-app :is(.voidrunner:fullscreen, .arcade-focus-view) .flight-deck canvas {
+  max-width: min(100%, max(250px, calc((100dvh - 200px) * 1.6)));
+}
+.arcade-app :is(.voidrunner:fullscreen, .arcade-focus-view).kepler-campaign .flight-deck canvas {
+  max-width: min(100%, max(210px, calc((100dvh - 220px) * 1.2)));
+}
+@media (max-width: 520px) {
+  .arcade-app #main { padding-top: .65rem; }
+  .arcade-app .arcade-back { font-size: .88rem; }
+  .arcade-app h1 { font-size: clamp(1.45rem, 7vw, 1.85rem); }
+  .arcade-app .voidrunner .arcade-objective { font-size: .92rem; line-height: 1.48; }
+  .arcade-app .flight-deck .flight-controls button { min-height: 45px; }
+  .arcade-app .mission-picker { gap: .45rem .75rem; }
+  .arcade-app .voidrunner :is(input, select) { font-size: 16px; }
+}
+@media (orientation: landscape) and (max-height: 620px) {
+  .arcade-app :is(.voidrunner:fullscreen, .arcade-focus-view) .flight-deck {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(140px, 1fr);
+    gap: .55rem;
+    align-items: start;
+  }
+  .arcade-app :is(.voidrunner:fullscreen, .arcade-focus-view) .flight-deck .flight-controls { margin-top: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .arcade-app .mission-grid button { transition: background-color 120ms ease, box-shadow 120ms ease; }
+}
+.arcade-app .board-view-controls { display: none; }
+@media (max-width: 680px) {
+  .arcade-app .board-view-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .45rem .65rem;
+    margin: .4rem 0 .6rem;
+    font-size: .8rem;
+  }
+  .arcade-app .voidrunner .board-view-controls button {
+    flex: 0 0 auto;
+    min-height: 38px;
+    padding: .3rem .7rem;
+    font-size: .8rem;
+  }
+  .arcade-app [data-arcade-board-scroll]:not(.arcade-board-enlarged) :is(.fleet-board, .siege-grid) {
+    min-width: 0;
+    gap: 2px;
+  }
+  .arcade-app [data-arcade-board-scroll]:not(.arcade-board-enlarged) :is(.fleet-board, .siege-grid) button {
+    min-height: 0;
+    padding: 0;
+    font-size: clamp(.52rem, 2.35vw, .87rem);
+  }
+  .arcade-app [data-arcade-board-scroll]:not(.arcade-board-enlarged) .fleet-board small {
+    font-size: clamp(.43rem, 1.6vw, .63rem);
+  }
+}

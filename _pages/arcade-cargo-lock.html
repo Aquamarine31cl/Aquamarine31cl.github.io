@@ -1,24 +1,37 @@
 ---
-layout: default
+layout: arcade
 title: "Cargo Lock"
 permalink: /star-arcade/cargo-lock/
 author_profile: false
 ---
-<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=70">
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=70">
-<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=83">
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=87">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=87">
+<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=87">
 <main id="main" class="experience-page arcade-play">
 <a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
-<section class="voidrunner grid-mission" data-grid-mission="cargo" aria-labelledby="mission-heading">
-<p class="cosmic-eyebrow">Cargo logistics</p>
+<section class="voidrunner grid-mission" data-grid-mission="cargo" data-arcade-fullscreen aria-labelledby="mission-heading">
 <h1 id="mission-heading">Cargo Lock</h1>
-<p>Push crates onto every marked bay. You can push one crate at a time and cannot pull it. Plan around corners and use undo to recover from a deadlock.</p>
-<p class="campaign-key-help">Arrows / WASD move and push. Tap an adjacent tile to move. Z undoes a move.</p>
-<label class="courier-speed">Stage &amp; difficulty <select data-stage-select></select></label>
+<p class="arcade-objective">Push every crate onto a marked bay. Move beside a crate to push it one square.</p>
+<details class="helios-help">
+  <summary>Controls and rules</summary>
+  <ul>
+    <li>Crates can only be pushed, one at a time. A crate pushed against two walls can get stuck.</li>
+    <li>Use the on-screen arrows, tap an adjacent tile or press the arrow keys or WASD. Undo restores the previous turn.</li>
+  </ul>
+</details>
+<div class="mission-picker">
+<label class="courier-speed">Stage <select data-stage-select></select></label>
 <form class="mission-jump"><label>Go to Stage <input type="number" min="1" max="500" step="1" required inputmode="numeric"></label> <button type="submit">Go</button></form>
+</div>
 <p class="mission-record"></p>
 <p role="status" class="mission-status"></p>
 <div class="mission-grid" role="group" aria-label="Cargo Lock board"></div>
+<div class="mission-directions" role="group" aria-label="Movement controls" hidden>
+  <button type="button" data-move="0" aria-label="Move up">↑</button>
+  <button type="button" data-move="3" aria-label="Move left">←</button>
+  <button type="button" data-move="2" aria-label="Move down">↓</button>
+  <button type="button" data-move="1" aria-label="Move right">→</button>
+</div>
 <div class="flight-controls">
   <button type="button" data-undo>Undo</button>
   <button type="button" data-reset>Restart Stage</button>
@@ -28,6 +41,6 @@ author_profile: false
 </div>
 </section>
 </main>
-<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=81"></script>
-<script defer src="{{ '/assets/js/grid-mission-stages.js' | relative_url }}?v=74"></script>
-<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=83"></script>
+<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=87"></script>
+<script defer src="{{ '/assets/js/grid-mission-stages.js' | relative_url }}?v=87"></script>
+<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=87"></script>

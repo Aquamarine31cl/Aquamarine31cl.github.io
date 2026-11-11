@@ -1,17 +1,30 @@
 ---
-layout: default
+layout: arcade
 title: "Kepler Courier"
 permalink: /star-arcade/kepler-courier/
 author_profile: false
 ---
-<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=67">
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=67">
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=87">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=87">
 <main id="main" class="experience-page arcade-play"><a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
-<section class="voidrunner kepler-campaign" data-kepler aria-labelledby="kepler-title">
-<h1 id="kepler-title">Kepler Courier</h1><p>Pilot an inertial spacecraft across three increasingly distant circular orbits. Gravity bends every maneuver. Rendezvous with each moving station within 15 units and below 1.8 relative speed; high-speed approaches cause damage. Docking restores fuel and hull. Select Launch again after delivery.</p>
-<details class="helios-help"><summary>Orbital Flight Manual</summary><ul><li>Focus the flight view: A / ← and D / → rotate; W / ↑ or Space thrust; P pauses. Touch controls work by holding the buttons. Prograde and Retrograde align the craft with or against its current velocity.</li><li>To raise orbit, burn prograde near periapsis, coast toward the target altitude, then burn prograde again to circularize. To lower orbit, burn retrograde. Watch the dashed unpowered trajectory and the transfer estimates. Near a circular orbit, the arrival offset estimates how far ahead or behind the station will be when you reach the opposite side of the transfer.</li><li>The golden circle moves with the destination station. Interception needs timing as well as altitude. A lower orbit overtakes a higher orbit. Stop burning early and approach slowly; do not cancel all orbital velocity.</li><li>Keep periapsis above 65 and radius below 650. The simulation starts at 1× mission time with a fixed 120 Hz integration step. Select 3× or 6× for coasting; return to 1× for docking. Hold Shift for quarter-power precision thrust. Q aligns prograde; E aligns retrograde; switching tabs or scrolling away pauses it. Fuel is finite; an unsafe trajectory can require a restart.</li></ul></details>
-<p class="helios-hud" data-kepler-hud></p><canvas width="960" height="800" tabindex="0" role="img" aria-label="Kepler Courier orbital navigation view"></canvas><p data-kepler-telemetry></p><p data-kepler-planning></p><label class="courier-speed">Simulation Speed <select data-kepler-speed><option value="1">1× · Precision Flight</option><option value="3">3× · Transit</option><option value="6">6× · Fast Coast</option></select></label>
-<div class="flight-controls"><button type="button" data-kepler-control="left" aria-pressed="false">Rotate Left</button><button type="button" data-kepler-control="thrust" aria-pressed="false">Hold Thrust</button><button type="button" data-kepler-control="right" aria-pressed="false">Rotate Right</button><button type="button" data-kepler-control="precision" aria-pressed="false">Hold Precision</button><button type="button" data-kepler-align>Prograde</button><button type="button" data-kepler-retro>Retrograde</button></div>
-<div class="flight-controls"><button type="button" data-kepler-start>Launch Courier</button><button type="button" data-kepler-restart>Restart Campaign</button><button type="button" data-kepler-pause>Pause Courier</button></div><p role="status" data-kepler-status></p></section>
+<section class="voidrunner kepler-campaign" data-kepler data-arcade-fullscreen aria-labelledby="kepler-title">
+<h1 id="kepler-title">Kepler Courier</h1>
+<p class="arcade-objective">Deliver cargo to three stations. To dock, get within 15 units and slow to less than 1.8 units per second relative to the station.</p>
+<details class="helios-help">
+  <summary>Controls and rules</summary>
+  <ul>
+    <li><kbd>W</kbd> or <kbd>Space</kbd> thrusts, <kbd>A</kbd> and <kbd>D</kbd> turn, and <kbd>Shift</kbd> gives quarter-power thrust. <kbd>Q</kbd> points along your orbit, <kbd>E</kbd> points against it, and <kbd>P</kbd> pauses.</li>
+    <li>To raise your orbit, thrust prograde, coast to the higher altitude, then thrust prograde again to circularize. Retrograde thrust lowers your orbit. Use the dashed trajectory and arrival offset to plan the transfer.</li>
+    <li>Within 70 units, <kbd>R</kbd> or Align for Docking points the ship in the direction of a velocity correction. Use short burns and return to 1× speed near the station.</li>
+    <li>Keep periapsis above 65 and stay inside radius 650. Retry Delivery restores the start of the current leg.</li>
+  </ul>
+</details>
+<div class="flight-controls flight-actions"><button type="button" data-kepler-start>Launch Courier</button><button type="button" data-kepler-retry hidden>Retry Delivery</button><button type="button" data-kepler-restart>Restart Campaign</button><button type="button" data-kepler-pause>Pause Courier</button></div>
+<p class="helios-hud" data-kepler-hud></p><div class="flight-deck"><canvas width="960" height="800" tabindex="0" role="img" aria-label="Kepler Courier orbital navigation view"></canvas>
+<div class="flight-controls"><button type="button" data-kepler-control="left" aria-pressed="false">Rotate Left</button><button type="button" data-kepler-control="thrust" aria-pressed="false">Hold Thrust</button><button type="button" data-kepler-control="right" aria-pressed="false">Rotate Right</button><button type="button" data-kepler-control="precision" aria-pressed="false">Hold Precision</button><button type="button" data-kepler-align>Prograde</button><button type="button" data-kepler-retro>Retrograde</button><button type="button" data-kepler-match disabled>Align for Docking</button></div>
+</div>
+<p data-kepler-planning></p><p data-kepler-telemetry></p>
+<label class="courier-speed">Simulation speed <select data-kepler-speed><option value="1">1× · Precision Flight</option><option value="3">3× · Transit</option><option value="6">6× · Fast Coast</option></select></label>
+<p role="status" data-kepler-status></p></section>
 </main>
-<script defer src="{{ '/assets/js/kepler-courier.js' | relative_url }}?v=81"></script>
+<script defer src="{{ '/assets/js/kepler-courier.js' | relative_url }}?v=87"></script>

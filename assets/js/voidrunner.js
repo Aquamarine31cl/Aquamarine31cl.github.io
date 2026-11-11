@@ -8,10 +8,19 @@
  const status=game.querySelector('[data-flight-status]'),hud=game.querySelector('[data-flight-hud]');
  const upgrades=game.querySelector('[data-flight-upgrades]');
  const start=game.querySelector('[data-flight-start]'),pause=game.querySelector('[data-flight-pause]');
+ const retry=game.querySelector('[data-flight-retry]'),pulse=game.querySelector('[data-flight-pulse]');
+ const mode=game.querySelector('[data-flight-mode]');
  let paused=false,frame=0,last=0,accumulator=0,lastPhase='',lastHud='';
  const keys={ArrowLeft:'left',a:'left',ArrowRight:'right',d:'right',ArrowUp:'thrust',w:'thrust',ArrowDown:'brake',s:'brake',' ':'fire',Shift:'brake'};
- function clear(){for(const key of Object.keys(input))delete input[key];}
- function paint(){
+ const holdControls=[...game.querySelectorAll('[data-flight-control]')];
+ function clear(){
+  for(const key of Object.keys(input))delete input[key];
+  for(const button of holdControls)button.removeAttribute('data-pressed');
+ }
+ const scenery=document.createElement("canvas");
+ scenery.width=960;scenery.height=600;
+ const sceneryContext=scenery.getContext("2d");
+ function drawScenery(ctx){
   ctx.fillStyle='#080f24';ctx.fillRect(0,0,960,600);
   for(let i=0;i<130;i++){
    ctx.globalAlpha=.25+(i%5)*.12;ctx.fillStyle=i%3?'#c5d7ff':'#c6a8eb';
@@ -27,6 +36,10 @@
    }
    ctx.closePath();ctx.fill();ctx.stroke();
   }
+ }
+ drawScenery(sceneryContext);
+ function paint(){
+  ctx.drawImage(scenery,0,0);
   for(const enemy of model.enemies){
    ctx.save();ctx.translate(enemy.x,enemy.y);ctx.rotate(Math.atan2(model.player.y-enemy.y,model.player.x-enemy.x));
    ctx.scale(enemy.r/14,enemy.r/14);ctx.fillStyle={raider:'#f18da7',interceptor:'#fbd080',gunship:'#c6aaff'}[enemy.role];ctx.beginPath();ctx.moveTo(17,0);ctx.lineTo(-12,-12);ctx.lineTo(-7,0);ctx.lineTo(-12,12);ctx.closePath();ctx.fill();ctx.restore();
@@ -39,12 +52,18 @@
   ctx.fillStyle='#b0f1e8';ctx.beginPath();ctx.moveTo(19,0);ctx.lineTo(-12,-11);ctx.lineTo(-6,0);ctx.lineTo(-12,11);ctx.closePath();ctx.fill();
   if(p.shield>0){ctx.strokeStyle='#8de8f080';ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(0,0,22,0,Math.PI*2);ctx.stroke();}ctx.restore();
   if(!reduced.matches)for(const effect of model.effects){ctx.strokeStyle='#f4cfaa';ctx.globalAlpha=effect.life/.45;ctx.beginPath();ctx.arc(effect.x,effect.y,(.45-effect.life)*85+4,0,Math.PI*2);ctx.stroke();}ctx.globalAlpha=1;
-  const text='Wave '+model.wave+' / 4 · Hull '+Math.ceil(p.hull)+' · Shield '+Math.ceil(p.shield)+' · Heat '+Math.ceil(p.heat)+'% · Speed '+Math.round(Math.hypot(p.vx,p.vy))+' · Score '+model.score;
+  if(model.pulseFlash>0){
+   const elapsed=1-model.pulseFlash/.3;
+   ctx.save();ctx.globalAlpha=1-elapsed;ctx.strokeStyle="#9efaff";ctx.lineWidth=3;
+   ctx.beginPath();ctx.arc(p.x,p.y,reduced.matches?110:22+88*elapsed,0,Math.PI*2);ctx.stroke();ctx.restore();
+  }
+  const text='Wave '+model.wave+' / 4 · Hull '+Math.ceil(p.hull)+' · Shield '+Math.ceil(p.shield)+' · Heat '+Math.ceil(p.heat)+'% · Speed '+Math.round(Math.hypot(p.vx,p.vy))+' · Score '+model.score+' · Pulse '+(model.pulseCooldown>0?Math.ceil(model.pulseCooldown)+'s':'ready');
   if(text!==lastHud){hud.textContent=text;lastHud=text;}
   if(model.phase!==lastPhase){
-   lastPhase=model.phase;upgrades.hidden=model.phase!=='upgrade';
-   status.textContent={ready:'Ready. Select Launch, then steer and fire.',playing:'Flight active. Asteroids block both friendly and hostile fire.',upgrade:'Sector clear. Choose one upgrade to enter the next wave.',lost:'Ship lost. Restart the sortie to try a different approach.',won:'Extraction complete. All four sectors cleared.'}[model.phase];
+   lastPhase=model.phase;upgrades.hidden=model.phase!=='upgrade';retry.hidden=model.phase!=='lost';start.textContent=model.phase==='ready'?'Launch':'Restart Campaign';
+   status.textContent={ready:'Ready. Select Launch, then steer and fire.',playing:'Flight active. Asteroids block both friendly and hostile fire.',upgrade:'Sector clear. Choose one upgrade to enter the next wave.',lost:'Ship lost. Retry this wave or restart the campaign.',won:'Extraction complete. All four sectors cleared.'}[model.phase];
   }
+  pulse.disabled=!active()||model.pulseCooldown>0;
   pause.disabled=model.phase!=='playing';pause.textContent=paused?'Resume Flight':'Pause Flight';pause.setAttribute('aria-pressed',String(paused));
  }
  function stop(){cancelAnimationFrame(frame);frame=0;last=0;accumulator=0;}
@@ -53,10 +72,21 @@
   frame=0;if(!active())return;
   accumulator+=last?Math.min((now-last)/1000,.08):0;last=now;
   while(accumulator>=1/120){model.step(1/120,input);accumulator-=1/120;}
-  paint();if(active())frame=requestAnimationFrame(tick);else {clear();if(model.phase==='upgrade'&&canvas===document.activeElement)upgrades.querySelector('button')?.focus({preventScroll:true});}
+  paint();if(active())frame=requestAnimationFrame(tick);else {
+   clear();
+   if(canvas===document.activeElement){
+    if(model.phase==='upgrade')upgrades.querySelector('button')?.focus({preventScroll:true});
+    if(model.phase==='lost')retry.focus({preventScroll:true});
+   }
+  }
  }
  function sync(){stop();paint();if(active())frame=requestAnimationFrame(tick);}
- start.addEventListener('click',()=>{model.reset();model.start();paused=false;clear();sync();canvas.focus();});
+ start.addEventListener('click',()=>{model.reset(mode.value);model.start();paused=false;clear();sync();canvas.focus();});
+ retry.addEventListener('click',()=>{
+  if(!model.retryWave())return;
+  paused=false;clear();sync();canvas.focus();
+ });
+ pulse.addEventListener('click',()=>{if(active()&&model.pulse()){canvas.focus({preventScroll:true});paint();}});
  pause.addEventListener('click',()=>{paused=!paused;clear();sync();});
  for(const button of upgrades.querySelectorAll('[data-upgrade]'))button.addEventListener('click',()=>{
   model.chooseUpgrade(button.dataset.upgrade);clear();sync();canvas.focus();
@@ -64,15 +94,16 @@
  game.addEventListener('keydown',event=>{
   if(event.ctrlKey||event.metaKey||event.altKey)return;
   if(event.target.matches('button')&&event.key===' ')return;
+  if(event.key.toLowerCase()==='e'&&!event.repeat&&active()){event.preventDefault();pulse.click();return;}
   const key=keys[event.key]||keys[event.key.toLowerCase()];
   if(key&&active()){event.preventDefault();input[key]=true;}
   if(event.key.toLowerCase()==='p'&&!event.repeat&&model.phase==='playing'){paused=!paused;clear();sync();}
  });
- game.addEventListener('keyup',event=>{const key=keys[event.key]||keys[event.key.toLowerCase()];if(key){delete input[key];event.preventDefault();}});
- for(const button of game.querySelectorAll('[data-flight-control]')){
+ game.addEventListener('keyup',event=>{if(event.target.matches('button')&&event.key===' ')return;const key=keys[event.key]||keys[event.key.toLowerCase()];if(key){delete input[key];event.preventDefault();}});
+ for(const button of holdControls){
   const key=button.dataset.flightControl;
-  button.addEventListener('pointerdown',event=>{if(!active()||event.button!==0)return;event.preventDefault();button.setPointerCapture(event.pointerId);input[key]=true;});
-  for(const name of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(name,()=>delete input[key]);
+  button.addEventListener('pointerdown',event=>{if(!active()||event.button!==0)return;event.preventDefault();button.setPointerCapture(event.pointerId);input[key]=true;button.dataset.pressed='true';});
+  for(const name of ['pointerup','pointercancel','lostpointercapture'])button.addEventListener(name,()=>{delete input[key];button.removeAttribute('data-pressed');});
   button.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)&&active()){event.preventDefault();input[key]=true;}});
   button.addEventListener('keyup',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();delete input[key];}});
  }
@@ -80,7 +111,7 @@
  addEventListener('blur',suspend);addEventListener('pagehide',()=>{paused=true;clear();stop();});
  document.addEventListener('visibilitychange',()=>{if(document.hidden)suspend();});
  game.addEventListener('focusout',event=>{if(!game.contains(event.relatedTarget))suspend();});
- if('IntersectionObserver' in window)new IntersectionObserver(entries=>{if(!entries[0].isIntersecting)suspend();}).observe(canvas);
+ if('IntersectionObserver' in window)new IntersectionObserver(entries=>{if(!entries[0].isIntersecting)suspend();}).observe(game.querySelector('.flight-deck')||canvas);
  function resize(){
   const width=Math.max(320,canvas.clientWidth),ratio=Math.min(devicePixelRatio||1,2);
   canvas.width=Math.round(width*ratio);canvas.height=Math.round(width*600/960*ratio);

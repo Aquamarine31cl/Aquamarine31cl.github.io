@@ -1,25 +1,37 @@
 ---
-layout: default
+layout: arcade
 title: "Shadow Dock"
 permalink: /star-arcade/shadow-dock/
 author_profile: false
 ---
-<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=70">
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=70">
-<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=83">
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=87">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=87">
+<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=87">
 <main id="main" class="experience-page arcade-play">
 <a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
-<section class="voidrunner grid-mission" data-grid-mission="stealth" aria-labelledby="mission-heading">
-<p class="cosmic-eyebrow">Patrol infiltration</p>
+<section class="voidrunner grid-mission" data-grid-mission="stealth" data-arcade-fullscreen aria-labelledby="mission-heading">
 <h1 id="mission-heading">Shadow Dock</h1>
-<p>Collect the access key and reach the exit. The guard takes one step after each move or wait. Shaded tiles show the current sightline. Watch the direction arrow and plan where it will look next.</p>
-<p class="campaign-key-help">Arrows / WASD move. Space waits a turn. Z undoes your last turn.</p>
-<label class="courier-speed">Stage &amp; difficulty <select data-stage-select></select></label>
+<p class="arcade-objective">Take the key and reach the exit. Check the amber outline before moving into the guard’s next sightline.</p>
+<details class="helios-help">
+  <summary>Controls and rules</summary>
+  <ul>
+    <li>Pink shows the current sightline. The guard advances once after each move or wait.</li>
+    <li>Tap the arrows or use the arrow keys or WASD. Use Wait or Space to let the guard move first.</li>
+  </ul>
+</details>
+<div class="mission-picker">
+<label class="courier-speed">Stage <select data-stage-select></select></label>
 <form class="mission-jump"><label>Go to Stage <input type="number" min="1" max="500" step="1" required inputmode="numeric"></label> <button type="submit">Go</button></form>
+</div>
 <p class="mission-record"></p>
-<p class="mission-guide">Pink shows the current guard position and sightline. Amber outlines the danger after your next move.</p>
 <p role="status" class="mission-status"></p>
 <div class="mission-grid" role="group" aria-label="Shadow Dock board"></div>
+<div class="mission-directions" role="group" aria-label="Movement controls" hidden>
+  <button type="button" data-move="0" aria-label="Move up">↑</button>
+  <button type="button" data-move="3" aria-label="Move left">←</button>
+  <button type="button" data-move="2" aria-label="Move down">↓</button>
+  <button type="button" data-move="1" aria-label="Move right">→</button>
+</div>
 <div class="flight-controls">
   <button type="button" data-undo>Undo</button>
   <button type="button" data-reset>Restart Stage</button>
@@ -29,6 +41,6 @@ author_profile: false
 </div>
 </section>
 </main>
-<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=81"></script>
-<script defer src="{{ '/assets/js/grid-mission-stages.js' | relative_url }}?v=74"></script>
-<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=83"></script>
+<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=87"></script>
+<script defer src="{{ '/assets/js/grid-mission-stages.js' | relative_url }}?v=87"></script>
+<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=87"></script>

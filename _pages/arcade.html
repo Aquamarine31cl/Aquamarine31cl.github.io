@@ -1,12 +1,18 @@
 ---
-layout: default
+layout: arcade
 title: "Star Arcade"
 permalink: /star-arcade/
 author_profile: false
 ---
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=69">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=87">
 <main id="main" class="experience-page">
-<header class="experience-hero"><h1>Star Arcade</h1><p>Combat, flight, strategy and puzzles. Puzzle progress is saved in this browser.</p></header>
+<header class="experience-hero"><h1>Star Arcade</h1><p>Nine games across action, strategy and puzzles. Your puzzle progress is saved on this device.</p>
+  <div class="arcade-app-actions" data-arcade-app-actions>
+    <button type="button" data-arcade-install hidden>Install Star Arcade</button>
+    <details data-arcade-install-help hidden><summary>Install on this device</summary><p>Use your browser’s Install option or Add to Home Screen.</p></details>
+    <p data-arcade-offline role="status"></p>
+  </div>
+</header>
 <div class="arcade-filters" role="group" aria-label="Filter games" hidden>
   <button type="button" data-game-filter="all" aria-pressed="true">All</button>
   <button type="button" data-game-filter="action" aria-pressed="false">Action &amp; Flight</button>
@@ -17,7 +23,7 @@ author_profile: false
   <a class="arcade-choice" data-game-kind="action" href="{{ '/star-arcade/voidrunner/' | relative_url }}">
     <span class="cosmic-eyebrow">Space combat</span>
     <h2>Voidrunner</h2>
-    <p>Pilot an inertial fighter through four waves.</p>
+    <p>Survive four waves with inertial flight, upgrades and a defensive pulse.</p>
     <span class="arcade-play-label">Play →</span>
   </a>
   <a class="arcade-choice" data-game-kind="strategy" href="{{ '/star-arcade/relay-siege/' | relative_url }}">
@@ -29,13 +35,13 @@ author_profile: false
   <a class="arcade-choice" data-game-kind="strategy" href="{{ '/star-arcade/helios-accord/' | relative_url }}">
     <span class="cosmic-eyebrow">Colony strategy</span>
     <h2>Helios Accord</h2>
-    <p>Develop a solar colony and launch navigation beacons.</p>
+    <p>Plan each cycle, survive flares and launch three beacons.</p>
     <span class="arcade-play-label">Play →</span>
   </a>
   <a class="arcade-choice" data-game-kind="action" href="{{ '/star-arcade/kepler-courier/' | relative_url }}">
     <span class="cosmic-eyebrow">Orbital flight</span>
     <h2>Kepler Courier</h2>
-    <p>Match orbits and dock at three moving stations.</p>
+    <p>Fly between orbits, match velocity and dock at three moving stations.</p>
     <span class="arcade-play-label">Play →</span>
   </a>
   <a class="arcade-choice" data-game-kind="strategy" href="{{ '/star-arcade/meridian-fleet/' | relative_url }}">
@@ -74,5 +80,6 @@ author_profile: false
   </a>
 </nav>
 </main>
-<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=83"></script>
+<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=87"></script>
+
 

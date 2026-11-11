@@ -1,29 +1,35 @@
 ---
-layout: default
+layout: arcade
 title: "Helios Accord"
 permalink: /star-arcade/helios-accord/
 author_profile: false
 ---
-<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=67">
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=67">
+<link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=87">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=87">
 <main id="main" class="experience-page arcade-play"><a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
 <section class="voidrunner" data-helios aria-labelledby="helios-title">
 <h1 id="helios-title">Helios Accord</h1>
-<p>A 36-cycle colony campaign. Build a connected industrial network, balance power and heat, survive solar flares, and launch three navigation beacons. Each cycle allows one construction, repair, research or launch order. You can inspect the board without spending that order.</p>
-<details class="helios-help"><summary>Colony Manual & Module Reference</summary><ul>
-<li>Select a hex sector, then issue an order. New modules must touch the connected colony. Relays bridge sectors and add 20 battery capacity per level.</li>
-<li>Core production: 8 energy and 4 alloy per cycle. Extractors consume 3 power per level and mine finite deposits; labs consume 5 power per level and produce 3 science per level. Power prioritizes cooling and shields. Unpowered or disconnected modules do nothing.</li>
-<li>Solar output changes with the six sun sectors every three cycles. Adjacent arrays shade each other. Flares every six cycles halve solar output and damage unshielded modules.</li>
-<li>Heat above 24 damages modules. Radiators cool themselves and adjacent modules. Shields protect their own hex and adjacent hexes. Upgrade modules to level 3, research cooling, efficiency or armor to level 2, or salvage 60% of a module's base cost.</li>
-<li>Research costs 15 alloy and 12 / 24 science. Beacons cost 38 / 50 / 62 alloy, 18 / 26 / 34 science, and 20 energy each. Build an extractor and lab early; protect the core before the first flare.</li>
-</ul></details>
-<p class="helios-hud" data-helios-hud></p><p class="helios-forecast" data-helios-forecast></p>
+<p class="arcade-objective">Launch three beacons within 36 cycles. Build an extractor for alloy and a lab for science, then check the forecast before advancing.</p>
+<details class="helios-help">
+  <summary>Controls and rules</summary>
+  <ul>
+    <li>Build on an empty hex next to the connected colony. Each cycle allows one order. The core produces 8 energy and 4 alloy per cycle.</li>
+    <li>Extractors use finite deposits. Solar output varies with the sun and drops during flares. Relays connect sectors and add 20 battery capacity per level.</li>
+    <li>Radiators cool adjacent modules. Shields protect their hex and its neighbors. Orange borders mark projected damage next cycle.</li>
+    <li>Launch Beacon displays its current cost. You can undo the last order before advancing.</li>
+  </ul>
+</details>
+<div class="arcade-settings">
+  <label>New campaign <select data-helios-scenario><option value="standard">Standard</option><option value="scarcity">Scarce Deposits</option><option value="storm">Frequent Flares</option></select></label>
+  <button data-helios-restart type="button">Start New Colony</button>
+</div>
+<p class="helios-hud" data-helios-hud></p><p class="helios-forecast" data-helios-forecast></p><p class="fleet-order-preview" data-helios-preview></p>
 <div class="helios-layout"><div><svg class="helios-map" data-helios-board viewBox="0 0 640 510" role="group" aria-label="Helios colony sectors. Arrow keys move selection; Enter selects."></svg><p data-helios-detail></p></div><div>
 <div class="helios-orders"><button data-helios-build="solar" type="button">Solar · 22</button><button data-helios-build="mine" type="button">Extractor · 26</button><button data-helios-build="lab" type="button">Lab · 34</button><button data-helios-build="shield" type="button">Shield · 30</button><button data-helios-build="radiator" type="button">Radiator · 18</button><button data-helios-build="relay" type="button">Relay · 12</button></div>
 <div class="helios-orders"><button data-helios-order="upgrade" type="button">Upgrade · 18 / 36</button><button data-helios-order="repair" type="button">Repair · 12</button><button data-helios-order="salvage" type="button">Salvage</button><button data-helios-order="launch" type="button">Launch Beacon</button></div>
 <div class="helios-orders"><button data-helios-tech="efficiency" type="button">Research Efficiency</button><button data-helios-tech="cooling" type="button">Research Cooling</button><button data-helios-tech="fortification" type="button">Research Armor</button></div>
-<div class="flight-controls"><button data-helios-next type="button">Advance Cycle</button><button data-helios-restart type="button">Restart Colony</button></div><ol class="helios-log" data-helios-log aria-label="Colony event log"></ol></div></div><p role="status" data-helios-status></p></section>
+<div class="flight-controls"><button data-helios-next type="button">Advance Cycle</button><button data-helios-undo type="button" disabled>Undo Order</button></div><details class="helios-help"><summary>Colony log</summary><ol class="helios-log" data-helios-log aria-label="Colony event log"></ol></details></div></div><p role="status" data-helios-status></p></section>
 </main>
-<script defer src="{{ '/assets/js/helios-engine.js' | relative_url }}?v=67"></script>
-<script defer src="{{ '/assets/js/helios.js' | relative_url }}?v=81"></script>
-<script defer src="{{ '/assets/js/campaign-controls.js' | relative_url }}?v=67"></script>
+<script defer src="{{ '/assets/js/helios-engine.js' | relative_url }}?v=87"></script>
+<script defer src="{{ '/assets/js/helios.js' | relative_url }}?v=87"></script>
+<script defer src="{{ '/assets/js/campaign-controls.js' | relative_url }}?v=87"></script>
