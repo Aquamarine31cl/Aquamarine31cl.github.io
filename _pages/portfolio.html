@@ -4,23 +4,23 @@ title: "Portfolio"
 permalink: /portfolio/
 author_profile: false
 portfolio_page: true
+private_metadata: true
+sitemap: false
 ---
 <main id="main" class="experience-page portfolio-page">
-<section class="daily-access-prompt" data-daily-prompt><span aria-hidden="true">✧</span><h1>Portfolio</h1><p>Research, creative work and life beyond the lab.</p><button type="button" data-open-access>Unlock Portfolio ↗</button></section>
-<div data-protected-section hidden>
-<header class="portfolio-hero"><p class="cosmic-eyebrow">RESEARCH / CREATE / EXPLORE</p><h1>Curiosity, Made Tangible.</h1><p>A selection of academic work, creative interests and experiences collected across this website.</p><nav aria-label="Portfolio sections"><a href="#portfolio-research">Research</a><a href="#portfolio-recognition">Recognition</a><a href="#portfolio-beyond">Beyond the Lab</a></nav></header>
-<div class="portfolio-stats"><div><strong>{{ site.publications | size }}</strong><span>Publications</span></div><div><strong>{{ site.data.honors.total }}</strong><span>Honors & Competition Awards</span></div><div><strong>{{ site.data.travel.journeys | size }}</strong><span>Recorded Destinations</span></div></div>
-<section class="portfolio-section" id="portfolio-research"><header><p class="cosmic-eyebrow">01 / MATERIALS & DISCOVERY</p><h2>Research in Focus</h2><p>Supramolecularly assembled materials, chirality and light. Current research interests include chiral induced spin selectivity (CISS).</p></header>
-<div class="portfolio-grid">{% for post in site.publications reversed %}<article class="portfolio-card"><div class="portfolio-visual">{% include academic-figure.html item=post %}</div><div class="portfolio-copy"><span class="cosmic-eyebrow">{{ post.date | date: '%Y' }} / PUBLICATION</span><h3>{{ post.title | escape }}</h3><p>{{ post.venue | escape }}</p><a href="{{ post.url | relative_url }}">Read the Research ↗</a></div></article>{% endfor %}</div>
-<div class="portfolio-path"><span>ACADEMIC PATH</span><p>Fudan University · PhD in Polymer Chemistry and Physics, 2026–2031 (Expected)</p><p>Tongji University · BSc in New Energy Materials and Devices, 2022–2026 · Guohao College</p></div></section>
-<section class="portfolio-section" id="portfolio-recognition"><header><p class="cosmic-eyebrow">02 / SELECTED MILESTONES</p><h2>Recognition Along the Way</h2><p>Selected highlights from a broader record of honors and competition awards.</p></header>
-<div class="portfolio-awards">{% assign selected = site.data.honors.awards | where: 'featured', true %}{% for award in selected %}<article class="portfolio-card portfolio-copy"><span class="cosmic-eyebrow">{{ award.date }} / {% if award.kind == 'competition' %}COMPETITION{% else %}HONOR{% endif %}</span><h3>{{ award.title | escape }}</h3>{% if award.distinction != '' %}<p>{{ award.distinction | escape }}</p>{% endif %}</article>{% endfor %}</div>
-<div class="portfolio-award-totals">{% for group in site.data.honors.groups %}<span><strong>{{ group.total }}</strong> {{ group.label }}</span>{% endfor %}</div><a class="portfolio-more" href="{{ '/#honors' | relative_url }}">Explore the Honors Record ↗</a></section>
-<section class="portfolio-section" id="portfolio-beyond"><header><p class="cosmic-eyebrow">03 / A LIFE IN MOTION</p><h2>Beyond the Lab</h2><p>Other ways to explore patterns, places and possibilities.</p></header>
-<div class="portfolio-awards">
-<article class="portfolio-card portfolio-copy"><span class="portfolio-glyph" aria-hidden="true">◎</span><h3>Travel & Exploration</h3><p>Interactive maps and city journals bring together recorded visits across China, Japan, Singapore and Malaysia, with space for three photographs from each destination.</p><a href="{{ '/experiences/travel/' | relative_url }}">Explore the Travel Journal ↗</a></article>
-<article class="portfolio-card portfolio-copy"><span class="portfolio-glyph" aria-hidden="true">♫</span><h3>Gaming & Music</h3><p>Rolling Sky, Dancing Line, Roller Craft and Mario adventures meet a personal radio channel. Rolling Sky 2 videos are a future addition.</p><a href="{{ '/online-posts/' | relative_url }}">Open Online Posts ↗</a></article>
-<article class="portfolio-card portfolio-copy"><span class="portfolio-glyph" aria-hidden="true">◇</span><h3>Football & Go</h3><p>Two interests beyond academic work: movement on the football pitch and strategy at the Go board. Personal stories and photographs will be added over time.</p><a href="{{ '/experiences/sports/' | relative_url }}">Visit Sports & Movement ↗</a></article>
-</div></section>
-<footer class="portfolio-footer"><p>This portfolio draws from the publications, recognition and experiences recorded on this website.</p><a href="{{ '/' | relative_url }}">Back to About ↗</a></footer>
-</div></main>
+  <section class="daily-access-prompt" data-daily-prompt>
+    <h1>Portfolio</h1>
+    <p>Enter the access code to open the portfolio.</p>
+    <button type="button" data-open-access>Enter access code</button>
+  </section>
+  <div hidden data-protected-section>
+    <header class="portfolio-hero"><h1>Portfolio</h1><p>Research, awards and personal projects.</p></header>
+    <div class="portfolio-grid portfolio-index">
+      <article class="portfolio-card portfolio-copy"><h2><a href="{{ '/publications/' | relative_url }}">Publications</a></h2><p>Articles and publication details.</p></article>
+      <article class="portfolio-card portfolio-copy"><h2><a href="{{ '/#honors' | relative_url }}">Honors & awards</a></h2><p>Selected awards and certificates.</p></article>
+      <article class="portfolio-card portfolio-copy"><h2><a href="{{ '/experiences/travel/' | relative_url }}">Travel</a></h2><p>Maps and photographs by destination.</p></article>
+      <article class="portfolio-card portfolio-copy"><h2><a href="{{ '/online-posts/' | relative_url }}">Online posts</a></h2><p>Game videos and radio.</p></article>
+      <article class="portfolio-card portfolio-copy"><h2><a href="{{ '/experiences/sports/' | relative_url }}">Sports & hobbies</a></h2><p>Football and Go.</p></article>
+    </div>
+  </div>
+</main>

@@ -29,8 +29,8 @@
   }
   for(const enemy of model.enemies){
    ctx.save();ctx.translate(enemy.x,enemy.y);ctx.rotate(Math.atan2(model.player.y-enemy.y,model.player.x-enemy.x));
-   ctx.fillStyle='#f18da7';ctx.beginPath();ctx.moveTo(17,0);ctx.lineTo(-12,-12);ctx.lineTo(-7,0);ctx.lineTo(-12,12);ctx.closePath();ctx.fill();ctx.restore();
-   ctx.fillStyle='#f5c2d2';ctx.fillRect(enemy.x-14,enemy.y-23,28*Math.max(0,enemy.hull)/(30+model.wave*8),3);
+   ctx.scale(enemy.r/14,enemy.r/14);ctx.fillStyle={raider:'#f18da7',interceptor:'#fbd080',gunship:'#c6aaff'}[enemy.role];ctx.beginPath();ctx.moveTo(17,0);ctx.lineTo(-12,-12);ctx.lineTo(-7,0);ctx.lineTo(-12,12);ctx.closePath();ctx.fill();ctx.restore();
+   ctx.fillStyle='#f5c2d2';ctx.fillRect(enemy.x-14,enemy.y-23,28*Math.max(0,enemy.hull)/enemy.maxHull,3);
   }
   for(const b of model.bullets){ctx.strokeStyle=b.friendly?'#b6fff1':'#ffb4b9';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(b.x,b.y);ctx.lineTo(b.x-b.vx*.025,b.y-b.vy*.025);ctx.stroke();}
   const p=model.player;
@@ -53,7 +53,7 @@
   frame=0;if(!active())return;
   accumulator+=last?Math.min((now-last)/1000,.08):0;last=now;
   while(accumulator>=1/120){model.step(1/120,input);accumulator-=1/120;}
-  paint();if(active())frame=requestAnimationFrame(tick);else clear();
+  paint();if(active())frame=requestAnimationFrame(tick);else {clear();if(model.phase==='upgrade'&&canvas===document.activeElement)upgrades.querySelector('button')?.focus({preventScroll:true});}
  }
  function sync(){stop();paint();if(active())frame=requestAnimationFrame(tick);}
  start.addEventListener('click',()=>{model.reset();model.start();paused=false;clear();sync();canvas.focus();});

@@ -1,14 +1,13 @@
 {% include base_path %}
-<div {% unless forloop.first %}data-preview-item{% endunless %} class="list__item academic-list-item">
+<div class="list__item academic-list-item">
   <article class="archive__item academic-card" itemscope itemtype="http://schema.org/CreativeWork">
     <div class="academic-card-visual">{% include academic-figure.html item=post %}</div>
     <div class="academic-card-copy">
-      <p class="cosmic-eyebrow">{{ post.type | escape }}</p>
       <h2 class="archive__item-title" itemprop="headline"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
       <p class="academic-meta">{{ post.event_dates | default: post.date | escape }} · {{ post.location | escape }}</p>
       <p class="academic-venue">{{ post.venue | escape }}</p>
-      <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
-      <a class="academic-read-more" href="{{ post.url | relative_url }}">About this event <span aria-hidden="true">↗</span></a>
+      <div class="archive__item-excerpt" itemprop="description">{{ post.excerpt | strip_html | escape }}</div>
+      <a class="academic-read-more" href="{{ post.url | relative_url }}">Conference details <span aria-hidden="true">↗</span></a>
     </div>
   </article>
 </div>

@@ -25,3 +25,17 @@ html .voidrunner .mission-grid [data-kind=wall] { background: #080f21; color: #6
 html .voidrunner .mission-grid [data-kind=danger] { background: #742b45; }
 html .voidrunner .mission-grid [data-kind=goal] { background: #665018; color: #ffe5a3; }
 html .voidrunner .mission-grid button:focus-visible { outline-offset: -3px; }
+.mission-jump {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin: .6rem 0;
+}
+.mission-jump label { display: flex; align-items: center; gap: .55rem; margin: 0; }
+.mission-jump input { width: 5em; margin: 0; }
+.mission-record, .mission-guide { font-size: .9em; }
+html .voidrunner .mission-grid [data-next-danger] { box-shadow: inset 0 0 0 2px #ffc478; }
+html .voidrunner [data-flag][aria-pressed="true"] { color: #081321; background: #f7ce86; }
+html .voidrunner .mission-grid [data-mission-hint] { box-shadow: inset 0 0 0 3px #ffda91; }
+[data-hint-status]:empty { display: none; }

@@ -5,21 +5,30 @@ permalink: /star-arcade/relay-siege/
 author_profile: false
 ---
 <link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=67">
-<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=67">
+<link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=83">
 <main id="main" class="experience-page arcade-play"><a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
 <section class="voidrunner" data-relay-siege aria-labelledby="siege-title">
 <h1 id="siege-title">Relay Siege</h1>
-<p>Protect the relay through six waves. Place laser towers (35 credits) for damage and stasis towers (50) to slow enemies. Towers block movement, so every placement reshapes the shortest route. You must leave a route open. Armored enemies take reduced laser damage and cost two integrity if they escape.</p>
-<p>Select a tile, then Build. Upgrade the selected tower to level 3 for 30 and 60 credits, or salvage it for 60% of its total investment. Each kill funds more construction. A cleared wave grants 35 credits. On narrow screens, scroll the board sideways. Arrow keys navigate tiles.</p>
+<p>Defend the relay for six waves. Place towers to lengthen the enemy route and cover as much of it as possible.</p>
+<details class="helios-help"><summary>Towers and controls</summary><ul>
+<li>Lasers fire quickly. Stasis towers slow enemies. Railguns fire more slowly but ignore armor and reach farther.</li>
+<li>Place a tower on an empty tile and leave a path to the relay. Select a built tower to change its target priority, upgrade it or salvage it for 60% of its cost.</li>
+<li>Armored enemies take reduced laser damage and cost two integrity if they escape. A cleared wave grants 35 credits.</li>
+</ul></details>
+<p data-siege-forecast class="fleet-order-preview"></p>
 <p data-siege-hud></p>
 <div class="siege-scroll"><div class="siege-grid" data-siege-grid role="grid" aria-label="Relay defense map"></div></div>
 <div class="flight-controls">
-<button type="button" data-siege-mode="laser" aria-pressed="true">Laser (35)</button><button type="button" data-siege-mode="stasis" aria-pressed="false">Stasis (50)</button>
+<button type="button" data-siege-mode="laser" aria-pressed="true">Laser (35)</button><button type="button" data-siege-mode="stasis" aria-pressed="false">Stasis (50)</button><button type="button" data-siege-mode="rail" aria-pressed="false">Railgun (65)</button>
 <button type="button" data-siege-action="build">Build</button><button type="button" data-siege-action="upgrade">Upgrade</button><button type="button" data-siege-action="sell">Salvage</button>
 </div>
+<div class="arcade-settings">
+  <label>Target priority <select data-siege-priority><option value="first">Closest to relay</option><option value="armor">Armored first</option><option value="scout">Fast first</option><option value="fresh">Least slowed first</option></select></label>
+  <label>Wave speed <select data-siege-speed><option value="1">1×</option><option value="2">2×</option><option value="3">3×</option></select></label>
+</div>
 <div class="flight-controls"><button type="button" data-siege-launch>Launch Wave</button><button type="button" data-siege-pause>Pause Wave</button><button type="button" data-siege-restart>Restart Siege</button></div>
-<p role="status"></p>
+<p data-siege-preview></p><p role="status"></p>
 </section>
 </main>
-<script defer src="{{ '/assets/js/relay-siege.js' | relative_url }}?v=67"></script>
-<script defer src="{{ '/assets/js/campaign-controls.js' | relative_url }}?v=67"></script>
+<script defer src="{{ '/assets/js/relay-siege.js' | relative_url }}?v=83"></script>
+<script defer src="{{ '/assets/js/campaign-controls.js' | relative_url }}?v=83"></script>

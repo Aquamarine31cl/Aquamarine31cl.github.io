@@ -39,7 +39,10 @@
    const side=Math.floor(this.random()*4),t=.1+this.random()*.8;
    const x=side===0?30:side===1?W-30:t*W;
    const y=side===2?30:side===3?H-30:t*H;
-   this.enemies.push({x,y,vx:0,vy:0,r:14,hull:30+this.wave*8,cooldown:1+this.random(),strafe:this.random()<.5?-1:1});
+   const role=this.wave>=3&&this.spawned%5===4?"gunship":this.wave>=2&&this.spawned%3===1?"interceptor":"raider";
+   const traits={raider:{r:14,bonus:0,speed:1,range:190,fireRate:1},interceptor:{r:11,bonus:-12,speed:1.65,range:105,fireRate:.85},gunship:{r:19,bonus:36,speed:.72,range:270,fireRate:.9}}[role];
+   const hull=30+this.wave*8+traits.bonus;
+   this.enemies.push({x,y,vx:0,vy:0,role,traits,r:traits.r,hull,maxHull:hull,cooldown:1+this.random(),strafe:this.random()<.5?-1:1});
    this.spawned++;
   }
   shoot(entity,friendly){
@@ -82,7 +85,7 @@
    if(this.spawned<this.quota&&this.spawnTimer<=0){this.spawn();this.spawnTimer=1.8;}
    for(const enemy of this.enemies){
     const dx=p.x-enemy.x,dy=p.y-enemy.y,d=Math.hypot(dx,dy)||1;
-    const approach=clamp((d-190)/90,-1,1),speed=65+this.wave*6;
+    const approach=clamp((d-enemy.traits.range)/90,-1,1),speed=(65+this.wave*6)*enemy.traits.speed;
     let vx=(dx/d*approach-dy/d*enemy.strafe*.6)*speed;
     let vy=(dy/d*approach+dx/d*enemy.strafe*.6)*speed;
     for(const rock of this.rocks){
@@ -91,7 +94,7 @@
     }
     const ease=1-Math.exp(-dt*2);enemy.vx+=(vx-enemy.vx)*ease;enemy.vy+=(vy-enemy.vy)*ease;
     this.move(enemy,dt,enemy.r);enemy.cooldown-=dt;
-    if(enemy.cooldown<=0&&d<520){this.shoot(enemy,false);enemy.cooldown=1.8-this.wave*.13;}
+    if(enemy.cooldown<=0&&d<520){this.shoot(enemy,false);enemy.cooldown=(1.8-this.wave*.13)*enemy.traits.fireRate;}
     if(distance(enemy,p)<27){this.damage(p,12);enemy.vx*=-1;enemy.vy*=-1;}
    }
    for(const bullet of this.bullets){

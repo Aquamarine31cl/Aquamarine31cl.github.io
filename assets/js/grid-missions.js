@@ -3,7 +3,7 @@
   const root = document.querySelector('[data-grid-mission]');
   if (!root) return;
   const board = root.querySelector('.mission-grid');
-  const status = root.querySelector('[role=status]');
+  const status = root.querySelector('.mission-status');
   const next = root.querySelector('[data-next]');
   const undo = root.querySelector('[data-undo]');
   const mode = root.dataset.gridMission;
@@ -38,6 +38,14 @@
   maps.stealth.push(...extra.stealth);
   patrols.push(...extra.patrols);
   const stageCount = 500;
+  const {read, save} = StarArcadeProgress;
+  const progress = read(mode);
+  const jump = root.querySelector('.mission-jump');
+  const jumpInput = jump.querySelector('input');
+  const record = root.querySelector('.mission-record');
+  const flagMode = root.querySelector('[data-flag]');
+  const hintStatus = root.querySelector('[data-hint-status]');
+  let hintTile = -1;
   const select = root.querySelector('[data-stage-select]');
   const difficulty = stage => Math.floor((stage % 100) / 20) + 1;
   const stars = stage => '★'.repeat(difficulty(stage)) + '☆'.repeat(5 - difficulty(stage));
@@ -58,7 +66,7 @@
   const directions = [[0,-1],[1,0],[0,1],[-1,0]];
   const arrows = {ArrowUp:0,ArrowRight:1,ArrowDown:2,ArrowLeft:3,w:0,d:1,s:2,a:3};
   const glyphs = ['','╵','╶','└','╷','│','┌','├','╴','┘','─','┴','┐','┤','┬','┼'];
-  let level = 0, width, height, terrain, state, history, cursor, cells;
+  let level = progress.stage, width, height, terrain, state, history, cursor, cells, marking = false;
 
   function neighbor(index, direction) {
     const [dx,dy] = directions[direction];
@@ -69,8 +77,11 @@
   function randomSource(seed) {
     return () => {seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
   }
-  function reset() {
+  function reset(resume=false) {
+    hintTile=-1;
+    if(hintStatus)hintStatus.textContent='';
     select.value=String(level);
+    jumpInput.value=String(level+1);
     const map=maps[mode]?.[level];
     width=map?.[0].length ?? boardSize(level);
     height=map?.length ?? boardSize(level);
@@ -96,11 +107,12 @@
         return mask;
       });
     }
+    if(resume)restoreDraft();
     board.style.setProperty('--columns',width);
     cells=Array.from({length:width*height},(_,i)=>{
       const button=document.createElement('button');
       button.type='button';
-      button.addEventListener('click',()=>{cursor=i;activate(i);});
+      button.addEventListener('click',()=>{cursor=i;activate(i,marking);});
       button.addEventListener('contextmenu',event=>{
         if(mode!=='survey')return;
         event.preventDefault();cursor=i;activate(i,true);
@@ -110,7 +122,37 @@
     board.replaceChildren(...cells);
     render();
   }
-  function checkpoint() { history.push(structuredClone(state));state.turn++; }
+  const draftKey='star-arcade.draft.v1.'+mode;
+  function storeDraft() {
+    try {
+      if(state.turn===0)localStorage.removeItem(draftKey);
+      else localStorage.setItem(draftKey,JSON.stringify({level,state,history:history.slice(-32)}));
+    } catch {}
+  }
+  function restoreDraft() {
+    try {
+      const draft=JSON.parse(localStorage.getItem(draftKey));
+      if(draft?.level!==level)return;
+      const tile=i=>Number.isInteger(i)&&i>=0&&i<width*height;
+      const indexList=list=>Array.isArray(list)&&list.length<=width*height&&list.every(tile);
+      const valid=boardState=>boardState&&Number.isInteger(boardState.turn)&&boardState.turn>=0&&
+        ['', 'won', 'lost'].includes(boardState.result)&&typeof boardState.key==='boolean'&&
+        (maps[mode]?tile(boardState.player):boardState.player===-1)&&
+        indexList(boardState.crates)&&indexList(boardState.revealed)&&indexList(boardState.flags)&&indexList(boardState.mines)&&
+        Array.isArray(boardState.pipes)&&boardState.pipes.length===(mode==='circuit'?width*height:0)&&
+        boardState.pipes.every(mask=>Number.isInteger(mask)&&mask>=1&&mask<=15);
+      if(!valid(draft.state))return;
+      state=draft.state;
+      history=Array.isArray(draft.history)?draft.history.slice(-32).filter(valid):[];
+      cursor=Math.max(0,state.player);
+    } catch {}
+  }
+  function checkpoint() {
+    hintTile=-1;
+    if(hintStatus)hintStatus.textContent='';
+    history.push(structuredClone(state));
+    state.turn++;
+  }
   function energized() {
     const seen=new Set([0]),queue=[0];
     let leaks=0;
@@ -124,8 +166,8 @@
     }
     return {seen,leaks};
   }
-  function guard() {
-    const route=patrols[level],phase=state.turn%route.length;
+  function guard(turn=state.turn) {
+    const route=patrols[level],phase=turn%route.length;
     const [x,y]=route[phase],[nextX,nextY]=route[(phase+1)%route.length];
     const direction=directions.findIndex(([dx,dy])=>dx===nextX-x&&dy===nextY-y);
     const tile=y*width+x, danger=new Set([tile]);
@@ -153,7 +195,7 @@
       else if(terrain[target]==='K')state.key=true;
       else if(terrain[target]==='E'&&state.key)state.result='won';
     }
-    render();cells[cursor].focus({preventScroll:true});
+    storeDraft();render();cells[cursor].focus({preventScroll:true});
   }
   function adjacent(tile) {
     const x=tile%width,y=Math.floor(tile/width),out=[];
@@ -166,6 +208,10 @@
   function survey(tile, flag) {
     if(flag&&state.revealed.includes(tile))return;
     if(!flag&&state.flags.includes(tile))return;
+    if(!flag&&state.revealed.includes(tile)){
+      const around=adjacent(tile);
+      if(around.filter(i=>state.flags.includes(i)).length!==countMines(tile)||around.every(i=>state.flags.includes(i)||state.revealed.includes(i)))return;
+    }
     checkpoint();
     if(flag){
       state.flags=state.flags.includes(tile)?state.flags.filter(i=>i!==tile):[...state.flags,tile];
@@ -198,16 +244,24 @@
       if(direction>=0)move(direction);
       return;
     }
+    const previousTurn=state.turn;
     if(mode==='survey')survey(tile,flag);
     if(mode==='circuit'){
       checkpoint();state.pipes[tile]=rotate(state.pipes[tile]);
       const {seen,leaks}=energized();
       if(seen.size===cells.length&&!leaks)state.result='won';
     }
+    if(state.turn!==previousTurn)storeDraft();
     render();
   }
   function render() {
     const circuit=mode==='circuit'?energized():null, patrol=mode==='stealth'?guard():null;
+    const nextDanger=patrol&&guard(state.turn+1).danger;
+    if(state.result==='won'&&(!progress.best[level]||state.turn<progress.best[level])){
+      progress.best[level]=state.turn;
+      save(mode,progress);
+    }
+    record.textContent=Object.keys(progress.best).length+' / '+stageCount+' cleared'+(progress.best[level]?' · Best: '+progress.best[level]+' turns':'');
     for(const [i,cell] of cells.entries()){
       let symbol='',kind='',label='';
       if(circuit){
@@ -218,7 +272,7 @@
         const revealed=state.revealed.includes(i),mine=state.mines.includes(i);
         symbol=state.result==='lost'&&mine?'✹':state.flags.includes(i)?'⚑':revealed?(countMines(i)||'·'):'';
         kind=revealed?'lit':'';
-        label=String(symbol||'Unscanned');
+        label=state.flags.includes(i)?'Flagged hazard':revealed?countMines(i)+' adjacent hazards':String(symbol||'Unscanned');
       }else{
         const tile=terrain[i];
         symbol=tile==='#'?'▦':tile==='.'?'·':tile==='K'&&!state.key?'◆':tile==='E'?'⇥':'';
@@ -230,16 +284,25 @@
       }
       cell.textContent=symbol;
       cell.dataset.kind=kind;
+      cell.toggleAttribute('data-mission-hint',i===hintTile);
+      cell.toggleAttribute('data-next-danger', Boolean(nextDanger?.has(i)));
+      if(nextDanger?.has(i))label+=', danger next turn';
       cell.tabIndex=i===cursor?0:-1;
       cell.setAttribute('aria-label',`Row ${Math.floor(i/width)+1}, column ${i%width+1}: ${label}`);
     }
-    const progress=circuit?` · Powered ${circuit.seen.size}/${cells.length} · Open connections ${circuit.leaks}`
+    const detail=circuit?` · Powered ${circuit.seen.size}/${cells.length} · Open connections ${circuit.leaks}`
       :mode==='survey'?` · Flags ${state.flags.length}/${mineCount(level)}`
-      :mode==='stealth'?(state.key?' · Key acquired':' · Find the key'):'';
-    status.textContent=`Stage ${level+1}/${stageCount} · ${stars(level)} (${difficulty(level)}/5) · Turns ${state.turn}${progress}`+
-      (state.result==='won'?(level===stageCount-1?' · Final stage complete.':' · Stage complete.'):state.result==='lost'?' · Mission failed. Undo or restart.':'');
+      :mode==='stealth'?(state.key?' · Key acquired':' · Find the key')
+      :mode==='cargo'?' · Bays filled '+state.crates.filter(i=>terrain[i]==='.').length+'/'+state.crates.length:'';
+    const cornered=mode==='cargo'&&state.crates.some(i=>terrain[i]!=='.'&&directions.some((_,d)=>{
+      const wall=direction=>{const n=neighbor(i,direction);return n<0||terrain[n]==='#';};
+      return wall(d)&&wall((d+1)%4);
+    }));
+    status.textContent=`Stage ${level+1}/${stageCount} · ${stars(level)} (${difficulty(level)}/5) · Turns ${state.turn}${detail}`+
+      (state.result==='won'?(level===stageCount-1?' · Final stage complete.':' · Stage complete.'):state.result==='lost'?' · Mission failed. Undo or restart.':cornered?' · Crate trapped in a corner. Undo the push.':'');
     next.hidden=state.result!=='won'||level===stageCount-1;
     undo.disabled=!history.length;
+    if(flagMode){flagMode.textContent='Flag Mode: '+(marking?'On':'Off');flagMode.setAttribute('aria-pressed',String(marking));}
   }
   board.addEventListener('keydown',event=>{
     if(event.ctrlKey||event.metaKey||event.altKey)return;
@@ -257,12 +320,44 @@
   root.addEventListener('keydown',event=>{
     if(event.target!==select&&event.key.toLowerCase()==='z'&&!event.ctrlKey&&!event.metaKey&&!event.altKey&&!event.repeat)undo.click();
   });
-  select.addEventListener('change',()=>{level=Number(select.value);reset();});
-  undo.addEventListener('click',()=>{if(history.length){state=history.pop();render();cells[cursor].focus();}});
-  next.addEventListener('click',()=>{if(state.result!=='won'||level>=stageCount-1)return;level++;reset();cells[cursor].focus();});
-  root.querySelector('[data-reset]').addEventListener('click',()=>{reset();cells[cursor].focus();});
+  function openStage(stage) {
+    if(!Number.isInteger(stage)||stage<0||stage>=stageCount||stage===level)return;
+    level=stage;
+    progress.stage=stage;
+    save(mode,progress);
+    reset();
+    storeDraft();
+  }
+  select.addEventListener('change',()=>openStage(Number(select.value)));
+  jump.addEventListener('submit',event=>{
+    event.preventDefault();
+    openStage(jumpInput.valueAsNumber-1);
+    cells[cursor].focus({preventScroll:true});
+  });
+  undo.addEventListener('click',()=>{if(history.length){state=history.pop();hintTile=-1;if(hintStatus)hintStatus.textContent='';if(maps[mode])cursor=state.player;storeDraft();render();cells[cursor].focus();}});
+  next.addEventListener('click',()=>{if(state.result!=='won'||level>=stageCount-1)return;openStage(level+1);cells[cursor].focus();});
+  root.querySelector('[data-reset]').addEventListener('click',()=>{reset();storeDraft();cells[cursor].focus();});
   root.querySelector('[data-wait]')?.addEventListener('click',()=>move(-1));
-  root.querySelector('[data-flag]')?.addEventListener('click',()=>{activate(cursor,true);cells[cursor].focus();});
-  reset();
+  flagMode?.addEventListener('click',()=>{marking=!marking;render();});
+  root.querySelector('[data-survey-hint]')?.addEventListener('click',()=>{
+    if(state.result)return;
+    hintTile=-1;
+    for(const clue of state.revealed){
+      const neighbors=adjacent(clue);
+      const unopened=neighbors.filter(i=>!state.revealed.includes(i)&&!state.flags.includes(i));
+      if(!unopened.length)continue;
+      const remaining=countMines(clue)-neighbors.filter(i=>state.flags.includes(i)).length;
+      if(remaining!==0&&remaining!==unopened.length)continue;
+      hintTile=unopened[0];
+      cursor=hintTile;
+      const row=Math.floor(hintTile/width)+1,column=hintTile%width+1;
+      hintStatus.textContent='Row '+row+', column '+column+(remaining?' should be flagged.':' should be safe.')+' This assumes your flags are correct.';
+      break;
+    }
+    if(hintTile<0)hintStatus.textContent=state.revealed.length?'No single clue settles a tile. Compare neighboring clues.':'Scan a tile to begin. The first scan is safe.';
+    render();
+    if(hintTile>=0)cells[hintTile].focus({preventScroll:true});
+  });
+  reset(true);
 })();
 

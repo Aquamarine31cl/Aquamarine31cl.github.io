@@ -1,17 +1,16 @@
 ---
 layout: archive
-title: "Attended Academic Conferences"
+title: "Conferences"
 permalink: /talks/
-author_profile: true
+author_profile: false
+private_metadata: true
+sitemap: false
+hide_archive_title: true
 ---
 
-<div data-preview-list>
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
+<section class="daily-access-prompt" data-daily-prompt><h1>Conferences</h1><p>Enter the access code to view the conference list.</p><button type="button" data-open-access>Enter access code</button></section>
+<div hidden data-protected-section class="academic-list">
+<h1>Conferences</h1>
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}

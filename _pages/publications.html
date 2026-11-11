@@ -2,15 +2,16 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
+private_metadata: true
+sitemap: false
+hide_archive_title: true
 ---
-<section class="daily-access-prompt" data-daily-prompt><span aria-hidden="true">✧</span><h2>Publications</h2><p>Enter the access code to view publications and download links.</p><button type="button" data-open-access>Unlock Publications</button></section>
-<section data-protected-section data-name-private hidden>
-
-
-<div data-preview-list>
+<section class="daily-access-prompt" data-daily-prompt><h1>Publications</h1><p>Enter the access code to view publications and download links.</p><button type="button" data-open-access>Enter access code</button></section>
+<section data-protected-section hidden class="academic-list">
+<h1>Publications</h1>
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <p><a href="{{ site.author.googlescholar | escape }}">Google Scholar</a></p>
 {% endif %}
 
 {% include base_path %}
@@ -35,10 +36,5 @@ author_profile: true
     {% include archive-single-publication.html %}
   {% endfor %}
 {% endif %}
-
-
-
-
-</div>
 
 </section>

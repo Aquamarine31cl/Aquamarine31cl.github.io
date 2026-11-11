@@ -22,7 +22,10 @@ function render(){
  links.replaceChildren();for(const [id,t] of game.tiles)if(t.online)for(const n of game.neighbors(t))if(n.online&&id<`${n.q},${n.r}`){const a=point(t),b=point(n);links.append(element('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y}));}
  const t=game.tiles.get(game.selected);detail.textContent=`Sector ${game.selected}: ${t.kind==='core'?'Command Core':HeliosModules[t.kind]?.name||'Empty'} · ${t.ore} ore remaining · ${Math.round(t.heat)} heat${t.kind?' · '+(t.online?'connected':'DISCONNECTED')+(t.powered?' · powered':' · idle'):''}.`;
  log.replaceChildren(...game.log.map(text=>{const li=document.createElement('li');li.textContent=text;return li;}));
- for(const b of root.querySelectorAll('[data-helios-build],[data-helios-order],[data-helios-tech]'))b.disabled=game.phase!=='playing'||game.actionUsed;
+ for(const b of root.querySelectorAll('[data-helios-build],[data-helios-order],[data-helios-tech]')){
+  const spec=HeliosModules[b.dataset.heliosBuild];
+  b.disabled=game.phase!=='playing'||game.actionUsed||Boolean(spec&&(t.kind||game.alloy<spec.cost));
+ }
  root.querySelector('[data-helios-next]').disabled=game.phase!=='playing';
  root.querySelector('[data-helios-status]').textContent=game.phase==='won'?'Victory — the Helios Accord is online.':game.phase==='lost'?'Campaign ended. Restart to try a different plan.':game.log[0];
 }

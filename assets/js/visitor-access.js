@@ -12,27 +12,9 @@ try{unlocked=sessionStorage.getItem(key)===expected;}catch{}
 // Render the public alias initially; restore the owner's name only in an unlocked tab.
 const publicName='Aquamarine';
 const privateName=String.fromCharCode(89,117,97,110,112,101,110,103,32,89,101);
-const namePattern=/\bAquamarine\b/g;
 function applyNames(){
- const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode(node){
-  return node.parentElement?.closest('script,style,textarea,[data-name-private]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
- }});
- while(walker.nextNode()){
-  const node=walker.currentNode;
-  const text=unlocked?node.data.replace(namePattern,privateName):node.data.split(privateName).join(publicName);
-  if(node.data!==text)node.data=text;
- }
- document.querySelectorAll('[alt],[title],[aria-label],meta[content]').forEach(el=>{
-  if(el.closest('[data-name-private]'))return;
-  for(const attr of ['alt','title','aria-label','content']){
-   if(!el.hasAttribute(attr))continue;
-   const old=el.getAttribute(attr),next=unlocked?old.replace(namePattern,privateName):old.split(privateName).join(publicName);
-   if(old!==next)el.setAttribute(attr,next);
-  }
- });
- const baseTitle=window.aquamarinePublicationTitle?(unlocked?window.aquamarinePublicationTitle:'Publications'):document.title;
- const title=unlocked?baseTitle.replace(namePattern,privateName):baseTitle.split(privateName).join(publicName);
- if(document.title!==title)document.title=title;
+ const name=unlocked&&!restricted?privateName:publicName;
+ document.querySelectorAll('[data-private-name]').forEach(el=>{if(el.textContent!==name)el.textContent=name;});
 }
 
 function apply(){
@@ -45,11 +27,11 @@ function apply(){
   a.querySelectorAll('.access-photo-veil').forEach(veil=>veil.hidden=unlocked);
  });
  document.querySelectorAll('[data-protected-src]').forEach(img=>{
-  if(unlocked){img.src=img.dataset.protectedSrc;img.hidden=false;}else{img.removeAttribute('src');img.hidden=true;}
+  if(unlocked){if(img.getAttribute('src')!==img.dataset.protectedSrc)img.src=img.dataset.protectedSrc;img.hidden=false;}else{img.removeAttribute('src');img.hidden=true;}
  });
  document.querySelectorAll('[data-protected-section]').forEach(el=>el.hidden=!unlocked);
  document.querySelectorAll('[data-daily-prompt]').forEach(el=>el.hidden=unlocked);
- document.querySelectorAll('[data-open-access]').forEach(el=>{if(!el.dataset.lockedLabel)el.dataset.lockedLabel=el.textContent.trim();el.textContent=unlocked?'Manage Access ↗':el.dataset.lockedLabel;});
+ document.querySelectorAll('[data-open-access]').forEach(el=>{if(!el.dataset.lockedLabel)el.dataset.lockedLabel=el.textContent.trim();el.textContent=unlocked?'Manage access':el.dataset.lockedLabel;});
  dialog.querySelector('[data-relock]').hidden=!unlocked;
  form.hidden=unlocked;
  document.dispatchEvent(new CustomEvent('site-access-changed'));
@@ -75,6 +57,7 @@ form.addEventListener('submit',async e=>{
   if(actual!==expected){feedback.textContent='That code did not match. Please try again.';input.select();return;}
   unlocked=true;try{sessionStorage.setItem(key,expected);}catch{}
   const destination=pending,after=resume;resume=null;apply();close();if(after)after();
+  if(!destination&&!after&&trigger&&!trigger.getClientRects().length)document.querySelector('.site-access-button')?.focus({preventScroll:true});
   if(destination&&['paper','chapter','external'].includes(destination.dataset.accessKind))location.assign(destination.dataset.protectedHref);
   else if(destination)destination.focus({preventScroll:true});
  }catch{feedback.textContent='Verification is unavailable. Please open the HTTPS website and try again.';}
@@ -87,24 +70,26 @@ apply();
 window.addEventListener('pageshow',event=>{
  if(!event.persisted)return;
  try{unlocked=sessionStorage.getItem(key)===expected;}catch{unlocked=false;}
+ if(dialog.open)close();
  apply();previews();
 });
 
 function previews(){
  document.querySelectorAll('[data-preview-list]').forEach(list=>{
+  if(list.closest('[data-protected-section]'))return;
   const count=Array.from(list.querySelectorAll('[data-preview-item]')).filter(el=>el.closest('[data-preview-list]')===list).length;
   if(!count)return;
   let prompt=list.nextElementSibling?.classList.contains('preview-access-prompt')?list.nextElementSibling:null;
   if(!prompt){
    prompt=document.createElement('div');prompt.className='preview-access-prompt';
-   const button=document.createElement('button');button.type='button';button.setAttribute('data-open-access','');button.textContent='Unlock the Full Collection ↗';prompt.append(button);list.insertAdjacentElement('afterend',prompt);
+   const button=document.createElement('button');button.type='button';button.setAttribute('data-open-access','');button.textContent='Enter access code';prompt.append(button);list.insertAdjacentElement('afterend',prompt);
   }
   prompt.hidden=unlocked;
  });
 }
 previews();
 let previewScheduled=false;
-new MutationObserver(()=>{if(!previewScheduled){previewScheduled=true;requestAnimationFrame(()=>{previewScheduled=false;previews();applyNames();});}}).observe(document.body,{childList:true,subtree:true});
+new MutationObserver(()=>{if(!previewScheduled){previewScheduled=true;requestAnimationFrame(()=>{previewScheduled=false;previews();});}}).observe(document.body,{childList:true,subtree:true});
 document.addEventListener('site-access-request',e=>{
  if(unlocked){e.detail.resume();return;}
  pending=null;resume=e.detail.resume;open(document.activeElement);
@@ -119,7 +104,7 @@ if(corner){
  const persist=()=>{try{localStorage.setItem('aquamarine.visitor.v1',JSON.stringify(activity));}catch{}};
  function render(){corner.querySelector('[data-visit-count]').textContent=activity.visits;corner.querySelector('[data-heart-count]').textContent=activity.hearts;}
  persist();render();
- corner.querySelector('[data-visitor-greeting]').textContent=activity.visits>1?'Welcome back. There is always more to discover.':'Welcome, fellow explorer. Make yourself at home.';
+ corner.querySelector('[data-visitor-greeting]').textContent=activity.visits>1?'Welcome back.':'Welcome.';
  const clock=()=>{const now=new Date();corner.querySelector('time').dateTime=now.toISOString();corner.querySelector('time').textContent=now.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});};clock();setInterval(clock,60000);
  let lastHeart=0;
  corner.querySelector('[data-send-heart]').addEventListener('click',e=>{

@@ -4,13 +4,19 @@ title: "Online Posts"
 permalink: /online-posts/
 author_profile: false
 online_posts: true
+private_metadata: true
+sitemap: false
+redirect_from:
+  - /posts/2018/09/blog-post-1/
+  - /posts/2013/08/blog-post-2/
+  - /posts/2014/08/blog-post-3/
+  - /posts/2012/08/blog-post-4/
 ---
 <main id="main" class="experience-page">
   <section class="daily-access-prompt" data-daily-prompt>
-    <span aria-hidden="true">✧</span>
     <h1>Online Posts</h1>
-    <p>Enter the access code to view the game collections, videos, and radio.</p>
-    <button type="button" data-open-access>Unlock Online Posts ↗</button>
+    <p>Enter the access code to view videos and radio.</p>
+    <button type="button" data-open-access>Enter access code</button>
   </section>
   <section class="experience-section experience-section--atlas" data-protected-section hidden>
     <div class="experience-section-body">{% include online-posts.html %}</div>

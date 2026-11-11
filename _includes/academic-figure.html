@@ -1,7 +1,9 @@
+{% assign private_figure = false %}
+{% if include.item.collection == 'publications' or include.item.collection == 'talks' %}{% assign private_figure = true %}{% endif %}
 {% if include.item.image %}
 <figure class="academic-figure{% if include.item.collection == 'publications' %} academic-figure--graphical{% endif %}">
-  <a class="academic-figure-link" {% if include.item.publication_key %}href="#access-dialog" data-protected-href="{{ include.item.image | relative_url }}" data-access-kind="photo"{% else %}href="{{ include.item.image | relative_url }}"{% endif %} aria-label="{{ include.item.image_alt | escape }}">
-    <img {% if include.item.publication_key %}hidden data-protected-src{% else %}src{% endif %}="{{ include.item.image | relative_url }}" alt="{{ include.item.image_alt | escape }}"{% if include.item.image_width %} width="{{ include.item.image_width }}"{% endif %}{% if include.item.image_height %} height="{{ include.item.image_height }}"{% endif %} loading="lazy" decoding="async">
+  <a class="academic-figure-link" {% if private_figure %}href="#access-dialog" data-protected-href="{{ include.item.image | relative_url }}" data-access-kind="photo"{% else %}href="{{ include.item.image | relative_url }}"{% endif %} aria-label="{{ include.item.image_alt | escape }}">
+    <img {% if private_figure %}hidden data-protected-src{% else %}src{% endif %}="{{ include.item.image | relative_url }}" alt="{{ include.item.image_alt | escape }}"{% if include.item.image_width %} width="{{ include.item.image_width }}"{% endif %}{% if include.item.image_height %} height="{{ include.item.image_height }}"{% endif %} loading="lazy" decoding="async">
   </a>
   <figcaption>{{ include.item.image_caption | escape }}{% if include.item.image_credit %} <span class="academic-image-credit">{% if include.item.image_source_url %}<a href="{{ include.item.image_source_url | escape }}">{{ include.item.image_credit | escape }}</a>{% else %}{{ include.item.image_credit | escape }}{% endif %}</span>{% endif %}</figcaption>
 </figure>

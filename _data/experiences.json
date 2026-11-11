@@ -1,34 +1,30 @@
 {
-  "eyebrow": "BEYOND THE LAB",
-  "title": "A Life in Motion.",
-  "intro": "Sports, journeys, and the moments in between.",
+  "title": "Experiences",
   "sections": [
     {
       "id": "travel",
       "index": "01",
-      "title": "Travel & Exploration",
-      "subtitle": "New places. Different perspectives.",
+      "title": "Travel",
+      "subtitle": "Maps and photographs by destination.",
       "art": "travel",
       "entries": []
     },
     {
       "id": "sports",
       "index": "02",
-      "title": "Sports & Movement",
-      "subtitle": "Energy, rhythm, and new challenges.",
+      "title": "Sports & Hobbies",
+      "subtitle": "Football and Go.",
       "art": "sports",
       "entries": [
         {
           "id": "football",
           "title": "Football",
-          "description": "Stories and photographs to follow.",
           "image": "",
           "image_alt": ""
         },
         {
           "id": "go",
           "title": "Go (Weiqi)",
-          "description": "Stories and photographs to follow.",
           "image": "",
           "image_alt": ""
         }
@@ -37,8 +33,7 @@
     {
       "id": "moments",
       "index": "03",
-      "title": "Everyday Moments",
-      "subtitle": "Small discoveries worth keeping.",
+      "title": "Everyday Life",
       "art": "moments",
       "entries": []
     }

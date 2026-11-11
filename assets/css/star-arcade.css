@@ -2,3 +2,25 @@
 html[data-theme="dark"] #site-nav a.star-arcade-nav{color:#a3fae7!important;background:#173e43!important;}
 #site-nav a.star-arcade-nav:hover,#site-nav a.star-arcade-nav:focus-visible{outline:2px solid currentColor;outline-offset:-2px;}
 #site-nav .selected>a.star-arcade-nav{text-decoration:underline;text-underline-offset:.2em;}
+.arcade-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  max-width: 1080px;
+  margin: 1rem auto;
+}
+.arcade-filters[hidden], .arcade-library [hidden] { display: none !important; }
+.arcade-filters button {
+  padding: .5rem .9rem;
+  border: 1px solid #9a84c880;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.arcade-filters button[aria-pressed="true"] {
+  background: #d4faf1;
+  color: #00554b;
+  border-color: #269588;
+}

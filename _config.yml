@@ -125,7 +125,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true
   path                   : # blank (default) uses feed.xml
 
 
@@ -180,6 +180,9 @@ exclude:
   - Capfile
   - config
   - Dockerfile
+  - talkmap
+  - talkmap.ipynb
+  - talkmap_out.ipynb
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -228,7 +231,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
     output: true
@@ -242,6 +245,7 @@ defaults:
       path: ""
       type: posts
     values:
+      published: false
       layout: single
       author_profile: true
       read_time: true
@@ -269,8 +273,9 @@ defaults:
       path: ""
       type: publications
     values:
+      sitemap: false
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       comments: true
   # _portfolio
@@ -287,6 +292,7 @@ defaults:
       path: ""
       type: talks
     values:
+      sitemap: false
       layout: talk
       author_profile: true
       share: true

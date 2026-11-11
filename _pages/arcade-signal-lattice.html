@@ -6,7 +6,7 @@ author_profile: false
 ---
 <link rel="stylesheet" href="{{ '/assets/css/voidrunner.css' | relative_url }}?v=70">
 <link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=70">
-<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=74">
+<link rel="stylesheet" href="{{ '/assets/css/grid-missions.css' | relative_url }}?v=83">
 <main id="main" class="experience-page arcade-play">
 <a class="arcade-back" href="{{ '/star-arcade/' | relative_url }}">← All Games</a>
 <section class="voidrunner grid-mission" data-grid-mission="circuit" aria-labelledby="mission-heading">
@@ -15,6 +15,8 @@ author_profile: false
 <p>Rotate tiles to connect every module to the source at the top left. Energized connections light up. Every connection must meet a matching port.</p>
 <p class="campaign-key-help">Arrows / WASD select a tile. Enter or Space rotates it. Z undoes a rotation.</p>
 <label class="courier-speed">Stage &amp; difficulty <select data-stage-select></select></label>
+<form class="mission-jump"><label>Go to Stage <input type="number" min="1" max="500" step="1" required inputmode="numeric"></label> <button type="submit">Go</button></form>
+<p class="mission-record"></p>
 <p role="status" class="mission-status"></p>
 <div class="mission-grid" role="group" aria-label="Signal Lattice board"></div>
 <div class="flight-controls">
@@ -26,5 +28,6 @@ author_profile: false
 </div>
 </section>
 </main>
+<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=81"></script>
 <script defer src="{{ '/assets/js/grid-mission-stages.js' | relative_url }}?v=74"></script>
-<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=74"></script>
+<script defer src="{{ '/assets/js/grid-missions.js' | relative_url }}?v=83"></script>

@@ -1,3 +1,13 @@
+{% if page.private_metadata or page.collection == "publications" or page.collection == "talks" or page.collection == "portfolio" %}
+{% assign public_title = page.title %}
+{% case page.collection %}
+  {% when "publications" %}{% assign public_title = "Publications" %}
+  {% when "talks" %}{% assign public_title = "Conferences" %}
+  {% when "portfolio" %}{% assign public_title = "Portfolio" %}
+{% endcase %}
+<title>{{ public_title | escape }} · {{ site.title | escape }}</title>
+<meta name="robots" content="noindex, nosnippet">
+{% else %}
 {% include base_path %}
 
 <!-- begin SEO -->
@@ -144,4 +154,4 @@
 {% elsif page.header.overlay_image %}
   <meta property="og:image" content="{% if page.header.overlay_image contains "://" %}{{ page.header.overlay_image }}{% else %}{{ page.header.overlay_image | prepend: "/images/" | prepend: base_path }}{% endif %}">
 {% endif %}
-<!-- end Open Graph protocol -->
+<!-- end Open Graph protocol -->{% endif %}

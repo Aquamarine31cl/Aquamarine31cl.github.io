@@ -6,57 +6,73 @@ author_profile: false
 ---
 <link rel="stylesheet" href="{{ '/assets/css/helios.css' | relative_url }}?v=69">
 <main id="main" class="experience-page">
-<header class="experience-hero"><p class="cosmic-eyebrow">NINE CAMPAIGNS / ONE GALAXY</p><h1>Star Arcade</h1><p>Choose a game to start.</p></header>
+<header class="experience-hero"><h1>Star Arcade</h1><p>Combat, flight, strategy and puzzles. Puzzle progress is saved in this browser.</p></header>
+<div class="arcade-filters" role="group" aria-label="Filter games" hidden>
+  <button type="button" data-game-filter="all" aria-pressed="true">All</button>
+  <button type="button" data-game-filter="action" aria-pressed="false">Action &amp; Flight</button>
+  <button type="button" data-game-filter="strategy" aria-pressed="false">Strategy</button>
+  <button type="button" data-game-filter="puzzle" aria-pressed="false">Puzzles</button>
+</div>
 <nav class="arcade-library" aria-label="Choose a game">
-  <a class="arcade-choice" href="{{ '/star-arcade/voidrunner/' | relative_url }}">
-    <span class="cosmic-eyebrow">01 · Space combat</span>
+  <a class="arcade-choice" data-game-kind="action" href="{{ '/star-arcade/voidrunner/' | relative_url }}">
+    <span class="cosmic-eyebrow">Space combat</span>
     <h2>Voidrunner</h2>
     <p>Pilot an inertial fighter through four waves.</p>
     <span class="arcade-play-label">Play →</span>
   </a>
-  <a class="arcade-choice" href="{{ '/star-arcade/relay-siege/' | relative_url }}">
-    <span class="cosmic-eyebrow">02 · Tower defense</span>
+  <a class="arcade-choice" data-game-kind="strategy" href="{{ '/star-arcade/relay-siege/' | relative_url }}">
+    <span class="cosmic-eyebrow">Tower defense</span>
     <h2>Relay Siege</h2>
     <p>Build and upgrade defenses to protect the relay.</p>
     <span class="arcade-play-label">Play →</span>
   </a>
-  <a class="arcade-choice" href="{{ '/star-arcade/helios-accord/' | relative_url }}">
-    <span class="cosmic-eyebrow">03 · Colony strategy</span>
+  <a class="arcade-choice" data-game-kind="strategy" href="{{ '/star-arcade/helios-accord/' | relative_url }}">
+    <span class="cosmic-eyebrow">Colony strategy</span>
     <h2>Helios Accord</h2>
     <p>Develop a solar colony and launch navigation beacons.</p>
     <span class="arcade-play-label">Play →</span>
   </a>
-  <a class="arcade-choice" href="{{ '/star-arcade/kepler-courier/' | relative_url }}">
-    <span class="cosmic-eyebrow">04 · Orbital flight</span>
+  <a class="arcade-choice" data-game-kind="action" href="{{ '/star-arcade/kepler-courier/' | relative_url }}">
+    <span class="cosmic-eyebrow">Orbital flight</span>
     <h2>Kepler Courier</h2>
     <p>Match orbits and dock at three moving stations.</p>
     <span class="arcade-play-label">Play →</span>
   </a>
-  <a class="arcade-choice" href="{{ '/star-arcade/meridian-fleet/' | relative_url }}">
-    <span class="cosmic-eyebrow">05 · Fleet tactics</span>
+  <a class="arcade-choice" data-game-kind="strategy" href="{{ '/star-arcade/meridian-fleet/' | relative_url }}">
+    <span class="cosmic-eyebrow">Fleet tactics</span>
     <h2>Meridian Fleet</h2>
     <p>Command ships across an asteroid field and capture relays.</p>
     <span class="arcade-play-label">Play →</span>
   </a>
-  <a class="arcade-choice" href="{{ '/star-arcade/cargo-lock/' | relative_url }}">
-    <span class="cosmic-eyebrow">06 · Cargo logistics</span>
+  <a class="arcade-choice" data-game-kind="puzzle" data-arcade-progress="cargo" href="{{ '/star-arcade/cargo-lock/' | relative_url }}">
+    <span class="cosmic-eyebrow">Cargo logistics</span>
     <h2>Cargo Lock</h2>
+    <p>Route crates through tight bays. Plan pushes and watch for deadlocks.</p>
+    <span class="arcade-record">500 stages</span>
     <span class="arcade-play-label">Play →</span>
   </a>
-  <a class="arcade-choice" href="{{ '/star-arcade/signal-lattice/' | relative_url }}">
-    <span class="cosmic-eyebrow">07 · Network repair</span>
+  <a class="arcade-choice" data-game-kind="puzzle" data-arcade-progress="circuit" href="{{ '/star-arcade/signal-lattice/' | relative_url }}">
+    <span class="cosmic-eyebrow">Network repair</span>
     <h2>Signal Lattice</h2>
+    <p>Rotate conductors to reconnect the entire station.</p>
+    <span class="arcade-record">500 stages</span>
     <span class="arcade-play-label">Play →</span>
   </a>
-  <a class="arcade-choice" href="{{ '/star-arcade/shadow-dock/' | relative_url }}">
-    <span class="cosmic-eyebrow">08 · Patrol infiltration</span>
+  <a class="arcade-choice" data-game-kind="puzzle" data-arcade-progress="stealth" href="{{ '/star-arcade/shadow-dock/' | relative_url }}">
+    <span class="cosmic-eyebrow">Patrol infiltration</span>
     <h2>Shadow Dock</h2>
+    <p>Read the patrol’s next move, steal the key and reach extraction.</p>
+    <span class="arcade-record">500 stages</span>
     <span class="arcade-play-label">Play →</span>
   </a>
-  <a class="arcade-choice" href="{{ '/star-arcade/gravimetric-survey/' | relative_url }}">
-    <span class="cosmic-eyebrow">09 · Hazard deduction</span>
+  <a class="arcade-choice" data-game-kind="puzzle" data-arcade-progress="survey" href="{{ '/star-arcade/gravimetric-survey/' | relative_url }}">
+    <span class="cosmic-eyebrow">Hazard deduction</span>
     <h2>Gravimetric Survey</h2>
+    <p>Deduce hazards from neighboring scans before clearing a sector.</p>
+    <span class="arcade-record">500 stages</span>
     <span class="arcade-play-label">Play →</span>
   </a>
 </nav>
 </main>
+<script defer src="{{ '/assets/js/arcade-progress.js' | relative_url }}?v=83"></script>
+
