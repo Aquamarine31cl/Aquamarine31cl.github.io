@@ -1,0 +1,76 @@
+---
+layout: default
+title: "Personal Access"
+permalink: /personal/
+author_profile: false
+personal_page: true
+private_metadata: true
+sitemap: false
+---
+<main id="main" class="experience-page personal-page">
+  <section class="daily-access-prompt" data-daily-prompt>
+    <h1>Personal Access</h1>
+    <p>Enter your site access code to open your shop list.</p>
+    <button type="button" data-open-access>Enter access code</button>
+  </section>
+
+  <div class="personal-workspace" data-protected-section hidden>
+    <header class="personal-heading">
+      <h1>Personal Access</h1>
+      <p>Your shop list is saved in this browser.</p>
+    </header>
+
+    <div class="personal-grid">
+      <section class="personal-panel" aria-labelledby="shop-editor-heading">
+        <h2 id="shop-editor-heading">Add a shop</h2>
+        <form class="personal-form" data-shop-form>
+          <label for="shop-name">Shop name</label>
+          <input id="shop-name" name="name" required maxlength="100">
+          <div class="personal-fields">
+            <div>
+              <label for="shop-area">Area <small>(optional)</small></label>
+              <input id="shop-area" name="area" maxlength="100">
+            </div>
+            <div>
+              <label for="shop-type">Type <small>(optional)</small></label>
+              <input id="shop-type" name="type" maxlength="60">
+            </div>
+          </div>
+          <label for="shop-notes">Notes <small>(optional)</small></label>
+          <textarea id="shop-notes" name="notes" rows="3" maxlength="500"></textarea>
+          <div class="personal-actions">
+            <button type="submit" class="personal-primary" data-shop-save disabled>Save shop</button>
+            <button type="button" data-shop-cancel hidden>Cancel</button>
+          </div>
+        </form>
+        <p class="personal-status" data-shop-form-status role="status"></p>
+      </section>
+
+      <section class="personal-panel" aria-labelledby="shop-list-heading">
+        <h2 id="shop-list-heading">Saved shops</h2>
+        <div class="personal-toolbar">
+          <label for="shop-search">Search shops
+            <input id="shop-search" type="search" maxlength="100" placeholder="Name, area or type">
+          </label>
+          <button type="button" class="personal-primary" data-shop-random disabled>Pick at random</button>
+        </div>
+        <p class="personal-pick" data-shop-pick role="status"></p>
+        <p class="personal-status" data-shop-count role="status"></p>
+        <ul class="personal-list" data-shop-list></ul>
+        <template data-shop-item>
+          <li class="personal-shop">
+            <div>
+              <h3 data-shop-name></h3>
+              <p data-shop-info></p>
+              <p class="personal-notes" data-shop-notes></p>
+            </div>
+            <div class="personal-actions">
+              <button type="button" data-shop-action="edit">Edit</button>
+              <button type="button" data-shop-action="delete">Delete</button>
+            </div>
+          </li>
+        </template>
+      </section>
+    </div>
+  </div>
+</main>

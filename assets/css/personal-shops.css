@@ -1,0 +1,157 @@
+.personal-workspace {
+  --personal-surface: linear-gradient(145deg, #f1ebf9ee, #faf9fdee);
+  --personal-list-surface: linear-gradient(145deg, #e8f3f6ee, #faf9fdee);
+  --personal-field: #ffffffd9;
+  --personal-edge: #8c75b247;
+  --personal-muted: #665875;
+  --personal-focus: #7351ad;
+}
+
+html[data-theme="dark"] .personal-workspace {
+  --personal-surface: linear-gradient(145deg, #30255488, #10152e66);
+  --personal-list-surface: linear-gradient(145deg, #183f5170, #10152e66);
+  --personal-field: #10152b9c;
+  --personal-edge: #b5a0df55;
+  --personal-muted: #cbc2dc;
+  --personal-focus: #c3a5f2;
+}
+
+.personal-page .personal-workspace {
+  max-width: 1060px;
+  margin-inline: auto;
+}
+
+.personal-heading {
+  margin-bottom: 1.3rem;
+}
+
+.personal-heading h1 {
+  margin: 0 0 .35rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: -.04em;
+}
+
+.personal-heading p,
+.personal-status,
+.personal-form small,
+.personal-shop p {
+  color: var(--personal-muted);
+}
+
+.personal-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  align-items: start;
+  gap: 1rem;
+}
+
+.personal-panel {
+  min-width: 0;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border: 1px solid var(--personal-edge);
+  border-radius: 1.2rem;
+  background: var(--personal-surface);
+}
+
+.personal-panel + .personal-panel { background: var(--personal-list-surface); }
+.personal-panel h2 { margin: 0 0 .85rem; font-size: 1.3rem; }
+.personal-form { display: grid; gap: .5rem; margin: 0; }
+.personal-form label, .personal-toolbar label { font-size: .85rem; font-weight: 600; }
+.personal-form small { font-weight: 400; }
+.personal-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; }
+.personal-toolbar label { display: grid; gap: .35rem; }
+.personal-fields label { display: block; margin: 0 0 .35rem; }
+
+.personal-workspace :is(input, textarea) {
+  box-sizing: border-box;
+  min-width: 0;
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  padding: .55rem .7rem;
+  border: 1px solid var(--personal-edge);
+  border-radius: .55rem;
+  background: var(--personal-field);
+  color: inherit;
+  font: inherit;
+  box-shadow: none;
+}
+
+.personal-workspace textarea { resize: vertical; }
+.personal-workspace :is(input, textarea, button):focus-visible {
+  outline: 2px solid var(--personal-focus);
+  outline-offset: 2px;
+}
+
+.personal-workspace button {
+  min-height: 42px;
+  padding: .45rem .75rem;
+  border: 1px solid var(--personal-edge);
+  border-radius: .6rem;
+  background: var(--personal-field);
+  color: inherit;
+  font: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+}
+
+.personal-workspace .personal-primary {
+  border-color: #8974c38c;
+  background: linear-gradient(130deg, #385e85, #59428c);
+  color: #fff;
+  font-weight: 650;
+}
+
+.personal-workspace button:not(:disabled):hover { border-color: var(--personal-focus); }
+.personal-workspace button:disabled { opacity: .55; cursor: default; }
+.personal-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.personal-form > .personal-actions { margin-top: .35rem; }
+.personal-toolbar { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: .65rem; }
+.personal-toolbar button { min-height: 44px; }
+.personal-status { margin: .65rem 0 0; font-size: .82rem; }
+.personal-status:empty { margin: 0; }
+
+.personal-pick {
+  margin: .85rem 0 0;
+  padding: .7rem .85rem;
+  border: 1px solid var(--personal-edge);
+  border-radius: .65rem;
+  background: var(--personal-surface);
+  overflow-wrap: anywhere;
+  font-weight: 650;
+}
+
+.personal-pick:empty { margin: 0; padding: 0; border: 0; }
+
+.personal-list {
+  display: grid;
+  gap: .65rem;
+  list-style: none;
+  margin: .75rem 0 0;
+  padding: 0;
+}
+
+.personal-list:empty { margin: 0; }
+.personal-shop {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: .65rem;
+  padding: .8rem;
+  border: 1px solid var(--personal-edge);
+  border-radius: .8rem;
+  background: var(--personal-field);
+  overflow-wrap: anywhere;
+}
+
+.personal-shop h3 { margin: 0; font-size: 1rem; }
+.personal-shop p { margin: .25rem 0 0; font-size: .8rem; }
+.personal-notes { white-space: pre-wrap; }
+
+@media (max-width: 760px) {
+  .personal-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 440px) {
+  .personal-shop { grid-template-columns: minmax(0, 1fr); }
+}

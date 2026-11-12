@@ -134,3 +134,119 @@ html .daily-access-prompt > p { margin: 0 auto 1rem; max-width: 42ch; }
   .experience-hub .experience-choice-copy { padding: 1rem; }
   .home-page .page__content .news-timeline p, .home-page .page__content .research-ribbon > p { line-height: 1.6; }
 }
+
+/* Tint the surfaces themselves so text, photos and controls keep their contrast. */
+html[data-theme="dark"] {
+  --panel-indigo: 39 37 82;
+  --panel-indigo-edge: 160 175 241;
+  --panel-teal: 22 62 76;
+  --panel-teal-edge: 117 204 216;
+  --panel-plum: 64 37 79;
+  --panel-plum-edge: 210 157 220;
+  --panel-amber: 64 49 64;
+  --panel-amber-edge: 225 186 146;
+  --panel-night: 12 15 32;
+}
+
+html[data-theme="dark"] :is(
+  .page__inner-wrap, .sidebar > div[itemscope], .experience-hero, .experience-section,
+  .portfolio-hero, .academic-detail-body, .daily-access-prompt, .academic-card,
+  .education-card, .honor-feature, .news-photo-card, .experience-choice,
+  .city-journey, .travel-map-card, .portfolio-card, .portfolio-stats > div,
+  .online-game, .online-radio, .visitor-corner, .wish-panel
+) {
+  --panel-opacity: .38;
+  --panel-base-opacity: .23;
+  background: linear-gradient(
+    145deg,
+    rgb(var(--panel-tone, var(--panel-indigo)) / var(--panel-opacity)),
+    rgb(var(--panel-night) / var(--panel-base-opacity))
+  );
+  border-color: rgb(var(--panel-edge, var(--panel-indigo-edge)) / .26);
+}
+
+html[data-theme="dark"] :is(
+  .page__inner-wrap, .sidebar > div[itemscope], .experience-hero, .experience-section,
+  .portfolio-hero, .academic-detail-body, .daily-access-prompt, .academic-card
+) {
+  --panel-opacity: .54;
+  --panel-base-opacity: .38;
+}
+
+html[data-theme="dark"] :is(
+  .sidebar > div[itemscope], .education-card:first-child, .visitor-corner,
+  .academic-card--publication, .experience-section--atlas, .experience-choice:nth-child(1),
+  .travel-map-card, .city-journey:nth-child(3n + 1), .portfolio-card:nth-child(3n + 1)
+) {
+  --panel-tone: var(--panel-teal);
+  --panel-edge: var(--panel-teal-edge);
+}
+
+html[data-theme="dark"] :is(
+  .wish-panel, .news-photo-card, .experience-choice:nth-child(3), .portfolio-hero,
+  .city-journey:nth-child(3n + 2), .portfolio-card:nth-child(3n + 2), .online-radio
+) {
+  --panel-tone: var(--panel-plum);
+  --panel-edge: var(--panel-plum-edge);
+}
+
+html[data-theme="dark"] :is(.honor-feature, .experience-choice:nth-child(2)) {
+  --panel-tone: var(--panel-amber);
+  --panel-edge: var(--panel-amber-edge);
+}
+
+html[data-theme="dark"] .city-journey:nth-child(3n) {
+  --panel-tone: var(--panel-indigo);
+  --panel-edge: var(--panel-indigo-edge);
+}
+
+html[data-theme="dark"] .experience-choice .experience-art {
+  background: linear-gradient(155deg, rgb(var(--panel-tone, var(--panel-indigo)) / .38), transparent);
+}
+
+.greedy-nav .visible-links .personal-access-item > a {
+  margin-inline: .35rem;
+  padding: .48rem .75rem;
+  border: 1px solid #9a80c460;
+  border-radius: 999px;
+  background: #ab8bdd18;
+  color: #554277;
+  font-weight: 650;
+}
+
+html[data-theme="dark"] .greedy-nav .visible-links .personal-access-item > a {
+  color: #e0d3fb;
+  background: #ab8bdd22;
+}
+
+.greedy-nav .visible-links .personal-access-item > a:is(:hover, [aria-current="page"]) {
+  border-color: #aa91d4b0;
+}
+
+.greedy-nav .visible-links .personal-access-item > a:focus-visible {
+  outline: 2px solid #aa91d4;
+  outline-offset: 2px;
+}
+
+@media (min-width: 701px) {
+  .greedy-nav .visible-links .masthead__menu-item:where(:not(.personal-access-item)) > a {
+    margin-inline: .7rem;
+  }
+  .greedy-nav .visible-links .masthead__menu-item--lg { padding-right: 1rem; }
+  .greedy-nav .visible-links .masthead__menu-item--lg > a { white-space: nowrap; }
+}
+
+@media (max-width: 700px) {
+  .greedy-nav .visible-links .masthead__menu-item--lg { padding-right: .4rem; }
+  .greedy-nav .visible-links .masthead__menu-item--lg > a {
+    margin-inline-end: .25rem;
+    padding-inline: 0;
+  }
+  .greedy-nav .visible-links #theme-toggle a { margin-inline: .15rem; padding-inline: .25rem; }
+  .greedy-nav .visible-links .personal-access-item > a {
+    margin-inline: .2rem;
+    padding-inline: .55rem;
+    font-size: .74rem;
+    letter-spacing: 0;
+  }
+}
