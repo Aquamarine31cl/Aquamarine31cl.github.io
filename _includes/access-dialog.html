@@ -1,4 +1,4 @@
-<dialog id="access-dialog" class="access-dialog" aria-labelledby="access-heading">
+<dialog id="access-dialog" class="access-dialog" aria-labelledby="access-heading" data-access-scope="{% if page.personal_page %}personal{% elsif page.online_posts or page.portfolio_page %}creative{% else %}site{% endif %}">
 <button type="button" class="access-close" data-close-access aria-label="Close access dialog">×</button><span class="access-emblem" aria-hidden="true">✧</span>
 <h2 id="access-heading">Site access</h2><p>Use your access code to view this section.</p>
 <form data-access-form><label for="access-code">Access Code</label><input id="access-code" name="access-code" type="password" required maxlength="6" minlength="6" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-describedby="access-feedback"><button type="submit">Unlock</button></form>

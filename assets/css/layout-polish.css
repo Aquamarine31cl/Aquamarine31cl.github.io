@@ -184,13 +184,14 @@ html[data-theme="dark"] :is(
 
 html[data-theme="dark"] :is(
   .wish-panel, .news-photo-card, .experience-choice:nth-child(3), .portfolio-hero,
-  .city-journey:nth-child(3n + 2), .portfolio-card:nth-child(3n + 2), .online-radio
+  .city-journey:nth-child(3n + 2), .portfolio-card:nth-child(3n + 2), .online-radio,
+  .honor-feature:nth-child(3n + 1)
 ) {
   --panel-tone: var(--panel-plum);
   --panel-edge: var(--panel-plum-edge);
 }
 
-html[data-theme="dark"] :is(.honor-feature, .experience-choice:nth-child(2)) {
+html[data-theme="dark"] :is(.honor-feature:nth-child(3n), .experience-choice:nth-child(2)) {
   --panel-tone: var(--panel-amber);
   --panel-edge: var(--panel-amber-edge);
 }
@@ -202,6 +203,22 @@ html[data-theme="dark"] .city-journey:nth-child(3n) {
 
 html[data-theme="dark"] .experience-choice .experience-art {
   background: linear-gradient(155deg, rgb(var(--panel-tone, var(--panel-indigo)) / .38), transparent);
+}
+
+html[data-theme="dark"] :is(
+  .home-page .honor-feature .honor-photo,
+  .news-photo-card .news-photo,
+  .online-game > figure
+) {
+  background: linear-gradient(155deg, rgb(var(--panel-edge, var(--panel-indigo-edge)) / .11), transparent 80%);
+}
+
+html[data-theme="dark"] .home-page .honor-feature .honor-photo {
+  border-bottom-color: rgb(var(--panel-edge, var(--panel-indigo-edge)) / .12);
+}
+
+html[data-theme="dark"] :is(.honor-photo, .news-photo) > .access-photo-veil {
+  background: linear-gradient(145deg, rgb(var(--panel-tone, var(--panel-indigo)) / .28), transparent);
 }
 
 .greedy-nav .visible-links .personal-access-item > a {

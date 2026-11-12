@@ -1,9 +1,24 @@
 (() => {
 'use strict';
 const dialog=document.getElementById('access-dialog');if(!dialog)return;
-const restricted=/\/(online-posts|portfolio)\/?$/.test(location.pathname);
-const key=restricted?'aquamarine.access.creative.v1':'aquamarine.access.v1';
-const expected=restricted?'bf9de450c75ae31f736a773783bfa24b6a8afc04de83185503d4a32da1d06877':'384fde3636e6e01e0194d2976d8f26410af3e846e573379cb1a09e2f0752d8cc';
+const scope=dialog.dataset.accessScope;
+const access={
+ site:{
+  digest:'4527b7b28937d4523a4ec170de8e9eff79644b2614e07f458ba79895f6705b97',
+  message:'This part of the site is unlocked in this tab.'
+ },
+ creative:{
+  digest:'ba2f1ffecc49f78882ab23b3ac3b8b12a11bb70525c2cd1c1f47aa8a745e98ce',
+  message:'Online Posts and Portfolio are unlocked in this tab.'
+ },
+ personal:{
+  digest:'d2afda62e7daaf09793e8e9492a8d44747bdd6d5c8c0d381bfd5227479f78caf',
+  message:'Your shop list is unlocked in this tab.'
+ }
+}[scope];
+if(!access)return;
+const key=`aquamarine.access.${scope}.v2`;
+const expected=access.digest;
 const form=dialog.querySelector('form'),input=dialog.querySelector('input'),feedback=dialog.querySelector('[role="status"]');
 const reduce=matchMedia('(prefers-reduced-motion: reduce)');
 let unlocked=false,pending=null,trigger=null,resume=null;
@@ -13,7 +28,7 @@ try{unlocked=sessionStorage.getItem(key)===expected;}catch{}
 const publicName='Aquamarine';
 const privateName=String.fromCharCode(89,117,97,110,112,101,110,103,32,89,101);
 function applyNames(){
- const name=unlocked&&!restricted?privateName:publicName;
+ const name=unlocked&&scope==='site'?privateName:publicName;
  document.querySelectorAll('[data-private-name]').forEach(el=>{if(el.textContent!==name)el.textContent=name;});
 }
 
@@ -37,7 +52,7 @@ function apply(){
  document.dispatchEvent(new CustomEvent('site-access-changed'));
 }
 function open(el){
- trigger=el;feedback.textContent=unlocked?(restricted?'Online Posts and Portfolio are unlocked in this tab.':'This part of the site is unlocked in this tab.'):'';
+ trigger=el;feedback.textContent=unlocked?access.message:'';
  input.value='';dialog.showModal();if(!unlocked)input.focus();else dialog.querySelector('[data-relock]').focus();
 }
 function close(){dialog.close();pending=null;resume=null;if(trigger?.isConnected)trigger.focus({preventScroll:true});}
