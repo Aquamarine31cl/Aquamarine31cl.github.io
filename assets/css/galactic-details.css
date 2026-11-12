@@ -3,11 +3,9 @@
 .section-constellation{position:absolute;right:16px;top:14px;width:82px;height:35px;pointer-events:none;overflow:visible;opacity:.5;transition:opacity .4s;z-index:1;}
 .section-constellation polyline{fill:none;stroke:#bfaadd;stroke-width:.65;stroke-opacity:.45;stroke-dasharray:2 3;}
 .section-constellation circle{fill:#ddc8f4;filter:drop-shadow(0 0 2px #bfa7ea);animation:section-star 5s ease-in-out infinite;}
+.galactic-section:hover>.section-constellation{opacity:.95;}
 .galactic-section:before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;background:radial-gradient(260px circle at var(--galaxy-x) var(--galaxy-y),#bda5e50b,transparent 75%);transition:opacity .5s;}
-@media(hover:hover) and (pointer:fine){
- .galactic-section:hover>.section-constellation{opacity:.95;}
- .galactic-section:hover:before{opacity:1;}
-}
+.galactic-section:hover:before{opacity:1;}
 .online-group>.section-constellation,.portfolio-section>.section-constellation{top:0;}
 .visitor-corner>.section-constellation{width:45px;top:8px;right:8px;opacity:.25;}
 .home-honors>.section-constellation{top:0;right:5px;}

@@ -1,0 +1,10 @@
+/* Stable local-space tracks: identical parameters in the track and moon model. */
+.planet-moon-track{position:absolute;left:50%;top:100.5px;transform:translate(-50%,-50%);overflow:visible;z-index:1;pointer-events:none;}
+.planet-moon-track ellipse{fill:none;stroke:var(--planet-glow);stroke-width:1;stroke-opacity:.35;transition:stroke-opacity .4s,stroke-width .4s;}
+.experience-art[data-planet="travel"]:after,.experience-art[data-planet="sports"]:after,.experience-art .art-satellite-track{display:none!important;}
+.experience-art .art-moon{animation:none!important;transition:none!important;}
+.experience-choice.motion-card{transform:none!important;}
+[data-orbit-pulse] .planet-moon-track ellipse{stroke-opacity:.85;stroke-width:1.7;}
+.travel-photo-note{margin:28px 0 0;padding-top:16px;border-top:1px solid #bba3d925;color:#aa9cbd;font-size:11px;line-height:1.8;text-align:center;}
+html[data-theme="light"] .travel-photo-note{color:#786784;}
+@media(prefers-reduced-motion:reduce){.planet-moon-track ellipse{transition:none;}}
