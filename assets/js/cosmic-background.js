@@ -73,7 +73,7 @@ if(gpu){
 }
 draw();}
 function draw(){
-if(gpu){gpu.draw(elapsed,atmosphere,camera,pointer,active());return;}
+if(gpu){gpu.draw(elapsed,atmosphere,camera,pointer);return;}
 if(!ctx)return;
 ctx.clearRect(0,0,width,height);
 if(atmosphere==='rich'){ctx.globalAlpha=.9;ctx.drawImage(haze,-width*.08+Math.sin(elapsed*.08)*24-camera.x*8,-height*.08+Math.cos(elapsed*.07)*18-camera.y*6,width*1.16,height*1.16);}

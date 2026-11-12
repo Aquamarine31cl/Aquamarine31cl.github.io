@@ -5,35 +5,7 @@ window.createGalaxyRenderer=canvas=>{
  const compile=(type,src)=>{const s=gl.createShader(type);gl.shaderSource(s,src);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s;};
  const program=(vs,fs)=>{const p=gl.createProgram();gl.attachShader(p,compile(gl.VERTEX_SHADER,vs));gl.attachShader(p,compile(gl.FRAGMENT_SHADER,fs));gl.linkProgram(p);if(!gl.getProgramParameter(p,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(p));return p;};
  const bg=program('attribute vec2 a;varying vec2 uv;void main(){uv=a*.5+.5;gl_Position=vec4(a,0.,1.);}',
- `precision mediump float;
- varying vec2 uv;
- uniform sampler2D tex;
- uniform float t,rich,motion;
- uniform vec2 camera,viewport;
- float meteor(float phase,float lane,vec2 pixel){
-   if(phase>=1.35)return 0.;
-   vec2 head=vec2(viewport.x*(.14+phase*.52),viewport.y*lane+phase*90.);
-   vec2 trail=vec2(-130.,-50.);
-   vec2 offset=pixel-head;
-   float along=clamp(dot(offset,vec2(-.00670,-.00258)),0.,1.);
-   vec2 gap=offset-along*trail;
-   if(max(abs(gap.x),abs(gap.y))>6.)return 0.;
-   float distance=length(gap);
-   return pow(1.-along,2.)*exp(-distance*.95)*sin(phase/1.35*3.14159);
- }
- void main(){
-   vec2 q=uv+camera*.01+vec2(sin(t*.02),cos(t*.017))*.006;
-   vec3 c=texture2D(tex,q).rgb;
-   float a=exp(-length((q-vec2(.25,.7))*vec2(1.1,1.5))*4.);
-   float b=exp(-length((q-vec2(.8,.3))*vec2(1.6,1.))*4.);
-   c=c*.85+vec3(.12,.06,.2)*a+vec3(.02,.1,.15)*b;
-   float streak=0.;
-   if(motion>.5&&rich>.5){
-     vec2 pixel=vec2(uv.x,1.-uv.y)*viewport;
-     streak=meteor(mod(t+3.,13.),.18,pixel)+meteor(mod(t+11.,19.),.42,pixel)+meteor(mod(t+6.,29.),.68,pixel);
-   }
-   gl_FragColor=vec4(c*.8*rich+vec3(.72,.83,1.)*streak*.7,.8*rich);
- }`);
+ 'precision mediump float;varying vec2 uv;uniform sampler2D tex;uniform float t,rich;uniform vec2 camera;void main(){vec2 q=uv+camera*.01+vec2(sin(t*.02),cos(t*.017))*.006;vec3 c=texture2D(tex,q).rgb;float a=exp(-length((q-vec2(.25,.7))*vec2(1.1,1.5))*4.);float b=exp(-length((q-vec2(.8,.3))*vec2(1.6,1.))*4.);c=c*.85+vec3(.12,.06,.2)*a+vec3(.02,.1,.15)*b;gl_FragColor=vec4(c*.8*rich,.8*rich);}');
  const points=program('attribute vec4 a;uniform float t,dpr,ratio;uniform vec2 camera,pointer;varying float alpha;varying float warmth;void main(){float d=a.z;vec2 p=vec2(fract(a.x+t*(.0008+d*.002)),a.y);p+=camera*d*.017;p.y+=sin(t*.12+a.w)*.003;float n=1.-smoothstep(0.,.18,length((p-pointer)*vec2(ratio,1.)));p+=normalize(p-pointer+vec2(.0001))*n*.006*d;gl_Position=vec4(p*2.-1.,0.,1.);gl_PointSize=(2.+d*7.)*dpr;alpha=.2+d*.4+sin(t*(.5+d*.3)+a.w)*.12+n*.25;warmth=mod(a.w,3.)/3.;}',
  'precision mediump float;varying float alpha;varying float warmth;void main(){vec2 p=gl_PointCoord-.5;float r=length(p);float a=(exp(-r*r*30.)*.4+exp(-r*r*160.)*.7)*alpha;vec3 c=mix(vec3(.62,.78,1.),vec3(1.,.85,.77),warmth);gl_FragColor=vec4(c*a,a);}');
  const quad=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,quad);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
@@ -43,6 +15,6 @@ window.createGalaxyRenderer=canvas=>{
  const attribute=(p,buffer,size)=>{gl.bindBuffer(gl.ARRAY_BUFFER,buffer);const a=gl.getAttribLocation(p,'a');gl.enableVertexAttribArray(a);gl.vertexAttribPointer(a,size,gl.FLOAT,false,0,0);};
  return {
  resize(width,height,dpr,data,image){w=width;h=height;ratio=dpr;count=data.length;gl.viewport(0,0,canvas.width,canvas.height);gl.bindBuffer(gl.ARRAY_BUFFER,stars);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(data.flatMap(s=>[s.x,s.y,s.depth,s.phase])),gl.STATIC_DRAW);gl.bindTexture(gl.TEXTURE_2D,texture);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);},
- draw(time,mode,camera,pointer,motion){gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);gl.useProgram(bg);uniform(bg,'t',time);uniform(bg,'rich',mode==='rich'?1:.25);uniform(bg,'motion',motion?1:0);uniform(bg,'viewport',w,h);uniform(bg,'camera',camera.x,camera.y);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,texture);gl.uniform1i(gl.getUniformLocation(bg,'tex'),0);attribute(bg,quad,2);gl.drawArrays(gl.TRIANGLES,0,3);gl.useProgram(points);uniform(points,'t',time);uniform(points,'dpr',ratio);uniform(points,'ratio',w/h);uniform(points,'camera',camera.x,camera.y);uniform(points,'pointer',pointer.active?(pointer.x+1)/2:-5,pointer.active?1-(pointer.y+1)/2:-5);attribute(points,stars,4);gl.blendFunc(gl.ONE,gl.ONE);gl.drawArrays(gl.POINTS,0,count);}
+ draw(time,mode,camera,pointer){gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);gl.useProgram(bg);uniform(bg,'t',time);uniform(bg,'rich',mode==='rich'?1:.25);uniform(bg,'camera',camera.x,camera.y);gl.activeTexture(gl.TEXTURE0);gl.bindTexture(gl.TEXTURE_2D,texture);gl.uniform1i(gl.getUniformLocation(bg,'tex'),0);attribute(bg,quad,2);gl.drawArrays(gl.TRIANGLES,0,3);gl.useProgram(points);uniform(points,'t',time);uniform(points,'dpr',ratio);uniform(points,'ratio',w/h);uniform(points,'camera',camera.x,camera.y);uniform(points,'pointer',pointer.active?(pointer.x+1)/2:-5,pointer.active?1-(pointer.y+1)/2:-5);attribute(points,stars,4);gl.blendFunc(gl.ONE,gl.ONE);gl.drawArrays(gl.POINTS,0,count);}
  };
 };
