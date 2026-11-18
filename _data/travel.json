@@ -28,28 +28,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-abroad/tokyo-1.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/tokyo-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/东京_1.jpg",
+          "thumbnail": "/images/travel/manga-97/东京_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Tokyo skyline after dusk",
-          "caption": "Tokyo skyline after dusk"
+          "caption": "Tokyo skyline after dusk",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/tokyo-2.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/tokyo-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/东京_2.jpg",
+          "thumbnail": "/images/travel/manga-97/东京_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Rainbow Bridge and Tokyo Bay",
-          "caption": "Rainbow Bridge and Tokyo Bay"
+          "caption": "Rainbow Bridge and Tokyo Bay",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/tokyo-3.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/tokyo-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/东京_3.jpg",
+          "thumbnail": "/images/travel/manga-97/东京_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Senso-ji temple and its pagoda",
-          "caption": "Senso-ji temple and its pagoda"
+          "caption": "Senso-ji temple and its pagoda",
+          "style": "manga"
         }
       ],
       "region_key": "JPN:tokyo"
@@ -66,28 +69,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-abroad/osaka-1.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/osaka-1-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/大阪_1.jpg",
+          "thumbnail": "/images/travel/manga-97/大阪_1.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "Osaka Castle after dark",
-          "caption": "Osaka Castle after dark"
+          "caption": "Osaka Castle after dark",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/osaka-2.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/osaka-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/大阪_2.jpg",
+          "thumbnail": "/images/travel/manga-97/大阪_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Dotonbori and the Glico sign",
-          "caption": "Dotonbori and the Glico sign"
+          "caption": "Dotonbori and the Glico sign",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/osaka-3.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/osaka-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/大阪_3.jpg",
+          "thumbnail": "/images/travel/manga-97/大阪_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Super Nintendo World at Universal Studios Japan",
-          "caption": "Super Nintendo World at Universal Studios Japan"
+          "caption": "Super Nintendo World at Universal Studios Japan",
+          "style": "manga"
         }
       ],
       "region_key": "JPN:osaka"
@@ -104,28 +110,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-abroad/kamakura-1.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/kamakura-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/镰仓_1.jpg",
+          "thumbnail": "/images/travel/manga-97/镰仓_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The coast viewed from Enoshima",
-          "caption": "The coast viewed from Enoshima"
+          "caption": "The coast viewed from Enoshima",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/kamakura-2.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/kamakura-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/镰仓_2.jpg",
+          "thumbnail": "/images/travel/manga-97/镰仓_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Waterfront near Enoshima",
-          "caption": "Waterfront near Enoshima"
+          "caption": "Waterfront near Enoshima",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/kamakura-3.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/kamakura-3-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/镰仓_3.jpg",
+          "thumbnail": "/images/travel/manga-97/镰仓_3.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "Enoden train beside a coastal station",
-          "caption": "Enoden train beside a coastal station"
+          "caption": "Enoden train beside a coastal station",
+          "style": "manga"
         }
       ],
       "region_key": "JPN:kamakura"
@@ -142,28 +151,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-abroad/kyoto-1.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/kyoto-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/京都_1.jpg",
+          "thumbnail": "/images/travel/manga-97/京都_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Kiyomizu-dera above the green hillside",
-          "caption": "Kiyomizu-dera above the green hillside"
+          "caption": "Kiyomizu-dera above the green hillside",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/kyoto-2.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/kyoto-2-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/京都_2.jpg",
+          "thumbnail": "/images/travel/manga-97/京都_2.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "Torii gates at Fushimi Inari",
-          "caption": "Torii gates at Fushimi Inari"
+          "caption": "Torii gates at Fushimi Inari",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/kyoto-3.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/kyoto-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/京都_3.jpg",
+          "thumbnail": "/images/travel/manga-97/京都_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A small courtyard in Kyoto",
-          "caption": "A small courtyard in Kyoto"
+          "caption": "A small courtyard in Kyoto",
+          "style": "manga"
         }
       ],
       "region_key": "JPN:kyoto"
@@ -180,28 +192,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-abroad/yokohama-1.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/yokohama-1-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/横滨_1.jpg",
+          "thumbnail": "/images/travel/manga-97/横滨_1.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "Flower beds beside Yokohama Bay",
-          "caption": "Flower beds beside Yokohama Bay"
+          "caption": "Flower beds beside Yokohama Bay",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/yokohama-2.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/yokohama-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/横滨_2.jpg",
+          "thumbnail": "/images/travel/manga-97/横滨_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Yokohama waterfront and InterContinental Hotel",
-          "caption": "Yokohama waterfront and InterContinental Hotel"
+          "caption": "Yokohama waterfront and InterContinental Hotel",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/yokohama-3.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/yokohama-3-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/横滨_3.jpg",
+          "thumbnail": "/images/travel/manga-97/横滨_3.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "A street in Yokohama",
-          "caption": "A street in Yokohama"
+          "caption": "A street in Yokohama",
+          "style": "manga"
         }
       ],
       "region_key": "JPN:yokohama"
@@ -218,28 +233,31 @@
       "description": "A visit to Fujiyoshida in the Mount Fuji area.",
       "photos": [
         {
-          "src": "/images/travel/graded-73-abroad/fujiyoshida-1.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/fujiyoshida-1-thumb.jpg",
-          "width": 1800,
-          "height": 1525,
+          "src": "/images/travel/manga-97/富士吉田_1.jpg",
+          "thumbnail": "/images/travel/manga-97/富士吉田_1.jpg",
+          "width": 1363,
+          "height": 1154,
           "alt": "Mount Fuji framed by spring flowers",
-          "caption": "Mount Fuji framed by spring flowers"
+          "caption": "Mount Fuji framed by spring flowers",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/fujiyoshida-2.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/fujiyoshida-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/富士吉田_2.jpg",
+          "thumbnail": "/images/travel/manga-97/富士吉田_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Chureito Pagoda and Mount Fuji",
-          "caption": "Chureito Pagoda and Mount Fuji"
+          "caption": "Chureito Pagoda and Mount Fuji",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/fujiyoshida-3.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/fujiyoshida-3-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/富士吉田_3.jpg",
+          "thumbnail": "/images/travel/manga-97/富士吉田_3.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "Cherry blossoms in Fujiyoshida",
-          "caption": "Cherry blossoms in Fujiyoshida"
+          "caption": "Cherry blossoms in Fujiyoshida",
+          "style": "manga"
         }
       ],
       "region_key": "JPN:fujiyoshida"
@@ -256,28 +274,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-abroad/singapore-1.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/singapore-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/新加坡_1.jpg",
+          "thumbnail": "/images/travel/manga-97/新加坡_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Marina Bay Sands at night",
-          "caption": "Marina Bay Sands at night"
+          "caption": "Marina Bay Sands at night",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/singapore-2.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/singapore-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/新加坡_2.jpg",
+          "thumbnail": "/images/travel/manga-97/新加坡_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Gardens by the Bay after dark",
-          "caption": "Gardens by the Bay after dark"
+          "caption": "Gardens by the Bay after dark",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/singapore-3.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/singapore-3-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/新加坡_3.jpg",
+          "thumbnail": "/images/travel/manga-97/新加坡_3.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "A quiet shore in Singapore",
-          "caption": "A quiet shore in Singapore"
+          "caption": "A quiet shore in Singapore",
+          "style": "manga"
         }
       ],
       "region_key": "SGP:singapore"
@@ -294,28 +315,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-abroad/kuala-lumpur-1.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/kuala-lumpur-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/吉隆坡_1.jpg",
+          "thumbnail": "/images/travel/manga-97/吉隆坡_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Kuala Lumpur skyline at blue hour",
-          "caption": "Kuala Lumpur skyline at blue hour"
+          "caption": "Kuala Lumpur skyline at blue hour",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/kuala-lumpur-2.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/kuala-lumpur-2-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/吉隆坡_2.jpg",
+          "thumbnail": "/images/travel/manga-97/吉隆坡_2.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "Petronas Twin Towers after dark",
-          "caption": "Petronas Twin Towers after dark"
+          "caption": "Petronas Twin Towers after dark",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-abroad/kuala-lumpur-3.jpg",
-          "thumbnail": "/images/travel/graded-73-abroad/kuala-lumpur-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/吉隆坡_3.jpg",
+          "thumbnail": "/images/travel/manga-97/吉隆坡_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Putra Mosque in nearby Putrajaya",
-          "caption": "Putra Mosque in nearby Putrajaya"
+          "caption": "Putra Mosque in nearby Putrajaya",
+          "style": "manga"
         }
       ],
       "region_key": "MYS:kuala-lumpur"
@@ -332,28 +356,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-168.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-168-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/香港_1.jpg",
+          "thumbnail": "/images/travel/manga-97/香港_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Islands and blue water viewed from a hillside",
-          "caption": "Islands and blue water viewed from a hillside"
+          "caption": "Islands and blue water viewed from a hillside",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-169.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-169-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/香港_2.jpg",
+          "thumbnail": "/images/travel/manga-97/香港_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Victoria Harbour at dusk",
-          "caption": "Victoria Harbour at dusk"
+          "caption": "Victoria Harbour at dusk",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-170.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-170-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/香港_3.jpg",
+          "thumbnail": "/images/travel/manga-97/香港_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Hong Kong city lights from above",
-          "caption": "Hong Kong city lights from above"
+          "caption": "Hong Kong city lights from above",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:hong-kong",
@@ -371,28 +398,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-171.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-171-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/澳门_1.jpg",
+          "thumbnail": "/images/travel/manga-97/澳门_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The illuminated Golden Reel at Studio City",
-          "caption": "The illuminated Golden Reel at Studio City"
+          "caption": "The illuminated Golden Reel at Studio City",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-172.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-172-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/澳门_2.jpg",
+          "thumbnail": "/images/travel/manga-97/澳门_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Senado Square and its fountain",
-          "caption": "Senado Square and its fountain"
+          "caption": "Senado Square and its fountain",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-173.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-173-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/澳门_3.jpg",
+          "thumbnail": "/images/travel/manga-97/澳门_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A view across Macao’s waterfront",
-          "caption": "A view across Macao’s waterfront"
+          "caption": "A view across Macao’s waterfront",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:macao",
@@ -410,28 +440,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/shanghai-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/shanghai-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/上海_1.jpg",
+          "thumbnail": "/images/travel/manga-97/上海_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Aerial view of the Huangpu River",
-          "caption": "Aerial view of the Huangpu River"
+          "caption": "Aerial view of the Huangpu River",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/shanghai-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/shanghai-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/上海_2.jpg",
+          "thumbnail": "/images/travel/manga-97/上海_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Pudong skyline at night",
-          "caption": "Pudong skyline at night"
+          "caption": "Pudong skyline at night",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/shanghai-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/shanghai-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/上海_3.jpg",
+          "thumbnail": "/images/travel/manga-97/上海_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A landscaped garden path",
-          "caption": "A landscaped garden path"
+          "caption": "A landscaped garden path",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:shanghai",
@@ -450,28 +483,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/suzhou-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/suzhou-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/苏州_1.jpg",
+          "thumbnail": "/images/travel/manga-97/苏州_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A rockery and flowers beside the pond",
-          "caption": "A rockery and flowers beside the pond"
+          "caption": "A rockery and flowers beside the pond",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/suzhou-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/suzhou-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/苏州_2.jpg",
+          "thumbnail": "/images/travel/manga-97/苏州_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A garden pond under a blue sky",
-          "caption": "A garden pond under a blue sky"
+          "caption": "A garden pond under a blue sky",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/suzhou-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/suzhou-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/苏州_3.jpg",
+          "thumbnail": "/images/travel/manga-97/苏州_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A canal street at night",
-          "caption": "A canal street at night"
+          "caption": "A canal street at night",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:suzhou",
@@ -489,28 +525,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-156.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-156-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/南京_1.jpg",
+          "thumbnail": "/images/travel/manga-97/南京_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Boats on the Qinhuai River at night",
-          "caption": "Boats on the Qinhuai River at night"
+          "caption": "Boats on the Qinhuai River at night",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-157.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-157-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/南京_2.jpg",
+          "thumbnail": "/images/travel/manga-97/南京_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The lawn outside Nanjing Museum",
-          "caption": "The lawn outside Nanjing Museum"
+          "caption": "The lawn outside Nanjing Museum",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-158.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-158-thumb.jpg",
-          "width": 1800,
-          "height": 1399,
+          "src": "/images/travel/manga-97/南京_3.jpg",
+          "thumbnail": "/images/travel/manga-97/南京_3.jpg",
+          "width": 1422,
+          "height": 1106,
           "alt": "A red gateway and garden steps",
-          "caption": "A red gateway and garden steps"
+          "caption": "A red gateway and garden steps",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:nanjing",
@@ -528,28 +567,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-165.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-165-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/深圳_1.jpg",
+          "thumbnail": "/images/travel/manga-97/深圳_1.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "The China National GeneBank building",
-          "caption": "The China National GeneBank building"
+          "caption": "The China National GeneBank building",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-166.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-166-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/深圳_2.jpg",
+          "thumbnail": "/images/travel/manga-97/深圳_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A landscaped plaza in Shenzhen",
-          "caption": "A landscaped plaza in Shenzhen"
+          "caption": "A landscaped plaza in Shenzhen",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-167.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-167-thumb.jpg",
-          "width": 1800,
-          "height": 1377,
+          "src": "/images/travel/manga-97/深圳_3.jpg",
+          "thumbnail": "/images/travel/manga-97/深圳_3.jpg",
+          "width": 1433,
+          "height": 1098,
           "alt": "A bull sculpture in an exhibition hall",
-          "caption": "A bull sculpture in an exhibition hall"
+          "caption": "A bull sculpture in an exhibition hall",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:shenzhen",
@@ -567,28 +609,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-162.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-162-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/珠海_1.jpg",
+          "thumbnail": "/images/travel/manga-97/珠海_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Night lights along the waterfront",
-          "caption": "Night lights along the waterfront"
+          "caption": "Night lights along the waterfront",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-163.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-163-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/珠海_2.jpg",
+          "thumbnail": "/images/travel/manga-97/珠海_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The fountain and gardens at New Yuanming Palace",
-          "caption": "The fountain and gardens at New Yuanming Palace"
+          "caption": "The fountain and gardens at New Yuanming Palace",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-164.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-164-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/珠海_3.jpg",
+          "thumbnail": "/images/travel/manga-97/珠海_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A green hillside and park lake",
-          "caption": "A green hillside and park lake"
+          "caption": "A green hillside and park lake",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:zhuhai",
@@ -606,28 +651,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/hangzhou-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/hangzhou-1-thumb.jpg",
-          "width": 1800,
-          "height": 1800,
+          "src": "/images/travel/manga-97/杭州_1.jpg",
+          "thumbnail": "/images/travel/manga-97/杭州_1.jpg",
+          "width": 1254,
+          "height": 1254,
           "alt": "A pavement relief at sunset",
-          "caption": "A pavement relief at sunset"
+          "caption": "A pavement relief at sunset",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/hangzhou-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/hangzhou-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/杭州_2.jpg",
+          "thumbnail": "/images/travel/manga-97/杭州_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A tree-lined canal and stone bridge",
-          "caption": "A tree-lined canal and stone bridge"
+          "caption": "A tree-lined canal and stone bridge",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/hangzhou-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/hangzhou-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/杭州_3.jpg",
+          "thumbnail": "/images/travel/manga-97/杭州_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A garden pond beside a pavilion",
-          "caption": "A garden pond beside a pavilion"
+          "caption": "A garden pond beside a pavilion",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:hangzhou",
@@ -645,28 +693,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/wuxi-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/wuxi-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/无锡_1.jpg",
+          "thumbnail": "/images/travel/manga-97/无锡_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Stone arch bridge and its reflection",
-          "caption": "Stone arch bridge and its reflection"
+          "caption": "Stone arch bridge and its reflection",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/wuxi-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/wuxi-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/无锡_2.jpg",
+          "thumbnail": "/images/travel/manga-97/无锡_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Canal-side buildings lit at night",
-          "caption": "Canal-side buildings lit at night"
+          "caption": "Canal-side buildings lit at night",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/wuxi-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/wuxi-3-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/无锡_3.jpg",
+          "thumbnail": "/images/travel/manga-97/无锡_3.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "An illuminated tower above the square",
-          "caption": "An illuminated tower above the square"
+          "caption": "An illuminated tower above the square",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:wuxi",
@@ -684,28 +735,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-159.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-159-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/合肥_1.jpg",
+          "thumbnail": "/images/travel/manga-97/合肥_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The entrance to Dashushan Forest Park",
-          "caption": "The entrance to Dashushan Forest Park"
+          "caption": "The entrance to Dashushan Forest Park",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-160.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-160-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/合肥_2.jpg",
+          "thumbnail": "/images/travel/manga-97/合肥_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A wooded pond and its reflections",
-          "caption": "A wooded pond and its reflections"
+          "caption": "A wooded pond and its reflections",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-161.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-161-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/合肥_3.jpg",
+          "thumbnail": "/images/travel/manga-97/合肥_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A campus statue at the University of Science and Technology of China",
-          "caption": "A campus statue at the University of Science and Technology of China"
+          "caption": "A campus statue at the University of Science and Technology of China",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:hefei",
@@ -723,28 +777,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/changzhou-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/changzhou-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/常州_1.jpg",
+          "thumbnail": "/images/travel/manga-97/常州_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Traditional buildings reflected in a pond",
-          "caption": "Traditional buildings reflected in a pond"
+          "caption": "Traditional buildings reflected in a pond",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/changzhou-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/changzhou-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/常州_2.jpg",
+          "thumbnail": "/images/travel/manga-97/常州_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A statue beside a carved stone wall",
-          "caption": "A statue beside a carved stone wall"
+          "caption": "A statue beside a carved stone wall",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/changzhou-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/changzhou-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/常州_3.jpg",
+          "thumbnail": "/images/travel/manga-97/常州_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The tall bookshelves of Banshan Bookstore",
-          "caption": "The tall bookshelves of Banshan Bookstore"
+          "caption": "The tall bookshelves of Banshan Bookstore",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:changzhou",
@@ -762,28 +819,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/zhenjiang-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/zhenjiang-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/镇江_1.jpg",
+          "thumbnail": "/images/travel/manga-97/镇江_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A red footbridge beneath a pagoda",
-          "caption": "A red footbridge beneath a pagoda"
+          "caption": "A red footbridge beneath a pagoda",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/zhenjiang-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/zhenjiang-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/镇江_2.jpg",
+          "thumbnail": "/images/travel/manga-97/镇江_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A hilltop view across the water",
-          "caption": "A hilltop view across the water"
+          "caption": "A hilltop view across the water",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/zhenjiang-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/zhenjiang-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/镇江_3.jpg",
+          "thumbnail": "/images/travel/manga-97/镇江_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A garden pavilion surrounded by flowers",
-          "caption": "A garden pavilion surrounded by flowers"
+          "caption": "A garden pavilion surrounded by flowers",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:zhenjiang",
@@ -801,28 +861,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/yangzhou-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/yangzhou-1-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/扬州_1.jpg",
+          "thumbnail": "/images/travel/manga-97/扬州_1.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "A rock garden beside the water",
-          "caption": "A rock garden beside the water"
+          "caption": "A rock garden beside the water",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/yangzhou-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/yangzhou-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/扬州_2.jpg",
+          "thumbnail": "/images/travel/manga-97/扬州_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A pavilion and rockery at He Garden",
-          "caption": "A pavilion and rockery at He Garden"
+          "caption": "A pavilion and rockery at He Garden",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/yangzhou-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/yangzhou-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/扬州_3.jpg",
+          "thumbnail": "/images/travel/manga-97/扬州_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A view across the lake",
-          "caption": "A view across the lake"
+          "caption": "A view across the lake",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:yangzhou",
@@ -840,28 +903,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/ningbo-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/ningbo-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/宁波_1.jpg",
+          "thumbnail": "/images/travel/manga-97/宁波_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A city lake framed by trees",
-          "caption": "A city lake framed by trees"
+          "caption": "A city lake framed by trees",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/ningbo-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/ningbo-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/宁波_2.jpg",
+          "thumbnail": "/images/travel/manga-97/宁波_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "An illuminated bridge on the river",
-          "caption": "An illuminated bridge on the river"
+          "caption": "An illuminated bridge on the river",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/ningbo-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/ningbo-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/宁波_3.jpg",
+          "thumbnail": "/images/travel/manga-97/宁波_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A pavilion overlooking a garden pond",
-          "caption": "A pavilion overlooking a garden pond"
+          "caption": "A pavilion overlooking a garden pond",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:ningbo",
@@ -879,28 +945,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/shaoxing-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/shaoxing-1-thumb.jpg",
-          "width": 1355,
-          "height": 1800,
+          "src": "/images/travel/manga-97/绍兴_1.jpg",
+          "thumbnail": "/images/travel/manga-97/绍兴_1.jpg",
+          "width": 1088,
+          "height": 1445,
           "alt": "A rock garden at dusk",
-          "caption": "A rock garden at dusk"
+          "caption": "A rock garden at dusk",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/shaoxing-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/shaoxing-2-thumb.jpg",
-          "width": 1800,
-          "height": 1441,
+          "src": "/images/travel/manga-97/绍兴_2.jpg",
+          "thumbnail": "/images/travel/manga-97/绍兴_2.jpg",
+          "width": 1402,
+          "height": 1122,
           "alt": "Lanterns along a canal at night",
-          "caption": "Lanterns along a canal at night"
+          "caption": "Lanterns along a canal at night",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/shaoxing-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/shaoxing-3-thumb.jpg",
-          "width": 1800,
-          "height": 1340,
+          "src": "/images/travel/manga-97/绍兴_3.jpg",
+          "thumbnail": "/images/travel/manga-97/绍兴_3.jpg",
+          "width": 1453,
+          "height": 1082,
           "alt": "The entrance mural at Lu Xun’s Native Place",
-          "caption": "The entrance mural at Lu Xun’s Native Place"
+          "caption": "The entrance mural at Lu Xun’s Native Place",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:shaoxing",
@@ -918,28 +987,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-153.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-153-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/北京_1.jpg",
+          "thumbnail": "/images/travel/manga-97/北京_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The Beijing Institute of Technology campus",
-          "caption": "The Beijing Institute of Technology campus"
+          "caption": "The Beijing Institute of Technology campus",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-154.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-154-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/北京_2.jpg",
+          "thumbnail": "/images/travel/manga-97/北京_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A pagoda reflected in the lake",
-          "caption": "A pagoda reflected in the lake"
+          "caption": "A pagoda reflected in the lake",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-155.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-155-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/北京_3.jpg",
+          "thumbnail": "/images/travel/manga-97/北京_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A lakeside view under a clear sky",
-          "caption": "A lakeside view under a clear sky"
+          "caption": "A lakeside view under a clear sky",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:beijing",
@@ -957,28 +1029,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/qingdao-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/qingdao-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/青岛_1.jpg",
+          "thumbnail": "/images/travel/manga-97/青岛_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Qingdao coastline from above",
-          "caption": "Qingdao coastline from above"
+          "caption": "Qingdao coastline from above",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/qingdao-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/qingdao-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/青岛_2.jpg",
+          "thumbnail": "/images/travel/manga-97/青岛_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "May Fourth Square at night",
-          "caption": "May Fourth Square at night"
+          "caption": "May Fourth Square at night",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/qingdao-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/qingdao-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/青岛_3.jpg",
+          "thumbnail": "/images/travel/manga-97/青岛_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Red rooftops in Qingdao’s old town",
-          "caption": "Red rooftops in Qingdao’s old town"
+          "caption": "Red rooftops in Qingdao’s old town",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:qingdao",
@@ -996,28 +1071,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/graded-73-china/jinan-1.jpg",
-          "thumbnail": "/images/travel/graded-73-china/jinan-1-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/济南_1.jpg",
+          "thumbnail": "/images/travel/manga-97/济南_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A historic tower above a stone wall",
-          "caption": "A historic tower above a stone wall"
+          "caption": "A historic tower above a stone wall",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/jinan-2.jpg",
-          "thumbnail": "/images/travel/graded-73-china/jinan-2-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/济南_2.jpg",
+          "thumbnail": "/images/travel/manga-97/济南_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Pavilions by the spring pool",
-          "caption": "Pavilions by the spring pool"
+          "caption": "Pavilions by the spring pool",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-73-china/jinan-3.jpg",
-          "thumbnail": "/images/travel/graded-73-china/jinan-3-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/济南_3.jpg",
+          "thumbnail": "/images/travel/manga-97/济南_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The Spring City Square sculpture at night",
-          "caption": "The Spring City Square sculpture at night"
+          "caption": "The Spring City Square sculpture at night",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:jinan",
@@ -1035,9 +1113,13 @@
       "description": "",
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/成都_1.jpg",
+          "thumbnail": "/images/travel/manga-97/成都_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Rivers and footbridges in Dujiangyan",
+          "caption": "Rivers and footbridges in Dujiangyan",
+          "style": "manga"
         },
         {
           "src": "",
@@ -1069,19 +1151,31 @@
       ],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/海东_1.jpg",
+          "thumbnail": "/images/travel/manga-97/海东_1.jpg",
+          "width": 1140,
+          "height": 1380,
+          "alt": "A plant detail at Nanmen Gorge",
+          "caption": "A plant detail at Nanmen Gorge",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/海东_2.jpg",
+          "thumbnail": "/images/travel/manga-97/海东_2.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Autumn at Wufeng in Huzhu",
+          "caption": "Autumn at Wufeng in Huzhu",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/海东_3.jpg",
+          "thumbnail": "/images/travel/manga-97/海东_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "The Datong River near Huzhu",
+          "caption": "The Datong River near Huzhu",
+          "style": "manga"
         }
       ],
       "adcode": 630200
@@ -1102,28 +1196,31 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/graded-76/photo-213.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-213-thumb.jpg",
-          "width": 1423,
-          "height": 800,
+          "src": "/images/travel/manga-97/昌吉_1.jpg",
+          "thumbnail": "/images/travel/manga-97/昌吉_1.jpg",
+          "width": 1672,
+          "height": 940,
           "alt": "Snow-covered slopes and forest",
-          "caption": "Snow-covered slopes and forest"
+          "caption": "Snow-covered slopes and forest",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-214.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-214-thumb.jpg",
-          "width": 1422,
-          "height": 800,
+          "src": "/images/travel/manga-97/昌吉_2.jpg",
+          "thumbnail": "/images/travel/manga-97/昌吉_2.jpg",
+          "width": 1672,
+          "height": 941,
           "alt": "A mountain lake in winter",
-          "caption": "A mountain lake in winter"
+          "caption": "A mountain lake in winter",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-215.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-215-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/昌吉_3.jpg",
+          "thumbnail": "/images/travel/manga-97/昌吉_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The blue waters of Heavenly Lake",
-          "caption": "The blue waters of Heavenly Lake"
+          "caption": "The blue waters of Heavenly Lake",
+          "style": "manga"
         }
       ],
       "adcode": 652300
@@ -1147,28 +1244,31 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/graded-76/photo-210.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-210-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/伊犁_1.jpg",
+          "thumbnail": "/images/travel/manga-97/伊犁_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A wetland below the mountains",
-          "caption": "A wetland below the mountains"
+          "caption": "A wetland below the mountains",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-211.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-211-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/伊犁_2.jpg",
+          "thumbnail": "/images/travel/manga-97/伊犁_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Fields and mountain ridges in the Ili Valley",
-          "caption": "Fields and mountain ridges in the Ili Valley"
+          "caption": "Fields and mountain ridges in the Ili Valley",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-212.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-212-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/伊犁_3.jpg",
+          "thumbnail": "/images/travel/manga-97/伊犁_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Sunset over a winding river",
-          "caption": "Sunset over a winding river"
+          "caption": "Sunset over a winding river",
+          "style": "manga"
         }
       ],
       "adcode": 654000
@@ -1189,28 +1289,31 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/graded-76/photo-207.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-207-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/博尔塔拉_1.jpg",
+          "thumbnail": "/images/travel/manga-97/博尔塔拉_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A mountain ridge and border fence",
-          "caption": "A mountain ridge and border fence"
+          "caption": "A mountain ridge and border fence",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-208.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-208-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/博尔塔拉_2.jpg",
+          "thumbnail": "/images/travel/manga-97/博尔塔拉_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The shores of Sayram Lake",
-          "caption": "The shores of Sayram Lake"
+          "caption": "The shores of Sayram Lake",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-209.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-209-thumb.jpg",
-          "width": 1618,
-          "height": 1080,
+          "src": "/images/travel/manga-97/博尔塔拉_3.jpg",
+          "thumbnail": "/images/travel/manga-97/博尔塔拉_3.jpg",
+          "width": 1535,
+          "height": 1025,
           "alt": "Green hills and forested slopes",
-          "caption": "Green hills and forested slopes"
+          "caption": "Green hills and forested slopes",
+          "style": "manga"
         }
       ],
       "adcode": 652700
@@ -1262,19 +1365,31 @@
       ],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/延安_1.jpg",
+          "thumbnail": "/images/travel/manga-97/延安_1.jpg",
+          "width": 1493,
+          "height": 1053,
+          "alt": "Hukou Waterfall from the gorge",
+          "caption": "Hukou Waterfall from the gorge",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/延安_2.jpg",
+          "thumbnail": "/images/travel/manga-97/延安_2.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Yellow River at Hukou",
+          "caption": "Yellow River at Hukou",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/延安_3.jpg",
+          "thumbnail": "/images/travel/manga-97/延安_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "The falls and river gorge at Hukou",
+          "caption": "The falls and river gorge at Hukou",
+          "style": "manga"
         }
       ],
       "adcode": 610600
@@ -1293,28 +1408,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "/images/travel/graded-76/photo-204.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-204-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/大连_1.jpg",
+          "thumbnail": "/images/travel/manga-97/大连_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Dalian’s waterfront from above",
-          "caption": "Dalian’s waterfront from above"
+          "caption": "Dalian’s waterfront from above",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-205.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-205-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/大连_2.jpg",
+          "thumbnail": "/images/travel/manga-97/大连_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "An illuminated fountain at night",
-          "caption": "An illuminated fountain at night"
+          "caption": "An illuminated fountain at night",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-206.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-206-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/大连_3.jpg",
+          "thumbnail": "/images/travel/manga-97/大连_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A bridge lit across the bay",
-          "caption": "A bridge lit across the bay"
+          "caption": "A bridge lit across the bay",
+          "style": "manga"
         }
       ],
       "adcode": 210200
@@ -1333,28 +1451,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "/images/travel/graded-76/photo-201.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-201-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/丹东_1.jpg",
+          "thumbnail": "/images/travel/manga-97/丹东_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The bridges across the Yalu River",
-          "caption": "The bridges across the Yalu River"
+          "caption": "The bridges across the Yalu River",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-202.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-202-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/丹东_2.jpg",
+          "thumbnail": "/images/travel/manga-97/丹东_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Mountain slopes reflected in the Yalu River",
-          "caption": "Mountain slopes reflected in the Yalu River"
+          "caption": "Mountain slopes reflected in the Yalu River",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-203.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-203-thumb.jpg",
-          "width": 1600,
-          "height": 1600,
+          "src": "/images/travel/manga-97/丹东_3.jpg",
+          "thumbnail": "/images/travel/manga-97/丹东_3.jpg",
+          "width": 1254,
+          "height": 1254,
           "alt": "A monument in a city square",
-          "caption": "A monument in a city square"
+          "caption": "A monument in a city square",
+          "style": "manga"
         }
       ],
       "adcode": 210600
@@ -1373,28 +1494,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "/images/travel/graded-76/photo-198.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-198-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/哈尔滨_1.jpg",
+          "thumbnail": "/images/travel/manga-97/哈尔滨_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Harbin street lights after dark",
-          "caption": "Harbin street lights after dark"
+          "caption": "Harbin street lights after dark",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-199.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-199-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/哈尔滨_2.jpg",
+          "thumbnail": "/images/travel/manga-97/哈尔滨_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The Flood Control Monument at dusk",
-          "caption": "The Flood Control Monument at dusk"
+          "caption": "The Flood Control Monument at dusk",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-76/photo-200.jpg",
-          "thumbnail": "/images/travel/graded-76/photo-200-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/哈尔滨_3.jpg",
+          "thumbnail": "/images/travel/manga-97/哈尔滨_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Saint Sophia Cathedral",
-          "caption": "Saint Sophia Cathedral"
+          "caption": "Saint Sophia Cathedral",
+          "style": "manga"
         }
       ],
       "adcode": 230100
@@ -1479,28 +1603,31 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-180.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-180-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/拉萨_1.jpg",
+          "thumbnail": "/images/travel/manga-97/拉萨_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A highland lake beneath storm clouds",
-          "caption": "A highland lake beneath storm clouds"
+          "caption": "A highland lake beneath storm clouds",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-181.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-181-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/拉萨_2.jpg",
+          "thumbnail": "/images/travel/manga-97/拉萨_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The Potala Palace",
-          "caption": "The Potala Palace"
+          "caption": "The Potala Palace",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-188.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-188-thumb.jpg",
-          "width": 1584,
-          "height": 1034,
+          "src": "/images/travel/manga-97/拉萨_3.jpg",
+          "thumbnail": "/images/travel/manga-97/拉萨_3.jpg",
+          "width": 1552,
+          "height": 1013,
           "alt": "Drigung Til Monastery on the mountainside",
-          "caption": "Drigung Til Monastery on the mountainside"
+          "caption": "Drigung Til Monastery on the mountainside",
+          "style": "manga"
         }
       ]
     },
@@ -1523,28 +1650,31 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-182.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-182-thumb.jpg",
-          "width": 1800,
-          "height": 1349,
+          "src": "/images/travel/manga-97/那曲_1.jpg",
+          "thumbnail": "/images/travel/manga-97/那曲_1.jpg",
+          "width": 1450,
+          "height": 1085,
           "alt": "A glacier terminus above a meltwater pool",
-          "caption": "A glacier terminus above a meltwater pool"
+          "caption": "A glacier terminus above a meltwater pool",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-183.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-183-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/那曲_2.jpg",
+          "thumbnail": "/images/travel/manga-97/那曲_2.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "A lake and snow-dusted mountain peaks",
-          "caption": "A lake and snow-dusted mountain peaks"
+          "caption": "A lake and snow-dusted mountain peaks",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-184.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-184-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/那曲_3.jpg",
+          "thumbnail": "/images/travel/manga-97/那曲_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A glacial valley under broken clouds",
-          "caption": "A glacial valley under broken clouds"
+          "caption": "A glacial valley under broken clouds",
+          "style": "manga"
         }
       ]
     },
@@ -1567,28 +1697,31 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-185.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-185-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/昌都_1.jpg",
+          "thumbnail": "/images/travel/manga-97/昌都_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Zizhu Monastery amid rocky peaks",
-          "caption": "Zizhu Monastery amid rocky peaks"
+          "caption": "Zizhu Monastery amid rocky peaks",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-186.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-186-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/昌都_2.jpg",
+          "thumbnail": "/images/travel/manga-97/昌都_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A meadow below forested slopes",
-          "caption": "A meadow below forested slopes"
+          "caption": "A meadow below forested slopes",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-187.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-187-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/昌都_3.jpg",
+          "thumbnail": "/images/travel/manga-97/昌都_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A mountain valley seen from a rocky ridge",
-          "caption": "A mountain valley seen from a rocky ridge"
+          "caption": "A mountain valley seen from a rocky ridge",
+          "style": "manga"
         }
       ]
     },
@@ -1620,28 +1753,31 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-189.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-189-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/玉树_1.jpg",
+          "thumbnail": "/images/travel/manga-97/玉树_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Stone monuments on the plateau",
-          "caption": "Stone monuments on the plateau"
+          "caption": "Stone monuments on the plateau",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-190.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-190-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/玉树_2.jpg",
+          "thumbnail": "/images/travel/manga-97/玉树_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Prayer flags across open grassland",
-          "caption": "Prayer flags across open grassland"
+          "caption": "Prayer flags across open grassland",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-191.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-191-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/玉树_3.jpg",
+          "thumbnail": "/images/travel/manga-97/玉树_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Braided river channels in a broad valley",
-          "caption": "Braided river channels in a broad valley"
+          "caption": "Braided river channels in a broad valley",
+          "style": "manga"
         }
       ]
     },
@@ -1667,28 +1803,31 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-192.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-192-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/果洛_1.jpg",
+          "thumbnail": "/images/travel/manga-97/果洛_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Stars over the plateau",
-          "caption": "Stars over the plateau"
+          "caption": "Stars over the plateau",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-193.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-193-thumb.jpg",
-          "width": 1707,
-          "height": 1280,
+          "src": "/images/travel/manga-97/果洛_2.jpg",
+          "thumbnail": "/images/travel/manga-97/果洛_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A plateau lake at dusk",
-          "caption": "A plateau lake at dusk"
+          "caption": "A plateau lake at dusk",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-194.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-194-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/果洛_3.jpg",
+          "thumbnail": "/images/travel/manga-97/果洛_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A glacier and snow-covered peaks",
-          "caption": "A glacier and snow-covered peaks"
+          "caption": "A glacier and snow-covered peaks",
+          "style": "manga"
         }
       ]
     },
@@ -1711,28 +1850,31 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-195.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-195-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/海南藏族自治州_1.jpg",
+          "thumbnail": "/images/travel/manga-97/海南藏族自治州_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "A blue reservoir between mountain slopes",
-          "caption": "A blue reservoir between mountain slopes"
+          "caption": "A blue reservoir between mountain slopes",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-196.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-196-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/海南藏族自治州_2.jpg",
+          "thumbnail": "/images/travel/manga-97/海南藏族自治州_2.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Eroded ridges of the earth forest",
-          "caption": "Eroded ridges of the earth forest"
+          "caption": "Eroded ridges of the earth forest",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-197.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-197-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/海南藏族自治州_3.jpg",
+          "thumbnail": "/images/travel/manga-97/海南藏族自治州_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Red cliffs reflected in the water",
-          "caption": "Red cliffs reflected in the water"
+          "caption": "Red cliffs reflected in the water",
+          "style": "manga"
         }
       ]
     },
@@ -1751,19 +1893,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/西宁_1.jpg",
+          "thumbnail": "/images/travel/manga-97/西宁_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "A temple courtyard in Xining",
+          "caption": "A temple courtyard in Xining",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/西宁_2.jpg",
+          "thumbnail": "/images/travel/manga-97/西宁_2.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Beishan Monastery overlooking Xining",
+          "caption": "Beishan Monastery overlooking Xining",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/西宁_3.jpg",
+          "thumbnail": "/images/travel/manga-97/西宁_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Yellow blossoms in Datong County",
+          "caption": "Yellow blossoms in Datong County",
+          "style": "manga"
         }
       ]
     },
@@ -1782,28 +1936,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-174.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-174-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
-          "alt": "Guangzhou’s skyline across the Pearl River",
-          "caption": "Guangzhou’s skyline across the Pearl River"
+          "src": "/images/travel/manga-97/广州_1.jpg",
+          "thumbnail": "/images/travel/manga-97/广州_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Guangzhou skyline across the Pearl River",
+          "caption": "Guangzhou skyline across the Pearl River",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-175.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-175-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/广州_2.jpg",
+          "thumbnail": "/images/travel/manga-97/广州_2.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "The Five Rams sculpture",
-          "caption": "The Five Rams sculpture"
+          "caption": "The Five Rams sculpture",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-176.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-176-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/广州_3.jpg",
+          "thumbnail": "/images/travel/manga-97/广州_3.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "The Sun Yat-sen Memorial Hall",
-          "caption": "The Sun Yat-sen Memorial Hall"
+          "caption": "The Sun Yat-sen Memorial Hall",
+          "style": "manga"
         }
       ]
     },
@@ -1822,28 +1979,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "/images/travel/graded-75/photo-177.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-177-thumb.jpg",
-          "width": 1800,
-          "height": 1350,
+          "src": "/images/travel/manga-97/桂林_1.jpg",
+          "thumbnail": "/images/travel/manga-97/桂林_1.jpg",
+          "width": 1448,
+          "height": 1086,
           "alt": "Limestone peaks beneath a cloudy sky",
-          "caption": "Limestone peaks beneath a cloudy sky"
+          "caption": "Limestone peaks beneath a cloudy sky",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-178.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-178-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/桂林_2.jpg",
+          "thumbnail": "/images/travel/manga-97/桂林_2.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "The Sun and Moon Pagodas at night",
-          "caption": "The Sun and Moon Pagodas at night"
+          "caption": "The Sun and Moon Pagodas at night",
+          "style": "manga"
         },
         {
-          "src": "/images/travel/graded-75/photo-179.jpg",
-          "thumbnail": "/images/travel/graded-75/photo-179-thumb.jpg",
-          "width": 1350,
-          "height": 1800,
+          "src": "/images/travel/manga-97/桂林_3.jpg",
+          "thumbnail": "/images/travel/manga-97/桂林_3.jpg",
+          "width": 1086,
+          "height": 1448,
           "alt": "Elephant Trunk Hill beside the river",
-          "caption": "Elephant Trunk Hill beside the river"
+          "caption": "Elephant Trunk Hill beside the river",
+          "style": "manga"
         }
       ]
     },
@@ -1862,19 +2022,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/厦门_1.jpg",
+          "thumbnail": "/images/travel/manga-97/厦门_1.jpg",
+          "width": 1671,
+          "height": 941,
+          "alt": "Fishing boats at Shapowei",
+          "caption": "Fishing boats at Shapowei",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/厦门_2.jpg",
+          "thumbnail": "/images/travel/manga-97/厦门_2.jpg",
+          "width": 1538,
+          "height": 1023,
+          "alt": "A local view of the old Xiamen harbor",
+          "caption": "A local view of the old Xiamen harbor",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/厦门_3.jpg",
+          "thumbnail": "/images/travel/manga-97/厦门_3.jpg",
+          "width": 1536,
+          "height": 1024,
+          "alt": "The Shapowei shelter basin in 2015",
+          "caption": "The Shapowei shelter basin in 2015",
+          "style": "manga"
         }
       ]
     },
@@ -1893,19 +2065,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/莆田_1.jpg",
+          "thumbnail": "/images/travel/manga-97/莆田_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Shimen’ao beach near Talin Village",
+          "caption": "Shimen’ao beach near Talin Village",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/莆田_2.jpg",
+          "thumbnail": "/images/travel/manga-97/莆田_2.jpg",
+          "width": 1020,
+          "height": 1541,
+          "alt": "Guangxiao Temple in Putian",
+          "caption": "Guangxiao Temple in Putian",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/莆田_3.jpg",
+          "thumbnail": "/images/travel/manga-97/莆田_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "An old opera stage by a Mazu temple",
+          "caption": "An old opera stage by a Mazu temple",
+          "style": "manga"
         }
       ],
       "highlight": "gold"
@@ -1925,19 +2109,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/三明_1.jpg",
+          "thumbnail": "/images/travel/manga-97/三明_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "The castanopsis forest in Sanyuan",
+          "caption": "The castanopsis forest in Sanyuan",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/三明_2.jpg",
+          "thumbnail": "/images/travel/manga-97/三明_2.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "A view from the Sanming greenway",
+          "caption": "A view from the Sanming greenway",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/三明_3.jpg",
+          "thumbnail": "/images/travel/manga-97/三明_3.jpg",
+          "width": 1502,
+          "height": 1047,
+          "alt": "Miaoyuan Mountain Country Park",
+          "caption": "Miaoyuan Mountain Country Park",
+          "style": "manga"
         }
       ]
     },
@@ -1959,19 +2155,31 @@
       ],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/阿坝_1.jpg",
+          "thumbnail": "/images/travel/manga-97/阿坝_1.jpg",
+          "width": 1536,
+          "height": 1024,
+          "alt": "A lake in Jiuzhaigou",
+          "caption": "A lake in Jiuzhaigou",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/阿坝_2.jpg",
+          "thumbnail": "/images/travel/manga-97/阿坝_2.jpg",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Huanglong pools and temple",
+          "caption": "Huanglong pools and temple",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/阿坝_3.jpg",
+          "thumbnail": "/images/travel/manga-97/阿坝_3.jpg",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Travertine terraces at Huanglong",
+          "caption": "Travertine terraces at Huanglong",
+          "style": "manga"
         }
       ]
     },
@@ -1990,19 +2198,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/甘南_1.jpg",
+          "thumbnail": "/images/travel/manga-97/甘南_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "A local view of Hezuo",
+          "caption": "A local view of Hezuo",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/甘南_2.jpg",
+          "thumbnail": "/images/travel/manga-97/甘南_2.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Hezuo beyond the hotel grounds",
+          "caption": "Hezuo beyond the hotel grounds",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/甘南_3.jpg",
+          "thumbnail": "/images/travel/manga-97/甘南_3.jpg",
+          "width": 1536,
+          "height": 1024,
+          "alt": "A fort exterior in Gannan",
+          "caption": "A fort exterior in Gannan",
+          "style": "manga"
         }
       ]
     },
@@ -2021,19 +2241,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/白银_1.jpg",
+          "thumbnail": "/images/travel/manga-97/白银_1.jpg",
+          "width": 1085,
+          "height": 1449,
+          "alt": "Wenyuan Pavilion in Baiyin",
+          "caption": "Wenyuan Pavilion in Baiyin",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/白银_2.jpg",
+          "thumbnail": "/images/travel/manga-97/白银_2.jpg",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Jinling Park in Baiyin District",
+          "caption": "Jinling Park in Baiyin District",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-97/白银_3.jpg",
+          "thumbnail": "/images/travel/manga-97/白银_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Yinfeng Lake in Baiyin",
+          "caption": "Yinfeng Lake in Baiyin",
+          "style": "manga"
         }
       ]
     },
@@ -2101,5 +2333,6 @@
       ]
     }
   ],
-  "pending_places": []
+  "pending_places": [],
+  "asset_version": "travel-manga-97"
 }
