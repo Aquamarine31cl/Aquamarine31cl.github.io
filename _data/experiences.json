@@ -13,29 +13,108 @@
       "id": "sports",
       "index": "02",
       "title": "Sports & Hobbies",
-      "subtitle": "Football and Go.",
+      "subtitle": "Football, Liverpool and Go.",
       "art": "sports",
       "entries": [
         {
           "id": "football",
           "title": "Football",
-          "image": "",
-          "image_alt": ""
+          "team": "22级隼与湖鱼队",
+          "university": {
+            "year": 2024,
+            "result": "Third place"
+          },
+          "school": [
+            {
+              "year": 2020,
+              "result": "Third place",
+              "goals": 3
+            },
+            {
+              "year": 2021,
+              "result": "Third place",
+              "goals": 2,
+              "assists": 1
+            }
+          ],
+          "kit": "Atlético Madrid",
+          "photos": [
+            {
+              "src": "/images/experiences/manga-102/university-football.jpg",
+              "preview": "/images/experiences/manga-102/university-football-preview.webp",
+              "width": 1448,
+              "height": 1086,
+              "caption": "22级隼与湖鱼队 · University football"
+            },
+            {
+              "src": "/images/experiences/manga-102/school-team.jpg",
+              "preview": "/images/experiences/manga-102/school-team-preview.webp",
+              "width": 1536,
+              "height": 1024,
+              "caption": "High-school team"
+            },
+            {
+              "src": "/images/experiences/manga-102/school-team-back.jpg",
+              "preview": "/images/experiences/manga-102/school-team-back-preview.webp",
+              "width": 1536,
+              "height": 1024,
+              "caption": "High-school team · together at the goal"
+            },
+            {
+              "src": "/images/experiences/manga-102/school-kit.jpg",
+              "preview": "/images/experiences/manga-102/school-kit-preview.webp",
+              "width": 1254,
+              "height": 1254,
+              "caption": "Our high-school kit · Atlético Madrid design"
+            }
+          ],
+          "supporter": {
+            "club": "Liverpool FC",
+            "motto": "You'll Never Walk Alone",
+            "photos": [
+              {
+                "src": "/images/experiences/manga-102/anfield.jpg",
+                "preview": "/images/experiences/manga-102/anfield-preview.webp",
+                "width": 1536,
+                "height": 1024,
+                "caption": "Anfield · Liverpool fan illustration"
+              },
+              {
+                "src": "/images/experiences/manga-102/liverpool.jpg",
+                "preview": "/images/experiences/manga-102/liverpool-preview.webp",
+                "width": 1536,
+                "height": 1024,
+                "caption": "You'll Never Walk Alone · Liverpool fan illustration"
+              }
+            ]
+          }
         },
         {
           "id": "go",
           "title": "Go (Weiqi)",
-          "image": "",
-          "image_alt": ""
+          "rank": "Amateur 4-dan",
+          "rank_year": 2014,
+          "awards": [
+            "School Principal’s Cup champion",
+            "Third prize in the junior-high selection tournament"
+          ],
+          "photo": {
+            "src": "/images/experiences/manga-102/go.jpg",
+            "preview": "/images/experiences/manga-102/go-preview.webp",
+            "width": 1536,
+            "height": 1024,
+            "caption": "Go"
+          }
         }
       ]
     },
     {
       "id": "moments",
       "index": "03",
-      "title": "Everyday Life",
+      "title": "Daily events",
       "art": "moments",
-      "entries": []
+      "entries": [],
+      "subtitle": "For recent updates, please contact me on WeChat."
     }
   ]
 }

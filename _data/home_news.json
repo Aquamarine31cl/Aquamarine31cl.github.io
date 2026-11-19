@@ -4,11 +4,14 @@
     "text": "I received the Xianghui Scholarship (Only 200 PhD Students were Awarded This Scholarship at Fudan University).",
     "important": true,
     "title": "Xianghui Scholarship",
-    "image": "",
-    "image_alt": "",
-    "image_caption": "",
+    "image": "/images/experiences/manga-102/xianghui.jpg",
+    "image_alt": "A laboratory scholarship portrait, anime illustration",
+    "image_caption": "Anime illustration",
     "image_fit": "contain",
-    "image_orientation": "portrait"
+    "image_orientation": "landscape",
+    "image_preview": "/images/experiences/manga-102/xianghui-preview.webp",
+    "image_width": 1536,
+    "image_height": 1024
   },
   {
     "date": "2026.09",
