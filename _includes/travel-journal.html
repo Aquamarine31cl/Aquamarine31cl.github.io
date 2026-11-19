@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ '/assets/css/travel-manga97.css' | relative_url }}?v=97">
+<link rel="stylesheet" href="{{ '/assets/css/travel-manga98.css' | relative_url }}?v=98">
 <section class="travel-journal travel-journal--manga" aria-labelledby="travel-journal-heading">
 <header class="travel-journal-header"><h3 id="travel-journal-heading">Travel, illustrated.</h3><p>Illustrated views from each place. Select 01–03 to browse.</p></header>
 <section class="travel-star-passport" aria-labelledby="travel-passport-title" hidden>
@@ -28,5 +28,6 @@
 {% endfor %}</div>
 {% if site.data.travel.pending_places.size > 0 %}<aside class="travel-journal-empty"><div><h4>Visits Awaiting a Location Detail</h4><ul>{% for place in site.data.travel.pending_places %}<li><strong>{{ place.name | escape }}</strong> — {{ place.note | escape }}</li>{% endfor %}</ul></div></aside>{% endif %}
 
+<details class="travel-image-credits"><summary>Image credits</summary><ul>{% for credit in site.data.travel.illustration_credits %}<li><a href="{{ credit.source | escape }}" rel="noopener noreferrer" target="_blank">{{ credit.place | escape }}</a> · {{ credit.author | escape }} · <a href="{{ credit.license_url | escape }}" rel="noopener noreferrer" target="_blank">{{ credit.license | escape }}</a>. Anime adaptation and color/framing changes; adapted images retain their source license.</li>{% endfor %}</ul></details>
 <p class="travel-photo-note">Some illustrations are based on older, lower-resolution travel photos.</p></section>
 
