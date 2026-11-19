@@ -1113,23 +1113,31 @@
       "description": "",
       "photos": [
         {
-          "src": "/images/travel/manga-97/成都_1.jpg",
-          "thumbnail": "/images/travel/manga-97/成都_1.jpg",
+          "src": "/images/travel/manga-100/成都_1.jpg",
+          "thumbnail": "/images/travel/manga-100/成都_1.jpg",
           "width": 1448,
           "height": 1086,
-          "alt": "Rivers and footbridges in Dujiangyan",
-          "caption": "Rivers and footbridges in Dujiangyan",
+          "alt": "Sichuan University gate, anime illustration",
+          "caption": "Sichuan University gate",
           "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/成都_2.jpg",
+          "thumbnail": "/images/travel/manga-100/成都_2.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "The panda at Chengdu IFS, anime illustration",
+          "caption": "The panda at Chengdu IFS",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/成都_3.jpg",
+          "thumbnail": "/images/travel/manga-100/成都_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "A historic pedestrian lane, anime illustration",
+          "caption": "A historic pedestrian lane",
+          "style": "manga"
         }
       ],
       "region_key": "CHN:chengdu",
@@ -1169,12 +1177,12 @@
           "style": "manga"
         },
         {
-          "src": "/images/travel/manga-97/海东_3.jpg",
-          "thumbnail": "/images/travel/manga-97/海东_3.jpg",
-          "width": 1448,
-          "height": 1086,
-          "alt": "The Datong River near Huzhu",
-          "caption": "The Datong River near Huzhu",
+          "src": "/images/travel/manga-99/海东_3.jpg",
+          "thumbnail": "/images/travel/manga-99/海东_3.jpg",
+          "width": 1086,
+          "height": 1448,
+          "alt": "Winding mountain roads and autumn woodland in Huzhu, Haidong, illustrated",
+          "caption": "Huzhu · mountain roads in autumn",
           "style": "manga"
         }
       ],
@@ -1332,19 +1340,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/西安_1.jpg",
+          "thumbnail": "/images/travel/manga-100/西安_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Giant Wild Goose Pagoda and night fountains, anime illustration",
+          "caption": "Giant Wild Goose Pagoda and night fountains",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/西安_2.jpg",
+          "thumbnail": "/images/travel/manga-100/西安_2.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Terracotta Army exhibition hall, anime illustration",
+          "caption": "Terracotta Army exhibition hall",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/西安_3.jpg",
+          "thumbnail": "/images/travel/manga-100/西安_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Bronze fountain sculpture, anime illustration",
+          "caption": "Bronze fountain sculpture",
+          "style": "manga"
         }
       ],
       "adcode": 610100
@@ -1359,36 +1379,34 @@
       "lat": 36.5853,
       "lng": 109.4897,
       "arrival": "",
-      "description": "Recorded stops: Hukou Waterfall, Yichuan County (Shaanxi side).",
-      "sites": [
-        "Hukou Waterfall, Yichuan County (Shaanxi side)"
-      ],
+      "description": "",
+      "sites": [],
       "photos": [
         {
-          "src": "/images/travel/manga-97/延安_1.jpg",
-          "thumbnail": "/images/travel/manga-97/延安_1.jpg",
-          "width": 1493,
-          "height": 1053,
-          "alt": "Hukou Waterfall from the gorge",
-          "caption": "Hukou Waterfall from the gorge",
+          "src": "/images/travel/manga-100/延安_1.jpg",
+          "thumbnail": "/images/travel/manga-100/延安_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Hukou Waterfall, anime illustration",
+          "caption": "Hukou Waterfall",
           "style": "manga"
         },
         {
-          "src": "/images/travel/manga-97/延安_2.jpg",
-          "thumbnail": "/images/travel/manga-97/延安_2.jpg",
+          "src": "/images/travel/manga-100/延安_2.jpg",
+          "thumbnail": "/images/travel/manga-100/延安_2.jpg",
           "width": 1448,
           "height": 1086,
-          "alt": "Yellow River at Hukou",
-          "caption": "Yellow River at Hukou",
+          "alt": "Lake and willow-lined shore, anime illustration",
+          "caption": "Lake and willow-lined shore",
           "style": "manga"
         },
         {
-          "src": "/images/travel/manga-97/延安_3.jpg",
-          "thumbnail": "/images/travel/manga-97/延安_3.jpg",
+          "src": "/images/travel/manga-100/延安_3.jpg",
+          "thumbnail": "/images/travel/manga-100/延安_3.jpg",
           "width": 1448,
           "height": 1086,
-          "alt": "The falls and river gorge at Hukou",
-          "caption": "The falls and river gorge at Hukou",
+          "alt": "Xuanyuan ceremonial hall at Huangdi Mausoleum, anime illustration",
+          "caption": "Xuanyuan ceremonial hall at Huangdi Mausoleum",
           "style": "manga"
         }
       ],
@@ -1537,19 +1555,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/沈阳_1.jpg",
+          "thumbnail": "/images/travel/manga-100/沈阳_1.jpg",
+          "width": 1447,
+          "height": 1087,
+          "alt": "Shenyang Commercial City at night, anime illustration",
+          "caption": "Shenyang Commercial City at night",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/沈阳_2.jpg",
+          "thumbnail": "/images/travel/manga-100/沈阳_2.jpg",
+          "width": 1447,
+          "height": 1087,
+          "alt": "Rockery at Zhang Family Mansion, anime illustration",
+          "caption": "Rockery at Zhang Family Mansion",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/沈阳_3.jpg",
+          "thumbnail": "/images/travel/manga-100/沈阳_3.jpg",
+          "width": 1447,
+          "height": 1087,
+          "alt": "Dazheng Hall at Shenyang Imperial Palace, anime illustration",
+          "caption": "Dazheng Hall at Shenyang Imperial Palace",
+          "style": "manga"
         }
       ],
       "adcode": 210100
@@ -1568,19 +1598,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/长春_1.jpg",
+          "thumbnail": "/images/travel/manga-100/长春_1.jpg",
+          "width": 1447,
+          "height": 1087,
+          "alt": "Changchun Film Studio Museum square, anime illustration",
+          "caption": "Changchun Film Studio Museum square",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/长春_2.jpg",
+          "thumbnail": "/images/travel/manga-100/长春_2.jpg",
+          "width": 1447,
+          "height": 1087,
+          "alt": "FAW towers and the city square, anime illustration",
+          "caption": "FAW towers and the city square",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/长春_3.jpg",
+          "thumbnail": "/images/travel/manga-100/长春_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Historic building and tiled roofs, anime illustration",
+          "caption": "Historic building and tiled roofs",
+          "style": "manga"
         }
       ],
       "adcode": 220100
@@ -1902,12 +1944,12 @@
           "style": "manga"
         },
         {
-          "src": "/images/travel/manga-97/西宁_2.jpg",
-          "thumbnail": "/images/travel/manga-97/西宁_2.jpg",
-          "width": 1448,
-          "height": 1086,
-          "alt": "Beishan Monastery overlooking Xining",
-          "caption": "Beishan Monastery overlooking Xining",
+          "src": "/images/travel/manga-99/西宁_2.jpg",
+          "thumbnail": "/images/travel/manga-99/西宁_2.jpg",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Summer courtyard at Dongguan Mosque in Xining, illustrated",
+          "caption": "Dongguan Mosque · courtyard in summer",
           "style": "manga"
         },
         {
@@ -2031,12 +2073,12 @@
           "style": "manga"
         },
         {
-          "src": "/images/travel/manga-98/厦门_2.jpg",
-          "thumbnail": "/images/travel/manga-98/厦门_2.jpg",
-          "width": 1774,
-          "height": 887,
-          "alt": "Sunset over the white pagoda and Shimao twin towers in Xiamen, illustrated",
-          "caption": "Xiamen · sunset, white pagoda and twin towers",
+          "src": "/images/travel/manga-99/厦门_2.jpg",
+          "thumbnail": "/images/travel/manga-99/厦门_2.jpg",
+          "width": 1472,
+          "height": 1068,
+          "alt": "The Customs Clock Tower and Lujiang Road in Xiamen on a winter night, illustrated",
+          "caption": "Xiamen · Customs Clock Tower at night",
           "style": "manga"
         },
         {
@@ -2065,12 +2107,12 @@
       "sites": [],
       "photos": [
         {
-          "src": "/images/travel/manga-97/莆田_1.jpg",
-          "thumbnail": "/images/travel/manga-97/莆田_1.jpg",
-          "width": 1448,
-          "height": 1086,
-          "alt": "Shimen’ao beach near Talin Village",
-          "caption": "Shimen’ao beach near Talin Village",
+          "src": "/images/travel/manga-99/莆田_1.jpg",
+          "thumbnail": "/images/travel/manga-99/莆田_1.jpg",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Coastal rock formations and a pavilion on Meizhou Island, illustrated",
+          "caption": "Meizhou Island · coastal rocks and pavilion",
           "style": "manga"
         },
         {
@@ -2155,12 +2197,12 @@
       ],
       "photos": [
         {
-          "src": "/images/travel/manga-97/阿坝_1.jpg",
-          "thumbnail": "/images/travel/manga-97/阿坝_1.jpg",
+          "src": "/images/travel/manga-99/阿坝_1.jpg",
+          "thumbnail": "/images/travel/manga-99/阿坝_1.jpg",
           "width": 1536,
           "height": 1024,
-          "alt": "A lake in Jiuzhaigou",
-          "caption": "A lake in Jiuzhaigou",
+          "alt": "Spring lake reflections and submerged trunks in Jiuzhaigou, illustrated",
+          "caption": "Jiuzhaigou · spring reflections and submerged trunks",
           "style": "manga"
         },
         {
@@ -2216,12 +2258,12 @@
           "style": "manga"
         },
         {
-          "src": "/images/travel/manga-98/甘南_3.jpg",
-          "thumbnail": "/images/travel/manga-98/甘南_3.jpg",
-          "width": 1537,
-          "height": 1023,
-          "alt": "Temple buildings at Langmusi and the wooded hillside, illustrated",
-          "caption": "Langmusi · temples beneath the wooded hillside",
+          "src": "/images/travel/manga-99/甘南_3.jpg",
+          "thumbnail": "/images/travel/manga-99/甘南_3.jpg",
+          "width": 1536,
+          "height": 1024,
+          "alt": "Temple roofs and golden ornaments at Labrang Monastery in summer, illustrated",
+          "caption": "Labrang Monastery · temple roofs in summer",
           "style": "manga"
         }
       ]
@@ -2284,19 +2326,31 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/兰州_1.jpg",
+          "thumbnail": "/images/travel/manga-100/兰州_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Lanzhou at dusk, anime illustration",
+          "caption": "Lanzhou at dusk",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/兰州_2.jpg",
+          "thumbnail": "/images/travel/manga-100/兰州_2.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Zhongshan Bridge and Baita Hill at night, anime illustration",
+          "caption": "Zhongshan Bridge and Baita Hill at night",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/兰州_3.jpg",
+          "thumbnail": "/images/travel/manga-100/兰州_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Danxia ridges and walking trails, anime illustration",
+          "caption": "Danxia ridges and walking trails",
+          "style": "manga"
         }
       ],
       "highlight": "gold"
@@ -2316,79 +2370,336 @@
       "sites": [],
       "photos": [
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/乌鲁木齐_1.jpg",
+          "thumbnail": "/images/travel/manga-100/乌鲁木齐_1.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "City skyline at dusk, anime illustration",
+          "caption": "City skyline at dusk",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/乌鲁木齐_2.jpg",
+          "thumbnail": "/images/travel/manga-100/乌鲁木齐_2.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Village and mountain slopes, anime illustration",
+          "caption": "Village and mountain slopes",
+          "style": "manga"
         },
         {
-          "src": "",
-          "alt": "",
-          "caption": ""
+          "src": "/images/travel/manga-100/乌鲁木齐_3.jpg",
+          "thumbnail": "/images/travel/manga-100/乌鲁木齐_3.jpg",
+          "width": 1448,
+          "height": 1086,
+          "alt": "Golden fields beneath the clouds, anime illustration",
+          "caption": "Golden fields beneath the clouds",
+          "style": "manga"
         }
       ]
     }
   ],
   "pending_places": [],
-  "asset_version": "travel-manga-98",
+  "asset_version": "travel-manga-99",
   "illustration_credits": [
     {
-      "asset": "甘南_1",
-      "place": "Zhagana",
-      "author": "Jonashtand",
-      "source": "https://commons.wikimedia.org/wiki/File:202609_Zhagana_Scenic_Area_77.jpg",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "asset": "海东_1",
+      "place": "A plant detail at Nanmen Gorge",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E6%B5%B7%E7%9C%81%E4%BA%92%E5%8A%A9%E5%8E%BF%E5%8D%97%E9%97%A8%E5%B3%A1%E9%A3%8E%E5%85%89_-_panoramio.jpg",
+      "title": "File:青海省互助县南门峡风光 - panoramio.jpg",
+      "author": "伊盛昌",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2012-09-28",
+      "season": "autumn",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
       "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
     },
     {
-      "asset": "甘南_2",
-      "place": "Labrang Monastery",
-      "author": "Jonashtand",
-      "source": "https://commons.wikimedia.org/wiki/File:202609_Labrang_Monastery_125.jpg",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "asset": "海东_2",
+      "place": "Autumn at Wufeng in Huzhu",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E5%88%B0%E4%BA%94%E5%B3%B0_-_panoramio.jpg",
+      "title": "File:秋到五峰 - panoramio.jpg",
+      "author": "伊盛昌",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2010-10-13",
+      "season": "autumn",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
       "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
     },
     {
-      "asset": "甘南_3",
-      "place": "Langmusi",
-      "author": "明雨卿晨",
-      "source": "https://commons.wikimedia.org/wiki/File:Langmusi_-_1.jpg",
-      "license": "CC BY-SA 2.5",
-      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "asset": "海东_3",
+      "place": "Huzhu · mountain roads in autumn",
+      "source": "https://commons.wikimedia.org/wiki/File:Huzhu,_Haidong,_Qinghai,_China_-_panoramio.jpg",
+      "title": "File:Huzhu, Haidong, Qinghai, China - panoramio.jpg",
+      "author": "伊盛昌",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "capture_date": null,
+      "season": "autumn",
+      "season_evidence": "可见金黄落叶林、褐色草坡，原页面日期2013-10-07为上传日期，不能当作拍摄日期；季节依据秋季植被状态",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "西宁_2",
+      "place": "Dongguan Mosque · courtyard in summer",
+      "source": "https://commons.wikimedia.org/wiki/File:Dongguan_Mosque,_Xining,_Qinghai_province,_China.jpg",
+      "title": "File:Dongguan Mosque, Xining, Qinghai province, China.jpg",
+      "author": "Wikiwakhan",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "capture_date": "2026-07-20",
+      "season": "summer",
+      "season_evidence": "拍摄日期与图像中的植被、地表状态一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "西宁_3",
+      "place": "Yellow blossoms in Datong County",
+      "source": "https://commons.wikimedia.org/wiki/File:Datong%2C_Xining%2C_Qinghai%2C_China_-_panoramio.jpg",
+      "title": "File:Datong, Xining, Qinghai, China - panoramio.jpg",
+      "author": "伊盛昌",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2008-07-06",
+      "season": "summer",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
       "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
     },
     {
       "asset": "厦门_1",
-      "place": "Gulangyu · Haitiantang",
+      "place": "Gulangyu · Haitiantang historical gateway",
       "author": "H2v5o68z",
       "source": "https://commons.wikimedia.org/wiki/File:Gulangyu_1.jpg",
       "license": "CC0",
       "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph.",
+      "capture_date": "2025-02-09",
+      "season": "winter",
+      "season_evidence": "参考图页面拍摄日期与植被状态核对一致"
     },
     {
-      "asset": "厦门_2",
-      "place": "Xiamen sunset",
-      "author": "Mx. Granger",
-      "source": "https://commons.wikimedia.org/wiki/File:Xiamen_scenery.jpg",
+      "title": "File:Xiamen 4.jpg",
+      "file": "D:\\Codex\\旅行卡片对齐修复99\\季节参考\\Xiamen 4.jpg",
+      "date": "2025-02-08 19:23:13",
+      "source": "https://commons.wikimedia.org/wiki/File:Xiamen_4.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Xiamen_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "H2v5o68z",
       "license": "CC0",
       "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "asset": "厦门_2",
+      "place": "Xiamen · Customs Clock Tower at night",
+      "capture_date": "2025-02-08",
+      "season": "winter",
+      "season_evidence": "与保留的厦门两张原参考图同为2025年2月8–9日",
       "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
     },
     {
       "asset": "厦门_3",
-      "place": "Zheng Chenggong statue",
+      "place": "Gulangyu · Zheng Chenggong statue",
       "author": "H2v5o68z",
       "source": "https://commons.wikimedia.org/wiki/File:Statue_of_Koxinga_on_Gulangyu_1.jpg",
       "license": "CC0",
       "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph.",
+      "capture_date": "2025-02-09",
+      "season": "winter",
+      "season_evidence": "参考图页面拍摄日期与植被状态核对一致"
+    },
+    {
+      "asset": "莆田_1",
+      "place": "Meizhou Island · coastal rocks and pavilion",
+      "source": "https://commons.wikimedia.org/wiki/File:%E6%B9%84%E6%B4%B2%E5%B2%9B%E7%A5%9E%E7%9F%B3%E5%9B%AD%E9%A3%8E%E5%85%89_-_panoramio.jpg",
+      "title": "File:湄洲岛神石园风光 - panoramio.jpg",
+      "author": "江上清风1961",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "capture_date": "2012-09-22",
+      "season": "autumn",
+      "season_evidence": "拍摄日期与图像中的植被、地表状态一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "莆田_2",
+      "place": "Guangxiao Temple in Putian",
+      "source": "https://commons.wikimedia.org/wiki/File:Guangxiao_Temple_(Putian).jpg",
+      "title": "File:Guangxiao Temple (Putian).jpg",
+      "author": "Fanglongzong",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2020-10-11",
+      "season": "autumn",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "莆田_3",
+      "place": "An old opera stage by a Mazu temple",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%A6%88%E7%A5%96%E5%BA%99%E5%89%8D%E5%8F%A4%E6%88%8F%E5%8F%B0_-_panoramio.jpg",
+      "title": "File:妈祖庙前古戏台 - panoramio.jpg",
+      "author": "江上清风1961",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2012-09-22",
+      "season": "autumn",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "三明_1",
+      "place": "The castanopsis forest in Sanyuan",
+      "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E5%85%83%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%A0%BC%E6%B0%8F%E6%A0%B2%E6%99%AF%E5%8C%BA_-_Castanopsis_kawakamii_Park_of_Sanyuan_Forest_Park_-_2016.08_-_panoramio.jpg",
+      "title": "File:三元森林公园格氏栲景区 - Castanopsis kawakamii Park of Sanyuan Forest Park - 2016.08 - panoramio.jpg",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2016-08-04",
+      "season": "summer",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "三明_2",
+      "place": "A view from the Sanming greenway",
+      "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E6%98%8E%E5%9F%8E%E5%B8%82%E7%BB%BF%E9%81%93_-_Greenway_of_Sanming_-_2016.08_-_panoramio_-_rheins.jpg",
+      "title": "File:三明城市绿道 - Greenway of Sanming - 2016.08 - panoramio - rheins.jpg",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2016-08-05",
+      "season": "summer",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "三明_3",
+      "place": "Miaoyuan Mountain Country Park",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%A6%99%E5%85%83%E5%B1%B1%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD_-_Miaoyuan_Mountain_County_Park_-_2016.08_-_panoramio.jpg",
+      "title": "File:妙元山郊野公园 - Miaoyuan Mountain County Park - 2016.08 - panoramio.jpg",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2016-08-05",
+      "season": "summer",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "阿坝_1",
+      "place": "Jiuzhaigou · spring reflections and submerged trunks",
+      "source": "https://commons.wikimedia.org/wiki/File:Reflexion_of_underwater_trunks_and_mixed_forest_vegetation_(Jiuzhaigou_Valley_UNESCO-MAB_Biosphere_Reserve_with_WDPA_ID_145572).jpg",
+      "title": "File:Reflexion of underwater trunks and mixed forest vegetation (Jiuzhaigou Valley UNESCO-MAB Biosphere Reserve with WDPA ID 145572).jpg",
+      "author": "Toni Wöhrl",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capture_date": "2015-04-01",
+      "season": "spring",
+      "season_evidence": "拍摄日期与图像中的植被、地表状态一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "阿坝_2",
+      "place": "Huanglong pools and temple",
+      "source": "https://commons.wikimedia.org/wiki/File:Huanglong_travertine_pools_with_temple.jpg",
+      "title": "File:Huanglong travertine pools with temple.jpg",
+      "author": "Toni Wöhrl",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2015-04-02",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "阿坝_3",
+      "place": "Travertine terraces at Huanglong",
+      "source": "https://commons.wikimedia.org/wiki/File:Huanglong_travertine_pools.jpg",
+      "title": "File:Huanglong travertine pools.jpg",
+      "author": "Toni Wöhrl",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2015-04-02",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "甘南_1",
+      "place": "Zhagana · limestone peaks in the clouds",
+      "author": "Jonashtand",
+      "source": "https://commons.wikimedia.org/wiki/File:202609_Zhagana_Scenic_Area_77.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph.",
+      "capture_date": "2026-08-02",
+      "season": "summer",
+      "season_evidence": "参考图页面拍摄日期与植被状态核对一致"
+    },
+    {
+      "asset": "甘南_2",
+      "place": "Labrang Monastery · painted walls and golden ornaments",
+      "author": "Jonashtand",
+      "source": "https://commons.wikimedia.org/wiki/File:202609_Labrang_Monastery_125.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph.",
+      "capture_date": "2026-08-01",
+      "season": "summer",
+      "season_evidence": "参考图页面拍摄日期与植被状态核对一致"
+    },
+    {
+      "asset": "甘南_3",
+      "place": "Labrang Monastery · temple roofs in summer",
+      "source": "https://commons.wikimedia.org/wiki/File:202609_Labrang_Monastery_26.jpg",
+      "title": "File:202609 Labrang Monastery 26.jpg",
+      "author": "Jonashtand",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capture_date": "2026-08-01",
+      "season": "summer",
+      "season_evidence": "拍摄日期与图像中的植被、地表状态一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "白银_1",
+      "place": "Wenyuan Pavilion in Baiyin",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E9%93%B6%E5%B8%82_%E6%96%87%E6%B8%8A%E9%98%81.jpg",
+      "title": "File:白银市 文渊阁.jpg",
+      "author": "Shenjimilin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2019-04-08",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "白银_2",
+      "place": "Jinling Park in Baiyin District",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E9%93%B6%E5%B8%82_%E7%99%BD%E9%93%B6%E5%8C%BA%E9%87%91%E5%B2%AD%E5%85%AC%E5%9B%AD.jpg",
+      "title": "File:白银市 白银区金岭公园.jpg",
+      "author": "Shenjimilin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2019-04-08",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "白银_3",
+      "place": "Yinfeng Lake in Baiyin",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E9%93%B6%E5%B8%82_%E9%93%B6%E5%87%A4%E6%B9%96.jpg",
+      "title": "File:白银市 银凤湖.jpg",
+      "author": "Shenjimilin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2019-04-08",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
       "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
     }
-  ]
+  ],
+  "image_credit_notes": []
 }

@@ -1,4 +1,4 @@
-{% include base_path %}
+{% include "base_path.html" %}
 
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
@@ -7,13 +7,13 @@
 <div itemscope itemtype="http://schema.org/Person">
 
   {% if page.home_page %}
-  <div class="author__avatar"><img src="{{ '/images/home-avatar.jpg' | relative_url }}" alt="" fetchpriority="high"></div>
+  <div class="author__avatar"><img src="{{ '/images/home-avatar.jpg' | relative_url }}?v=100" alt="" fetchpriority="high"></div>
   {% else %}
   <div class="author__avatar" hidden data-protected-section>
     {% if author.avatar contains "://" %}
-    	<img hidden data-protected-src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" onerror="this.onerror=null;this.src='{{ '/images/profile.png' | relative_url }}';" />
+    	<img hidden data-protected-src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" onerror="this.onerror=null;this.src='{{ '/images/profile.png' | relative_url }}?v=100';" />
     {% else %}
-    	<img hidden data-protected-src="{{ author.avatar | prepend: "/images/" | relative_url }}?v=20261102-local" alt="{{ author.name }}"  fetchpriority="high" onerror="this.onerror=null;this.src='{{ '/images/profile.png' | relative_url }}';" />
+    	<img hidden data-protected-src="{{ author.avatar | prepend: "/images/" | relative_url }}?v=100" alt="{{ author.name }}"  fetchpriority="high" onerror="this.onerror=null;this.src='{{ '/images/profile.png' | relative_url }}?v=100';" />
     {% endif %}
   </div>
 
@@ -172,5 +172,5 @@
       {% endif %}      
     </ul>
   </div>
-  {% if page.home_page %}{% include wish-bottles.html %}{% include visitor-corner.html %}{% endif %}
+  {% if page.home_page %}{% include "wish-bottles.html" %}{% include "visitor-corner.html" %}{% endif %}
 </div>

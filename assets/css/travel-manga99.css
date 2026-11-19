@@ -1,0 +1,44 @@
+/* Travel gallery: shared heading, image, caption and control tracks. */
+.travel-journal--manga{min-width:0;max-width:100%;--travel-heading-height:8rem;--travel-caption-height:5rem}
+section.travel-journal--manga{display:block!important;width:100%!important;max-width:none!important;grid-column:1/-1!important}
+html[data-theme="dark"] #main.experience-page,html #main.experience-page{width:100%;max-width:1760px;box-sizing:border-box}
+.experience-section--atlas{display:block!important;grid-template-columns:minmax(0,1fr)!important}
+.experience-section--atlas>.experience-section-body{display:block!important;width:100%;max-width:none;box-sizing:border-box}
+.travel-journal--manga .travel-city-grid{display:grid;width:100%!important;max-width:none!important;grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:1fr;gap:clamp(12px,1.25vw,22px);align-items:stretch;box-sizing:border-box}
+.travel-journal--manga .travel-city-grid .city-journey{display:flex;flex-direction:column;align-self:stretch;min-width:0;max-width:100%;height:100%;margin:0;padding:clamp(12px,1vw,16px);box-sizing:border-box;overflow:hidden;transform:none!important;translate:none!important;rotate:none!important;scale:none!important}
+.travel-journal--manga .city-heading-copy{display:flow-root;flex:0 0 auto;box-sizing:border-box;min-width:0;min-height:var(--travel-heading-height);margin:0;padding:0}
+.travel-journal--manga .city-heading-copy .cosmic-eyebrow{font-size:.61rem!important;letter-spacing:.12em;line-height:1.5;margin:0 0 .4rem}
+.travel-journal--manga .city-heading-copy h4{font-size:clamp(1rem,1.25vw,1.2rem);line-height:1.4;margin:0 0 1rem;overflow-wrap:anywhere;word-break:normal;hyphens:none}
+.travel-journal--manga .city-photo-gallery{display:flex;flex-direction:column;flex:1 0 auto;min-width:0;width:100%;margin:0!important}
+.travel-journal--manga .city-photo-stage{flex:1 0 auto;position:relative;width:100%;min-width:0;min-height:0;height:auto;aspect-ratio:auto;background:transparent;overflow:visible}
+.travel-journal--manga .city-photo-stage::before,.travel-journal--manga .city-photo-stage::after{content:none!important}
+.travel-journal--manga .city-photo-stage .city-photo-card{display:flex!important;flex-direction:column;width:100%;max-width:100%;min-width:0;margin:0;transform:none!important}
+.travel-journal--manga .city-photo-stage .city-photo-card[hidden]{display:none!important}
+.travel-journal--manga .city-photo-stage .city-photo-card>a{display:block;position:relative;flex:0 0 auto;box-sizing:border-box;width:100%;height:auto;aspect-ratio:1;min-width:0;padding:0;line-height:0;border:1px solid #bca3e625;border-radius:12px;overflow:hidden;background:linear-gradient(145deg,#b29ce50a,#83bcce06)}
+.travel-journal--manga .city-photo-stage .city-photo-card img{position:absolute;inset:0;display:block!important;width:100%!important;height:100%!important;max-width:100%;max-height:100%;aspect-ratio:auto!important;object-fit:contain!important;object-position:center;transform:none!important;border-radius:0}
+.travel-journal--manga .city-photo-stage .city-photo-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 auto;box-sizing:border-box;aspect-ratio:1;width:100%;height:auto;min-width:0;margin:0;border-radius:12px;background:linear-gradient(145deg,#b29ce50a,#83bcce06)}
+.travel-journal--manga .city-photo-stage figcaption{box-sizing:border-box;flex:0 0 auto;min-height:var(--travel-caption-height);margin:0;padding:.65rem 0 .8rem;font-family:inherit;font-size:.72rem;line-height:1.5;text-align:center;overflow-wrap:anywhere;word-break:normal}
+.travel-journal--manga .city-photo-stage figcaption>.city-photo-caption-text{display:block;margin:0;color:inherit}
+.travel-journal--manga .city-photo-controls{display:flex;position:relative;flex:0 0 auto;gap:6px;flex-wrap:nowrap;margin-top:12px}
+.travel-journal--manga .city-photo-controls button{flex:1;min-width:0;min-height:44px;padding:8px;font-size:.75rem;line-height:1.3;touch-action:manipulation}
+.travel-journal--manga .city-photo-controls button:focus-visible{outline:2px solid #c6a9f5;outline-offset:3px}
+.travel-journal--manga .travel-star-passport[hidden],.travel-journal--manga .travel-star-passport [hidden]{display:none!important}
+.travel-journal--manga .travel-star-passport:not([hidden]){padding:1rem 0 1.5rem}
+.travel-journal--manga .travel-star-passport svg{display:block;width:min(100%,420px);height:auto;fill:none;stroke:#bca3e6;stroke-width:1}
+.travel-journal--manga .travel-star-passport circle{fill:#bca3e6;stroke:none}
+.travel-journal--manga .travel-photo-note{font-size:.72rem;line-height:1.6;opacity:.75;margin-top:2rem}
+.travel-image-credits{margin-top:2rem;font-size:.72rem;line-height:1.6;color:inherit;opacity:.8}
+.travel-image-credits summary{cursor:pointer;padding:.7rem 0}
+.travel-image-credits ul{margin:.5rem 0;padding-left:1.2rem;max-width:85ch}
+.travel-image-credits li,.travel-image-credits .travel-credit-note{margin:.4rem 0;overflow-wrap:anywhere}
+/* Invisible text-only copies are measured without loading duplicate images. */
+.travel-layout-measure{position:fixed!important;top:0!important;left:-100000px!important;display:block!important;visibility:hidden!important;pointer-events:none!important;margin:0!important;padding:0!important;border:0!important;contain:layout style;z-index:-1}
+.travel-layout-measure .city-journey{height:auto!important;margin:0!important}
+.travel-layout-measure .travel-city-grid{display:block!important}
+.travel-layout-measure .city-heading-copy,.travel-layout-measure figcaption{height:auto!important;min-height:0!important}
+.travel-layout-measure .city-photo-stage{flex:0 0 auto}
+@media(max-width:1279px){.travel-journal--manga .travel-city-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:1023px){.travel-journal--manga .travel-city-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:759px){.travel-journal--manga .travel-city-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.travel-journal--manga .travel-city-grid .city-journey{padding:12px}}
+@media(max-width:519px){.travel-journal--manga .travel-city-grid{grid-template-columns:minmax(0,1fr);gap:18px}.travel-journal--manga .travel-city-grid .city-journey{padding:14px}.travel-journal--manga .city-heading-copy h4{font-size:1.15rem}.travel-journal--manga .city-photo-stage figcaption{font-size:.8rem}}
+@media(prefers-reduced-motion:reduce){.travel-journal--manga .city-photo-card,.travel-journal--manga .city-photo-card img{animation:none!important;transition:none!important}}
