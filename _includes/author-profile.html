@@ -1,4 +1,4 @@
-{% include "base_path.html" %}
+{% include base_path %}
 
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
@@ -172,5 +172,5 @@
       {% endif %}      
     </ul>
   </div>
-  {% if page.home_page %}{% include "wish-bottles.html" %}{% include "visitor-corner.html" %}{% endif %}
+  {% if page.home_page %}{% include wish-bottles.html %}{% include visitor-corner.html %}{% endif %}
 </div>

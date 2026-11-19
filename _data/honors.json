@@ -50,10 +50,12 @@
       "kind": "honor",
       "level": "provincial",
       "featured": true,
-      "image": "/images/honors/1.png",
+      "image": "/images/honors/manga-101/selected-award-1.jpg",
       "image_alt": "Shanghai Outstanding Graduate certificate",
-      "image_orientation": "portrait",
-      "image_preview": "/images/honors/1-preview.webp"
+      "image_orientation": "landscape",
+      "image_preview": "/images/honors/manga-101/selected-award-1-preview.webp",
+      "image_width": 1536,
+      "image_height": 1024
     },
     {
       "id": "award-03",
@@ -64,10 +66,12 @@
       "kind": "honor",
       "level": "university",
       "featured": true,
-      "image": "/images/honors/2.png",
+      "image": "/images/honors/manga-101/selected-award-2.jpg",
       "image_alt": "Tongji University Academic Star Pacemaker certificate",
-      "image_orientation": "portrait",
-      "image_preview": "/images/honors/2-preview.webp"
+      "image_orientation": "landscape",
+      "image_preview": "/images/honors/manga-101/selected-award-2-preview.webp",
+      "image_width": 1448,
+      "image_height": 1086
     },
     {
       "id": "award-04",
@@ -133,15 +137,17 @@
       "id": "award-10",
       "date": "2025.12",
       "title": "The 19th 'Challenge Cup' National College Students' Extracurricular Academic Science and Technology Works Competition",
-      "distinction": "Third Prize (Main Track)",
+      "distinction": "Third Prize (Main Track) & Shanghai First Prize",
       "detail": "",
       "kind": "competition",
       "level": "international-national",
       "featured": true,
-      "image": "/images/honors/3.png",
+      "image": "/images/honors/manga-101/selected-award-3.jpg",
       "image_alt": "Third Prize certificate for the 19th Challenge Cup",
       "image_orientation": "landscape",
-      "image_preview": "/images/honors/3-preview.webp"
+      "image_preview": "/images/honors/manga-101/selected-award-3-preview.webp",
+      "image_width": 1536,
+      "image_height": 1024
     },
     {
       "id": "award-12",

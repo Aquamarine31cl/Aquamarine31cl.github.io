@@ -1,5 +1,6 @@
 {% assign honors = site.data.honors %}
-<section id="honors" class="home-honors" aria-labelledby="honors-heading">
+<link rel="stylesheet" href="{{ '/assets/css/honors-manga101.css' | relative_url }}?v=101">
+<section data-awards-version="101" id="honors" class="home-honors" aria-labelledby="honors-heading">
   <header class="honors-section-heading"><div><h2 id="honors-heading">Honors & awards</h2></div><span class="honors-total">{{ honors.total }} <small>honors & competition awards in total</small></span></header>
   <p class="honors-intro">{{ honors.intro | escape }}</p>
   <div class="honors-stats" aria-label="Award counts by level">
@@ -12,7 +13,7 @@
   <div class="honors-spotlight" data-preview-list>
   {% assign featured = honors.awards | where: 'featured', true %}{% for award in featured %}
   <article {% unless forloop.first %}data-preview-item{% endunless %} class="honor-feature honors-reveal honor-feature--{{ award.image_orientation | default: 'landscape' }}">
-      {% if award.image != '' %}<a class="honor-photo" href="#access-dialog" data-protected-href="{{ award.image | relative_url }}" data-access-kind="photo"><span class="access-photo-veil"><span aria-hidden="true">✧</span><span>Unlock photograph</span></span><img hidden data-protected-src="{{ award.image_preview | default: award.image | relative_url }}" alt="{{ award.image_alt | default: award.title | escape }}" {% if award.image_orientation == 'portrait' %}width="720" height="960"{% else %}width="960" height="600"{% endif %} loading="lazy"></a>
+      {% if award.image != '' %}<a class="honor-photo" href="#access-dialog" data-protected-href="{{ award.image | relative_url }}" data-access-kind="photo"><span class="access-photo-veil"><span aria-hidden="true">✧</span><span>Unlock photograph</span></span><img hidden data-protected-src="{{ award.image_preview | default: award.image | relative_url }}" alt="{{ award.image_alt | default: award.title | escape }}" width="{{ award.image_width | default: 960 }}" height="{{ award.image_height | default: 600 }}" loading="lazy"></a>
       {% else %}<div class="honor-photo honor-photo--placeholder" role="img" aria-label="Image space reserved for {{ award.title | escape }}"><span class="honor-medallion" aria-hidden="true">✧</span><span class="honor-photo-label">CERTIFICATE / MOMENT<small>{% if award.image_orientation == 'portrait' %}Portrait Image Coming Soon{% else %}Landscape Image Coming Soon{% endif %}</small></span></div>{% endif %}
       <div class="honor-feature-copy"><span class="honor-date">{{ award.date | escape }}</span><h4>{{ award.title | escape }}</h4>{% if award.distinction != '' %}<p class="honor-distinction">{{ award.distinction | escape }}</p>{% endif %}</div>
     </article>{% endfor %}
