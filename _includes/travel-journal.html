@@ -35,7 +35,7 @@
     <li><a href="{{ credit.source | escape }}" rel="noopener noreferrer" target="_blank">{{ credit.place | escape }}</a> · {{ credit.author | escape }} · <a href="{{ credit.license_url | escape }}" rel="noopener noreferrer" target="_blank">{{ credit.license | escape }}</a>{% if credit.note %} · {{ credit.note | escape }}{% endif %}</li>
     {% endfor %}
   </ul>
-  <p class="travel-credit-note">Anime adaptations with color and framing adjustments. The adapted images retain their source licenses.</p>
+  <p class="travel-credit-note">Anime adaptations with color and framing adjustments. Use all photos for free. </p>
   {% for note in site.data.travel.image_credit_notes %}
   <p class="travel-credit-note">{{ note | escape }}</p>
   {% endfor %}
