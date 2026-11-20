@@ -16,7 +16,7 @@ if(active.size)raf=requestAnimationFrame(step);}
 function leave(state){if(!state)return;state.hover=false;state.tx=state.ty=0;state.el.removeAttribute('data-pointer-active');wake(state);}
 function restRect(state){const r=state.el.getBoundingClientRect(),width=state.el.offsetWidth,height=state.el.offsetHeight;const left=r.left+(r.width-width)/2-(state.kind==='magnet'?state.x:0),top=r.top+(r.height-height)/2+(state.kind==='card'?state.lift:-state.y);return{left,top,right:left+width,bottom:top+height,width,height};}
 function inside(rect,x,y){return rect&&x>=rect.left&&x<=rect.right&&y>=rect.top&&y<=rect.bottom;}
-function finishArrival(el){for(const animation of el.getAnimations()){if(['surface-arrive','honor-rise-in'].includes(animation.animationName)){try{animation.finish();}catch(e){}}}}
+function finishArrival(el){for(const animation of (el.getAnimations?el.getAnimations():[])){if(['surface-arrive','honor-rise-in'].includes(animation.animationName)){try{animation.finish();}catch(e){}}}}
 function makeState(el,kind){const compact=el.classList.contains('city-journey');const state={el,kind,x:0,y:0,tx:0,ty:0,lift:0,hover:false,rect:null,strength:compact?.8:1.5,maxLift:kind==='magnet'?0:compact?1.2:2.5};states.push(state);return state;}
 for(const card of cards){card.classList.add('motion-card');const sheen=document.createElement('span');sheen.className='motion-sheen';sheen.setAttribute('aria-hidden','true');const edge=document.createElement('span');edge.className='motion-edge';edge.setAttribute('aria-hidden','true');card.append(sheen,edge);cardMap.set(card,makeState(card,'card'));card.addEventListener('animationend',event=>{if(event.target===card&&event.animationName==='surface-arrive')card.classList.remove('motion-arrived');});}
 for(const el of magnets){el.classList.add('motion-magnetic');magnetMap.set(el,makeState(el,'magnet'));}
@@ -38,7 +38,7 @@ let scheduled=false;function drawProgress(){scheduled=false;const length=documen
 function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(drawProgress);}}
 addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});addEventListener('load',schedule,{once:true});if('ResizeObserver' in window)new ResizeObserver(schedule).observe(document.body);drawProgress();
 /* Native dialog keeps focus and Escape behavior intact. Original links remain usable without JS. */
-if(typeof HTMLDialogElement==='undefined')return;
+if(typeof HTMLDialogElement==='undefined'||typeof HTMLDialogElement.prototype.showModal!=='function')return;
 const viewer=document.createElement('dialog');viewer.className='motion-viewer';viewer.setAttribute('aria-label','Photograph viewer');
 viewer.innerHTML='<div class="motion-viewer-top"><span>Closer Look</span><button type="button" class="motion-viewer-close" aria-label="Close photograph viewer">Close ×</button></div><div class="motion-viewer-stage"><img alt=""></div><div class="motion-viewer-bottom"><p class="motion-viewer-caption"></p><a class="motion-viewer-original" target="_blank" rel="noopener">Open Original ↗</a></div><div class="motion-viewer-navigation"><button type="button" data-viewer-prev aria-label="Previous photograph">← Previous</button><span data-viewer-count></span><button type="button" data-viewer-next aria-label="Next photograph">Next →</button></div>';
 document.body.append(viewer);

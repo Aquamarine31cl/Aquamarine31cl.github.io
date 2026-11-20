@@ -7,13 +7,13 @@
 <div itemscope itemtype="http://schema.org/Person">
 
   {% if page.home_page %}
-  <div class="author__avatar"><img src="{{ '/images/home-avatar.jpg' | relative_url }}?v=100" alt="" fetchpriority="high"></div>
+  <div class="author__avatar"><img src="{{ '/images/previews-104/avatar.jpg' | relative_url }}?v=105" alt="" fetchpriority="high"></div>
   {% else %}
   <div class="author__avatar" hidden data-protected-section>
     {% if author.avatar contains "://" %}
-    	<img hidden data-protected-src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" onerror="this.onerror=null;this.src='{{ '/images/profile.png' | relative_url }}?v=100';" />
+    	<img hidden data-protected-src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" onerror="this.onerror=null;this.src='{{ '/images/profile.png' | relative_url }}?v=105';" />
     {% else %}
-    	<img hidden data-protected-src="{{ author.avatar | prepend: "/images/" | relative_url }}?v=100" alt="{{ author.name }}"  fetchpriority="high" onerror="this.onerror=null;this.src='{{ '/images/profile.png' | relative_url }}?v=100';" />
+    	<img hidden data-protected-src="{{ author.avatar | prepend: "/images/" | relative_url }}?v=105" alt="{{ author.name }}"  fetchpriority="high" onerror="this.onerror=null;this.src='{{ '/images/profile.png' | relative_url }}?v=105';" />
     {% endif %}
   </div>
 

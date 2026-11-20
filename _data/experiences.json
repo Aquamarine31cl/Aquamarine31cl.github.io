@@ -41,28 +41,28 @@
           "photos": [
             {
               "src": "/images/experiences/manga-102/university-football.jpg",
-              "preview": "/images/experiences/manga-102/university-football-preview.webp",
+              "preview": "/images/previews-104/football-0.jpg",
               "width": 1448,
               "height": 1086,
               "caption": "22级隼与湖鱼队 · University football"
             },
             {
               "src": "/images/experiences/manga-102/school-team.jpg",
-              "preview": "/images/experiences/manga-102/school-team-preview.webp",
+              "preview": "/images/previews-104/football-1.jpg",
               "width": 1536,
               "height": 1024,
               "caption": "High-school team"
             },
             {
               "src": "/images/experiences/manga-102/school-team-back.jpg",
-              "preview": "/images/experiences/manga-102/school-team-back-preview.webp",
+              "preview": "/images/previews-104/football-2.jpg",
               "width": 1536,
               "height": 1024,
               "caption": "High-school team · together at the goal"
             },
             {
               "src": "/images/experiences/manga-102/school-kit.jpg",
-              "preview": "/images/experiences/manga-102/school-kit-preview.webp",
+              "preview": "/images/previews-104/football-3.jpg",
               "width": 1254,
               "height": 1254,
               "caption": "Our high-school kit · Atlético Madrid design"
@@ -74,14 +74,14 @@
             "photos": [
               {
                 "src": "/images/experiences/manga-102/anfield.jpg",
-                "preview": "/images/experiences/manga-102/anfield-preview.webp",
+                "preview": "/images/previews-104/lfc-0.jpg",
                 "width": 1536,
                 "height": 1024,
                 "caption": "Anfield · Liverpool fan illustration"
               },
               {
                 "src": "/images/experiences/manga-102/liverpool.jpg",
-                "preview": "/images/experiences/manga-102/liverpool-preview.webp",
+                "preview": "/images/previews-104/lfc-1.jpg",
                 "width": 1536,
                 "height": 1024,
                 "caption": "You'll Never Walk Alone · Liverpool fan illustration"
@@ -100,7 +100,7 @@
           ],
           "photo": {
             "src": "/images/experiences/manga-102/go.jpg",
-            "preview": "/images/experiences/manga-102/go-preview.webp",
+            "preview": "/images/previews-104/go.jpg",
             "width": 1536,
             "height": 1024,
             "caption": "Go"

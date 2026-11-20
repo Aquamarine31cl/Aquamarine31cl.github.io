@@ -9,7 +9,7 @@
     "image_caption": "Anime illustration",
     "image_fit": "contain",
     "image_orientation": "landscape",
-    "image_preview": "/images/news/xianghui-103.jpg",
+    "image_preview": "/images/previews-104/news-0.jpg",
     "image_width": 1536,
     "image_height": 1024,
     "image_fallback": "/images/experiences/manga-102/xianghui.jpg"
@@ -23,7 +23,7 @@
     "image_alt": "Group photograph for the Fudan University milestone",
     "image_caption": "A New Chapter at Fudan",
     "image_fit": "contain",
-    "image_preview": "/images/news/2-preview.webp",
+    "image_preview": "/images/previews-104/news-1.jpg",
     "image_orientation": "landscape",
     "public_text": "I began graduate studies at Fudan University."
   },
@@ -36,7 +36,7 @@
     "image_alt": "Graduation group photograph in front of the university library",
     "image_caption": "Graduation from Tongji",
     "image_fit": "contain",
-    "image_preview": "/images/news/3-preview.webp",
+    "image_preview": "/images/previews-104/news-2.jpg",
     "image_orientation": "landscape",
     "public_text": "I completed my bachelor’s degree in engineering at Tongji University."
   },
