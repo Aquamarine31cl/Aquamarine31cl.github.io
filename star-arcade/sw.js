@@ -1,6 +1,7 @@
 'use strict';
 
-const release = '87';
+const release = '106';
+const assetVersion = '87';
 const scope = new URL(self.registration.scope);
 const prefix = 'star-arcade:' + scope.pathname + ':';
 const cacheName = prefix + release;
@@ -15,7 +16,8 @@ const assets = [
   '../assets/js/voidrunner-engine.js', '../assets/js/voidrunner.js', '../assets/js/relay-siege.js',
   '../assets/js/helios-engine.js', '../assets/js/helios.js', '../assets/js/kepler-courier.js',
   '../assets/js/meridian-fleet.js', '../assets/js/grid-mission-stages.js', '../assets/js/grid-missions.js'
-].map(path => path + '?v=' + release);
+].map(path => path + '?v=' + assetVersion);
+assets.push('../assets/css/layout106.css?v=106', '../assets/js/reading106.js?v=106');
 const pages = new Set(['./', ...games].map(path => new URL(path, scope).href));
 const resources = new Set([...assets, 'manifest.webmanifest', 'icon-192.png', 'icon-512.png']
   .map(path => new URL(path, scope).href));
@@ -54,6 +56,7 @@ self.addEventListener('fetch', event => {
 
   event.respondWith((async () => {
     const cache = await caches.open(cacheName);
+    if(event.request.mode === 'navigate'){try{const response=await fetch(event.request);if(response.ok){await cache.put(key,response.clone());return response;}}catch{}const saved=await cache.match(key);if(saved)return saved;return new Response('This game is not available offline yet.',{status:503,headers:{'Content-Type':'text/plain'}});}
     return await cache.match(key) ?? fetch(event.request);
   })());
 });
