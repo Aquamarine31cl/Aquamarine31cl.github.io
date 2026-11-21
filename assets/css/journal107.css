@@ -76,3 +76,40 @@ button.journal-photo-face { padding: 0; border-radius: 16px; }
 @media(prefers-reduced-motion:no-preference) { .journal-tabs button,.journal-months button { transition: background-color 150ms ease,border-color 150ms ease; } }
 
 .journal-empty-cell{display:flex;align-items:center;justify-content:center;color:var(--journal-muted);font-size:.875rem}
+
+.journal-language{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}.journal-language button{font:inherit;font-size:.875rem;min-height:44px;padding:.45rem .9rem;border:1px solid #a5a1c65c;border-radius:12px;color:inherit;background:#9e8acb12;cursor:pointer}.journal-language button[aria-pressed=true]{border-color:#91d6e4;background:#6b9abb32}.journal-language button:focus-visible{outline:2px solid #8bdce5;outline-offset:3px}.journal-tabs{flex-wrap:wrap}
+
+/* Keep journal controls distinct from the global pill-button skin. */
+html .journal-page .journal-app button,
+html .journal-page .journal-language button {
+  border-radius:12px;background:#9e8acb12;box-shadow:none;color:inherit;
+  border-color:var(--journal-line,#a5a1c65c);transform:none;
+}
+html .journal-page :is(.journal-tabs,.journal-months,.journal-language) button[aria-pressed=true] {
+  background:linear-gradient(130deg,#508ba448,#9471b648);border-color:#91d6e4;
+}
+html .journal-page .journal-app button.journal-photo-face {
+  border-radius:16px;padding:0;background:linear-gradient(145deg,#93b9e30c,#a68bc41a);
+}
+html .journal-page .journal-year-frame button.journal-photo-face {border:0;border-radius:0;padding-bottom:1.65rem;}
+html .journal-page .journal-photo {display:block;}
+html .journal-page .journal-photo figcaption {font-family:inherit;letter-spacing:0;}
+html .journal-page .journal-photo-face img {margin:0;border-radius:0;}
+html .journal-page .journal-photo-face span {padding:.5rem;text-align:center;line-height:1.6;letter-spacing:0;}
+.journal-loading {min-height:26rem;padding-top:.4rem;}
+.journal-loading-photos {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.4rem 0;}
+.journal-loading-photo {aspect-ratio:4/3;border:1px solid var(--journal-line);border-radius:16px;background:#a38bd80c;}
+.journal-loading-lines {padding:1.2rem;border:1px solid var(--journal-line);border-radius:18px;}
+.journal-loading-lines span {display:block;height:.7rem;margin:.8rem 0;background:#a38bd812;border-radius:4px;}
+.journal-loading-lines span:last-child {width:65%;}
+@media(max-width:600px) {
+ .journal-loading-photos {grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;}
+ .journal-loading-photo:first-child {grid-column:1/-1;aspect-ratio:16/10;}
+ html .journal-page .journal-year-frame button.journal-photo-face {padding-bottom:1.4rem;}
+}
+@media(prefers-reduced-motion:no-preference) {
+ .journal-photo-face img {animation:journal-photo-in 180ms ease-out;}
+ @keyframes journal-photo-in {from{opacity:0}to{opacity:1}}
+}
+
+.journal-months.journal-months-partial {grid-template-columns:repeat(var(--journal-month-count),minmax(0,1fr));}
