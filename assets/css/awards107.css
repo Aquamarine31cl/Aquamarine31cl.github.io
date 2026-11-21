@@ -1,0 +1,9 @@
+/* Emphasis belongs to the achievement, not to the whole administrative group. */
+html .home-page #honors [data-award-tier] :is(h4,h5) { color: var(--global-text-color) !important; line-height: 1.55; }
+html .home-page #honors [data-award-tier=standard] :is(h4,h5) { font-weight: 600; }
+html .home-page #honors [data-award-tier=notable] :is(h4,h5) { font-weight: 700; }
+html .home-page #honors [data-award-tier=highlight] :is(h4,h5) { color: #efdaac !important; font-weight: 760; }
+html[data-theme=light] .home-page #honors [data-award-tier=highlight] :is(h4,h5) { color: #79541d !important; }
+html .home-page #honors .honor-record[data-award-tier=highlight] { border-inline-start: 2px solid #d4b47a; padding-inline-start: 1rem; }
+.honor-level { display: block; color: var(--global-text-color); font-size: .8rem; line-height: 1.65; margin-bottom: .4rem; opacity: .84; }
+html .home-page #honors .honor-record h5 { font-size: 1rem; }

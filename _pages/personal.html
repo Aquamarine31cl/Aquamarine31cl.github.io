@@ -1,7 +1,10 @@
 ---
 layout: default
-title: "Daily events"
+title: "Personal"
 permalink: /personal/
+author_profile: false
+personal_page: true
+private_metadata: true
 sitemap: false
 ---
-<main id="main" class="experience-page"><p>For recent updates, please contact me on WeChat.</p><a href="{{ '/experiences/moments/' | relative_url }}">Daily events</a></main><script>location.replace({{ '/experiences/moments/' | relative_url | jsonify }});</script>
+<main id="main" class="experience-page journal-page"><header class="experience-hero journal-hero"><a class="experience-back" href="{{ '/experiences/' | relative_url }}">Observatory</a><h1>Personal</h1><p>三帧照片，一段月记。把日常慢慢收好。</p><nav class="experience-tabs" aria-label="Personal sections"><a href="{{ '/personal/' | relative_url }}">Personal</a><a href="{{ '/experiences/moments/' | relative_url }}">Daily Events</a></nav></header><section class="daily-access-prompt" data-daily-prompt><h2>个人手记</h2><p>输入个人通行码，打开月记与年计。</p><button type="button" data-open-access>解锁个人手记</button></section><section class="experience-section" hidden data-protected-section><div class="journal-app" data-personal-journal data-journal-url="{{ '/assets/private-journal107/entries.enc.json' | relative_url }}"><noscript>请启用 JavaScript 后解锁手记。</noscript></div><div class="journal-access-tools"><button type="button" data-open-access>管理通行</button></div></section></main>

@@ -1,5 +1,5 @@
 {
-  "title": "Experiences",
+  "title": "Observatory",
   "sections": [
     {
       "id": "travel",
@@ -114,7 +114,7 @@
       "title": "Daily events",
       "art": "moments",
       "entries": [],
-      "subtitle": "For recent updates, please contact me on WeChat."
+      "subtitle": "Monthly notes, photographs and a year in review."
     }
   ]
 }

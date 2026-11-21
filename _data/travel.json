@@ -33,8 +33,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Tokyo skyline after dusk",
-          "caption": "Tokyo skyline after dusk",
-          "style": "manga"
+          "caption": "Tokyo Tower and central Tokyo",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Tokyo Tower",
+            "captionZh": "东京塔与东京市中心",
+            "evidence": [
+              {
+                "url": "https://www.gotokyo.org/en/spot/4/index.html",
+                "title": "GO TOKYO — Tokyo Tower"
+              }
+            ],
+            "reason": "橙色钢架塔与东京塔对应；不据此猜具体观景楼。"
+          }
         },
         {
           "src": "/images/travel/manga-97/东京_2.jpg",
@@ -42,8 +54,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Rainbow Bridge and Tokyo Bay",
-          "caption": "Rainbow Bridge and Tokyo Bay",
-          "style": "manga"
+          "caption": "Rainbow Bridge, Tokyo Bay",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Rainbow Bridge",
+            "captionZh": "东京湾彩虹大桥",
+            "evidence": [
+              {
+                "url": "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202403/202403_02_en.html",
+                "title": "Government of Japan — The Rainbow Bridge"
+              }
+            ],
+            "reason": "双白色悬索主塔、双层桥面与官方彩虹桥图文对应。"
+          }
         },
         {
           "src": "/images/travel/manga-97/东京_3.jpg",
@@ -51,8 +75,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Senso-ji temple and its pagoda",
-          "caption": "Senso-ji temple and its pagoda",
-          "style": "manga"
+          "caption": "Hozomon Gate and the five-storied pagoda, Senso-ji",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Senso-ji Hozomon Gate and Five-Storied Pagoda",
+            "captionZh": "浅草寺宝藏门与五重塔",
+            "evidence": [
+              {
+                "url": "https://www.senso-ji.jp/english/",
+                "title": "Senso-ji official precinct guide"
+              }
+            ],
+            "reason": "宝藏门红色两层门楼及小舟町提灯、左侧五重塔组合可辨。"
+          }
         }
       ],
       "region_key": "JPN:tokyo"
@@ -74,8 +110,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "Osaka Castle after dark",
-          "caption": "Osaka Castle after dark",
-          "style": "manga"
+          "caption": "Osaka Castle Main Tower",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Osaka Castle Main Tower",
+            "captionZh": "大阪城天守阁",
+            "evidence": [
+              {
+                "url": "https://www.osakacastle.net/pdf/leaflet/english_202305.pdf",
+                "title": "Osaka Castle official English leaflet"
+              }
+            ],
+            "reason": "白墙绿瓦、金色装饰、重叠屋檐与高石垣匹配天守阁。"
+          }
         },
         {
           "src": "/images/travel/manga-97/大阪_2.jpg",
@@ -83,8 +131,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Dotonbori and the Glico sign",
-          "caption": "Dotonbori and the Glico sign",
-          "style": "manga"
+          "caption": "Dotonbori Canal and the Glico sign",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Dotonbori Glico sign",
+            "captionZh": "道顿堀运河与格力高跑者广告牌",
+            "evidence": [
+              {
+                "url": "https://www.osaka-info.jp/en/spot/dotonbori/",
+                "title": "Osaka Convention & Tourism Bureau — Dotonbori"
+              }
+            ],
+            "reason": "Glico跑者、CHINTAI广告及运河步道可交叉确认道顿堀。"
+          }
         },
         {
           "src": "/images/travel/manga-97/大阪_3.jpg",
@@ -92,8 +152,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Super Nintendo World at Universal Studios Japan",
-          "caption": "Super Nintendo World at Universal Studios Japan",
-          "style": "manga"
+          "caption": "Super Nintendo World, Universal Studios Japan",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Super Nintendo World, Universal Studios Japan",
+            "captionZh": "日本环球影城·超级任天堂世界",
+            "evidence": [
+              {
+                "url": "https://www.usj.co.jp/web/en/us/areas/super-nintendo-world",
+                "title": "USJ — Super Nintendo World"
+              }
+            ],
+            "reason": "马里奥山体、食人花、管道与后方库巴城堡匹配园区设计。"
+          }
         }
       ],
       "region_key": "JPN:osaka"
@@ -115,8 +187,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The coast viewed from Enoshima",
-          "caption": "The coast viewed from Enoshima",
-          "style": "manga"
+          "caption": "Enoshima and the Katase coast, Fujisawa",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Enoshima / Katase coastline",
+            "captionZh": "江之岛与片濑海岸（藤泽市）",
+            "evidence": [
+              {
+                "url": "https://www.fujisawa-kanko.jp/global-data/2024070418093729.pdf",
+                "title": "Fujisawa City Tourism Association — Enoshima guide"
+              }
+            ],
+            "reason": "江之岛大桥通向弧形海滩，腰越港轮廓可辨。江之岛本体在藤泽市，不能全部写成镰仓市内景点。"
+          }
         },
         {
           "src": "/images/travel/manga-97/镰仓_2.jpg",
@@ -124,8 +208,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Waterfront near Enoshima",
-          "caption": "Waterfront near Enoshima",
-          "style": "manga"
+          "caption": "Likely the Sakai River near Katase-Enoshima — unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "Sakai River near Katase-Enoshima — probable",
+            "captionZh": "可能为片濑江之岛附近境川河口，待核实",
+            "evidence": [
+              {
+                "url": "https://www.fujisawa-kanko.jp/global-data/2024070418093729.pdf",
+                "title": "Fujisawa City Tourism Association — Enoshima guide"
+              }
+            ],
+            "reason": "河道两岸住宅与周边地理相符，但缺桥名及排他性地标，不写死桥梁或机位。"
+          }
         },
         {
           "src": "/images/travel/manga-97/镰仓_3.jpg",
@@ -133,8 +229,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "Enoden train beside a coastal station",
-          "caption": "Enoden train beside a coastal station",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Kamakura",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "Enoden railway station — exact station unresolved",
+            "captionZh": "江之电站台，具体车站待核实",
+            "evidence": [
+              {
+                "url": "https://www.shonan-monorail.co.jp/transfer/pdf/transfer-st-shonanenoshima.pdf",
+                "title": "Shonan Monorail official transfer map"
+              }
+            ],
+            "reason": "可辨江之电绿色列车及藤泽方向指示，但没有可读站名；不能凭相似站棚定为某站。"
+          }
         }
       ],
       "region_key": "JPN:kamakura"
@@ -156,8 +264,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Kiyomizu-dera above the green hillside",
-          "caption": "Kiyomizu-dera above the green hillside",
-          "style": "manga"
+          "caption": "Main Hall and wooden stage, Kiyomizu-dera",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Kiyomizu-dera Main Hall",
+            "captionZh": "清水寺本堂与清水舞台",
+            "evidence": [
+              {
+                "url": "https://www.kiyomizudera.or.jp/en/visit/",
+                "title": "Kiyomizu-dera official grounds guide"
+              }
+            ],
+            "reason": "本堂大屋顶与悬挑木构舞台组合匹配清水寺本堂。"
+          }
         },
         {
           "src": "/images/travel/manga-97/京都_2.jpg",
@@ -165,8 +285,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "Torii gates at Fushimi Inari",
-          "caption": "Torii gates at Fushimi Inari",
-          "style": "manga"
+          "caption": "Kiyomizu-dera gate precinct",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Kiyomizu-dera gate precinct",
+            "captionZh": "清水寺山门区域（非伏见稻荷鸟居）",
+            "evidence": [
+              {
+                "url": "https://www.kiyomizudera.or.jp/en/visit/",
+                "title": "Kiyomizu-dera official grounds guide"
+              }
+            ],
+            "reason": "楼门、石阶石狮及后方三重塔塔刹属于清水寺入口建筑群。旧伏见稻荷鸟居描述错误；漫画细节不足进一步断言仁王门或西门。"
+          }
         },
         {
           "src": "/images/travel/manga-98/京都_3.jpg",
@@ -174,8 +306,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A small courtyard in Kyoto",
-          "caption": "A small courtyard in Kyoto",
-          "style": "manga"
+          "caption": "Donguri Republic in Kyoto — branch unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "Donguri Republic, Kyoto — branch unconfirmed",
+            "captionZh": "京都橡子共和国，具体分店待核实",
+            "evidence": [
+              {
+                "url": "https://benelic.com/donguri/faq/",
+                "title": "Benelic — Donguri Republic official information"
+              }
+            ],
+            "reason": "现行图可读どんぐり共和国招牌，配龙猫及琪琪装饰。京都有清水与二宁坂分店，中庭装饰不足定某一家。"
+          }
         }
       ],
       "region_key": "JPN:kyoto"
@@ -197,8 +341,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "Flower beds beside Yokohama Bay",
-          "caption": "Flower beds beside Yokohama Bay",
-          "style": "manga"
+          "caption": "Likely Yamashita Park flower beds — unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "Yamashita Park — probable",
+            "captionZh": "可能为山下公园花坛，待核实",
+            "evidence": [
+              {
+                "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/midori-koen/koen/koen/daihyoteki/kouen008.html",
+                "title": "Yokohama City — Yamashita Park"
+              }
+            ],
+            "reason": "滨海花坛、酒店及远处港未来轮廓符合山下公园，但缺雕像或船只等排他线索。"
+          }
         },
         {
           "src": "/images/travel/manga-97/横滨_2.jpg",
@@ -206,8 +362,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Yokohama waterfront and InterContinental Hotel",
-          "caption": "Yokohama waterfront and InterContinental Hotel",
-          "style": "manga"
+          "caption": "InterContinental Yokohama Grand, Minato Mirai waterfront",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "InterContinental Yokohama Grand / Minato Mirai",
+            "captionZh": "横滨港未来·横滨洲际大酒店",
+            "evidence": [
+              {
+                "url": "https://www.icyokohama-grand.com/en/",
+                "title": "InterContinental Yokohama Grand official site"
+              }
+            ],
+            "reason": "帆形白色酒店为明确地标，周围临港布局确认港未来地区；不指定拍摄建筑。"
+          }
         },
         {
           "src": "/images/travel/manga-97/横滨_3.jpg",
@@ -215,8 +383,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "A street in Yokohama",
-          "caption": "A street in Yokohama",
-          "style": "manga"
+          "caption": "Likely King’s Tower, Kanagawa Prefectural Government — unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "Kanagawa Prefectural Government King’s Tower — probable",
+            "captionZh": "可能为神奈川县厅国王塔，待核实",
+            "evidence": [
+              {
+                "url": "https://www.welcome.city.yokohama.jp/spot/details.php?bbid=186",
+                "title": "Yokohama Official Visitors Guide — King’s Tower"
+              }
+            ],
+            "reason": "棕色方塔和绿色和式塔顶符合国王塔；改写后的立面不足完全排除其他历史建筑。"
+          }
         }
       ],
       "region_key": "JPN:yokohama"
@@ -238,8 +418,20 @@
           "width": 1363,
           "height": 1154,
           "alt": "Mount Fuji framed by spring flowers",
-          "caption": "Mount Fuji framed by spring flowers",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Fujiyoshida",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "Mount Fuji flower field — exact garden unresolved",
+            "captionZh": "富士山花田，具体公园待核实",
+            "evidence": [
+              {
+                "url": "https://www.hananomiyakokouen.jp/",
+                "title": "Hananomiyako Park official site"
+              }
+            ],
+            "reason": "富士山可确认，同区域多处公园都有花田；没有湖岸或园牌，不能将候选花之都公园写成确认。"
+          }
         },
         {
           "src": "/images/travel/manga-97/富士吉田_2.jpg",
@@ -247,8 +439,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Chureito Pagoda and Mount Fuji",
-          "caption": "Chureito Pagoda and Mount Fuji",
-          "style": "manga"
+          "caption": "Chureito Pagoda, Arakurayama Sengen Park",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Arakurayama Sengen Park Chureito Pagoda",
+            "captionZh": "新仓山浅间公园·忠灵塔",
+            "evidence": [
+              {
+                "url": "https://www.city.fujiyoshida.yamanashi.jp/page/13101.html",
+                "title": "Fujiyoshida City — Arakurayama Sengen Park"
+              }
+            ],
+            "reason": "红色五重塔、富士山与山下市区的标志性组合与市政府资料匹配。"
+          }
         },
         {
           "src": "/images/travel/manga-97/富士吉田_3.jpg",
@@ -256,8 +460,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "Cherry blossoms in Fujiyoshida",
-          "caption": "Cherry blossoms in Fujiyoshida",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Fujiyoshida",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "Exact location unresolved",
+            "captionZh": "樱花拍摄地点待核实",
+            "evidence": [
+              {
+                "url": "https://www.city.fujiyoshida.yamanashi.jp/page/13101.html",
+                "title": "Fujiyoshida City — Arakurayama Sengen Park"
+              }
+            ],
+            "reason": "仅有花枝，不含地点标识；不能由同组忠灵塔照片反推这张也在同一公园。"
+          }
         }
       ],
       "region_key": "JPN:fujiyoshida"
@@ -279,8 +495,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Marina Bay Sands at night",
-          "caption": "Marina Bay Sands at night",
-          "style": "manga"
+          "caption": "Marina Bay Sands",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Marina Bay Sands",
+            "captionZh": "滨海湾金沙酒店",
+            "evidence": [
+              {
+                "url": "https://www.marinabaysands.com/",
+                "title": "Marina Bay Sands official site"
+              }
+            ],
+            "reason": "三座塔楼与连通的船形SkyPark为明确建筑特征。"
+          }
         },
         {
           "src": "/images/travel/manga-97/新加坡_2.jpg",
@@ -288,8 +516,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Gardens by the Bay after dark",
-          "caption": "Gardens by the Bay after dark",
-          "style": "manga"
+          "caption": "Gardens by the Bay — Supertree Grove and conservatories",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Gardens by the Bay / Supertree Grove and conservatories",
+            "captionZh": "滨海湾花园·擎天树丛与双温室",
+            "evidence": [
+              {
+                "url": "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/supertree-grove.html",
+                "title": "Gardens by the Bay — Supertree Grove"
+              }
+            ],
+            "reason": "树形结构群、花穹及云雾林双温室与滨海湾轮廓可辨。"
+          }
         },
         {
           "src": "/images/travel/manga-97/新加坡_3.jpg",
@@ -297,8 +537,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "A quiet shore in Singapore",
-          "caption": "A quiet shore in Singapore",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Singapore",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "Singapore shoreline — exact park unresolved",
+            "captionZh": "新加坡海岸拍摄地点待核实",
+            "evidence": [
+              {
+                "url": "https://pcn.nparks.gov.sg/explore-park-connectors/coastal-pc/",
+                "title": "NParks — Coastal Park Connector"
+              }
+            ],
+            "reason": "棕榈、石堤及船只可见于东海岸、樟宜等地；官方步道资料不能给出唯一对应。"
+          }
         }
       ],
       "region_key": "SGP:singapore"
@@ -320,8 +572,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Kuala Lumpur skyline at blue hour",
-          "caption": "Kuala Lumpur skyline at blue hour",
-          "style": "manga"
+          "caption": "Petronas Twin Towers and Kuala Lumpur Tower",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Petronas Twin Towers and Kuala Lumpur Tower",
+            "captionZh": "吉隆坡双子塔与吉隆坡塔",
+            "evidence": [
+              {
+                "url": "https://www.petronastwintowers.com.my/",
+                "title": "PETRONAS Twin Towers official site"
+              }
+            ],
+            "reason": "中央双塔及右侧广播塔外形可辨；不附会具体观景台。"
+          }
         },
         {
           "src": "/images/travel/manga-97/吉隆坡_2.jpg",
@@ -329,8 +593,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "Petronas Twin Towers after dark",
-          "caption": "Petronas Twin Towers after dark",
-          "style": "manga"
+          "caption": "Petronas Twin Towers",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Petronas Twin Towers",
+            "captionZh": "吉隆坡国家石油双子塔",
+            "evidence": [
+              {
+                "url": "https://www.petronastwintowers.com.my/",
+                "title": "PETRONAS Twin Towers official site"
+              }
+            ],
+            "reason": "金属立面、连接天桥与双尖塔组合明确。"
+          }
         },
         {
           "src": "/images/travel/manga-97/吉隆坡_3.jpg",
@@ -338,8 +614,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Putra Mosque in nearby Putrajaya",
-          "caption": "Putra Mosque in nearby Putrajaya",
-          "style": "manga"
+          "caption": "Putra Mosque, Putrajaya",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "Putra Mosque, Putrajaya",
+            "captionZh": "布城·布特拉清真寺",
+            "evidence": [
+              {
+                "url": "https://www.malaysia.travel/index.php/explore/putra-mosque",
+                "title": "Tourism Malaysia — Putra Mosque"
+              }
+            ],
+            "reason": "粉红穹顶、湖岸建筑和高宣礼塔吻合。该地属布城而非吉隆坡市内。"
+          }
         }
       ],
       "region_key": "MYS:kuala-lumpur"
@@ -361,8 +649,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Islands and blue water viewed from a hillside",
-          "caption": "Islands and blue water viewed from a hillside",
-          "style": "manga"
+          "caption": "Likely the HKUST Clear Water Bay campus overlooking Port Shelter — exact building unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "香港科技大学清水湾校园临海一带（可能）；牛尾海",
+            "captionZh": "可能为香港科技大学清水湾校园眺望牛尾海；具体楼宇待核实",
+            "evidence": [
+              {
+                "url": "https://bmundergrad.hkust.edu.hk/app/webroot/files/Admissions/Campus_Map.pdf",
+                "title": "香港科技大学官方校园地图"
+              },
+              {
+                "url": "https://mfin.hkust.edu.hk/student-life/campus-environment",
+                "title": "HKUST — Campus Environment"
+              }
+            ],
+            "reason": "前景白色台阶式校舍与蓝色玻璃锥顶、临海坡地和多岛海面与科大清水湾校园相符；地图证实校园面对牛尾海，但无法凭当前漫画图确定楼宇或拍摄点。"
+          }
         },
         {
           "src": "/images/travel/manga-97/香港_2.jpg",
@@ -370,8 +674,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Victoria Harbour at dusk",
-          "caption": "Victoria Harbour at dusk",
-          "style": "manga"
+          "caption": "Victoria Harbour, with the Hong Kong Convention and Exhibition Centre and Central Plaza",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "维多利亚港；湾仔香港会议展览中心、中环广场及中环天际线",
+            "captionZh": "维多利亚港：香港会议展览中心、中环广场及港岛天际线",
+            "evidence": [
+              {
+                "url": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-victoria-harbour-hk-island-section.html",
+                "title": "香港旅游发展局 — Victoria Harbour, Hong Kong Island section"
+              }
+            ],
+            "reason": "可见会展中心弧形屋顶、中环广场尖顶及中银大厦交叉立面，组合明确对应维港港岛岸；未指定拍摄海滨。"
+          }
         },
         {
           "src": "/images/travel/manga-97/香港_3.jpg",
@@ -379,8 +695,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Hong Kong city lights from above",
-          "caption": "Hong Kong city lights from above",
-          "style": "manga"
+          "caption": "Victoria Harbour and the Hong Kong skyline from the Peak area",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "太平山一带俯瞰维多利亚港",
+            "captionZh": "太平山一带俯瞰维多利亚港与香港天际线",
+            "evidence": [
+              {
+                "url": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-peak.html",
+                "title": "香港旅游发展局 — The Peak"
+              }
+            ],
+            "reason": "港岛建筑在前、对岸环球贸易广场及维港水面在后，构成官方太平山全景的独特关系；只确认太平山一带，未断言凌霄阁或卢吉道机位。"
+          }
         }
       ],
       "region_key": "CHN:hong-kong",
@@ -403,8 +731,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "The illuminated Golden Reel at Studio City",
-          "caption": "The illuminated Golden Reel at Studio City",
-          "style": "manga"
+          "caption": "Wynn Palace SkyCab, Macao",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "澳门永利皇宫 SkyCab 观光缆车",
+            "captionZh": "澳门永利皇宫 SkyCab 观光缆车",
+            "evidence": [
+              {
+                "url": "https://www.wynnresortsmacau.com/en/wynn-palace/experiences/entertainment/sky-cab",
+                "title": "永利皇宫 — SkyCab"
+              },
+              {
+                "url": "https://www.macaotourism.gov.mo/en/shows-and-entertainment/shows/skycab",
+                "title": "澳门旅游局 — SkyCab"
+              }
+            ],
+            "reason": "楼顶可辨 WYNN PALACE，金龙形缆车支撑及悬空车厢吻合官方介绍。旧注“Studio City Golden Reel”地点错误，须删除。"
+          }
         },
         {
           "src": "/images/travel/manga-98/澳门_2.jpg",
@@ -412,8 +756,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Senado Square and its fountain",
-          "caption": "Senado Square and its fountain",
-          "style": "manga"
+          "caption": "Senado Square and the Holy House of Mercy, Macao",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "澳门议事亭前地；仁慈堂",
+            "captionZh": "澳门议事亭前地与仁慈堂",
+            "evidence": [
+              {
+                "url": "https://www.macaotourism.gov.mo/pt/sight/senado-square",
+                "title": "澳门旅游局 — Largo do Senado"
+              },
+              {
+                "url": "https://www.scmm.mo/frontend/content/index.php?hl=en&id=15",
+                "title": "澳门仁慈堂博物馆官方介绍"
+              }
+            ],
+            "reason": "波浪形葡式碎石铺面、浑天仪喷泉、黄色立面和右侧白色仁慈堂构成立面组合，可确认议事亭前地。"
+          }
         },
         {
           "src": "/images/travel/manga-97/澳门_3.jpg",
@@ -421,8 +781,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A view across Macao’s waterfront",
-          "caption": "A view across Macao’s waterfront",
-          "style": "manga"
+          "caption": "Macau Tower across the waterfront — viewpoint unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "澳门旅游塔（远景）；临水拍摄地点未定",
+            "captionZh": "隔水远望澳门旅游塔；具体拍摄地点待核实",
+            "evidence": [
+              {
+                "url": "https://content.macaotourism.gov.mo/uploads/mgto_brochures/23b61cd6a056dc811fd685232ca4fcb476e64be4.pdf",
+                "title": "澳门旅游局官方游览地图（列示澳门旅游塔）"
+              }
+            ],
+            "reason": "远景细长观光塔与澳门旅游塔形制吻合；前景水域、绿地及跨海桥不足以锁定南湾湖、西湾湖或具体公园，保留可能而非确认机位。"
+          }
         }
       ],
       "region_key": "CHN:macao",
@@ -445,8 +817,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Aerial view of the Huangpu River",
-          "caption": "Aerial view of the Huangpu River",
-          "style": "manga"
+          "caption": "Lujiazui, the Oriental Pearl Tower and the Huangpu River, Shanghai",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "上海陆家嘴；东方明珠及黄浦江",
+            "captionZh": "上海陆家嘴、东方明珠与黄浦江",
+            "evidence": [
+              {
+                "url": "https://english.shanghai.gov.cn/en-ScenicSpots/20231205/19a5f5184eca45728fd57a4d4c8efc61.html",
+                "title": "上海市政府英文网 — Oriental Pearl Tower"
+              }
+            ],
+            "reason": "球体塔身的东方明珠与黄浦江弯道、陆家嘴建筑群关系清楚；不据此臆断从上海中心或环球金融中心拍摄。"
+          }
         },
         {
           "src": "/images/travel/manga-97/上海_2.jpg",
@@ -454,8 +838,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Pudong skyline at night",
-          "caption": "Pudong skyline at night",
-          "style": "manga"
+          "caption": "Lujiazui skyline: the Oriental Pearl Tower, Shanghai Tower, SWFC and Jin Mao Tower",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "上海陆家嘴天际线；东方明珠、上海中心、环球金融中心与金茂大厦",
+            "captionZh": "陆家嘴天际线：东方明珠、上海中心、环球金融中心与金茂大厦",
+            "evidence": [
+              {
+                "url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250829/c3bbe11f97c84eefac249a80b842a865.html",
+                "title": "上海市政府英文网 — Shanghai Tower and the Lujiazui skyline"
+              }
+            ],
+            "reason": "可用球体塔身、旋转超高层、梯形开口楼顶和分节塔冠分别识别四个地标；照片只能确认所见景物，不强加外滩具体机位。"
+          }
         },
         {
           "src": "/images/travel/manga-97/上海_3.jpg",
@@ -463,8 +859,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A landscaped garden path",
-          "caption": "A landscaped garden path",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Shanghai",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "具体公园待核实（彼得兔造景）",
+            "captionZh": "彼得兔主题园艺造景；具体公园待核实",
+            "evidence": [
+              {
+                "url": "https://whlyj.sh.gov.cn/gqfc/20250603/d1ceff8787ca470b8f6fd4cdd60e4843.html",
+                "title": "上海市文化和旅游局 — 共青森林公园彼得兔主题活动（比对候选）"
+              }
+            ],
+            "reason": "画面可见蓝外套兔子塑像和游乐设施，但没有园名标识。已检索共青森林公园彼得兔布景，仍缺少与照片中整组景物对应的证据，不能把主题相同等同于地点确认。"
+          }
         }
       ],
       "region_key": "CHN:shanghai",
@@ -488,8 +896,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A rockery and flowers beside the pond",
-          "caption": "A rockery and flowers beside the pond",
-          "style": "manga"
+          "caption": "Guanyun Peak courtyard, Lingering Garden, Suzhou",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "苏州留园冠云峰庭院",
+            "captionZh": "苏州留园冠云峰庭院",
+            "evidence": [
+              {
+                "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/b7c0f2058c75498c9ecbacf234e25b08.shtml",
+                "title": "苏州市园林和绿化管理局 — 留园"
+              }
+            ],
+            "reason": "独立高耸的多孔太湖石、前方浣云沼、后方冠云楼及旁侧亭台符合官方冠云峰庭院介绍及布局；将旧泛称“rockery”具体化为冠云峰。"
+          }
         },
         {
           "src": "/images/travel/manga-97/苏州_2.jpg",
@@ -497,8 +917,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A garden pond under a blue sky",
-          "caption": "A garden pond under a blue sky",
-          "style": "manga"
+          "caption": "Pond and Taihu-stone rockeries at the Lion Grove Garden, Suzhou",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "苏州狮子林水假山及池景",
+            "captionZh": "苏州狮子林池景与水假山",
+            "evidence": [
+              {
+                "url": "https://ylj.suzhou.gov.cn/szsylj/sjyc/201905/767dcf47765b40549969f1a6989c689c.shtml",
+                "title": "苏州市园林和绿化管理局 — 狮子林"
+              }
+            ],
+            "reason": "连片迷宫式湖石水假山、莲池、临水小亭和石栏布局与狮子林相符。确认园名，不把右侧小亭进一步硬定为真趣亭或湖心亭。"
+          }
         },
         {
           "src": "/images/travel/manga-97/苏州_3.jpg",
@@ -506,8 +938,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "A canal street at night",
-          "caption": "A canal street at night",
-          "style": "manga"
+          "caption": "Likely Shantang Street and Shantang River, Suzhou — exact quay unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "苏州山塘街／山塘河（可能）；具体码头未确认",
+            "captionZh": "可能为苏州山塘街及山塘河；具体码头待核实",
+            "evidence": [
+              {
+                "url": "https://cgj.suzhou.gov.cn/srsz/sytp/202609/568c7c2067034d669271cd56e14e4810.shtml",
+                "title": "苏州市城市管理局 — 山塘街夜景"
+              },
+              {
+                "url": "https://visitsz.wglj.suzhou.com.cn/news-detail.aspx?id=2782",
+                "title": "苏州文旅 — 主要游船项目信息"
+              }
+            ],
+            "reason": "沿河密集画舫、两岸双层木立面、成串红灯笼及远端拱桥符合山塘河商业游览段；没有读得出的山塘标识，亦不能完全排除相似水乡，故保留可能。"
+          }
         }
       ],
       "region_key": "CHN:suzhou",
@@ -530,8 +978,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Boats on the Qinhuai River at night",
-          "caption": "Boats on the Qinhuai River at night",
-          "style": "manga"
+          "caption": "Confucius Temple–Qinhuai River scenic area, Nanjing",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "南京夫子庙—秦淮风光带",
+            "captionZh": "南京夫子庙—秦淮风光带",
+            "evidence": [
+              {
+                "url": "https://www.njqh.gov.cn/dmqh/yzqh/qhhssylx/",
+                "title": "南京市秦淮区人民政府 — 秦淮河水上游览线路"
+              }
+            ],
+            "reason": "秦淮画舫、沿岸牌坊、黄瓦亭阁和夫子庙临水建筑组合与官方夫子庙秦淮河资料吻合；不将相近岸线误写为具体码头。"
+          }
         },
         {
           "src": "/images/travel/manga-97/南京_2.jpg",
@@ -539,8 +999,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The lawn outside Nanjing Museum",
-          "caption": "The lawn outside Nanjing Museum",
-          "style": "manga"
+          "caption": "The forecourt and old main hall of Nanjing Museum",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "南京博物院老大殿前广场",
+            "captionZh": "南京博物院老大殿前广场",
+            "evidence": [
+              {
+                "url": "https://dsb.nanjing.gov.cn/yzyj/201311/t20131106_2083918.html",
+                "title": "南京市地方志办公室 — 中央博物院旧址"
+              }
+            ],
+            "reason": "可辨宽阔红色庑殿屋顶、九开间正殿、三层石台基与前方草坪、左侧现代馆楼，和南京博物院老大殿一致；并非朝天宫南京市博物馆。"
+          }
         },
         {
           "src": "/images/travel/manga-97/南京_3.jpg",
@@ -548,8 +1020,24 @@
           "width": 1422,
           "height": 1106,
           "alt": "A red gateway and garden steps",
-          "caption": "A red gateway and garden steps",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Nanjing",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "具体红墙门楼待核实",
+            "captionZh": "红墙门楼；南京具体景点待核实",
+            "evidence": [
+              {
+                "url": "https://zschina.nanjing.gov.cn/fjms/jqjd/lgjq/",
+                "title": "南京市中山陵园管理局 — 灵谷景区（红山门比对候选）"
+              },
+              {
+                "url": "https://mzzjj.nanjing.gov.cn/mzzj/njzjgk/njfj/201809/t20180927_1198632.html",
+                "title": "南京市民族宗教事务局 — 灵谷寺简介（比对候选）"
+              }
+            ],
+            "reason": "虽有三个拱门、红墙与宽台阶，但图上门额不清，顶部重檐楼阁和庭园布局与常见灵谷红山门不完全一致。检索栖霞寺、朝天宫、灵谷寺后仍无可靠一一匹配，不应编成确定寺庙。"
+          }
         }
       ],
       "region_key": "CHN:nanjing",
@@ -572,8 +1060,24 @@
           "width": 1086,
           "height": 1448,
           "alt": "The China National GeneBank building",
-          "caption": "The China National GeneBank building",
-          "style": "manga"
+          "caption": "China National GeneBank, Dapeng, Shenzhen",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "深圳国家基因库",
+            "captionZh": "深圳大鹏国家基因库",
+            "evidence": [
+              {
+                "url": "https://www.dpxq.gov.cn/zjdp/xqmxp/dpfg/content/post_7368385.html",
+                "title": "深圳市大鹏新区政府 — 深圳国家基因库"
+              },
+              {
+                "url": "https://www.smart-nbc.org.cn/about-us",
+                "title": "深圳国家基因库官方 — 关于我们"
+              }
+            ],
+            "reason": "建筑和入口均清楚写有 CNGB 国家基因库，层叠草屋面及依山建筑对应官方资料，地点可确认。沿用照片拍摄时期的CNGB称呼，不推断拍摄时间。"
+          }
         },
         {
           "src": "/images/travel/manga-97/深圳_2.jpg",
@@ -581,8 +1085,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A landscaped plaza in Shenzhen",
-          "caption": "A landscaped plaza in Shenzhen",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Shenzhen",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "具体校园／园区待核实",
+            "captionZh": "园区庭院；深圳具体地点待核实",
+            "evidence": [
+              {
+                "url": "https://www.dpxq.gov.cn/zjdp/xqmxp/dpfg/content/post_7368385.html",
+                "title": "深圳市大鹏新区政府 — 国家基因库建筑（相邻组候选排查）"
+              }
+            ],
+            "reason": "蓝色玻璃楼、米色山墙楼、棕榈和四圆喷泉都无可读地点标识；不能仅因同组三张就认定为国家基因库，也不足以确认某大学校园。"
+          }
         },
         {
           "src": "/images/travel/manga-97/深圳_3.jpg",
@@ -590,8 +1106,24 @@
           "width": 1433,
           "height": 1098,
           "alt": "A bull sculpture in an exhibition hall",
-          "caption": "A bull sculpture in an exhibition hall",
-          "style": "manga"
+          "caption": "A display of the sculpture Pioneer Ox — likely Shenzhen Museum, exact venue unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "《开荒牛》雕塑展陈；疑为深圳博物馆，馆址未确认",
+            "captionZh": "《开荒牛》雕塑展陈；可能为深圳博物馆，具体馆址待核实",
+            "evidence": [
+              {
+                "url": "https://www.namoc.org/zgmsg/xw2023/202311/4c504973d97a4d54a7f6ddfec25c156c.shtml",
+                "title": "中国美术馆 — 开荒牛：献给深圳特区"
+              },
+              {
+                "url": "https://www.shenzhenmuseum.com/newsDetail?resId=3d0c85081f7a49bfbc02865c605c2ef2&type=1",
+                "title": "深圳博物馆 — 艺述深圳展览"
+              }
+            ],
+            "reason": "公牛奋蹄拖拽树根的姿态可识别潘鹤《开荒牛》题材。背景改革开放历史照片墙与深圳相关展览相符，但官方存在多馆、多次展出，尚不能确认这间蓝顶弧形展厅的馆址。不得把中国美术馆馆藏信息等同于此照片拍摄地。"
+          }
         }
       ],
       "region_key": "CHN:shenzhen",
@@ -614,8 +1146,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Night lights along the waterfront",
-          "caption": "Night lights along the waterfront",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Zhuhai",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "具体海岸与拍摄地点待核实",
+            "captionZh": "滨水夜景；具体拍摄地点待核实",
+            "evidence": [
+              {
+                "url": "https://content.macaotourism.gov.mo/uploads/mgto_brochures/68fdeff1fdcf6aca24a5b36a8084a13f0e504b3f.pdf",
+                "title": "澳门旅游局 — 珠海及周边游览官方资料（地标比对）"
+              }
+            ],
+            "reason": "画面只有沿水高楼和一线灯光，缺少日月贝、渔女、口岸或可读建筑名；不能确定是情侣路、湾仔向澳门望去还是其他海岸，也不能据分组强行确认镜头内建筑属于珠海。"
+          }
         },
         {
           "src": "/images/travel/manga-97/珠海_2.jpg",
@@ -623,8 +1167,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The fountain and gardens at New Yuanming Palace",
-          "caption": "The fountain and gardens at New Yuanming Palace",
-          "style": "manga"
+          "caption": "Likely the Western Palace garden at New Yuanming Palace, Zhuhai — identification unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "珠海圆明新园西洋楼景区（可能）",
+            "captionZh": "可能为珠海圆明新园西洋楼景区；仍待最终核实",
+            "evidence": [
+              {
+                "url": "https://www.zhxz.gov.cn/wlxz/tsjd/content/post_3590067.html",
+                "title": "珠海市香洲区政府 — 圆明新园"
+              }
+            ],
+            "reason": "西洋式白色殿楼、黑色屋顶及前方人物喷泉与圆明新园西洋建筑群线索相符；官方页面确认园内有西洋建筑群，但尚未将这座人物喷泉与官方图片一一对应，故不把旧caption直接升格为确认，也不进一步猜海晏堂或远瀛观。"
+          }
         },
         {
           "src": "/images/travel/manga-97/珠海_3.jpg",
@@ -632,8 +1188,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "A green hillside and park lake",
-          "caption": "A green hillside and park lake",
-          "style": "manga"
+          "caption": "Likely Fuhai Lake at New Yuanming Palace, Zhuhai — exact spot unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "圆明新园福海一带（可能）",
+            "captionZh": "可能为珠海圆明新园福海一带；具体位置待核实",
+            "evidence": [
+              {
+                "url": "https://www.zhxz.gov.cn/wlxz/tsjd/content/post_3590067.html",
+                "title": "珠海市香洲区政府 — 圆明新园"
+              },
+              {
+                "url": "https://content.macaotourism.gov.mo/uploads/mgto_brochures/68fdeff1fdcf6aca24a5b36a8084a13f0e504b3f.pdf",
+                "title": "澳门旅游局 — 珠海圆明新园介绍"
+              }
+            ],
+            "reason": "湖畔仿古炮台、远端多孔石桥、山脊仿古景观与圆明新园园区较为接近；现有官方材料未一一对应此桥和炮台，故仅列可能，不以同组第二张作唯一证据。"
+          }
         }
       ],
       "region_key": "CHN:zhuhai",
@@ -656,8 +1228,24 @@
           "width": 1254,
           "height": 1254,
           "alt": "A pavement relief at sunset",
-          "caption": "A pavement relief at sunset",
-          "style": "manga"
+          "caption": "Likely a pavement relief at Canal Cultural Square, Hangzhou — identification unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "杭州运河文化广场地雕（可能）",
+            "captionZh": "可能为杭州运河文化广场地雕；具体作品待核实",
+            "evidence": [
+              {
+                "url": "https://www.ziad.cn/product/222.html",
+                "title": "浙江省建筑设计研究院 — 杭州运河文化广场及运河博物馆"
+              },
+              {
+                "url": "https://csjr.zjol.com.cn/html/2007-05/25/content_2483496.htm",
+                "title": "浙江在线城市假日 — 运河文化广场及大型地雕"
+              }
+            ],
+            "reason": "开阔铺装、低矮馆楼和大型历史文字地雕符合运河文化广场的建筑与设施线索，但当前漫画字形不能可靠逐字辨认，尚未取得地雕整体轮廓的一一匹配资料，暂列可能。"
+          }
         },
         {
           "src": "/images/travel/manga-97/杭州_2.jpg",
@@ -665,8 +1253,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "A tree-lined canal and stone bridge",
-          "caption": "A tree-lined canal and stone bridge",
-          "style": "manga"
+          "caption": "Likely Xiaohe Historic Street and the Xitang River, Hangzhou — exact bridge unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "杭州小河直街及西塘河（可能）",
+            "captionZh": "可能为杭州小河直街与西塘河；具体桥梁待核实",
+            "evidence": [
+              {
+                "url": "https://www.gongshu.gov.cn/art/2024/3/13/art_1228884_59079524.html",
+                "title": "杭州市拱墅区政府 — 小河直街与西塘河"
+              },
+              {
+                "url": "https://www.gongshu.gov.cn/art/2024/4/30/art_1229789753_59080393.html",
+                "title": "杭州市拱墅区政府 — 小河直街历史文化街区"
+              }
+            ],
+            "reason": "狭长河道两侧低层木构民居、绿化及小石拱桥与小河直街沿河风貌相近，但照片无街名和可读桥名，无法排除其他杭州沿河街区，不猜桥名。"
+          }
         },
         {
           "src": "/images/travel/manga-97/杭州_3.jpg",
@@ -674,8 +1278,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A garden pond beside a pavilion",
-          "caption": "A garden pond beside a pavilion",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Hangzhou",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "具体园林待核实",
+            "captionZh": "园池与临水建筑；杭州具体园林待核实",
+            "evidence": [
+              {
+                "url": "https://www.gongshu.gov.cn/art/2024/4/30/art_1229789753_59080393.html",
+                "title": "杭州市拱墅区政府 — 小河直街历史街区（周边候选排查）"
+              }
+            ],
+            "reason": "两层临水建筑、假山、柳树、荷叶与小岛雕塑没有独一标识；不能只凭江南园林风格写成郭庄、胡雪岩故居或西溪某园，更不能从同组三张推断一定相邻。"
+          }
         }
       ],
       "region_key": "CHN:hangzhou",
@@ -698,8 +1314,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Stone arch bridge and its reflection",
-          "caption": "Stone arch bridge and its reflection",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Wuxi",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "具体园林及石拱桥待核实",
+            "captionZh": "石拱桥；无锡具体园林待核实",
+            "evidence": [
+              {
+                "url": "https://en.wuxi.gov.cn/2025-10/15/c_1132577.htm",
+                "title": "无锡市政府英文网 — Main scenic spots in Wuxi（蠡园等候选）"
+              }
+            ],
+            "reason": "单孔石桥、白墙、小亭和水岸缺少桥名或园名；已与蠡园等园林候选比对，仍不能唯一确认，也不应因单孔桥一概写作鼋头渚长春桥。"
+          }
         },
         {
           "src": "/images/travel/manga-97/无锡_2.jpg",
@@ -707,8 +1335,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Canal-side buildings lit at night",
-          "caption": "Canal-side buildings lit at night",
-          "style": "manga"
+          "caption": "Likely the Qingming Bridge–Nanchang Street canal district, Wuxi — exact reach unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "清名桥古运河／南长街一带（可能）",
+            "captionZh": "可能为无锡清名桥古运河、南长街一带；具体河段待核实",
+            "evidence": [
+              {
+                "url": "https://en.wuxi.gov.cn/2025-10/15/c_1132577.htm",
+                "title": "无锡市政府英文网 — 清名桥古运河景区"
+              },
+              {
+                "url": "https://daj.wuxi.gov.cn/doc/2012/10/15/2426733.shtml",
+                "title": "无锡市档案史志网 — 清名桥历史文化街区"
+              }
+            ],
+            "reason": "较宽古运河、沿水两层商住街和远处现代高楼符合南长街、南下塘这一段城市水乡关系；无清名桥本体或可读招牌，不锁定具体桥堍或岸线。"
+          }
         },
         {
           "src": "/images/travel/manga-98/无锡_3.jpg",
@@ -716,8 +1360,24 @@
           "width": 1086,
           "height": 1448,
           "alt": "An illuminated tower above the square",
-          "caption": "An illuminated tower above the square",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Wuxi",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "具体灯光塔与广场待核实",
+            "captionZh": "灯光钢塔；具体地点待核实",
+            "evidence": [
+              {
+                "url": "https://www.wuxi.gov.cn/doc/2025/05/30/4583408.shtml",
+                "title": "无锡市政府 — 运河沿线光影景观（候选比对）"
+              },
+              {
+                "url": "https://xcb.wuxi.gov.cn/doc/2025/05/04/4576428.shtml",
+                "title": "中共无锡市委宣传部 — 运河汇工业景观（候选比对）"
+              }
+            ],
+            "reason": "可见狭高钢架塔、菱形光构件、河岸步桥和百威红车，但检索尚未找到对应官方地标。此塔形明显不是妙光塔或龙光塔，不能仅凭无锡分组强行取名。"
+          }
         }
       ],
       "region_key": "CHN:wuxi",
@@ -740,8 +1400,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The entrance to Dashushan Forest Park",
-          "caption": "The entrance to Dashushan Forest Park",
-          "style": "manga"
+          "caption": "Entrance gateway of Dashushan National Forest Park, Hefei",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "合肥大蜀山国家森林公园入口牌楼",
+            "captionZh": "合肥大蜀山国家森林公园入口牌楼",
+            "evidence": [
+              {
+                "url": "https://www.yuan.gov.cn/group2/M00/31/4F/wKgSGmTcKoiAG69jACH0Gsep2VI336.pdf",
+                "title": "安徽省农业农村厅规范性文件 — 大蜀山国家森林公园名录"
+              }
+            ],
+            "reason": "牌楼上“蜀山森林公园”六字清楚，灰色四柱三门牌楼与公园入口可对应；官方名录确认大蜀山国家森林公园位于合肥蜀山区。不据此加写未经证实的具体东门编号。"
+          }
         },
         {
           "src": "/images/travel/manga-97/合肥_2.jpg",
@@ -749,8 +1421,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "A wooded pond and its reflections",
-          "caption": "A wooded pond and its reflections",
-          "style": "manga"
+          "caption": "Likely Yexi Lake on USTC’s West Campus, Hefei — identification unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "中国科学技术大学西校区也西湖（可能）",
+            "captionZh": "可能为中国科学技术大学西校区也西湖；仍待最终核实",
+            "evidence": [
+              {
+                "url": "https://news.ustc.edu.cn/info/1056/77788.htm",
+                "title": "中国科大新闻网 — 六位“明星”落户中科大西区"
+              },
+              {
+                "url": "https://metalisotopes.ustc.edu.cn/news/CCFeFeOPb.html",
+                "title": "中国科大实验室 — 初识科大：也西湖黑天鹅"
+              }
+            ],
+            "reason": "黑天鹅、小型校内湖、对岸红砖楼与中国科大西区也西湖线索相符，官方报道明确该湖饲养黑天鹅；但照片没有湖牌，红砖楼亦非独一，仍保留可能。不是据有天鹅就写成合肥市政天鹅湖。"
+          }
         },
         {
           "src": "/images/travel/manga-98/合肥_3.jpg",
@@ -758,8 +1446,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "A campus statue at the University of Science and Technology of China",
-          "caption": "A campus statue at the University of Science and Technology of China",
-          "style": "manga"
+          "caption": "Statue of Yan Jici at the University of Science and Technology of China, Hefei",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "中国科学技术大学严济慈塑像",
+            "captionZh": "合肥中国科学技术大学严济慈塑像",
+            "evidence": [
+              {
+                "url": "https://djyszw.ustc.edu.cn/info/1041/3327.htm",
+                "title": "中国科大党建与思政网 — 严济慈塑像"
+              },
+              {
+                "url": "https://zgkdb.ustc.edu.cn/ndetail/7454",
+                "title": "中国科大报 — 西区严济慈雕像"
+              }
+            ],
+            "reason": "底座“严济慈像”可读，老人坐姿、座椅及红砖校园楼与校方严济慈塑像资料一致；将旧笼统“campus statue”改为人物和学校全称。"
+          }
         }
       ],
       "region_key": "CHN:hefei",
@@ -782,8 +1486,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Traditional buildings reflected in a pond",
-          "caption": "Traditional buildings reflected in a pond",
-          "style": "manga"
+          "caption": "Possible Taying Pond, Hongmei Park; pagoda unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为红梅公园塔影池；塔名待核实",
+            "captionZh": "可能为红梅公园塔影池；塔名待核实",
+            "evidence": [
+              {
+                "url": "https://wglj.changzhou.gov.cn/content/suitable/show?catid=12252&id=91012",
+                "title": "常州市文广旅局：跟着诗词游常州（11）——《文笔塔》"
+              }
+            ],
+            "reason": "已查看图像。池水、白墙灰瓦园林与林后塔身符合红梅公园文笔塔周边，但塔身被树木遮挡，现有官方资料不足以排除其他园林；不认定具体塔或机位。"
+          }
         },
         {
           "src": "/images/travel/manga-97/常州_2.jpg",
@@ -791,8 +1507,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A statue beside a carved stone wall",
-          "caption": "A statue beside a carved stone wall",
-          "style": "manga"
+          "caption": "Su Shi statue, Dongpo Park",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "东坡公园苏轼立像《竹杖芒鞋》",
+            "captionZh": "东坡公园·苏轼立像《竹杖芒鞋》",
+            "evidence": [
+              {
+                "url": "https://zx.changzhou.gov.cn/content/suitable/show?catid=36772&id=17489",
+                "title": "常州市政协：东坡文化与苏轼立像"
+              }
+            ],
+            "reason": "手持竹杖的苏轼站像、背后的石刻墙及地面水系组合，与官方介绍《竹杖芒鞋》的雕塑、地面水系、石雕碑文三部分相符。"
+          }
         },
         {
           "src": "/images/travel/manga-97/常州_3.jpg",
@@ -800,8 +1528,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The tall bookshelves of Banshan Bookstore",
-          "caption": "The tall bookshelves of Banshan Bookstore",
-          "style": "manga"
+          "caption": "Banshan Bookstore, New Century Mall",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "半山书局（新世纪商城）",
+            "captionZh": "半山书局·新世纪商城",
+            "evidence": [
+              {
+                "url": "https://www.zhonglou.gov.cn/html/czzl/2020/NFLOPNFQ_0826/259465.html",
+                "title": "钟楼区政府：半山书局"
+              }
+            ],
+            "reason": "高耸书墙、黑色钢构走廊与玻璃夹层的室内组合，与官方所述新世纪商城B座14—16层及约12米书墙对应；不把图片对应至未经核实的具体楼层。"
+          }
         }
       ],
       "region_key": "CHN:changzhou",
@@ -824,8 +1564,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A red footbridge beneath a pagoda",
-          "caption": "A red footbridge beneath a pagoda",
-          "style": "manga"
+          "caption": "Cishou Pagoda, Jinshan Temple",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "金山寺慈寿塔",
+            "captionZh": "金山寺·慈寿塔",
+            "evidence": [
+              {
+                "url": "https://www.jsw.com.cn/2018/0416/1445481.shtml",
+                "title": "金山网：城市山林中的塔"
+              }
+            ],
+            "reason": "可见山顶多层塔、依山寺院黄墙与临水红色步桥；慈寿塔与金山寺建筑群的组合可匹配。桥的正式名称没有确认。"
+          }
         },
         {
           "src": "/images/travel/manga-97/镇江_2.jpg",
@@ -833,8 +1585,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A hilltop view across the water",
-          "caption": "A hilltop view across the water",
-          "style": "manga"
+          "caption": "Possible Beigu Mountain; pavilion unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为北固山；亭名待核实",
+            "captionZh": "可能为北固山；亭名待核实",
+            "evidence": [
+              {
+                "url": "https://szb.jsw.com.cn/ZJRB/PC/attachment/202403/15/caa07cbb-8c2f-4154-8e57-b52a0deb5b09.pdf",
+                "title": "镇江日报：北固山祭江亭、临江亭及山水景观"
+              }
+            ],
+            "reason": "已查看图像与镇江山水地标资料；山脊临江小亭和一侧城市轮廓符合北固山一带，但无法可靠区分祭江亭、临江亭等具体建筑，保留候选。"
+          }
         },
         {
           "src": "/images/travel/manga-98/镇江_3.jpg",
@@ -842,8 +1606,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A garden pavilion surrounded by flowers",
-          "caption": "A garden pavilion surrounded by flowers",
-          "style": "manga"
+          "caption": "Possible pavilion in Beigu Mountain Scenic Area",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为北固山景区展陈亭；亭名待核实",
+            "captionZh": "可能为北固山景区展陈亭；亭名待核实",
+            "evidence": [
+              {
+                "url": "https://szb.jsw.com.cn/ZJRB/PC/attachment/202403/15/caa07cbb-8c2f-4154-8e57-b52a0deb5b09.pdf",
+                "title": "镇江日报：北固山景观资料（候选排查）"
+              }
+            ],
+            "reason": "已看原图：木亭匾额疑似“北固山”，内部有六艺相关展板。但该图经过漫画与文字修订，仅凭匾额不能确认原始场所；未找到可唯一匹配这座亭子的官方图像。"
+          }
         }
       ],
       "region_key": "CHN:zhenjiang",
@@ -866,8 +1642,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "A rock garden beside the water",
-          "caption": "A rock garden beside the water",
-          "style": "manga"
+          "caption": "Possible Summer Rockery and Crane Pavilion, Geyuan Garden",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为个园夏山及鹤亭",
+            "captionZh": "可能为个园夏山及鹤亭",
+            "evidence": [
+              {
+                "url": "https://jsnews.jschina.com.cn/sxzt/100yz2017/201706/t20170607_615872.shtml",
+                "title": "中国江苏网：扬州个园——盐商豪府邸 竹石雅乾坤"
+              }
+            ],
+            "reason": "太湖石叠山、池水和山顶亭的组合与个园夏山相符，并与第二张抱山楼场景互相支持；第一张缺少可清晰识读匾额，鹤亭名称保留为可能。"
+          }
         },
         {
           "src": "/images/travel/manga-97/扬州_2.jpg",
@@ -875,8 +1663,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A pavilion and rockery at He Garden",
-          "caption": "A pavilion and rockery at He Garden",
-          "style": "manga"
+          "caption": "Geyuan Garden: Summer Rockery and Baoshan Tower",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "个园夏山与抱山楼（旧注何园疑有误）",
+            "captionZh": "个园·夏山与抱山楼",
+            "evidence": [
+              {
+                "url": "https://jsnews.jschina.com.cn/sxzt/100yz2017/201706/t20170607_615872.shtml",
+                "title": "中国江苏网：扬州个园——盐商豪府邸 竹石雅乾坤"
+              }
+            ],
+            "reason": "画中两层临池长楼、夏山太湖石及疑似“壶天自春”匾额组合，与个园抱山楼相符。官方文章对应个园夏景与壶天自春；旧caption把此景写为何园，存在具体园名错配。"
+          }
         },
         {
           "src": "/images/travel/manga-97/扬州_3.jpg",
@@ -884,8 +1684,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A view across the lake",
-          "caption": "A view across the lake",
-          "style": "manga"
+          "caption": "Possible Diaoyutai Pavilion, Slender West Lake",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为瘦西湖钓鱼台（吹台）",
+            "captionZh": "可能为瘦西湖钓鱼台（吹台）",
+            "evidence": [
+              {
+                "url": "https://jsnews.jschina.com.cn/jsyw/202506/t20250609_s68463179e4b0851764e37747.shtml",
+                "title": "中国江苏网：瘦西湖钓鱼台"
+              }
+            ],
+            "reason": "临水小型黄墙方亭、圆洞门及柳岸，与官方媒体介绍的钓鱼台四角攒尖顶、三面临水及月洞门相符；漫画细节有限，保留为可能，不推断机位。"
+          }
         }
       ],
       "region_key": "CHN:yangzhou",
@@ -908,8 +1720,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A city lake framed by trees",
-          "caption": "A city lake framed by trees",
-          "style": "manga"
+          "caption": "Possible Moon Lake, Ningbo",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为月湖；亭阁名称待核实",
+            "captionZh": "可能为宁波月湖；亭阁名称待核实",
+            "evidence": [
+              {
+                "url": "https://news.cnnb.com.cn/system/2024/05/20/030587562.shtml",
+                "title": "宁波日报：月湖相关规划及景观节点"
+              }
+            ],
+            "reason": "已看图中的城市湖面、水边亭阁、柳岸及楼群；与月湖景观相容，但缺少唯一可识别标志，不能由此排除日湖或确认具体亭名。"
+          }
         },
         {
           "src": "/images/travel/manga-97/宁波_2.jpg",
@@ -917,8 +1741,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "An illuminated bridge on the river",
-          "caption": "An illuminated bridge on the river",
-          "style": "manga"
+          "caption": "Possible Xinjiang Bridge, Ningbo",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为新江桥；尚未最终确认",
+            "captionZh": "可能为宁波新江桥；待核实",
+            "evidence": [
+              {
+                "url": "https://daily.cnnb.com.cn/nbrb/html/2015-11/11/content_909741.htm?div=0",
+                "title": "宁波日报记者实地报道：新江桥——新的景点 泛起乡愁"
+              },
+              {
+                "url": "https://daily.cnnb.com.cn/dnsb/html/2015-11/10/content_909612.htm?div=-1",
+                "title": "东南商报：新江桥石材装饰与多重拱廊"
+              }
+            ],
+            "reason": "画中平直桥面、桥下连续石材装饰拱廊与复古路灯，符合宁波日报、东南商报记者对2015年新江桥的现场描述；灵桥上承钢拱和甬江大桥斜拉形态可排除。此前无法区分江厦桥，补充拱廊建筑证据后更倾向新江桥，但尚无同角度原始照片唯一匹配，保留为可能。"
+          }
         },
         {
           "src": "/images/travel/manga-97/宁波_3.jpg",
@@ -926,8 +1766,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A pavilion overlooking a garden pond",
-          "caption": "A pavilion overlooking a garden pond",
-          "style": "manga"
+          "caption": "Possible garden pavilion at Tianyi Pavilion Museum",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为天一阁园林；亭名待核实",
+            "captionZh": "可能为天一阁园林；亭名待核实",
+            "evidence": [
+              {
+                "url": "https://www.haishu.gov.cn/col/col1229830782/art/2025/art_37efc386010b49d298afdb02fbcfd642.html",
+                "title": "海曙区政府：天一阁相关文物资料"
+              }
+            ],
+            "reason": "已看临水木亭、叠石及白墙园林；符合天一阁园林类型，但无可读匾额或独有建筑组合，未能独立确认，不将某一亭名强加给图片。"
+          }
         }
       ],
       "region_key": "CHN:ningbo",
@@ -950,8 +1802,20 @@
           "width": 1088,
           "height": 1445,
           "alt": "A rock garden at dusk",
-          "caption": "A rock garden at dusk",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Shaoxing",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "具体园林待核实（沈园仅为候选）",
+            "captionZh": "园林地点待核实",
+            "evidence": [
+              {
+                "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3000/site/attach/0/f3ee2b8a49014b56acd2ec3f6abc49a0.pdf",
+                "title": "浙江省文物相关资料：沈园考古调查"
+              }
+            ],
+            "reason": "图中主要为太湖石、树木和灰瓦白墙，没有可读标牌或独有的园林建筑；检索沈园资料未得到唯一匹配，不能据叠石断言沈园。"
+          }
         },
         {
           "src": "/images/travel/manga-97/绍兴_2.jpg",
@@ -959,8 +1823,20 @@
           "width": 1402,
           "height": 1122,
           "alt": "Lanterns along a canal at night",
-          "caption": "Lanterns along a canal at night",
-          "style": "manga"
+          "caption": "Possible Ying’enmen Waterfront Street",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为迎恩门风情水街",
+            "captionZh": "可能为迎恩门风情水街",
+            "evidence": [
+              {
+                "url": "https://www.archina.com/index.php?a=show&g=works&id=156940&m=index",
+                "title": "東大院：绍兴迎恩门水街更新设计"
+              }
+            ],
+            "reason": "宽水道、成排灯笼、连续商业廊檐与现代楼群组合，更符合迎恩门水街的设计方项目图；未见可读街名，保留为候选，不写成仓桥直街。"
+          }
         },
         {
           "src": "/images/travel/manga-97/绍兴_3.jpg",
@@ -968,8 +1844,20 @@
           "width": 1453,
           "height": 1082,
           "alt": "The entrance mural at Lu Xun’s Native Place",
-          "caption": "The entrance mural at Lu Xun’s Native Place",
-          "style": "manga"
+          "caption": "Entrance screen wall, Lu Xun’s Native Place",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "鲁迅故里入口照壁",
+            "captionZh": "鲁迅故里·入口照壁",
+            "evidence": [
+              {
+                "url": "https://news.cnr.cn/native/gd/kx/20250825/t20250825_527338667.shtml",
+                "title": "绍兴鲁迅纪念馆官方回应：鲁迅故里入口景墙"
+              }
+            ],
+            "reason": "可直接识读“鲁迅故里”及英文，鲁迅木刻肖像景墙与绍兴鲁迅纪念馆官方说明的入口标志景墙相符。"
+          }
         }
       ],
       "region_key": "CHN:shaoxing",
@@ -992,8 +1880,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The Beijing Institute of Technology campus",
-          "caption": "The Beijing Institute of Technology campus",
-          "style": "manga"
+          "caption": "Beijing Institute of Technology",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "北京理工大学；具体校区与建筑待核实",
+            "captionZh": "北京理工大学；具体建筑待核实",
+            "evidence": [
+              {
+                "url": "https://www.bit.edu.cn/publish/bit/docs/2021-08/3b1aeede94ed4dcdbb475a686d40b4e4.pdf",
+                "title": "北京理工大学：读者指南"
+              }
+            ],
+            "reason": "图中大型“北京理工大学”校名及校徽可以识别，足以确认学校；玻璃和斜屋面建筑疑似良乡校区徐特立图书馆，但该具体楼名未获充分图像匹配，因此不在标题中确认。"
+          }
         },
         {
           "src": "/images/travel/manga-97/北京_2.jpg",
@@ -1001,8 +1901,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A pagoda reflected in the lake",
-          "caption": "A pagoda reflected in the lake",
-          "style": "manga"
+          "caption": "Weiming Lake and Boya Pagoda, Peking University",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "北京大学未名湖与博雅塔",
+            "captionZh": "北京大学·未名湖与博雅塔",
+            "evidence": [
+              {
+                "url": "https://www.pku.org.cn/info/1210/5036.htm",
+                "title": "北京大学校友网：你真的了解博雅塔吗？"
+              }
+            ],
+            "reason": "细长密檐塔、湖岸林木与水面倒影组合，与北京大学博雅塔及未名湖形态匹配，能比旧注“湖中塔影”更具体。"
+          }
         },
         {
           "src": "/images/travel/manga-97/北京_3.jpg",
@@ -1010,8 +1922,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A lakeside view under a clear sky",
-          "caption": "A lakeside view under a clear sky",
-          "style": "manga"
+          "caption": "White Pagoda on Qionghua Island, Beihai Park",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "北海公园琼华岛白塔",
+            "captionZh": "北海公园·琼华岛白塔",
+            "evidence": [
+              {
+                "url": "https://www.beijing.gov.cn/renwen/sy/bq/qsbj/zxzp/202504/t20250407_4057253.html",
+                "title": "北京市政府：西城古塔——北海白塔"
+              }
+            ],
+            "reason": "藏式覆钵白塔、琼华岛山体与环湖建筑组合，与北京市政府介绍及图像匹配；确认北海公园琼华岛白塔，不推断摄影机位。"
+          }
         }
       ],
       "region_key": "CHN:beijing",
@@ -1034,8 +1958,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Qingdao coastline from above",
-          "caption": "Qingdao coastline from above",
-          "style": "manga"
+          "caption": "No. 1 Bathing Beach, Huiquan Bay",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "汇泉湾第一海水浴场",
+            "captionZh": "汇泉湾·第一海水浴场",
+            "evidence": [
+              {
+                "url": "https://www.qingdao.gov.cn/yfqd/qdwl/cjfw/wyqgy/202009/t20200903_520364.shtml",
+                "title": "青岛政务网：小鱼山公园"
+              }
+            ],
+            "reason": "半月形沙滩、两端岬角和红瓦城区的组合，与官方小鱼山视景资料中的汇泉湾第一海水浴场对应。确认画面所示海湾，不由此断言拍摄位置一定在小鱼山。"
+          }
         },
         {
           "src": "/images/travel/manga-97/青岛_2.jpg",
@@ -1043,8 +1979,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "May Fourth Square at night",
-          "caption": "May Fourth Square at night",
-          "style": "manga"
+          "caption": "Wind of May sculpture, May Fourth Square",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "五四广场《五月的风》雕塑",
+            "captionZh": "五四广场·《五月的风》",
+            "evidence": [
+              {
+                "url": "https://www.qingdao.gov.cn/yfqd/qdwl/cjfw/wyqgy/202009/t20200903_520360.shtml",
+                "title": "青岛政务网：五四广场"
+              }
+            ],
+            "reason": "醒目的红色螺旋钢构雕塑位于海滨广场，与政府介绍的《五月的风》形态及位置一致。"
+          }
         },
         {
           "src": "/images/travel/manga-97/青岛_3.jpg",
@@ -1052,8 +2000,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Red rooftops in Qingdao’s old town",
-          "caption": "Red rooftops in Qingdao’s old town",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Qingdao",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "青岛老城；具体地标与机位待核实",
+            "captionZh": "青岛老城；具体地标待核实",
+            "evidence": [
+              {
+                "url": "https://www.qingdao.gov.cn/yfqd/qdwl/cjfw/wyqgy/202009/t20200903_520364.shtml",
+                "title": "青岛政务网：小鱼山公园及周边景观"
+              }
+            ],
+            "reason": "已看大面积红瓦屋顶与远处楼群，检索小鱼山、信号山相关景观，但无法从漫画图可靠识别独有建筑或区分观景点。不能只把“红瓦屋顶”换成一个未经确认的山名。"
+          }
         }
       ],
       "region_key": "CHN:qingdao",
@@ -1076,8 +2036,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A historic tower above a stone wall",
-          "caption": "A historic tower above a stone wall",
-          "style": "manga"
+          "caption": "Jiefang Pavilion, Jinan",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "解放阁",
+            "captionZh": "济南·解放阁",
+            "evidence": [
+              {
+                "url": "https://www.jinan.gov.cn/col/col118356/art/2026/art_5091525fd2244615b82340ef347bab01.html",
+                "title": "济南市政府：天下第一泉景区及解放阁"
+              }
+            ],
+            "reason": "石台高基、城阁顶部红星和“解放阁”匾额组合明确，与官方地标资料相符。"
+          }
         },
         {
           "src": "/images/travel/manga-98/济南_2.jpg",
@@ -1085,8 +2057,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Pavilions by the spring pool",
-          "caption": "Pavilions by the spring pool",
-          "style": "manga"
+          "caption": "Baotu Spring and Guanlan Pavilion",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "趵突泉与观澜亭",
+            "captionZh": "趵突泉·观澜亭",
+            "evidence": [
+              {
+                "url": "https://shandong-chorography.org/database/b1/section/5/article/5/",
+                "title": "山东省情资料：趵突泉"
+              }
+            ],
+            "reason": "泉池石碑“趵突泉”、临水亭和周边建筑位置，与地方志所述趵突泉及观澜亭组合一致。"
+          }
         },
         {
           "src": "/images/travel/manga-98/济南_3.jpg",
@@ -1094,8 +2078,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The Spring City Square sculpture at night",
-          "caption": "The Spring City Square sculpture at night",
-          "style": "manga"
+          "caption": "Spring City emblem sculpture, Quancheng Square",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "泉城广场泉标",
+            "captionZh": "泉城广场·泉标",
+            "evidence": [
+              {
+                "url": "https://sd.weather.com.cn/jinan/jnlyjdjs/03/1279276.shtml",
+                "title": "中国天气网（山东气象）：泉城广场"
+              }
+            ],
+            "reason": "高耸蓝色三股泉水造型及中央圆球是泉城广场泉标的独有形态，与气象部门景点介绍相符。"
+          }
         }
       ],
       "region_key": "CHN:jinan",
@@ -1118,8 +2114,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Sichuan University gate, anime illustration",
-          "caption": "Sichuan University gate",
-          "style": "manga"
+          "caption": "Sichuan University, Wangjiang Campus gate",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "四川大学望江校区校门",
+            "captionZh": "四川大学·望江校区校门",
+            "evidence": [
+              {
+                "url": "https://xcb.scu.edu.cn/xczy/xyfj/2.htm",
+                "title": "四川大学党委宣传部：校园风景"
+              }
+            ],
+            "reason": "红色三开间牌坊式校门及“四川大学”校名清晰，匹配学校官方校园图片中的望江校门。"
+          }
         },
         {
           "src": "/images/travel/manga-100/成都_2.jpg",
@@ -1127,8 +2135,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The panda at Chengdu IFS, anime illustration",
-          "caption": "The panda at Chengdu IFS",
-          "style": "manga"
+          "caption": "I AM HERE panda sculpture, Chengdu IFS",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "成都IFS《I AM HERE》爬墙大熊猫",
+            "captionZh": "成都IFS·《I AM HERE》爬墙大熊猫",
+            "evidence": [
+              {
+                "url": "https://www.cdifs.cn/dashcloud/wp-content/uploads/magazine/CDIFS-2021-1.pdf",
+                "title": "成都IFS官方刊物：I AM HERE熊猫艺术装置"
+              }
+            ],
+            "reason": "黑白多面体熊猫位于建筑屋顶边缘，附近可识别IFS标志，与IFS官方刊物对应的爬墙熊猫装置一致。"
+          }
         },
         {
           "src": "/images/travel/manga-100/成都_3.jpg",
@@ -1136,8 +2156,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A historic pedestrian lane, anime illustration",
-          "caption": "A historic pedestrian lane",
-          "style": "manga"
+          "caption": "Possible Kuanzhai Alley; exact lane unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为宽窄巷子；具体巷道待核实",
+            "captionZh": "可能为宽窄巷子；具体巷道待核实",
+            "evidence": [
+              {
+                "url": "https://cd3000y.cccic.org.cn/views/3DMuseum/OldStreet.aspx",
+                "title": "成都文化旅游系统：历史街区"
+              }
+            ],
+            "reason": "灰砖院墙、宽巷格局及街巷装饰更接近宽窄巷子，已检索其与锦里建筑特征；图中没有可辨门牌，不能确认宽巷子、窄巷子或井巷子中的某一条。"
+          }
         }
       ],
       "region_key": "CHN:chengdu",
@@ -1164,8 +2196,20 @@
           "width": 1140,
           "height": 1380,
           "alt": "A plant detail at Nanmen Gorge",
-          "caption": "A plant detail at Nanmen Gorge",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Haidong",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "具体地点待核实；南门峡旧注未证实",
+            "captionZh": "地点待核实；南门峡旧注未证实",
+            "evidence": [
+              {
+                "url": "https://www.huzhu.gov.cn/chgx/jqjj/4.htm",
+                "title": "互助县政府：景区简介"
+              }
+            ],
+            "reason": "植物果序特写缺少地形、建筑或标牌。即使当地存在南门峡景区，也无法凭这一特写确认拍摄地点；不继续把南门峡当作事实。"
+          }
         },
         {
           "src": "/images/travel/manga-97/海东_2.jpg",
@@ -1173,8 +2217,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Autumn at Wufeng in Huzhu",
-          "caption": "Autumn at Wufeng in Huzhu",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Haidong",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "道路地点待核实；互助五峰旧注未证实",
+            "captionZh": "道路地点待核实；互助五峰旧注未证实",
+            "evidence": [
+              {
+                "url": "https://www.huzhu.gov.cn/chgx/jqjj/4.htm",
+                "title": "互助县政府：景区简介"
+              }
+            ],
+            "reason": "直路与两侧行道树属于常见景观，没有五峰寺建筑、景区标牌等识别物。检索互助景区资料未找到唯一对应道路，不能用旧caption证明地点。"
+          }
         },
         {
           "src": "/images/travel/manga-99/海东_3.jpg",
@@ -1182,8 +2238,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "Winding mountain roads and autumn woodland in Huzhu, Haidong, illustrated",
-          "caption": "Huzhu · mountain roads in autumn",
-          "style": "manga"
+          "caption": "Twelve-Bend Road, Huzhu Beishan",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "互助北山十二盘坡（十二生肖弯）",
+            "captionZh": "互助北山·十二盘坡",
+            "evidence": [
+              {
+                "url": "https://www.cicphoto.com/cn/view14375907",
+                "title": "中国图片网：青海互助十二盘坡原始摄影资料"
+              }
+            ],
+            "reason": "山谷坡面连续密集发卡弯的路线结构和林带，与互助北山十二盘坡原始新闻摄影图的路形匹配；确认道路景点，不推断拍摄时间或具体机位。"
+          }
         }
       ],
       "adcode": 630200
@@ -1209,8 +2277,20 @@
           "width": 1672,
           "height": 940,
           "alt": "Snow-covered slopes and forest",
-          "caption": "Snow-covered slopes and forest",
-          "style": "manga"
+          "caption": "Possible Xiwangmu Temple, Tianshan Tianchi",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为天山天池西王母祖庙；殿名待核实",
+            "captionZh": "可能为天山天池西王母祖庙；殿名待核实",
+            "evidence": [
+              {
+                "url": "https://www.daoist.org/BookSearch%28test%29/list012/43-16-118.pdf",
+                "title": "中国道教协会：天山天池西王母祖庙资料"
+              }
+            ],
+            "reason": "林间黄色与红色道观建筑、山坡布局符合天池西王母祖庙候选；没有可识读匾额，现有资料不能排除其他道观建筑，因此不认定具体殿。 同组第1、2张可见较大范围积雪，第3张则以无雪绿色山坡与蓝湖为主，组内季相表现不一致；本次记录差异，不推定具体月份，也未替换图片。"
+          }
         },
         {
           "src": "/images/travel/manga-97/昌吉_2.jpg",
@@ -1218,8 +2298,20 @@
           "width": 1672,
           "height": 941,
           "alt": "A mountain lake in winter",
-          "caption": "A mountain lake in winter",
-          "style": "manga"
+          "caption": "Possible Tianshan Tianchi",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为天山天池",
+            "captionZh": "可能为天山天池",
+            "evidence": [
+              {
+                "url": "https://www.xinjiang.gov.cn/xinjiang/lyjg/201912/f74fa70bcf1c4d14ae3439fa3ba508bc.shtml",
+                "title": "新疆自治区政府：天山天池景区介绍"
+              }
+            ],
+            "reason": "林带环绕的高山湖泊和仿古游船与天池资料相容；画中建筑形体实际在游船上，不应误写成湖中寺庙。缺少独有标志，地点保留为可能。 同组第1、2张可见较大范围积雪，第3张则以无雪绿色山坡与蓝湖为主，组内季相表现不一致；本次记录差异，不推定具体月份，也未替换图片。"
+          }
         },
         {
           "src": "/images/travel/manga-97/昌吉_3.jpg",
@@ -1227,8 +2319,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The blue waters of Heavenly Lake",
-          "caption": "The blue waters of Heavenly Lake",
-          "style": "manga"
+          "caption": "Possible Tianshan Tianchi",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为天山天池",
+            "captionZh": "可能为天山天池",
+            "evidence": [
+              {
+                "url": "https://www.xinjiang.gov.cn/xinjiang/lyjg/201912/f74fa70bcf1c4d14ae3439fa3ba508bc.shtml",
+                "title": "新疆自治区政府：天山天池景区介绍"
+              }
+            ],
+            "reason": "蓝色高山湖面、环湖针叶林与天山地貌符合候选，但未见博格达峰清晰轮廓或可读标识，不能仅沿用“Heavenly Lake”旧注确认为天池某一岸。 本图绿色无雪山坡与同组第1、2张积雪场景存在明显季相差异；本次不推定月份，未改图。"
+          }
         }
       ],
       "adcode": 652300
@@ -1257,8 +2361,15 @@
           "width": 1448,
           "height": 1086,
           "alt": "A wetland below the mountains",
-          "caption": "A wetland below the mountains",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Ili Kazakh Autonomous Prefecture",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "湿地具体地点待核实",
+            "captionZh": "湿地地点待核实",
+            "evidence": [],
+            "reason": "已逐图检查并检索伊犁那拉提河谷草原及昭苏湿地候选；低山、平坦湿地与河汊缺少唯一地标，未找到可靠原始图像匹配，不强行命名景点。"
+          }
         },
         {
           "src": "/images/travel/manga-97/伊犁_2.jpg",
@@ -1266,8 +2377,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Fields and mountain ridges in the Ili Valley",
-          "caption": "Fields and mountain ridges in the Ili Valley",
-          "style": "manga"
+          "caption": "Possible lavender fields in the Ili Valley; farm unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为伊犁河谷薰衣草田；具体农场待核实",
+            "captionZh": "可能为伊犁河谷薰衣草田；具体农场待核实",
+            "evidence": [
+              {
+                "url": "https://lcj.xinjiang.gov.cn/lcj/lcdt/202609/a1c133d3ac334215819e4350b09b009c.shtml",
+                "title": "新疆林草局：伊犁薰衣草种植基地实地调研"
+              }
+            ],
+            "reason": "已查看紫色条带农田与低山图并检索霍城薰衣草田；景观类型相容，但种植园、乡镇乃至准确行政区无法由画面确定，不认定某一庄园。"
+          }
         },
         {
           "src": "/images/travel/manga-97/伊犁_3.jpg",
@@ -1275,8 +2398,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Sunset over a winding river",
-          "caption": "Sunset over a winding river",
-          "style": "manga"
+          "caption": "Possible Bayinbuluk Nine Bends; Ili grouping may be incorrect",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "疑似巴音布鲁克九曲十八弯；可能错归伊犁",
+            "captionZh": "疑似巴音布鲁克九曲十八弯；可能错归伊犁",
+            "evidence": [
+              {
+                "url": "https://www.aksxw.com/sy/rdxw/xj/202606/t20260604_34749333.html",
+                "title": "新华社原始摄影（阿克苏新闻网转载）：和静县巴音布鲁克九曲十八弯"
+              }
+            ],
+            "reason": "平坦草原中大幅连续回曲的河道、低地平线与落日组合，高度符合巴音布鲁克九曲十八弯。新闻摄影标明该景区在巴州和静县，行政上不属伊犁；漫画不能完全证明原照，保留为疑似错配。"
+          }
         }
       ],
       "adcode": 654000
@@ -1302,8 +2437,15 @@
           "width": 1448,
           "height": 1086,
           "alt": "A mountain ridge and border fence",
-          "caption": "A mountain ridge and border fence",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Bortala Mongol Autonomous Prefecture",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "围栏所在地待核实；不能确认国境线",
+            "captionZh": "围栏地点待核实；国境线未证实",
+            "evidence": [],
+            "reason": "已看山坡、野花与铁丝围栏并检索博州边境景观；没有界碑、口岸或标牌，普通防护围栏不能证明这里是国境线。旧caption中的“border”证据不足。"
+          }
         },
         {
           "src": "/images/travel/manga-97/博尔塔拉_2.jpg",
@@ -1311,8 +2453,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "The shores of Sayram Lake",
-          "caption": "The shores of Sayram Lake",
-          "style": "manga"
+          "caption": "Possible Sayram Lake; shore unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为赛里木湖；具体湖岸待核实",
+            "captionZh": "可能为赛里木湖；具体湖岸待核实",
+            "evidence": [
+              {
+                "url": "https://www.xjbl.gov.cn/xjbl/c126482/202411/7fb566e718e248e28d23e0d7d462e379.shtml",
+                "title": "博乐市政府：赛里木湖美景"
+              },
+              {
+                "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=35134",
+                "title": "文化和旅游部：博尔塔拉赛里木湖景区"
+              }
+            ],
+            "reason": "开阔蓝色高山湖泊、石质湖岸和低山背景与博乐市政府景观资料相容；缺少独有设施或可一一匹配的山峰轮廓，不认定某一湖岸节点。景区所属博州博乐可由文旅部资料确认，但区域事实不能单独证明这张照片的定位。"
+          }
         },
         {
           "src": "/images/travel/manga-97/博尔塔拉_3.jpg",
@@ -1320,8 +2478,20 @@
           "width": 1535,
           "height": 1025,
           "alt": "Green hills and forested slopes",
-          "caption": "Green hills and forested slopes",
-          "style": "manga"
+          "caption": "Possible Songshutou, Guozigou; prefecture unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为果子沟松树头；行政归属需复核",
+            "captionZh": "可能为果子沟松树头；行政归属待复核",
+            "evidence": [
+              {
+                "url": "https://www.xjhc.gov.cn/xjhc/c113377/202006/e5ee695ed960428784ef74ba959b004a.shtml",
+                "title": "霍城县政府：果赛景区松树头项目"
+              }
+            ],
+            "reason": "草坡、针叶林与山路地貌符合果子沟—松树头候选，但未见果子沟大桥等独有标志。若确为该候选，其所在地属伊犁霍城县；不能直接把博州标签认定为已核实。"
+          }
         }
       ],
       "adcode": 652700
@@ -1345,8 +2515,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Giant Wild Goose Pagoda and night fountains, anime illustration",
-          "caption": "Giant Wild Goose Pagoda and night fountains",
-          "style": "manga"
+          "caption": "Musical fountain, Giant Wild Goose Pagoda North Square",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "大雁塔北广场音乐喷泉",
+            "captionZh": "大雁塔北广场·音乐喷泉",
+            "evidence": [
+              {
+                "url": "https://qjxq.xa.gov.cn/zjqj/gyqj/tsqj/5df21c5c65cbd81235fc1faa.html",
+                "title": "西安曲江新区：大雁塔北广场"
+              }
+            ],
+            "reason": "方形七层大雁塔与其北侧轴线式大面积矩阵喷泉相互定位，与曲江新区介绍的北广场音乐喷泉布局相符。"
+          }
         },
         {
           "src": "/images/travel/manga-100/西安_2.jpg",
@@ -1354,8 +2536,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Terracotta Army exhibition hall, anime illustration",
-          "caption": "Terracotta Army exhibition hall",
-          "style": "manga"
+          "caption": "Terracotta Army Pit 1, Emperor Qinshihuang’s Mausoleum Site Museum",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "秦始皇帝陵博物院兵马俑一号坑",
+            "captionZh": "秦始皇帝陵博物院·兵马俑一号坑",
+            "evidence": [
+              {
+                "url": "https://www.bmy.com.cn/about/",
+                "title": "秦始皇帝陵博物院：博物院概况"
+              }
+            ],
+            "reason": "大型长跨拱形展厅、平行夯土隔梁与大规模兵俑阵列，与一号坑保护大厅形态及馆方展陈资料匹配。"
+          }
         },
         {
           "src": "/images/travel/manga-100/西安_3.jpg",
@@ -1363,8 +2557,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Bronze fountain sculpture, anime illustration",
-          "caption": "Bronze fountain sculpture",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Xi’an",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "仕女铜雕喷泉；具体作品和地点待核实",
+            "captionZh": "仕女铜雕喷泉；具体地点待核实",
+            "evidence": [
+              {
+                "url": "https://qjxq.xa.gov.cn/zjqj/gyqj/tsqj/5df21c5c65cbd81235fc1faa.html",
+                "title": "西安曲江新区：曲江景观资料（候选排查）"
+              }
+            ],
+            "reason": "已看原图并检索西安唐风雕塑、大唐芙蓉园仕女区及雁塔广场：圆形水池中央立有仕女，圆柱基座周围另有小型人物群。未找到可一一对应的原始作品资料，不能编造“贵妃像”等名称，所列候选资料不是定位证明。"
+          }
         }
       ],
       "adcode": 610100
@@ -1388,8 +2594,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Hukou Waterfall, anime illustration",
-          "caption": "Hukou Waterfall",
-          "style": "manga"
+          "caption": "Hukou Waterfall, Yellow River",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "黄河壶口瀑布",
+            "captionZh": "黄河·壶口瀑布",
+            "evidence": [
+              {
+                "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsxz/xbsxz/yas_16203/201405/P020240923615256371314.pdf",
+                "title": "陕西省地方志：宜川县志壶口瀑布资料"
+              }
+            ],
+            "reason": "黄河泥沙水流集中跌入狭窄岩石峡槽的独特瀑布地貌与壶口瀑布匹配。景区跨陕西宜川、山西吉县两岸；没有凭图片确定摄影所在岸。"
+          }
         },
         {
           "src": "/images/travel/manga-100/延安_2.jpg",
@@ -1397,8 +2615,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Lake and willow-lined shore, anime illustration",
-          "caption": "Lake and willow-lined shore",
-          "style": "manga"
+          "caption": "Possible Yinchi Pool, Huangdi Mausoleum",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为黄帝陵印池（沮河）；待核实",
+            "captionZh": "可能为黄帝陵印池；待核实",
+            "evidence": [
+              {
+                "url": "https://lishiwenhua.snnu.edu.cn/info/1294/4495.htm",
+                "title": "陕西师范大学历史文化学院：整修华夏第一陵"
+              }
+            ],
+            "reason": "临山水体、杨柳和岸边亭阁与黄帝陵印池环境相容，且同组第三张为黄帝陵建筑；但仅靠同组关系不足以确认，未找到唯一匹配的山形或亭名。"
+          }
         },
         {
           "src": "/images/travel/manga-100/延安_3.jpg",
@@ -1406,8 +2636,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Xuanyuan ceremonial hall at Huangdi Mausoleum, anime illustration",
-          "caption": "Xuanyuan ceremonial hall at Huangdi Mausoleum",
-          "style": "manga"
+          "caption": "Ceremonial Hall, Xuanyuan Temple, Huangdi Mausoleum",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "黄帝陵轩辕庙祭祀大殿",
+            "captionZh": "黄帝陵·轩辕庙祭祀大殿",
+            "evidence": [
+              {
+                "url": "https://xdxyh.xauat.edu.cn/2024012.pdf",
+                "title": "西安建筑科技大学校友资料：黄帝陵祭祀大殿建筑"
+              }
+            ],
+            "reason": "宽阔祭祀台阶、低平四坡大屋顶与殿前礼仪空间，符合设计者所在学校公开资料中的黄帝陵祭祀大殿建筑；不把画中仪式横幅反推为拍摄日期。"
+          }
         }
       ],
       "adcode": 610600
@@ -1431,8 +2673,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Dalian’s waterfront from above",
-          "caption": "Dalian’s waterfront from above",
-          "style": "manga"
+          "caption": "Donggang and Dalian International Conference Center",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "东港商务区与大连国际会议中心",
+            "captionZh": "东港商务区·大连国际会议中心",
+            "evidence": [
+              {
+                "url": "https://www.dldgswq.cn/html/2018/10/09/3/3/index_1.html",
+                "title": "大连东港商务区：景区及音乐喷泉广场"
+              }
+            ],
+            "reason": "临海银色折面壳体建筑为大连国际会议中心，与东港水岸、周边楼群组合相符；不将高处视角具体命名为某一酒店或楼层。"
+          }
         },
         {
           "src": "/images/travel/manga-97/大连_2.jpg",
@@ -1440,8 +2694,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "An illuminated fountain at night",
-          "caption": "An illuminated fountain at night",
-          "style": "manga"
+          "caption": "Possible Donggang Musical Fountain Square",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为东港音乐喷泉广场",
+            "captionZh": "可能为东港音乐喷泉广场",
+            "evidence": [
+              {
+                "url": "https://www.dldgswq.cn/html/2018/10/09/3/3/index_1.html",
+                "title": "大连东港商务区：东港音乐喷泉广场"
+              }
+            ],
+            "reason": "海滨长方形铺装水域与喷泉轴线、城市建筑背景符合官方景区资料，但夜景漫画淡化了会议中心等识别物，保留为可能。"
+          }
         },
         {
           "src": "/images/travel/manga-97/大连_3.jpg",
@@ -1449,8 +2715,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A bridge lit across the bay",
-          "caption": "A bridge lit across the bay",
-          "style": "manga"
+          "caption": "Xinghai Bay Bridge",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "星海湾大桥",
+            "captionZh": "星海湾大桥",
+            "evidence": [
+              {
+                "url": "https://m.thepaper.cn/newsDetail_forward_31253993",
+                "title": "大连发布：星海湾大桥及城市灯光景观"
+              }
+            ],
+            "reason": "双悬索桥塔、跨海桥身与岸线空间组合对应星海湾大桥；官方政务发布亦明确该桥夜间灯光景观。不由灯光判断摄影日期。"
+          }
         }
       ],
       "adcode": 210200
@@ -1474,8 +2752,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The bridges across the Yalu River",
-          "caption": "The bridges across the Yalu River",
-          "style": "manga"
+          "caption": "Yalu River Broken Bridge and Sino-Korean Friendship Bridge",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "鸭绿江断桥与中朝友谊桥",
+            "captionZh": "鸭绿江断桥与中朝友谊桥",
+            "evidence": [
+              {
+                "url": "https://www.mod.gov.cn/gfbw/gfjy_index/xjdx/4889213.html?big=fan",
+                "title": "国防部（解放军报）：鸭绿江畔，早已换了人间"
+              }
+            ],
+            "reason": "并行钢桁架桥、一完整一残存的双桥关系，与报道现场照片及其标注相符。"
+          }
         },
         {
           "src": "/images/travel/manga-97/丹东_2.jpg",
@@ -1483,8 +2773,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Mountain slopes reflected in the Yalu River",
-          "caption": "Mountain slopes reflected in the Yalu River",
-          "style": "manga"
+          "caption": "Possible Yalu River; exact section unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "疑似鸭绿江流域；具体河段待核实",
+            "captionZh": "疑似鸭绿江；具体河段待核实",
+            "evidence": [
+              {
+                "url": "https://files.dandong.gov.cn/files/ueditor/DDSZF/jsp/upload/file/20230318/1679113984062057190.pdf",
+                "title": "丹东市政府：鸭绿江风景名胜区整合优化方案"
+              }
+            ],
+            "reason": "宽阔水面、船只、山坡和村落符合鸭绿江沿线景观，但无法区分河口、水丰湖或其他河段；官方分区资料只用于候选排查，不能证明具体拍摄位置。"
+          }
         },
         {
           "src": "/images/travel/manga-97/丹东_3.jpg",
@@ -1492,8 +2794,20 @@
           "width": 1254,
           "height": 1254,
           "alt": "A monument in a city square",
-          "caption": "A monument in a city square",
-          "style": "manga"
+          "caption": "Mao Zedong statue, Dandong Railway Station Square",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "丹东站前广场毛泽东塑像",
+            "captionZh": "丹东站前广场·毛泽东塑像",
+            "evidence": [
+              {
+                "url": "https://www.thepaper.cn/newsDetail_forward_15921423",
+                "title": "澎湃新闻：丹东站前广场现场图文"
+              }
+            ],
+            "reason": "高台上身着长大衣、举右手的毛泽东塑像，以及站前广场周边楼群，与记者现场照片匹配，能具体命名而非泛称城市纪念碑。"
+          }
         }
       ],
       "adcode": 210600
@@ -1517,8 +2831,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Harbin street lights after dark",
-          "caption": "Harbin street lights after dark",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Harbin",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "中国工商银行建筑；支行与地址待核实",
+            "captionZh": "中国工商银行建筑；支行与地址待核实",
+            "evidence": [
+              {
+                "url": "https://v.icbc.com.cn/userfiles/Resources/ICBC/haiwai/Asia/download/CN/2023/heilongjiang_branches.pdf",
+                "title": "中国工商银行：黑龙江分行网点名录"
+              }
+            ],
+            "reason": "可识读中国工商银行招牌；红色历史建筑与圆拱窗尚未得到唯一建筑匹配。官方名录虽列中央大街支行地址，但不能把地址清单当作这张图就是该支行的证明。"
+          }
         },
         {
           "src": "/images/travel/manga-97/哈尔滨_2.jpg",
@@ -1526,8 +2852,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The Flood Control Monument at dusk",
-          "caption": "The Flood Control Monument at dusk",
-          "style": "manga"
+          "caption": "Harbin Flood Control Victory Monument",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "哈尔滨防洪胜利纪念塔",
+            "captionZh": "哈尔滨·防洪胜利纪念塔",
+            "evidence": [
+              {
+                "url": "https://files.chcg.gov.tw/files/67_1050725_%E5%87%BA%E5%A2%83%E8%80%83%E5%AF%9F%E5%A0%B1%E5%91%8A%E7%A7%80%E6%81%AC_2025.pdf",
+                "title": "彰化县政府考察报告：哈尔滨防洪纪念塔"
+              }
+            ],
+            "reason": "中央纪念塔及半圆形柱廊组合，与政府考察图文的防洪胜利纪念塔对应。漫画中水景的真实性没有独立确认，不将其写入地点事实。"
+          }
         },
         {
           "src": "/images/travel/manga-97/哈尔滨_3.jpg",
@@ -1535,8 +2873,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Saint Sophia Cathedral",
-          "caption": "Saint Sophia Cathedral",
-          "style": "manga"
+          "caption": "Saint Sophia Cathedral, Harbin",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "哈尔滨圣索菲亚教堂",
+            "captionZh": "哈尔滨·圣索菲亚教堂",
+            "evidence": [
+              {
+                "url": "https://fao.hlj.gov.cn/fao/c111834/202206/30672974/files/206c9110bd75c8a2e771b5434ffd70e9.pdf",
+                "title": "黑龙江省外事办：哈尔滨古色参访路线"
+              }
+            ],
+            "reason": "巨大洋葱形主穹顶、红砖墙、拱门和较小附属塔楼组合，与官方资料介绍的索菲亚教堂拜占庭式建筑匹配。"
+          }
         }
       ],
       "adcode": 230100
@@ -1560,8 +2910,20 @@
           "width": 1447,
           "height": 1087,
           "alt": "Shenyang Commercial City at night, anime illustration",
-          "caption": "Shenyang Commercial City at night",
-          "style": "manga"
+          "caption": "Shenyang Commercial City · Zhongjie",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "沈阳商业城（中街）",
+            "captionZh": "沈阳中街·沈阳商业城",
+            "evidence": [
+              {
+                "url": "https://zrzyj.shenyang.gov.cn/files/ueditor/GTZYJ/jsp/upload/file/20190927/1569570395060092229.pdf",
+                "title": "沈阳市第六批历史建筑资料：中街商业建筑"
+              }
+            ],
+            "reason": "画面门角黑色竖牌可读“沈阳商业城”，多层拱券商铺与中街商业建筑相符。确认建筑名称，不据灯光推断拍摄日期。"
+          }
         },
         {
           "src": "/images/travel/manga-100/沈阳_2.jpg",
@@ -1569,8 +2931,24 @@
           "width": 1447,
           "height": 1087,
           "alt": "Rockery at Zhang Family Mansion, anime illustration",
-          "caption": "Rockery at Zhang Family Mansion",
-          "style": "manga"
+          "caption": "Zhang Xueliang Former Residence · Tianli Renxin rockery",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "张学良旧居（张氏帅府）大青楼前假山",
+            "captionZh": "张学良旧居·“天理人心”假山与大青楼",
+            "evidence": [
+              {
+                "url": "https://lyzz.visitbeijing.com.cn/uploadfile/2018/1218/%E5%8C%BA%E5%9F%9F%E5%90%88%E4%BD%9C2018.pdf",
+                "title": "北京旅游杂志：张氏帅府天理人心假山"
+              },
+              {
+                "url": "https://www.ln.gov.cn/web/sqgk/whly/ajjq/4ajq/2025101516265721800/index.shtml",
+                "title": "辽宁省政府：张学良旧居陈列馆"
+              }
+            ],
+            "reason": "假山石匾“天理人心”、后方灰色大青楼的山花及窗列可对应。漫画中的匾额字序/笔画仍应与原照复核，地点可确认。"
+          }
         },
         {
           "src": "/images/travel/manga-100/沈阳_3.jpg",
@@ -1578,8 +2956,20 @@
           "width": 1447,
           "height": 1087,
           "alt": "Dazheng Hall at Shenyang Imperial Palace, anime illustration",
-          "caption": "Dazheng Hall at Shenyang Imperial Palace",
-          "style": "manga"
+          "caption": "Shenyang Imperial Palace · Dazheng Hall",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "沈阳故宫大政殿",
+            "captionZh": "沈阳故宫·大政殿",
+            "evidence": [
+              {
+                "url": "https://www.sypm.org.cn/zhanlan_3/53.html",
+                "title": "沈阳故宫博物院：大政殿"
+              }
+            ],
+            "reason": "八角重檐攒尖顶、黄色琉璃瓦绿剪边和门前金色盘龙柱，与故宫官网的大政殿结构及图片相符。"
+          }
         }
       ],
       "adcode": 210100
@@ -1603,8 +2993,20 @@
           "width": 1447,
           "height": 1087,
           "alt": "Changchun Film Studio Museum square, anime illustration",
-          "caption": "Changchun Film Studio Museum square",
-          "style": "manga"
+          "caption": "Changchun Film Studio Museum · entrance square",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "长影旧址博物馆门前广场",
+            "captionZh": "长影旧址博物馆·门前广场",
+            "evidence": [
+              {
+                "url": "https://media.people.com.cn/n1/2018/1006/c40606-30325949.html",
+                "title": "人民日报：长影旧址博物馆——难以忘怀的影像记忆"
+              }
+            ],
+            "reason": "画面可读“长影旧址博物馆”，并有门前毛泽东雕像；人民日报对馆址及近7米高门前雕像的报道与画面对应。"
+          }
         },
         {
           "src": "/images/travel/manga-100/长春_2.jpg",
@@ -1612,8 +3014,20 @@
           "width": 1447,
           "height": 1087,
           "alt": "FAW towers and the city square, anime illustration",
-          "caption": "FAW towers and the city square",
-          "style": "manga"
+          "caption": "China FAW Group · NBD headquarters",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "中国一汽NBD总部",
+            "captionZh": "中国一汽·NBD总部",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:FAW_Group_NBD_headquarters_(20250924144423).jpg",
+                "title": "原始摄影：FAW Group NBD headquarters"
+              }
+            ],
+            "reason": "双塔顶端被横向悬臂/连廊连接，中央圆形开口及楼体一汽标志与原始摄影页面可对照；不是泛称城市广场。"
+          }
         },
         {
           "src": "/images/travel/manga-100/长春_3.jpg",
@@ -1621,8 +3035,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Historic building and tiled roofs, anime illustration",
-          "caption": "Historic building and tiled roofs",
-          "style": "manga"
+          "caption": "Museum of the Imperial Palace of Manchukuo · Tongde Hall",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "伪满皇宫博物院同德殿",
+            "captionZh": "伪满皇宫博物院·同德殿",
+            "evidence": [
+              {
+                "url": "https://topicsfaro.com/wh24_02.html",
+                "title": "长春旅行现场摄影：同德殿入口"
+              },
+              {
+                "url": "https://jl.cri.cn/20180906/1aa36cc5-943d-6949-5b9f-ad6d68846224.html",
+                "title": "国际在线吉林频道：同德殿修缮及建筑资料"
+              }
+            ],
+            "reason": "中央石质门廊、两侧黄墙、红色琉璃屋顶和顶端三角山花，与同德殿入口照片匹配；不应误标伪满国务院主楼。"
+          }
         }
       ],
       "adcode": 220100
@@ -1650,8 +3080,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A highland lake beneath storm clouds",
-          "caption": "A highland lake beneath storm clouds",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Lhasa",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "拉萨行程·湖泊具体名称待核实",
+            "evidence": [
+              {
+                "url": "https://www.xzmzgk.gov.cn/mzfkxzf/jdjs/202001/e38bbc9bf8e54c718ad364abc565f1c7.shtml?userInfo=notlogin",
+                "title": "墨竹工卡县政府：景点介绍（含思金拉措、直贡梯寺）"
+              }
+            ],
+            "reason": "仅有水面与草坡，未见石碑、寺院或可独立识别的地形。检索了墨竹工卡思金拉措等候选，未能唯一对应；不能直接改名思金拉措、纳木错或羊卓雍错。"
+          }
         },
         {
           "src": "/images/travel/manga-97/拉萨_2.jpg",
@@ -1659,8 +3101,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The Potala Palace",
-          "caption": "The Potala Palace",
-          "style": "manga"
+          "caption": "Lhasa · Potala Palace",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "布达拉宫",
+            "captionZh": "拉萨·布达拉宫",
+            "evidence": [
+              {
+                "url": "https://whc.unesco.org/en/list/707/",
+                "title": "UNESCO：Historic Ensemble of the Potala Palace, Lhasa"
+              }
+            ],
+            "reason": "依山布置的红宫与白宫、堡墙阶梯及金顶构成明确地标；与UNESCO布达拉宫历史建筑群资料一致。"
+          }
         },
         {
           "src": "/images/travel/manga-97/拉萨_3.jpg",
@@ -1668,8 +3122,20 @@
           "width": 1552,
           "height": 1013,
           "alt": "Drigung Til Monastery on the mountainside",
-          "caption": "Drigung Til Monastery on the mountainside",
-          "style": "manga"
+          "caption": "Lhasa · Drigung Til Monastery, Maizhokunggar",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "直贡梯寺（拉萨市墨竹工卡县）",
+            "captionZh": "拉萨市墨竹工卡县·直贡梯寺",
+            "evidence": [
+              {
+                "url": "https://www.xzmzgk.gov.cn/mzfkxzf/jdjs/202001/e38bbc9bf8e54c718ad364abc565f1c7.shtml?userInfo=notlogin",
+                "title": "墨竹工卡县政府：直贡梯寺"
+              }
+            ],
+            "reason": "寺院沿山坡横向展开，红白墙与金顶群布局符合直贡梯寺；县政府明确其属拉萨市墨竹工卡县，保留在拉萨分组。"
+          }
         }
       ]
     },
@@ -1697,8 +3163,24 @@
           "width": 1450,
           "height": 1085,
           "alt": "A glacier terminus above a meltwater pool",
-          "caption": "A glacier terminus above a meltwater pool",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Nagqu",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "那曲行程·冰川名称待核实",
+            "evidence": [
+              {
+                "url": "https://wlt.xizang.gov.cn/xwzx_69/wlyw/dsdt/202106/t20210625_248190.html",
+                "title": "西藏自治区文旅厅：萨普冰川考察记"
+              },
+              {
+                "url": "https://www.kepusky.com/kepuweb/chinesewhite/typicalglacier/18814.html",
+                "title": "科普图文：中国典型冰川景观（那曲三类冰川）"
+              }
+            ],
+            "reason": "能见蓝色冰舌、融水池与裸露岩壁，但缺乏山峰全貌和地名标识；检索萨普、布加岗日及依嘎候选后未能唯一匹配，不据冰洞形态指定某一冰川。"
+          }
         },
         {
           "src": "/images/travel/manga-97/那曲_2.jpg",
@@ -1706,8 +3188,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "A lake and snow-dusted mountain peaks",
-          "caption": "A lake and snow-dusted mountain peaks",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Nagqu",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "那曲行程·湖泊与雪山名称待核实",
+            "evidence": [
+              {
+                "url": "https://wlt.xizang.gov.cn/xwzx_69/wlyw/dsdt/202106/t20210625_248190.html",
+                "title": "西藏自治区文旅厅：萨普冰川考察记"
+              }
+            ],
+            "reason": "窄幅湖泊和锯齿山脊不能单独排除那曲多个湖区；萨普官方资料可作候选参考，但现图主峰轮廓不足以坐实萨木错。"
+          }
         },
         {
           "src": "/images/travel/manga-97/那曲_3.jpg",
@@ -1715,8 +3209,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A glacial valley under broken clouds",
-          "caption": "A glacial valley under broken clouds",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Nagqu",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "那曲行程·冰川谷地具体地点待核实",
+            "evidence": [
+              {
+                "url": "https://wlt.xizang.gov.cn/xwzx_69/wlyw/dsdt/202106/t20210625_248190.html",
+                "title": "西藏自治区文旅厅：萨普冰川考察记"
+              }
+            ],
+            "reason": "图中林灌与开阔冰舌可见，但缺少定位牌和确定峰形；与萨普/布加/依嘎候选资料不能建立唯一对应，不沿用行程地名强行认定。"
+          }
         }
       ]
     },
@@ -1744,8 +3250,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Zizhu Monastery amid rocky peaks",
-          "caption": "Zizhu Monastery amid rocky peaks",
-          "style": "manga"
+          "caption": "Dingqing, Chamdo · Zizhu Monastery",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "昌都市丁青县孜珠寺",
+            "captionZh": "昌都丁青·孜珠寺",
+            "evidence": [
+              {
+                "url": "https://www.changdu.gov.cn/cdrmzf/c100670/202602/a158b5e16e48496da49add68c8fbdb7d.shtml",
+                "title": "昌都市政府：丁青孜珠寺"
+              }
+            ],
+            "reason": "寺院贴附数座直立岩峰，峰群与红白寺院的组合布局符合孜珠山。昌都市政府景点页确认寺院位于丁青县觉恩乡孜珠山。"
+          }
         },
         {
           "src": "/images/travel/manga-97/昌都_2.jpg",
@@ -1753,8 +3271,15 @@
           "width": 1448,
           "height": 1086,
           "alt": "A meadow below forested slopes",
-          "caption": "A meadow below forested slopes",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Chamdo",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "昌都行程·草甸具体地点待核实",
+            "evidence": [],
+            "reason": "林坡与紫花草甸缺少独有建筑或牌匾，不能从同组照片推出在孜珠寺附近。已对丁青/类乌齐候选做检索，暂无可靠唯一匹配。"
+          }
         },
         {
           "src": "/images/travel/manga-97/昌都_3.jpg",
@@ -1762,8 +3287,15 @@
           "width": 1448,
           "height": 1086,
           "alt": "A mountain valley seen from a rocky ridge",
-          "caption": "A mountain valley seen from a rocky ridge",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Chamdo",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "昌都行程·山脊具体地点待核实",
+            "evidence": [],
+            "reason": "山脊经幡与谷地道路在藏东多地相似；缺少地名石和明确峰形，未能证实属于孜珠山观景点或类乌齐某处。"
+          }
         }
       ]
     },
@@ -1800,8 +3332,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Stone monuments on the plateau",
-          "caption": "Stone monuments on the plateau",
-          "style": "manga"
+          "caption": "Dangqu headwaters · Yangtze Source stele",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "长江南源（当曲）源头纪念碑群",
+            "captionZh": "长江南源当曲·源头纪念碑群",
+            "evidence": [
+              {
+                "url": "https://www.tgpmuseum.cn/sxbbg/zxpd/xwdtpd/2025070911001283411/index.html",
+                "title": "三峡博物馆：当曲考察并树碑"
+              },
+              {
+                "url": "https://www.voc.com.cn/news/202507/29838332.html",
+                "title": "华声在线现场摄影：当曲长江源唐制碑"
+              }
+            ],
+            "reason": "中央“长江源”黑色唐制碑、龟趺及周边石碑与当曲源头摄影图对应。三峡博物馆资料确认杂多县当曲源头立碑；不据此推断本照片摄于2025年重立之后。"
+          }
         },
         {
           "src": "/images/travel/manga-97/玉树_2.jpg",
@@ -1809,8 +3357,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Prayer flags across open grassland",
-          "caption": "Prayer flags across open grassland",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Yushu Tibetan Autonomous Prefecture",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "玉树行程·泉眼及碑刻地点待核实",
+            "evidence": [
+              {
+                "url": "https://www.chinanews.com/cul/2014/07-14/6384276.shtml",
+                "title": "澜沧江源头科考现场报道：扎西乞瓦泉水区与吉富山地理源头"
+              }
+            ],
+            "reason": "看见草原泉眼、围栏和数块碑石，但漫画化的碑文不能可靠辨读。已检索澜沧江文化源头扎西乞瓦及地理源头资料；围栏、地形不足以唯一匹配，不把两种源头混为一谈。"
+          }
         },
         {
           "src": "/images/travel/manga-97/玉树_3.jpg",
@@ -1818,8 +3378,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Braided river channels in a broad valley",
-          "caption": "Braided river channels in a broad valley",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Yushu Tibetan Autonomous Prefecture",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "玉树行程·河流及河段待核实",
+            "evidence": [
+              {
+                "url": "https://www.guinan.gov.cn/lnb/zc1__zwgk/zc/aztfl/mzzj/content_29609300",
+                "title": "贵南县政府：长江、黄河和澜沧江的源头"
+              }
+            ],
+            "reason": "宽阔谷地中的辫状河道缺少桥梁、城镇、碑牌等可定位物。玉树同时有通天河、当曲及澜沧江源流；画面无法排除这些候选，不能直接认定澜沧江。"
+          }
         }
       ]
     },
@@ -1850,8 +3422,15 @@
           "width": 1448,
           "height": 1086,
           "alt": "Stars over the plateau",
-          "caption": "Stars over the plateau",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Golog Tibetan Autonomous Prefecture",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "果洛行程·星空拍摄地点待核实",
+            "evidence": [],
+            "reason": "仅有银河和黑色山脊剪影，没有能对应地表位置的标志物；星空本身不能证明果洛某座山或某个湖岸。检索当地景观不能形成唯一图像对应。"
+          }
         },
         {
           "src": "/images/travel/manga-97/果洛_2.jpg",
@@ -1859,8 +3438,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A plateau lake at dusk",
-          "caption": "A plateau lake at dusk",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Golog Tibetan Autonomous Prefecture",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "果洛行程·湖岸地点待核实",
+            "evidence": [
+              {
+                "url": "https://www.guinan.gov.cn/lnb/zc1__zwgk/zc/aztfl/mzzj/content_29609300",
+                "title": "贵南县政府：黄河源区的扎陵湖与鄂陵湖"
+              }
+            ],
+            "reason": "可见湖水、远岸和前景刻经石堆，未见湖名石或独有岸线。对扎陵湖、鄂陵湖候选检索后仍无法排除另一湖区；不把玛尼堆当作唯一地标。"
+          }
         },
         {
           "src": "/images/travel/manga-97/果洛_3.jpg",
@@ -1868,8 +3459,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A glacier and snow-covered peaks",
-          "caption": "A glacier and snow-covered peaks",
-          "style": "manga"
+          "caption": "Possibly Amnye Machen · glacier identity unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为阿尼玛卿山冰川（具体冰川待核实）",
+            "captionZh": "可能为阿尼玛卿山·具体冰川待核实",
+            "evidence": [
+              {
+                "url": "https://news.pku.edu.cn/xwzh/129-290217.htm",
+                "title": "北京大学登山队：阿尼玛卿主峰及哈龙冰川登山现场资料"
+              }
+            ],
+            "reason": "主雪峰与开阔谷地冰川具有阿尼玛卿景观特征，但画面不足以区分哈龙冰川及其他坡面；查阅北大登山队一手记录后仍不能确认具体冰川名称。"
+          }
         }
       ]
     },
@@ -1897,8 +3500,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A blue reservoir between mountain slopes",
-          "caption": "A blue reservoir between mountain slopes",
-          "style": "manga"
+          "caption": "Possibly Longyangxia Reservoir · viewpoint unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为龙羊峡水库（龙羊湖）",
+            "captionZh": "可能为龙羊峡水库·拍摄点待核实",
+            "evidence": [
+              {
+                "url": "https://www.guide.gov.cn/xwbd/bxxw/content_612208",
+                "title": "贵德县政府：贵德地质与峡谷景观图文（候选环境参考）"
+              }
+            ],
+            "reason": "深蓝库水、干旱红灰峡岸符合龙羊峡水库环境，但图中没有大坝、桥梁或清晰地名牌。可给候选，不能仅凭行程确认机位或库湾。"
+          }
         },
         {
           "src": "/images/travel/manga-97/海南藏族自治州_2.jpg",
@@ -1906,8 +3521,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Eroded ridges of the earth forest",
-          "caption": "Eroded ridges of the earth forest",
-          "style": "manga"
+          "caption": "Guide National Geopark · Ashigong Seven-Colored Peaks",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "贵德国家地质公园阿什贡七彩峰丛",
+            "captionZh": "贵德国家地质公园·阿什贡七彩峰丛",
+            "evidence": [
+              {
+                "url": "https://www.guide.gov.cn/gdly/jqjd/content_412042",
+                "title": "贵德县文旅：阿什贡七彩峰丛（贵德国家地质公园）"
+              },
+              {
+                "url": "https://www.guide.gov.cn/xwbd/bxxw/content_612208",
+                "title": "贵德县政府：七彩峰丛景观图文"
+              }
+            ],
+            "reason": "红、灰、白相间的陡立泥岩峰丛与步道组合，对照贵德县景区图文可匹配阿什贡。应由泛称土林改为该具体景区。"
+          }
         },
         {
           "src": "/images/travel/manga-97/海南藏族自治州_3.jpg",
@@ -1915,8 +3546,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Red cliffs reflected in the water",
-          "caption": "Red cliffs reflected in the water",
-          "style": "manga"
+          "caption": "Guide National Geopark · Ashigong scenic area",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "贵德国家地质公园阿什贡景区",
+            "captionZh": "贵德国家地质公园·阿什贡景区",
+            "evidence": [
+              {
+                "url": "https://www.guide.gov.cn/gdly/jqjd/content_412042",
+                "title": "贵德县文旅：阿什贡七彩峰丛（贵德国家地质公园）"
+              },
+              {
+                "url": "https://www.guide.gov.cn/xwbd/bxxw/content_612208",
+                "title": "贵德县政府：阿什贡红色峰丛及水景"
+              }
+            ],
+            "reason": "红色峰壁、峰壁脚下水景和沿岸人工游步道，与阿什贡景区景观布局相符。仅确认景区，不把水面擅自命名为某一个湖。"
+          }
         }
       ]
     },
@@ -1940,8 +3587,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "A temple courtyard in Xining",
-          "caption": "A temple courtyard in Xining",
-          "style": "manga"
+          "caption": "Possibly Kumbum Monastery · hall identity unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为塔尔寺（具体殿堂待核实）",
+            "captionZh": "可能为塔尔寺·具体殿堂待核实",
+            "evidence": [
+              {
+                "url": "https://travel.people.com.cn/n1/2019/0220/c41570-30808322.html",
+                "title": "塔尔寺建筑图文：小金瓦殿与寺院建筑（候选参考）"
+              }
+            ],
+            "reason": "红墙、金顶、石狮和门前台阶符合塔尔寺殿堂建筑；对照小金瓦殿等候选仍缺少可辨匾额，不能认定某一殿名。"
+          }
         },
         {
           "src": "/images/travel/manga-99/西宁_2.jpg",
@@ -1949,8 +3608,24 @@
           "width": 1536,
           "height": 1024,
           "alt": "Summer courtyard at Dongguan Mosque in Xining, illustrated",
-          "caption": "Dongguan Mosque · courtyard in summer",
-          "style": "manga"
+          "caption": "Xining · Dongguan Great Mosque",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "西宁东关清真大寺",
+            "captionZh": "西宁·东关清真大寺",
+            "evidence": [
+              {
+                "url": "https://dmqh.qhnu.edu.cn/html/travel/travelQinghai/travelplan/jingdian/1515344237728354306.html",
+                "title": "青海师范大学：东关清真大寺建筑资料"
+              },
+              {
+                "url": "https://qh.weather.com.cn/bdly/tcxc/06/2776793.shtml",
+                "title": "中国天气网青海：东关清真大寺"
+              }
+            ],
+            "reason": "院内钟楼式宣礼建筑、左右两侧不同形式的回廊及院落布局，与东关清真大寺图文资料对应。删除旧说明里无证据的summer。"
+          }
         },
         {
           "src": "/images/travel/manga-97/西宁_3.jpg",
@@ -1958,8 +3633,15 @@
           "width": 1448,
           "height": 1086,
           "alt": "Yellow blossoms in Datong County",
-          "caption": "Yellow blossoms in Datong County",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Xining",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "青海行程·花卉近摄地点待核实",
+            "evidence": [],
+            "reason": "黄色十字花与昆虫为近摄，背景完全虚化；画面不能确认西宁大通县，更不能确定某个油菜花景点。旧说明Datong County缺乏可见证据，建议暂去掉县名。"
+          }
         }
       ]
     },
@@ -1983,8 +3665,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Guangzhou skyline across the Pearl River",
-          "caption": "Guangzhou skyline across the Pearl River",
-          "style": "manga"
+          "caption": "Guangzhou · Zhujiang New Town and Haixinsha",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "珠江新城与海心沙（含广州东西塔）",
+            "captionZh": "广州·珠江新城与海心沙",
+            "evidence": [
+              {
+                "url": "https://www.gzass.gd.cn/whzc/wenhuasheshi/wenhuaguangchang/124.html",
+                "title": "广州市社会科学院：海心沙"
+              },
+              {
+                "url": "https://huacheng.gz-cmc.com/pages/2022/08/31/ea8933980c1c43efb892a62f90b1b1ba.html",
+                "title": "广州日报新花城：珠江新城东西塔及海心沙"
+              }
+            ],
+            "reason": "跨江画面中可识别海心沙帆形构筑物、广州国际金融中心及周大福金融中心，三者关系与珠江新城城市轴线吻合；不推断具体拍摄岸线。"
+          }
         },
         {
           "src": "/images/travel/manga-97/广州_2.jpg",
@@ -1992,8 +3690,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "The Five Rams sculpture",
-          "caption": "The Five Rams sculpture",
-          "style": "manga"
+          "caption": "Yuexiu Park · Five Rams Sculpture",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "越秀公园五羊石像",
+            "captionZh": "越秀公园·五羊石像",
+            "evidence": [
+              {
+                "url": "https://gzwxb.gov.cn/context/contextId/200738",
+                "title": "广州市委网信办：广州地标及文化景点"
+              }
+            ],
+            "reason": "五只石羊叠置在岩石基座上的轮廓和前方大羊形态可直接识别，对应越秀公园五羊石像。"
+          }
         },
         {
           "src": "/images/travel/manga-97/广州_3.jpg",
@@ -2001,8 +3711,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "The Sun Yat-sen Memorial Hall",
-          "caption": "The Sun Yat-sen Memorial Hall",
-          "style": "manga"
+          "caption": "Guangzhou · Sun Yat-sen Memorial Hall",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "广州中山纪念堂",
+            "captionZh": "广州·中山纪念堂",
+            "evidence": [
+              {
+                "url": "https://gzwxb.gov.cn/context/contextId/200738",
+                "title": "广州市委网信办：广州地标及文化景点"
+              }
+            ],
+            "reason": "蓝色琉璃瓦八角攒尖顶、正面门廊及孙中山立像组合明确，与纪念堂建筑对应。"
+          }
         }
       ]
     },
@@ -2026,8 +3748,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Limestone peaks beneath a cloudy sky",
-          "caption": "Limestone peaks beneath a cloudy sky",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Guilin",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "桂林行程·石灰岩山体具体名称待核实",
+            "evidence": [
+              {
+                "url": "https://www.spp.gov.cn/spp/zhuanlan/202512/t20251207_713013.shtml",
+                "title": "漓江兴坪段与九马画山资料（候选参考）"
+              }
+            ],
+            "reason": "已对照九马画山等漓江山体的网上照片。本图只含近景岩壁、植被和峰顶，缺少河流、完整峰群或题刻；不能可靠确认是九马画山，暂不以知名山名替代旧泛称。"
+          }
         },
         {
           "src": "/images/travel/manga-97/桂林_2.jpg",
@@ -2035,8 +3769,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "The Sun and Moon Pagodas at night",
-          "caption": "The Sun and Moon Pagodas at night",
-          "style": "manga"
+          "caption": "Shan Lake, Guilin · Sun and Moon Pagodas",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "桂林杉湖日月双塔",
+            "captionZh": "桂林杉湖·日月双塔",
+            "evidence": [
+              {
+                "url": "https://wgl.anshun.gov.cn/wsbs/xgxz/202008/P020220602623666797857.pdf",
+                "title": "全国导游资格考试大纲：两江四湖杉湖与日月双塔"
+              }
+            ],
+            "reason": "相邻的一金一银两座楼阁式塔及杉湖水面为清晰地标，与官方两江四湖—象山景区资料对应。"
+          }
         },
         {
           "src": "/images/travel/manga-97/桂林_3.jpg",
@@ -2044,8 +3790,20 @@
           "width": 1086,
           "height": 1448,
           "alt": "Elephant Trunk Hill beside the river",
-          "caption": "Elephant Trunk Hill beside the river",
-          "style": "manga"
+          "caption": "Guilin · Elephant Trunk Hill and Water-Moon Cave",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "桂林象鼻山水月洞",
+            "captionZh": "桂林·象鼻山水月洞",
+            "evidence": [
+              {
+                "url": "https://sjfw.mct.gov.cn/site/dataservice/culdetails?curId=10&id=35020",
+                "title": "文化和旅游部：象山景区与水月洞"
+              }
+            ],
+            "reason": "临江山体前伸的象鼻形岩壁与贯通的水月洞轮廓明确，文化和旅游部景区介绍与画面相符。"
+          }
         }
       ]
     },
@@ -2069,8 +3827,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Historic carved-stone gateway at Haitiantang on Gulangyu, illustrated",
-          "caption": "Gulangyu · Haitiantang historical gateway",
-          "style": "manga"
+          "caption": "Gulangyu · Hai Tian Tang Gou, 38 Fujian Road",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "鼓浪屿海天堂构（福建路38号）",
+            "captionZh": "鼓浪屿·海天堂构（福建路38号）",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:Gulangyu_1.jpg",
+                "title": "原始摄影：鼓浪屿海天堂构入口"
+              },
+              {
+                "url": "https://zfgb.fujian.gov.cn/pdf/upload/20210913183242142032.pdf",
+                "title": "福建省政府公报：海天堂构及福建路保护范围"
+              }
+            ],
+            "reason": "画面石雕门楼、蓝色38号门牌与海天堂构福建路38号入口对应，原始照片名Gulangyu 1可追溯。"
+          }
         },
         {
           "src": "/images/travel/manga-99/厦门_2.jpg",
@@ -2078,8 +3852,24 @@
           "width": 1472,
           "height": 1068,
           "alt": "The Customs Clock Tower and Lujiang Road in Xiamen on a winter night, illustrated",
-          "caption": "Xiamen · Customs Clock Tower at night",
-          "style": "manga"
+          "caption": "Xiamen · Customs Clock Tower and Lujiang Road",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "厦门海关钟楼与鹭江道",
+            "captionZh": "厦门·海关钟楼与鹭江道",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:Xiamen_4.jpg",
+                "title": "原始摄影：Xiamen 4，海关钟楼夜景"
+              },
+              {
+                "url": "https://xm.fjsen.com/wap/2021-09/01/content_30826473.htm",
+                "title": "厦门文旅线路：鹭江沿线"
+              }
+            ],
+            "reason": "四面钟塔、钟塔下方沿街立面及鹭江道夜景，与本网站替换图原始摄影Xiamen 4的构图一致。仅确认建筑与街道，不推定拍摄机位。"
+          }
         },
         {
           "src": "/images/travel/manga-98/厦门_3.jpg",
@@ -2087,8 +3877,24 @@
           "width": 1086,
           "height": 1448,
           "alt": "Zheng Chenggong statue at Haoyue Garden on Gulangyu, illustrated",
-          "caption": "Gulangyu · Zheng Chenggong statue",
-          "style": "manga"
+          "caption": "Gulangyu · Zheng Chenggong Statue, Haoyue Garden",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "鼓浪屿皓月园郑成功雕像",
+            "captionZh": "鼓浪屿皓月园·郑成功雕像",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:Statue_of_Koxinga_on_Gulangyu_1.jpg",
+                "title": "原始摄影：鼓浪屿郑成功雕像"
+              },
+              {
+                "url": "https://xm.fjsen.com/wap/2021-09/01/content_30826473.htm",
+                "title": "厦门文旅发布：皓月园郑成功雕像"
+              }
+            ],
+            "reason": "持剑郑成功巨型花岗岩像立于海边巨岩之上，其衣甲、人物姿势与皓月园雕像一致，原始照片名Statue of Koxinga也可追溯。"
+          }
         }
       ]
     },
@@ -2112,8 +3918,24 @@
           "width": 1536,
           "height": 1024,
           "alt": "Coastal rock formations and a pavilion on Meizhou Island, illustrated",
-          "caption": "Meizhou Island · coastal rocks and pavilion",
-          "style": "manga"
+          "caption": "Meizhou Island · Ewei Shenshi Geological Park",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "湄洲岛鹅尾神石园（鹅尾海蚀地质公园）",
+            "captionZh": "湄洲岛·鹅尾神石园",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:湄洲岛神石园风光_-_panoramio.jpg",
+                "title": "原始摄影：湄洲岛神石园风光"
+              },
+              {
+                "url": "https://www.360cities.net/zh/image/meizhou-island-putian-fujian-chinatheharmonyofseaandsky-fujian-province",
+                "title": "现场全景摄影：湄洲岛鹅尾神石园海岸"
+              }
+            ],
+            "reason": "海蚀岩坡、沿坡石阶和临海小亭与鹅尾神石园现场摄影可对应；网站记录的原始替换图亦为湄洲岛神石园风光。只确认景区，不虚构亭名。"
+          }
         },
         {
           "src": "/images/travel/manga-98/莆田_2.jpg",
@@ -2121,8 +3943,24 @@
           "width": 1020,
           "height": 1541,
           "alt": "Guangxiao Temple in Putian",
-          "caption": "Guangxiao Temple in Putian",
-          "style": "manga"
+          "caption": "Putian · Meifeng Guangxiao Temple gateway",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "莆田梅峰光孝寺山门",
+            "captionZh": "莆田·梅峰光孝寺山门",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:Guangxiao_Temple_(Putian).jpg",
+                "title": "原始摄影：莆田光孝寺山门"
+              },
+              {
+                "url": "https://data.fjdsfzw.org.cn/upload/Annals/2011/%E5%85%AB%E9%97%BD%E9%80%9A%E5%BF%97/epub/ops/437.htm",
+                "title": "福建省地方志：梅峰光孝寺"
+              }
+            ],
+            "reason": "山门中央石匾可辨“梅峰光孝寺”，石牌楼雕饰、铁门与原始寺门摄影对应；应补足梅峰，避免与其他城市同名光孝寺混淆。"
+          }
         },
         {
           "src": "/images/travel/manga-98/莆田_3.jpg",
@@ -2130,8 +3968,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "An old opera stage by a Mazu temple",
-          "caption": "An old opera stage by a Mazu temple",
-          "style": "manga"
+          "caption": "Meizhou Mazu Ancestral Temple · old opera stage",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "湄洲妈祖祖庙前古戏台",
+            "captionZh": "湄洲妈祖祖庙·古戏台",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:%E5%A6%88%E7%A5%96%E5%BA%99%E5%89%8D%E5%8F%A4%E6%88%8F%E5%8F%B0_-_panoramio.jpg",
+                "title": "原始摄影：妈祖庙前古戏台，含摄影坐标"
+              },
+              {
+                "url": "https://www.mzmz.org.cn/lx_tblyy.html",
+                "title": "湄洲妈祖祖庙官方：祖庙建筑与戏台"
+              }
+            ],
+            "reason": "红柱、黄色台基、歇山式屋顶与原始照片构图一致。原摄影页面给出25.093483,119.142300，位于湄洲祖庙；结合祖庙官方建筑资料，可具体到祖庙戏台，不再只写某妈祖庙旁。漫画匾额字形仍宜对原照校字。"
+          }
         }
       ],
       "highlight": "gold"
@@ -2156,8 +4010,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "The castanopsis forest in Sanyuan",
-          "caption": "The castanopsis forest in Sanyuan",
-          "style": "manga"
+          "caption": "Possibly Sanyuan National Forest Park · Castanopsis scenic area",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为三元国家森林公园格氏栲景区入口",
+            "captionZh": "可能为三元国家森林公园·格氏栲景区入口",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:三元森林公园格氏栲景区_-_Castanopsis_kawakamii_Park_of_Sanyuan_Forest_Park_-_2016.08_-_panoramio.jpg",
+                "title": "原始摄影记录：三元森林公园格氏栲景区"
+              },
+              {
+                "url": "https://lyj.fujian.gov.cn/bmsjk/slgy/202012/t20201211_5480574.htm",
+                "title": "福建省林业局：福建三元国家森林公园"
+              }
+            ],
+            "reason": "石刻、右侧登山石阶和林间桥可见，但漫画石刻字形无法完整可靠辨读。原替换图记录指向格氏栲景区，林业局确认该景区存在；未取得可直接逐部件比对的原摄影页面，保留可能。"
+          }
         },
         {
           "src": "/images/travel/manga-97/三明_2.jpg",
@@ -2165,8 +4035,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "A view from the Sanming greenway",
-          "caption": "A view from the Sanming greenway",
-          "style": "manga"
+          "caption": "Sanming Urban Greenway · stop identity unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "三明城市绿道（具体驿站待核实）",
+            "captionZh": "三明城市绿道·具体驿站待核实",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:三明城市绿道_-_Greenway_of_Sanming_-_2016.08_-_panoramio_-_rheins.jpg",
+                "title": "原始摄影：三明城市绿道"
+              },
+              {
+                "url": "https://zjt.fujian.gov.cn/ztzl/wqzt/fjyjhjjsxd/jb/201501/t20150109_2883525.htm",
+                "title": "福建省住建厅：三明绿道及驿站建设资料"
+              }
+            ],
+            "reason": "弯曲红色绿道、木栏杆、草顶凉亭和圆盘路灯可与该替换图的原摄影记录对应，可确认城市绿道体系；未确认具体驿站，不擅定妙元驿站。"
+          }
         },
         {
           "src": "/images/travel/manga-97/三明_3.jpg",
@@ -2174,8 +4060,24 @@
           "width": 1502,
           "height": 1047,
           "alt": "Miaoyuan Mountain Country Park",
-          "caption": "Miaoyuan Mountain Country Park",
-          "style": "manga"
+          "caption": "Possibly Miaoyuan Mountain Country Park · service building",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为妙元山郊野公园服务建筑",
+            "captionZh": "可能为妙元山郊野公园·服务建筑",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:妙元山郊野公园_-_Miaoyuan_Mountain_County_Park_-_2016.08_-_panoramio.jpg",
+                "title": "原始摄影记录：妙元山郊野公园"
+              },
+              {
+                "url": "https://lyj.fujian.gov.cn/bmsjk/slgy/202012/t20201211_5480574.htm",
+                "title": "福建省林业局：文笔山健身休闲区含妙元山景区"
+              }
+            ],
+            "reason": "单层红顶服务建筑、外部石墩及门楣牌可见，但漫画中的牌匾无法完整辨认。原替换摄影名为妙元山郊野公园，官方林业资料将妙元山列入三元森林公园；暂不能确认建筑正式名称。"
+          }
         }
       ]
     },
@@ -2202,8 +4104,24 @@
           "width": 1536,
           "height": 1024,
           "alt": "Spring lake reflections and submerged trunks in Jiuzhaigou, illustrated",
-          "caption": "Jiuzhaigou · spring reflections and submerged trunks",
-          "style": "manga"
+          "caption": "Jiuzhaigou · exact lake unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "九寨沟景区（具体海子待核实）",
+            "captionZh": "九寨沟·具体海子待核实",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:Reflexion_of_underwater_trunks_and_mixed_forest_vegetation_(Jiuzhaigou_Valley_UNESCO-MAB_Biosphere_Reserve_with_WDPA_ID_145572).jpg",
+                "title": "原始摄影：九寨沟水下树干与林地倒影"
+              },
+              {
+                "url": "https://www.jiuzhai.com/about/scenic-spot",
+                "title": "九寨沟官方：五花海及其他海子资料"
+              }
+            ],
+            "reason": "透明湖水与长沉木能对应九寨沟原替换摄影，但原始文件仅标九寨沟保护区，未写具体海子。五花海官方介绍也有沉木，然而沉木不是五花海独有标志，不能据此坐实五花海；不新增季节或年份推断。"
+          }
         },
         {
           "src": "/images/travel/manga-97/阿坝_2.jpg",
@@ -2211,8 +4129,24 @@
           "width": 1536,
           "height": 1024,
           "alt": "Huanglong pools and temple",
-          "caption": "Huanglong pools and temple",
-          "style": "manga"
+          "caption": "Huanglong · Five-Color Pool and rear temple",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "黄龙五彩池与黄龙后寺",
+            "captionZh": "黄龙·五彩池与黄龙后寺",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:Huanglong_travertine_pools_with_temple.jpg",
+                "title": "原始摄影：黄龙钙华彩池与寺院"
+              },
+              {
+                "url": "https://www.huanglong.com/cn/jqjs/hljq/spot-detail?id=3706&pid=4584",
+                "title": "黄龙景区官方：景点介绍"
+              }
+            ],
+            "reason": "钙华彩池向下延展，池群尽头为黄龙后寺，背景为沟谷与雪山；与原始摄影Huanglong travertine pools with temple对应，可定位到五彩池—后寺组合。"
+          }
         },
         {
           "src": "/images/travel/manga-97/阿坝_3.jpg",
@@ -2220,8 +4154,24 @@
           "width": 1536,
           "height": 1024,
           "alt": "Travertine terraces at Huanglong",
-          "caption": "Travertine terraces at Huanglong",
-          "style": "manga"
+          "caption": "Huanglong · travertine pools, exact group unconfirmed",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "黄龙景区钙华彩池（具体池组待核实）",
+            "captionZh": "黄龙·钙华彩池（具体池组待核实）",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:Huanglong_travertine_pools.jpg",
+                "title": "原始摄影：黄龙钙华彩池"
+              },
+              {
+                "url": "https://whc.unesco.org/en/list/638/",
+                "title": "UNESCO：Huanglong Scenic and Historic Interest Area"
+              }
+            ],
+            "reason": "可见连续米黄色钙华池埂、湛蓝池水与池中灌木，且与原始摄影Huanglong travertine pools对应；可确认黄龙，不把近景随意命名为争艳池或某一具体池组。"
+          }
         }
       ]
     },
@@ -2245,8 +4195,24 @@
           "width": 1536,
           "height": 1024,
           "alt": "Zhagana limestone cliffs and drifting clouds, illustrated",
-          "caption": "Zhagana · limestone peaks in the clouds",
-          "style": "manga"
+          "caption": "Diebu, Gannan · Zhagana Scenic Area",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "甘南州迭部县扎尕那景区",
+            "captionZh": "甘南迭部·扎尕那景区",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:202609_Zhagana_Scenic_Area_77.jpg",
+                "title": "原始现场摄影：扎尕那景区77"
+              },
+              {
+                "url": "https://zwfw.gansu.gov.cn/gannan/zwcs/zwtgdlyj/gnzAjjqml/index.html",
+                "title": "甘南州文体广电旅游局：A级景区名录（迭部县扎尕那景区）"
+              }
+            ],
+            "reason": "裸露石灰岩峰群、前方矮岩峰和草坡的叠置关系，与原始替换摄影Zhagana Scenic Area 77对应；原摄影页面明确景区名，甘南州官方名录确认属迭部县。仅确认扎尕那，不指定未证实的观景台。"
+          }
         },
         {
           "src": "/images/travel/manga-98/甘南_2.jpg",
@@ -2254,8 +4220,24 @@
           "width": 1536,
           "height": 1024,
           "alt": "Labrang Monastery buildings and golden roof ornaments, illustrated",
-          "caption": "Labrang Monastery · painted walls and golden ornaments",
-          "style": "manga"
+          "caption": "Xiahe · Labrang Monastery complex",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "夏河县拉卜楞寺建筑群",
+            "captionZh": "夏河·拉卜楞寺建筑群",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:202609_Labrang_Monastery_125.jpg",
+                "title": "原始现场摄影记录：拉卜楞寺125"
+              },
+              {
+                "url": "https://wlt.gansu.gov.cn/wlt/c118256/202308/169916340/files/984e9e5f38394c51803e753ad6fa617a.pdf",
+                "title": "甘肃省文旅厅：拉卜楞寺旅游资源单体普查（含建筑照片）"
+              }
+            ],
+            "reason": "红白墙体、彩绘檐部、金色法轮宝瓶与后方山坡的组合，能与原始替换摄影Labrang Monastery 125对应；官方普查资料亦记有相应建筑装饰。未取得殿堂的独立标识，不擅加学院或佛殿名。"
+          }
         },
         {
           "src": "/images/travel/manga-99/甘南_3.jpg",
@@ -2263,8 +4245,24 @@
           "width": 1536,
           "height": 1024,
           "alt": "Temple roofs and golden ornaments at Labrang Monastery in summer, illustrated",
-          "caption": "Labrang Monastery · temple roofs in summer",
-          "style": "manga"
+          "caption": "Xiahe · Labrang Monastery complex",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "夏河县拉卜楞寺建筑群",
+            "captionZh": "夏河·拉卜楞寺建筑群",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:202609_Labrang_Monastery_26.jpg",
+                "title": "原始现场摄影：拉卜楞寺26"
+              },
+              {
+                "url": "https://wlt.gansu.gov.cn/wlt/c118256/202308/169916340/files/984e9e5f38394c51803e753ad6fa617a.pdf",
+                "title": "甘肃省文旅厅：拉卜楞寺旅游资源单体普查（含建筑照片）"
+              }
+            ],
+            "reason": "绿瓦屋顶、红白立面、金色装饰及前方黄色墙体的组合，与原摄影Labrang Monastery 26对应；该现场摄影页面明确寺名。具体单体建筑名尚不能确认，不追加殿名，也不单凭植被推测季节。"
+          }
         }
       ]
     },
@@ -2288,8 +4286,24 @@
           "width": 1085,
           "height": 1449,
           "alt": "Wenyuan Pavilion in Baiyin",
-          "caption": "Wenyuan Pavilion in Baiyin",
-          "style": "manga"
+          "caption": "Baiyin · possibly Wenyuan Pavilion",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "白银文渊阁（名称及所在公园尚待独立复核）",
+            "captionZh": "白银·可能为文渊阁",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E9%93%B6%E5%B8%82_%E6%96%87%E6%B8%8A%E9%98%81.jpg",
+                "title": "原作者现场摄影：白银市文渊阁（正文称银凤湖古建筑）"
+              },
+              {
+                "url": "https://mail.bypc.gov.cn/zjby/bygl/wlzl/lyjd/art/2026/art_bdc5f085ae1a4b0c9e30bc5059066ddc.html",
+                "title": "白银文旅：金岭公园与银凤湖公园为不同公园"
+              }
+            ],
+            "reason": "多层红色楼阁及前景石灯笼，与原始替换摄影“白银市 文渊阁”对应；但原作者页面正文又写“银凤湖古建筑”，未说明楼阁名称来源。图中无可辨匾额，独立官方资料未能坐实名字与公园归属，故不升级为完全确认，更不补写金岭公园。"
+          }
         },
         {
           "src": "/images/travel/manga-97/白银_2.jpg",
@@ -2297,8 +4311,24 @@
           "width": 1536,
           "height": 1024,
           "alt": "Jinling Park in Baiyin District",
-          "caption": "Jinling Park in Baiyin District",
-          "style": "manga"
+          "caption": "Baiyin District · Jinling Park",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "白银区金岭公园",
+            "captionZh": "白银区·金岭公园",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E9%93%B6%E5%B8%82_%E7%99%BD%E9%93%B6%E5%8C%BA%E9%87%91%E5%B2%AD%E5%85%AC%E5%9B%AD.jpg",
+                "title": "原始现场摄影记录：白银区金岭公园"
+              },
+              {
+                "url": "https://gs.people.com.cn/n2/2026/0812/c183348-41666091.html",
+                "title": "白银区现场报道：金岭公园位于上海路西侧"
+              }
+            ],
+            "reason": "湖面、沿岸景观与远处楼阁的构图可对应网站采用的原始摄影“白银市 白银区金岭公园”；当地官方资料确认公园位置与水域景观。仅确认公园，不把远处楼阁命名为文渊阁。"
+          }
         },
         {
           "src": "/images/travel/manga-97/白银_3.jpg",
@@ -2306,8 +4336,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Yinfeng Lake in Baiyin",
-          "caption": "Yinfeng Lake in Baiyin",
-          "style": "manga"
+          "caption": "Baiyin · Yinfeng Lake",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "白银银凤湖",
+            "captionZh": "白银·银凤湖",
+            "evidence": [
+              {
+                "url": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E9%93%B6%E5%B8%82_%E9%93%B6%E5%87%A4%E6%B9%96.jpg",
+                "title": "原作者现场摄影：白银市区银凤湖"
+              },
+              {
+                "url": "https://mail.bypc.gov.cn/zjby/bygl/wlzl/lyjd/art/2026/art_bdc5f085ae1a4b0c9e30bc5059066ddc.html",
+                "title": "白银文旅：银凤湖公园"
+              }
+            ],
+            "reason": "前景草丛、湖面及远处景观建筑的布局与原作者“白银市 银凤湖”摄影相符；原摄影正文明确白银市区银凤湖，白银文旅资料亦确认该城市湖泊公园。"
+          }
         }
       ]
     },
@@ -2331,8 +4377,20 @@
           "width": 1448,
           "height": 1086,
           "alt": "Lanzhou at dusk, anime illustration",
-          "caption": "Lanzhou at dusk",
-          "style": "manga"
+          "caption": "Possibly Lanzhou · urban stretch of the Yellow River",
+          "style": "manga",
+          "location_check": {
+            "status": "probable",
+            "landmark": "可能为兰州城区黄河段（拍摄点待核实）",
+            "captionZh": "可能为兰州城区·黄河城区段",
+            "evidence": [
+              {
+                "url": "https://www.gswbj.gov.cn/a/2024/08/06/21503.html",
+                "title": "兰州市文旅深度探索活动：黄河风情线与城区景观"
+              }
+            ],
+            "reason": "山间河谷里的密集城区、宽阔河流弯道与兰州黄河城区段相符；但图中远处桥梁和建筑不足以独立定位具体河段或观景点。不能据俯拍视角直接认定兰山、白塔山或某座观景楼。"
+          }
         },
         {
           "src": "/images/travel/manga-100/兰州_2.jpg",
@@ -2340,8 +4398,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Zhongshan Bridge and Baita Hill at night, anime illustration",
-          "caption": "Zhongshan Bridge and Baita Hill at night",
-          "style": "manga"
+          "caption": "Lanzhou · Zhongshan Bridge and Baita Hill",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "兰州中山桥与白塔山",
+            "captionZh": "兰州·中山桥与白塔山",
+            "evidence": [
+              {
+                "url": "https://www.gswbj.gov.cn/a/2026/06/11/28565.html",
+                "title": "甘肃文旅：中山桥、白塔山与黄河沿线"
+              },
+              {
+                "url": "https://wlt.gansu.gov.cn/wlt/c118256/202308/169916340/files/984e9e5f38394c51803e753ad6fa617a.pdf",
+                "title": "甘肃省文旅厅：白塔山建筑群与中山桥景观资料"
+              }
+            ],
+            "reason": "连续弧形钢拱与桁架的中山桥，后方山坡古建筑群及白塔轮廓组成明确地标。官方旅游资料记载中山桥位于白塔山下，二者空间关系与画面吻合。"
+          }
         },
         {
           "src": "/images/travel/manga-100/兰州_3.jpg",
@@ -2349,8 +4423,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "Danxia ridges and walking trails, anime illustration",
-          "caption": "Danxia ridges and walking trails",
-          "style": "manga"
+          "caption": "Lanzhou · Shuimo Danxia Scenic Area",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "兰州水墨丹霞景区",
+            "captionZh": "兰州·水墨丹霞景区",
+            "evidence": [
+              {
+                "url": "https://www.gswbj.gov.cn/a/2026/06/09/28525.html",
+                "title": "甘肃文旅：兰州水墨丹霞现场摄影与地貌"
+              },
+              {
+                "url": "https://www.gswbj.gov.cn/a/2026/05/28/28400.html",
+                "title": "甘肃文旅：水墨丹霞山脊与栈道现场摄影"
+              }
+            ],
+            "reason": "红、灰、黄条带交错的低矮丹霞山脊和嵌入山间的游步道、观景路线，能对应水墨丹霞官方现场图文。只确认景区，不根据一条步道推断某一个平台。"
+          }
         }
       ],
       "highlight": "gold"
@@ -2375,8 +4465,24 @@
           "width": 1448,
           "height": 1086,
           "alt": "City skyline at dusk, anime illustration",
-          "caption": "City skyline at dusk",
-          "style": "manga"
+          "caption": "Urumqi · Zhongtian Plaza and surrounding cityscape",
+          "style": "manga",
+          "location_check": {
+            "status": "verified",
+            "landmark": "乌鲁木齐中天广场及周边城区",
+            "captionZh": "乌鲁木齐·中天广场及周边城区",
+            "evidence": [
+              {
+                "url": "https://cwcg.cscec.com/yjsl/jpgc/201408/2779858.html",
+                "title": "中建项目方：新疆乌鲁木齐中天广场"
+              },
+              {
+                "url": "https://zjt.xinjiang.gov.cn/xjzjt/c113175/202305/27d4000010244cc58a9a998b852ff1ec/files/%E3%80%8A%E8%87%AA%E6%B2%BB%E5%8C%BA%E5%9F%8E%E5%B8%82%E5%8F%8A%E5%BB%BA%E7%AD%91%E9%A3%8E%E8%B2%8C%E7%AE%A1%E7%90%86%E5%AF%BC%E5%88%99%E3%80%8B%E5%BE%81%E6%B1%82%E6%84%8F%E8%A7%81%E7%A8%BF%281%29.pdf",
+                "title": "新疆住建厅：城市及建筑风貌导则中的中天广场"
+              }
+            ],
+            "reason": "天际线中可见屋顶呈斜切尖顶/冰峰轮廓的中天广场，该建筑的形体与承建方项目照片及新疆建筑风貌资料相符。仅确认可见建筑，不把拍摄点擅定为红山公园。"
+          }
         },
         {
           "src": "/images/travel/manga-100/乌鲁木齐_2.jpg",
@@ -2384,8 +4490,15 @@
           "width": 1448,
           "height": 1086,
           "alt": "Village and mountain slopes, anime illustration",
-          "caption": "Village and mountain slopes",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Urumqi",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "新疆行程·村落具体地点待核实",
+            "evidence": [],
+            "reason": "绿色山坡、杨树与蓝顶村居缺少地名牌、独特山峰或地标建筑。检索南山板房沟、水西沟、白杨沟候选后无法唯一匹配；不能把一般乡村景观认定为上述任一景区，也尚不能独立证实当前乌鲁木齐分组。"
+          }
         },
         {
           "src": "/images/travel/manga-100/乌鲁木齐_3.jpg",
@@ -2393,13 +4506,320 @@
           "width": 1448,
           "height": 1086,
           "alt": "Golden fields beneath the clouds, anime illustration",
-          "caption": "Golden fields beneath the clouds",
-          "style": "manga"
+          "caption": "Exact location unconfirmed · Urumqi",
+          "style": "manga",
+          "location_check": {
+            "status": "unresolved",
+            "landmark": "",
+            "captionZh": "新疆行程·麦田具体地点待核实",
+            "evidence": [],
+            "reason": "开阔金黄色农田与低山云层缺少唯一定位物；达坂城、昌吉江布拉克等候选不能凭麦田外观排除或确认。没有证据把地点改到昌吉，也不能独立证明属于乌鲁木齐。"
+          }
         }
       ]
     }
   ],
   "pending_places": [],
   "asset_version": "travel-manga-99",
-   "image_credit_notes": []
+  "illustration_credits": [
+    {
+      "asset": "海东_1",
+      "place": "A plant detail at Nanmen Gorge",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E6%B5%B7%E7%9C%81%E4%BA%92%E5%8A%A9%E5%8E%BF%E5%8D%97%E9%97%A8%E5%B3%A1%E9%A3%8E%E5%85%89_-_panoramio.jpg",
+      "title": "File:青海省互助县南门峡风光 - panoramio.jpg",
+      "author": "伊盛昌",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2012-09-28",
+      "season": "autumn",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "海东_2",
+      "place": "Autumn at Wufeng in Huzhu",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%A7%8B%E5%88%B0%E4%BA%94%E5%B3%B0_-_panoramio.jpg",
+      "title": "File:秋到五峰 - panoramio.jpg",
+      "author": "伊盛昌",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2010-10-13",
+      "season": "autumn",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "海东_3",
+      "place": "Huzhu · mountain roads in autumn",
+      "source": "https://commons.wikimedia.org/wiki/File:Huzhu,_Haidong,_Qinghai,_China_-_panoramio.jpg",
+      "title": "File:Huzhu, Haidong, Qinghai, China - panoramio.jpg",
+      "author": "伊盛昌",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "capture_date": null,
+      "season": "autumn",
+      "season_evidence": "可见金黄落叶林、褐色草坡，原页面日期2013-10-07为上传日期，不能当作拍摄日期；季节依据秋季植被状态",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "西宁_2",
+      "place": "Dongguan Mosque · courtyard in summer",
+      "source": "https://commons.wikimedia.org/wiki/File:Dongguan_Mosque,_Xining,_Qinghai_province,_China.jpg",
+      "title": "File:Dongguan Mosque, Xining, Qinghai province, China.jpg",
+      "author": "Wikiwakhan",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "capture_date": "2026-07-20",
+      "season": "summer",
+      "season_evidence": "拍摄日期与图像中的植被、地表状态一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "西宁_3",
+      "place": "Yellow blossoms in Datong County",
+      "source": "https://commons.wikimedia.org/wiki/File:Datong%2C_Xining%2C_Qinghai%2C_China_-_panoramio.jpg",
+      "title": "File:Datong, Xining, Qinghai, China - panoramio.jpg",
+      "author": "伊盛昌",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2008-07-06",
+      "season": "summer",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "厦门_1",
+      "place": "Gulangyu · Haitiantang historical gateway",
+      "author": "H2v5o68z",
+      "source": "https://commons.wikimedia.org/wiki/File:Gulangyu_1.jpg",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph.",
+      "capture_date": "2025-02-09",
+      "season": "winter",
+      "season_evidence": "参考图页面拍摄日期与植被状态核对一致"
+    },
+    {
+      "title": "File:Xiamen 4.jpg",
+      "file": "D:\\Codex\\旅行卡片对齐修复99\\季节参考\\Xiamen 4.jpg",
+      "date": "2025-02-08 19:23:13",
+      "source": "https://commons.wikimedia.org/wiki/File:Xiamen_4.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Xiamen_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "H2v5o68z",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "asset": "厦门_2",
+      "place": "Xiamen · Customs Clock Tower at night",
+      "capture_date": "2025-02-08",
+      "season": "winter",
+      "season_evidence": "与保留的厦门两张原参考图同为2025年2月8–9日",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "厦门_3",
+      "place": "Gulangyu · Zheng Chenggong statue",
+      "author": "H2v5o68z",
+      "source": "https://commons.wikimedia.org/wiki/File:Statue_of_Koxinga_on_Gulangyu_1.jpg",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph.",
+      "capture_date": "2025-02-09",
+      "season": "winter",
+      "season_evidence": "参考图页面拍摄日期与植被状态核对一致"
+    },
+    {
+      "asset": "莆田_1",
+      "place": "Meizhou Island · coastal rocks and pavilion",
+      "source": "https://commons.wikimedia.org/wiki/File:%E6%B9%84%E6%B4%B2%E5%B2%9B%E7%A5%9E%E7%9F%B3%E5%9B%AD%E9%A3%8E%E5%85%89_-_panoramio.jpg",
+      "title": "File:湄洲岛神石园风光 - panoramio.jpg",
+      "author": "江上清风1961",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "capture_date": "2012-09-22",
+      "season": "autumn",
+      "season_evidence": "拍摄日期与图像中的植被、地表状态一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "莆田_2",
+      "place": "Guangxiao Temple in Putian",
+      "source": "https://commons.wikimedia.org/wiki/File:Guangxiao_Temple_(Putian).jpg",
+      "title": "File:Guangxiao Temple (Putian).jpg",
+      "author": "Fanglongzong",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2020-10-11",
+      "season": "autumn",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "莆田_3",
+      "place": "An old opera stage by a Mazu temple",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%A6%88%E7%A5%96%E5%BA%99%E5%89%8D%E5%8F%A4%E6%88%8F%E5%8F%B0_-_panoramio.jpg",
+      "title": "File:妈祖庙前古戏台 - panoramio.jpg",
+      "author": "江上清风1961",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2012-09-22",
+      "season": "autumn",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "三明_1",
+      "place": "The castanopsis forest in Sanyuan",
+      "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E5%85%83%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD%E6%A0%BC%E6%B0%8F%E6%A0%B2%E6%99%AF%E5%8C%BA_-_Castanopsis_kawakamii_Park_of_Sanyuan_Forest_Park_-_2016.08_-_panoramio.jpg",
+      "title": "File:三元森林公园格氏栲景区 - Castanopsis kawakamii Park of Sanyuan Forest Park - 2016.08 - panoramio.jpg",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2016-08-04",
+      "season": "summer",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "三明_2",
+      "place": "A view from the Sanming greenway",
+      "source": "https://commons.wikimedia.org/wiki/File:%E4%B8%89%E6%98%8E%E5%9F%8E%E5%B8%82%E7%BB%BF%E9%81%93_-_Greenway_of_Sanming_-_2016.08_-_panoramio_-_rheins.jpg",
+      "title": "File:三明城市绿道 - Greenway of Sanming - 2016.08 - panoramio - rheins.jpg",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2016-08-05",
+      "season": "summer",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "三明_3",
+      "place": "Miaoyuan Mountain Country Park",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%A6%99%E5%85%83%E5%B1%B1%E9%83%8A%E9%87%8E%E5%85%AC%E5%9B%AD_-_Miaoyuan_Mountain_County_Park_-_2016.08_-_panoramio.jpg",
+      "title": "File:妙元山郊野公园 - Miaoyuan Mountain County Park - 2016.08 - panoramio.jpg",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "capture_date": "2016-08-05",
+      "season": "summer",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "阿坝_1",
+      "place": "Jiuzhaigou · spring reflections and submerged trunks",
+      "source": "https://commons.wikimedia.org/wiki/File:Reflexion_of_underwater_trunks_and_mixed_forest_vegetation_(Jiuzhaigou_Valley_UNESCO-MAB_Biosphere_Reserve_with_WDPA_ID_145572).jpg",
+      "title": "File:Reflexion of underwater trunks and mixed forest vegetation (Jiuzhaigou Valley UNESCO-MAB Biosphere Reserve with WDPA ID 145572).jpg",
+      "author": "Toni Wöhrl",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capture_date": "2015-04-01",
+      "season": "spring",
+      "season_evidence": "拍摄日期与图像中的植被、地表状态一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "阿坝_2",
+      "place": "Huanglong pools and temple",
+      "source": "https://commons.wikimedia.org/wiki/File:Huanglong_travertine_pools_with_temple.jpg",
+      "title": "File:Huanglong travertine pools with temple.jpg",
+      "author": "Toni Wöhrl",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2015-04-02",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "阿坝_3",
+      "place": "Travertine terraces at Huanglong",
+      "source": "https://commons.wikimedia.org/wiki/File:Huanglong_travertine_pools.jpg",
+      "title": "File:Huanglong travertine pools.jpg",
+      "author": "Toni Wöhrl",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2015-04-02",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "甘南_1",
+      "place": "Zhagana · limestone peaks in the clouds",
+      "author": "Jonashtand",
+      "source": "https://commons.wikimedia.org/wiki/File:202609_Zhagana_Scenic_Area_77.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph.",
+      "capture_date": "2026-08-02",
+      "season": "summer",
+      "season_evidence": "参考图页面拍摄日期与植被状态核对一致"
+    },
+    {
+      "asset": "甘南_2",
+      "place": "Labrang Monastery · painted walls and golden ornaments",
+      "author": "Jonashtand",
+      "source": "https://commons.wikimedia.org/wiki/File:202609_Labrang_Monastery_125.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph.",
+      "capture_date": "2026-08-01",
+      "season": "summer",
+      "season_evidence": "参考图页面拍摄日期与植被状态核对一致"
+    },
+    {
+      "asset": "甘南_3",
+      "place": "Labrang Monastery · temple roofs in summer",
+      "source": "https://commons.wikimedia.org/wiki/File:202609_Labrang_Monastery_26.jpg",
+      "title": "File:202609 Labrang Monastery 26.jpg",
+      "author": "Jonashtand",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "capture_date": "2026-08-01",
+      "season": "summer",
+      "season_evidence": "拍摄日期与图像中的植被、地表状态一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "白银_1",
+      "place": "Wenyuan Pavilion in Baiyin",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E9%93%B6%E5%B8%82_%E6%96%87%E6%B8%8A%E9%98%81.jpg",
+      "title": "File:白银市 文渊阁.jpg",
+      "author": "Shenjimilin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2019-04-08",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "白银_2",
+      "place": "Jinling Park in Baiyin District",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E9%93%B6%E5%B8%82_%E7%99%BD%E9%93%B6%E5%8C%BA%E9%87%91%E5%B2%AD%E5%85%AC%E5%9B%AD.jpg",
+      "title": "File:白银市 白银区金岭公园.jpg",
+      "author": "Shenjimilin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2019-04-08",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    },
+    {
+      "asset": "白银_3",
+      "place": "Yinfeng Lake in Baiyin",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E9%93%B6%E5%B8%82_%E9%93%B6%E5%87%A4%E6%B9%96.jpg",
+      "title": "File:白银市 银凤湖.jpg",
+      "author": "Shenjimilin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "capture_date": "2019-04-08",
+      "season": "spring",
+      "season_evidence": "参考图拍摄日期/EXIF与画面状态核对一致",
+      "changes": "Anime illustration, color adjustment and framing adapted from the source photograph."
+    }
+  ],
+  "image_credit_notes": []
 }

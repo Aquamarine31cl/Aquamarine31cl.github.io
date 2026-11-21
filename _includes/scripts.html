@@ -1,7 +1,8 @@
 {% include analytics.html %}
 {% include access-dialog.html %}
 <script defer src="{{ '/assets/js/compat105.js' | relative_url }}?v=105"></script>
-<script defer src="{{ '/assets/js/visitor-access.js' | relative_url }}?v=105"></script>
+{% if page.personal_page %}<script defer src="{{ '/assets/js/journal108.js' | relative_url }}?v=108"></script>{% endif %}
+<script defer src="{{ '/assets/js/visitor-access107.js' | relative_url }}?v=107"></script>
 <script type="module" src="{{ '/assets/js/core-ui106.js' | relative_url }}?v=106"></script>
 <script defer src="{{ '/assets/js/interactions106.js' | relative_url }}?v=106"></script>
 {% if page.home_page %}<script defer src="{{ '/assets/js/home-honors.js' | relative_url }}?v=105"></script>{% endif %}

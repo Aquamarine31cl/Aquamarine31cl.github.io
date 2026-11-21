@@ -12,7 +12,7 @@ redirect_from:
 
 <div class="home-intro">
   <p class="home-summary">Research and personal projects</p>
-  <div class="home-paths"><a href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">↗</span></a><a href="{{ '/experiences/' | relative_url }}">Experiences <span aria-hidden="true">↗</span></a></div>
+  <div class="home-paths"><a href="{{ '/publications/' | relative_url }}">Publications <span aria-hidden="true">↗</span></a><a href="{{ '/experiences/' | relative_url }}">Observatory <span aria-hidden="true">↗</span></a></div>
   <nav class="home-paths home-section-links" aria-label="About sections">
     <a href="#education-heading">Education</a><a href="#news-heading">Updates</a><a href="#honors">Honors</a>
   </nav>

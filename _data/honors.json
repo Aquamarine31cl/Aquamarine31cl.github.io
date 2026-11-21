@@ -39,7 +39,9 @@
       "level": "university",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "School-Level",
+      "visual_tier": "notable"
     },
     {
       "id": "award-02",
@@ -55,7 +57,9 @@
       "image_orientation": "landscape",
       "image_preview": "/images/previews-104/award-02.jpg",
       "image_width": 1536,
-      "image_height": 1024
+      "image_height": 1024,
+      "level_label": "Provincial · Shanghai",
+      "visual_tier": "highlight"
     },
     {
       "id": "award-03",
@@ -71,7 +75,9 @@
       "image_orientation": "landscape",
       "image_preview": "/images/previews-104/award-03.jpg",
       "image_width": 1448,
-      "image_height": 1086
+      "image_height": 1086,
+      "level_label": "School-Level",
+      "visual_tier": "highlight"
     },
     {
       "id": "award-04",
@@ -83,7 +89,9 @@
       "level": "university",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "School-Level",
+      "visual_tier": "standard"
     },
     {
       "id": "award-05",
@@ -95,7 +103,9 @@
       "level": "university",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "School-Level",
+      "visual_tier": "highlight"
     },
     {
       "id": "award-06",
@@ -107,7 +117,9 @@
       "level": "university",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "School-Level",
+      "visual_tier": "notable"
     },
     {
       "id": "award-08",
@@ -119,7 +131,9 @@
       "level": "university",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "School-Level",
+      "visual_tier": "standard"
     },
     {
       "id": "award-09",
@@ -131,7 +145,9 @@
       "level": "international-national",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "International / National",
+      "visual_tier": "standard"
     },
     {
       "id": "award-10",
@@ -147,7 +163,9 @@
       "image_orientation": "landscape",
       "image_preview": "/images/previews-104/award-10.jpg",
       "image_width": 1536,
-      "image_height": 1024
+      "image_height": 1024,
+      "level_label": "International / National",
+      "visual_tier": "highlight"
     },
     {
       "id": "award-12",
@@ -159,7 +177,9 @@
       "level": "international-national",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "International / National",
+      "visual_tier": "standard"
     },
     {
       "id": "award-13",
@@ -171,7 +191,9 @@
       "level": "provincial",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "Provincial / Ministerial",
+      "visual_tier": "notable"
     },
     {
       "id": "award-14",
@@ -183,7 +205,9 @@
       "level": "provincial",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "Provincial / Ministerial",
+      "visual_tier": "notable"
     },
     {
       "id": "award-16",
@@ -195,7 +219,9 @@
       "level": "provincial",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "Provincial / Ministerial",
+      "visual_tier": "standard"
     },
     {
       "date": "2021.11",
@@ -207,7 +233,9 @@
       "detail": "",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "International / National",
+      "visual_tier": "highlight"
     },
     {
       "date": "2021.11",
@@ -219,7 +247,9 @@
       "detail": "",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "Provincial / Ministerial",
+      "visual_tier": "notable"
     },
     {
       "date": "2021.11",
@@ -231,7 +261,9 @@
       "detail": "",
       "featured": false,
       "image": "",
-      "image_alt": ""
+      "image_alt": "",
+      "level_label": "Provincial / Ministerial",
+      "visual_tier": "notable"
     }
   ],
   "total": 55
